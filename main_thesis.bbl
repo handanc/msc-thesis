@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{}\fi
+
+\bibitem{aran2006signlanguagetutoring}
+Aran, O., I.~Ari, A.~Benoit, A.~Carrillo, F.~Fanard, P.~Campr, L.~Akarun,
+  A.~Caplier, M.~Rombaut and B.~Sankur, \enquote{Sign Language Tutoring Tool},
+  {\em Proceedings of eNTERFACE 2007, The Summer Workshop on Multimodal
+  Interfaces\/}, Vol.~21, 2007.
+
+\end{thebibliography}
