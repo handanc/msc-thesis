@@ -10,7 +10,17 @@
 \usepackage{longtable}
 \graphicspath{{figures/}} % Graphics will be here
 
+\usepackage{multirow}
+\usepackage{subfigure}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+%\pagestyle{empty}
+%\includeonly{introduction} % To only process the given file
 
+\newtheorem{thm}{Theorem}[chapter]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
 % COVER PAGE
 \title{THESIS TITLE}
 \turkcebaslik{TEZ BAŞLIĞI}
@@ -24,7 +34,7 @@
 \begin{document}
 
 	\pagenumbering{roman}
-	\makemstitle % M.S. thesis
+	%\makemstitle % M.S. thesis
 	\tableofcontents
 	%\listoffigures
 	%\listoftables
@@ -33,7 +43,9 @@
 
 	\pagenumbering{arabic}
 	\input{chapters/introduction}
-	\input{chapters/fba}
+	\input{chapters/materialsmethods}
+	%\input{chapters/results}
+	%\input{chapters/discussion}
 
 
 	\bibliographystyle{styles/fbe_tez_v11}

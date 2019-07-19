@@ -1,4 +1,4 @@
-PWD C:\Users\hncetin\OneDrive\Belgeler\Thesis Studies\Thesis\My Thesis
+PWD C:\Users\hncetin\OneDrive\Belgeler\Thesis Studies\Thesis
 INPUT C:\Users\hncetin\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
 INPUT main_thesis.tex
 OUTPUT main_thesis.log
@@ -51,6 +51,20 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty
 INPUT main_thesis.aux
 INPUT main_thesis.aux
 OUTPUT main_thesis.aux
@@ -80,12 +94,6 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-1.def
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-1.def
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def
-OUTPUT main_thesis.pdf
-INPUT C:\Users\hncetin\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT main_thesis.toc
@@ -111,22 +119,35 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
 OUTPUT main_thesis.toc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsl12.tfm
+OUTPUT main_thesis.pdf
+INPUT C:\Users\hncetin\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT chapters\introduction.tex
 INPUT chapters\introduction.tex
-INPUT chapters\fba.tex
-INPUT chapters\fba.tex
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbxti10.tfm
+INPUT chapters\materialsmethods.tex
+INPUT chapters\materialsmethods.tex
+INPUT tables\experimental_concentrations.tex
+INPUT tables\experimental_concentrations.tex
+INPUT tables\experimental_OD600s_and_growths.tex
+INPUT tables\experimental_OD600s_and_growths.tex
+INPUT tables\calculated_fluxes.tex
+INPUT tables\calculated_fluxes.tex
 INPUT main_thesis.bbl
 INPUT main_thesis.bbl
 INPUT main_thesis.aux
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb

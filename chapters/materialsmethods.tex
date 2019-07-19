@@ -1,0 +1,24 @@
+\chapter{MATERIALS AND METHODS}
+
+\section{Experimental Data Preparation}
+\subsection{Data Acquisition}
+Extracellular metabolomics data is obtained from Cakar's Lab \cite{arslan2018physiological}. Briefly, ethyl methane sulfonate (EMS) mutagenesis was performed on the prototrophic \emph{Saccharomyces cerevisiae} strain CEN.PK 113-7D (MATa, MAL2-8c, SUC2) to increase the genetic diversity as an evolutionary engineering selection strategy. Cells were inoculated in 2\% Yeast Minimal Media (YMM), and the extracellular concentrations of glucose, ethanol, glycerol and acetate were measured at different time points. OD\textsubscript{600} values were determined by a spectrophotometer. Additionally, cell dry weight analysis was conducted to determine biomass production. Acquired extracellular metabolite concentrations, OD\textsubscript{600} values and dry weights of the reference strain (without mutagenesis) were used in this study are collected in Table \ref{table:experimental_data} and Table \ref{table:experimental_OD600s_and_growths}.
+\input{tables/experimental_concentrations.tex}
+\input{tables/experimental_OD600s_and_growths.tex}
+\subsection{Determination of Rates}
+As the slope of the curve of lnOD\textsubscript{600} as a function of time gives the growth rates, natural logarithm of OD\textsubscript{600} values were calculated to obtain specific growth rates by using the equation \ref{eq:growthrates}.
+  \begin{equation}
+      \ \mu = \frac{\Delta \ln{OD_{600}}}{\Delta t}
+      \label{eq:growthrates}
+  \end{equation}
+In order to determine uptake and secretion rates of the metabolites, the steady-state assumption is applied in 3 hours intervals. Metabolite rates in the units of mmol/Lh are obtained and further converted to mmol/gDWh to be used as flux values.
+\input{tables/calculated_fluxes.tex}
+
+
+
+\section{Model Selection}
+
+iAN50, a stoichiometric model of intermediary metabolism including glycolysis, the pentose phosphate pathway, anaerobic excretion, citric acid cycle (TCA cycle), oxidative phosphorylation, and uptake pathways for galactose, ethanol and acetate is used to simulate \cite{nilsson2016metabolic}.
+
+\section{Flux Balance Analysis}
+\section{Simulation of Batch Conditions}
