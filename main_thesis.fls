@@ -65,6 +65,13 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\soul\soul.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\soul\soul.sty
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ectt1000.tfm
 INPUT main_thesis.aux
 INPUT main_thesis.aux
 OUTPUT main_thesis.aux
@@ -134,6 +141,16 @@ INPUT tables\experimental_concentrations.tex
 INPUT tables\experimental_concentrations.tex
 INPUT tables\experimental_OD600s_and_growths.tex
 INPUT tables\experimental_OD600s_and_growths.tex
+INPUT images\GrowthGraphsSmall.eps
+INPUT .\images\GrowthGraphsSmall.eps
+INPUT .\images\GrowthGraphsSmall.eps
+INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
+INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
+INPUT .\images\GrowthGraphsSmall.eps
+INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
+INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
+INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
+INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
 INPUT tables\calculated_fluxes.tex
 INPUT tables\calculated_fluxes.tex
 INPUT main_thesis.bbl

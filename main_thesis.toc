@@ -14,6 +14,6 @@
 \contentsline {subsection}{\numberline {2.1.1.} Data Acquisition}{3}% 
 \contentsline {subsection}{\numberline {2.1.2.} Determination of Rates}{3}% 
 \contentsline {section}{\numberline {2.2.} Model Selection}{6}% 
-\contentsline {section}{\numberline {2.3.} Flux Balance Analysis}{6}% 
-\contentsline {section}{\numberline {2.4.} Simulation of Batch Conditions}{6}% 
-\contentsline {chapter}{REFERENCES}{7}% 
+\contentsline {section}{\numberline {2.3.} Flux Balance Analysis}{7}% 
+\contentsline {section}{\numberline {2.4.} Simulation of Batch Conditions}{7}% 
+\contentsline {chapter}{REFERENCES}{8}% 

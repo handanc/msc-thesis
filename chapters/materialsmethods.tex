@@ -2,7 +2,9 @@
 
 \section{Experimental Data Preparation}
 \subsection{Data Acquisition}
-Extracellular metabolomics data is obtained from Cakar's Lab \cite{arslan2018physiological}. Briefly, ethyl methane sulfonate (EMS) mutagenesis was performed on the prototrophic \emph{Saccharomyces cerevisiae} strain CEN.PK 113-7D (MATa, MAL2-8c, SUC2) to increase the genetic diversity as an evolutionary engineering selection strategy. Cells were inoculated in 2\% Yeast Minimal Media (YMM), and the extracellular concentrations of glucose, ethanol, glycerol and acetate were measured at different time points. OD\textsubscript{600} values were determined by a spectrophotometer. Additionally, cell dry weight analysis was conducted to determine biomass production. Acquired extracellular metabolite concentrations, OD\textsubscript{600} values and dry weights of the reference strain (without mutagenesis) were used in this study are collected in Table \ref{table:experimental_data} and Table \ref{table:experimental_OD600s_and_growths}.
+Extracellular metabolomics data is obtained from Cakar's Lab \cite{arslan2018physiological}. \hl{Missing sentence: What they did was...} Briefly, ethyl methane sulfonate (EMS) mutagenesis was performed on the prototrophic \emph{Saccharomyces cerevisiae} strain CEN.PK 113-7D (MATa, MAL2-8c, SUC2) to increase the genetic diversity as an evolutionary engineering selection strategy. Cells were inoculated in 2\% Yeast Minimal Media (YMM), and the extracellular concentrations of glucose, ethanol, glycerol and acetate were measured at different time points. OD\textsubscript{600} values were determined by a spectrophotometer. Additionally, cell dry weight analysis was conducted to determine biomass production. Acquired extracellular metabolite concentrations, OD\textsubscript{600} values and dry weights of the reference strain (without mutagenesis) were used in this study are collected in Table \ref{table:experimental_data} and Table \ref{table:experimental_OD600s_and_growths}.
+
+
 \input{tables/experimental_concentrations.tex}
 \input{tables/experimental_OD600s_and_growths.tex}
 \subsection{Determination of Rates}
@@ -11,13 +13,21 @@ As the slope of the curve of lnOD\textsubscript{600} as a function of time gives
       \ \mu = \frac{\Delta \ln{OD_{600}}}{\Delta t}
       \label{eq:growthrates}
   \end{equation}
-In order to determine uptake and secretion rates of the metabolites, the steady-state assumption is applied in 3 hours intervals. Metabolite rates in the units of mmol/Lh are obtained and further converted to mmol/gDWh to be used as flux values.
+
+In order to determine uptake and secretion rates of the metabolites, the steady-state assumption is applied in 3 hours intervals as they are the shortest measured intervals. Missing data on cell dry weights are estimated from the OD\textsubscript{600} values, and these cell dry weight data is used to calculate fluxes (in the unit of mmol/gDWh). Measurement of the cell dry weight at the 3rd hour was crucial for the steady-state assumption, however this data was missing. Curve trend of the OD600 values is used as a guide to estimate cell dry weight (Figure \ref{fig:GrowthGraphs}) \hl{Missing method: Estimation approach, similar to regression/curve fitting etc...}. Calculated flux values can be found in the Table \ref{table:calculated_fluxes}.
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=1\columnwidth]{GrowthGraphsSmall.eps}
+\end{center}
+\caption{OD\textsubscript{600}, lnOD\textsubscript{600}, cell dry weights and growth rates graphs. Estimated missing cell dry weight data is shown in red color.}
+\vskip\baselineskip % Leave a vertical skip below the figure
+\label{fig:GrowthGraphs}
+\end{figure}
+
 \input{tables/calculated_fluxes.tex}
 
-
-
 \section{Model Selection}
-
 iAN50, a stoichiometric model of intermediary metabolism including glycolysis, the pentose phosphate pathway, anaerobic excretion, citric acid cycle (TCA cycle), oxidative phosphorylation, and uptake pathways for galactose, ethanol and acetate is used to simulate \cite{nilsson2016metabolic}.
 
 \section{Flux Balance Analysis}
