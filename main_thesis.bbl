@@ -1,18 +1,70 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \newcommand{\enquote}[1]{``#1''}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{}\fi
 
-\bibitem{blank2017let}
-Blank, L.~M., \enquote{Let's talk about flux or the importance of
-  (intracellular) reaction rates}, {\em Microbial biotechnology\/}, Vol.~10,
-  No.~1, p.~28, 2017.
+\bibitem{kitano2002systems}
+Kitano, H., \enquote{Systems biology: a brief overview}, {\em science\/}, Vol.
+  295, No. 5560, pp. 1662--1664, 2002.
 
-\bibitem{reimers2016steady}
-Reimers, A.-M. and A.~C. Reimers, \enquote{The steady-state assumption in
-  oscillating and growing systems}, {\em Journal of theoretical biology\/},
-  Vol. 406, pp. 176--186, 2016.
+\bibitem{bellouquid2006mathematical}
+Bellouquid, A. and M.~Delitala, {\em Mathematical modeling of complex
+  biological systems\/}, Springer, 2006.
+
+\bibitem{kremling2013systems}
+Kremling, A., {\em Systems biology: mathematical modeling and model
+  analysis\/}, Chapman and Hall/CRC, 2013.
+
+\bibitem{bruggeman2007nature}
+Bruggeman, F.~J. and H.~V. Westerhoff, \enquote{The nature of systems biology},
+  {\em TRENDS in Microbiology\/}, Vol.~15, No.~1, pp. 45--50, 2007.
+
+\bibitem{shahzad2012application}
+Shahzad, K. and J.~J~Loor, \enquote{Application of top-down and bottom-up
+  systems approaches in ruminant physiology and metabolism}, {\em Current
+  Genomics\/}, Vol.~13, No.~5, pp. 379--394, 2012.
+
+\bibitem{thiele2010protocol}
+Thiele, I. and B.~{\O}. Palsson, \enquote{A protocol for generating a
+  high-quality genome-scale metabolic reconstruction}, {\em Nature
+  protocols\/}, Vol.~5, No.~1, p.~93, 2010.
+
+\bibitem{orth2010flux}
+Orth, J.~D., I.~Thiele and B.~{\O}. Palsson, \enquote{What is flux balance
+  analysis?}, {\em Nature biotechnology\/}, Vol.~28, No.~3, p. 245, 2010.
+
+\bibitem{feist2009reconstruction}
+Feist, A.~M., M.~J. Herrg{\aa}rd, I.~Thiele, J.~L. Reed and B.~{\O}. Palsson,
+  \enquote{Reconstruction of biochemical networks in microorganisms}, {\em
+  Nature Reviews Microbiology\/}, Vol.~7, No.~2, p. 129, 2009.
+
+\bibitem{chen2012metabolic}
+Chen, N., I.~J. del Val, S.~Kyriakopoulos, K.~M. Polizzi and C.~Kontoravdi,
+  \enquote{Metabolic network reconstruction: advances in in silico
+  interpretation of analytical information}, {\em Current opinion in
+  biotechnology\/}, Vol.~23, No.~1, pp. 77--82, 2012.
+
+\bibitem{durot2008genome}
+Durot, M., P.-Y. Bourguignon and V.~Schachter, \enquote{Genome-scale models of
+  bacterial metabolism: reconstruction and applications}, {\em FEMS
+  microbiology reviews\/}, Vol.~33, No.~1, pp. 164--190, 2008.
+
+\bibitem{machado2014systematic}
+Machado, D. and M.~Herrg{\aa}rd, \enquote{Systematic evaluation of methods for
+  integration of transcriptomic data into constraint-based models of
+  metabolism}, {\em PLoS computational biology\/}, Vol.~10, No.~4, p. e1003580,
+  2014.
+
+\bibitem{ramkrishna2012dynamic}
+Ramkrishna, D. and H.-S. Song, \enquote{Dynamic models of metabolism: Review of
+  the cybernetic approach}, {\em AIChE Journal\/}, Vol.~58, No.~4, pp.
+  986--997, 2012.
+
+\bibitem{pinzon2018mathematical}
+Pinzon, W., H.~Vega, J.~Gonzalez and A.~Pinzon, \enquote{Mathematical Framework
+  Behind the Reconstruction and Analysis of Genome Scale Metabolic Models},
+  {\em Archives of Computational Methods in Engineering\/}, pp. 1--14, 2018.
 
 \bibitem{arslan2018physiological}
 Arslan, M., C.~Holyavkin, H.~{\.I}. K{\i}sakesen, A.~Topalo{\u{g}}lu,

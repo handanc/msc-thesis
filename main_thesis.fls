@@ -101,6 +101,10 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def
+OUTPUT main_thesis.pdf
+INPUT C:\Users\hncetin\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT main_thesis.toc
@@ -129,11 +133,19 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
 OUTPUT main_thesis.toc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsl12.tfm
-OUTPUT main_thesis.pdf
-INPUT C:\Users\hncetin\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT chapters\introduction.tex
 INPUT chapters\introduction.tex
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT images\systemsbiology.png
+INPUT .\images\systemsbiology.png
+INPUT .\images\systemsbiology.png
+INPUT .\images\systemsbiology.png
+INPUT .\images\systemsbiology.png
+INPUT images\modelreconstruction.png
+INPUT .\images\modelreconstruction.png
+INPUT .\images\modelreconstruction.png
+INPUT .\images\modelreconstruction.png
+INPUT .\images\modelreconstruction.png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbxti10.tfm
 INPUT chapters\materialsmethods.tex
 INPUT chapters\materialsmethods.tex
