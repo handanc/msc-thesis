@@ -211,14 +211,6 @@ Schomburg, I., A.~Chang, S.~Placzek, C.~S{\"o}hngen, M.~Rother, M.~Lang,
 Nilsson, A., \enquote{solveLinMin: Code of Implementation of pFBA}, GitHub,
   SysBioChalmers, EnzymeConstrainedSmallYeast, sourceCode, solveLinMin, 2019.
 
-\bibitem{MATLAB2019}
-MATLAB, {\em version 9.6.0 (R2019a Update 3)\/}, The MathWorks Inc., Natick,
-  Massachusetts, 2019.
-
-\bibitem{gurobi}
-Gurobi~Optimization, L., \enquote{Gurobi Optimizer Reference Manual}, , 2019,
-  \urlprefix\url{http://www.gurobi.com}.
-
 \bibitem{cline2007integration}
 Cline, M.~S., M.~Smoot, E.~Cerami, A.~Kuchinsky, N.~Landys, C.~Workman,
   R.~Christmas, I.~Avila-Campilo, M.~Creech, B.~Gross {\em et~al.\/},

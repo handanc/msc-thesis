@@ -19,7 +19,7 @@
 \contentsline {section}{\numberline {2.4.} Visualization of the Model}{15}% 
 \contentsline {chapter}{\numberline {3.}RESULTS}{16}% 
 \contentsline {section}{\numberline {3.1.} Intracellular Flux Distributions}{16}% 
-\contentsline {chapter}{\numberline {4.}DISCUSSION}{17}% 
-\contentsline {chapter}{\numberline {5.}EXPANDABLE TOPICS}{18}% 
-\contentsline {section}{\numberline {5.1.} Following topics can be added into introduction}{18}% 
-\contentsline {chapter}{REFERENCES}{19}% 
+\contentsline {chapter}{\numberline {4.}DISCUSSION}{18}% 
+\contentsline {chapter}{\numberline {5.}EXPANDABLE TOPICS}{19}% 
+\contentsline {section}{\numberline {5.1.} Following topics can be added into introduction}{19}% 
+\contentsline {chapter}{REFERENCES}{20}% 
