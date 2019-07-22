@@ -1,18 +1,18 @@
 \contentsline {chapter}{\numberline {1.}INTRODUCTION}{1}% 
 \contentsline {section}{\numberline {1.1.} Systems Biology}{1}% 
 \contentsline {subsection}{\numberline {1.1.1.} Metabolic Networks}{2}% 
-\contentsline {subsection}{\numberline {1.1.2.} Mathematical Representation of Metabolic Networks}{4}% 
-\contentsline {subsection}{\numberline {1.1.3.} Flux Balance Analysis}{4}% 
-\contentsline {section}{\numberline {1.2.} \emph {Saccharomyces cerevisiae}}{4}% 
-\contentsline {subsection}{\numberline {1.2.1.} Industrial importance of \emph {S. cerevisiae}}{4}% 
-\contentsline {subsection}{\numberline {1.2.2.} Metabolic Models of \emph {S. cerevisiae}}{4}% 
-\contentsline {subsection}{\numberline {1.2.3.} Applications of \emph {S. cerevisiae} GSMMs}{4}% 
-\contentsline {section}{\numberline {1.3.} Significance of Thesis}{4}% 
-\contentsline {chapter}{\numberline {2.}MATERIALS AND METHODS}{5}% 
-\contentsline {section}{\numberline {2.1.} Experimental Data Preparation}{5}% 
-\contentsline {subsection}{\numberline {2.1.1.} Data Acquisition}{5}% 
-\contentsline {subsection}{\numberline {2.1.2.} Determination of Rates}{5}% 
-\contentsline {section}{\numberline {2.2.} Model Selection}{8}% 
-\contentsline {section}{\numberline {2.3.} Flux Balance Analysis}{9}% 
-\contentsline {section}{\numberline {2.4.} Simulation of Batch Conditions}{9}% 
-\contentsline {chapter}{REFERENCES}{10}% 
+\contentsline {subsection}{\numberline {1.1.2.} Mathematical Representation of Metabolic Networks}{5}% 
+\contentsline {subsection}{\numberline {1.1.3.} Flux Balance Analysis}{5}% 
+\contentsline {section}{\numberline {1.2.} \emph {Saccharomyces cerevisiae}}{5}% 
+\contentsline {subsection}{\numberline {1.2.1.} Central Carbon Metabolism of \emph {S. cerevisiae}}{5}% 
+\contentsline {subsection}{\numberline {1.2.2.} Metabolic Models of \emph {S. cerevisiae}}{6}% 
+\contentsline {subsection}{\numberline {1.2.3.} Applications of \emph {S. cerevisiae} GSMMs}{6}% 
+\contentsline {section}{\numberline {1.3.} Significance of Thesis}{6}% 
+\contentsline {chapter}{\numberline {2.}MATERIALS AND METHODS}{9}% 
+\contentsline {section}{\numberline {2.1.} Experimental Data Preparation}{9}% 
+\contentsline {subsection}{\numberline {2.1.1.} Data Acquisition}{9}% 
+\contentsline {subsection}{\numberline {2.1.2.} Determination of Rates}{9}% 
+\contentsline {section}{\numberline {2.2.} Model Selection}{12}% 
+\contentsline {section}{\numberline {2.3.} Flux Balance Analysis}{13}% 
+\contentsline {section}{\numberline {2.4.} Simulation of Batch Conditions}{13}% 
+\contentsline {chapter}{REFERENCES}{14}% 

@@ -6,7 +6,6 @@ With the increasing availability of the computational tools and the development 
 
 Biological systems based on complex interactions between various molecular components. The relations between these components are often obey nonlinear kinetics, for example, most of the reactions are regulated by one or more feedback or feed-forward loops with incomprehensible behaviours. When considered, cell structure and compartmentalization are also often introduce complexities to the unexpected behavior of the entire biological system \cite{bellouquid2006mathematical}. Mathematical modeling with these factors taken into consideration is used as a general approach to encompass existing knowledge in biological systems, and to gather information by analyzing these models to acquire a better understanding \cite{kremling2013systems}.
 
-
 A mathematical model of a cell can be approached by two different approaches in either a bottom-up or top-down directionality (Figure \ref{fig:systemsbiology}) \cite{bruggeman2007nature, shahzad2012application}. Top-down approach is an experimental oriented approach, it starts from the whole picture and aims to characterize biological mechanisms closer to the smaller parts and their interactions in the network. In the bottom-up approach, collected data from biological knowledge is used as a starting point, a subsystem is generated to deduce the functional properties of smaller points in the network. Combination of the pathway level models (bottom-up) into a model for the entire system level (top-down) is the ultimate goal in the systems biology therefore these approaches are complementary.
 
 \begin{figure}[ht]
@@ -19,9 +18,11 @@ A mathematical model of a cell can be approached by two different approaches in 
 \end{figure}
 
 \subsection{Metabolic Networks}
-In the context of systems biology, metabolic network reconstructions have become a common denominator over the past 10 years \cite{thiele2010protocol}. Organism-specific metabolic network analyses allow scientists to design experiments and even obtain beforehand predictions. These networks are the main sources of the mathematical models which can simulate metabolic fluxes reflecting the experimantal reality \cite{orth2010flux}.
+In the context of systems biology, metabolic network reconstructions have become a common denominator over the past 20 years \cite{thiele2010protocol}. Organism-specific metabolic network analyses allow scientists to design experiments and even obtain beforehand predictions. These networks are the main sources of the mathematical models which can simulate metabolic fluxes reflecting the experimantal reality \cite{orth2010flux}.
 
-A generally applicable protocol is defined by the Palsson group \cite{thiele2010protocol, feist2009reconstruction} for the reconstruction of biochemical networks described in the Figure \ref{fig:modelreconstruction} \cite{chen2012metabolic}). Briefly, genomic data for the biochemical reactions of an organism are identified from the databases, such as NCBI, DDBJ and EMBL-EBI. Since the genomic data is the least representative of the biological phenotypes; available transcriptomic, proteomic, metabolomic and/or subcellular localization data are also used to further curate the model. Once the final metabolic network is reconstructed, it is translated into a mathematical model and validated by the experimental data.
+Before the improvement of genome sequencing or annotation technologies, initial core metabolic networks were based on the accessible information of biochemical pathways \cite{vallino1994carbon} \cite{varma1993biochemical}. In the last decade, larger genome-scale metabolic models (GSMMs) have been able to be developed rapidly with the help of databases for annotated genomes, providing information on substrates and products of each enzyme and each bioreaction \cite{feist2009reconstruction}. Growing biochemical databases provide automatization processes for the metabolic network reconstructions. As a result, genome-scale metabolic networks are available today for almost all organisms with an annotated genome available in the literature \cite{pitkanen2014comparative, kerkhoven2014applications}. From the first genome-scale metabolic model of \emph{Escherichia coli} to other organisms, the steps are required for GSMM development remained the same regardless of the biological diversity.
+
+A generally applicable protocol is defined by the Palsson group \cite{thiele2010protocol, feist2009reconstruction} for the reconstruction of biochemical networks described in the Figure \ref{fig:modelreconstruction} \cite{chen2012metabolic}. Briefly, genomic data for the biochemical reactions of an organism are identified from the databases, such as NCBI, DDBJ and EMBL-EBI. Extraction and processing of the gene-protein-reaction relationship (GPR) of the genomic data results a draft reconstruction. GPR associations in the draft model should be reviewed by the researchers and manually curated if the identifying process is achieved with the help of automated computational algorithms \cite{pitkanen2014comparative}. Since the genomic data is the least representative of the biological phenotypes, available transcriptomic, proteomic, metabolomic and/or subcellular localization data are also used to further curate the model. Once the final metabolic network is reconstructed with bibliographic information, it is translated into a mathematical model.
 
 \begin{figure}[ht]
 \begin{center}
@@ -32,21 +33,49 @@ A generally applicable protocol is defined by the Palsson group \cite{thiele2010
 \label{fig:modelreconstruction}
 \end{figure}
 
-Once a metabolic network is reconstructed, a rational link between a genome sequence, the proteins encoded in the genome, and the reactions catalyzed by the proteins allowing to investigate the relationships between genotype and phenotype is achieved \cite{durot2008genome}.
+Once a metabolic network is reconstructed, a rational link between a genome sequence, the proteins encoded in the genome, and the reactions catalyzed by the proteins allowing to investigate the relationships between genotype and phenotype is achieved \cite{durot2008genome}. As the final step, GSMM needs to be validated by the new experimental data sets. GSMM validation process for various experimental conditions require detailed cultivation data from experiments. For example, information on the biomass composition of the specific organism leads more accurate biomass equation in the model, that is one of the key factors in the GSMM optimization and validation \cite{dikicioglu2015biomass}. Even tough multiple steps in the GSMM reconstruction can be achieved with the automated softwares available, it is usually necessary to curate the obtained model manually.
 
 Approaches for analyzing metabolic networks are mainly categorized as dynamic or structural approaches. Even though the former is promising more realistic approach, its implementation in the literature is obstructed due to the unavailability of kinetic parameters for the majority of enzymes within a metabolic network \cite{machado2014systematic, ramkrishna2012dynamic} Because of the lack of kinetic parameters, structural metabolic modeling has been widely used for analyzing cellular metabolism at a steady-state assumption.
 
-\subsection{Mathematical Representation of Metabolic Networks}
-\hl{There will be a review on} "Mathematical Framework Behind the Reconstruction and Analysis of Genome Scale Metabolic Models" \cite{pinzon2018mathematical})
+GSMMs are one of the most useful tools in systems biology, especially in metabolic engineering studies \cite{kim2012recent}. In 1998, with the publication of \emph{Metabolic Engineering: Principles and Methodologies}, the term metabolic engineering is defined as the optimization of natural processes within cells to increase the production of certain substances \cite{stephanopoulos1999metabolic}. Hence, studies of metabolic engineering can be considered as genetic engineering in strain development. However, while metabolic engineering manipulates strains by altering flux distributions in the pathways; genetic engineering modificates specific genes, proteins and/or enzymes of interest \cite{stephanopoulos2012synthetic}. Although GSMMs are mainly used in metabolic engineering strategies, other applications both for descriptive and predictive purposes can be found in the literature \cite{osterlund2012fifteen}.
 
-In a stoichiometric matrix, each column is a reaction in the network and each of the rows is associated with a component or metabolite expressed by its stoichiometric coefficient, being negative if it is a reactant from the perspective of the reaction...
+The ultimate goal of the GSMM reconstruction is to predict flux distribution profiles as close \emph{in silico} as they are \emph{in vivo}. Hence, GSMMs are in continuous research to improve predictability of organism-specific models.
+
+\hl{Here, a figure of "GSMM citation numbers vs year" can be added from WOS}
+
+\subsection{Mathematical Representation of Metabolic Networks}
+\hl{In this section, there will be a review on} "Mathematical Framework Behind the Reconstruction and Analysis of Genome Scale Metabolic Models" \cite{pinzon2018mathematical}, similar to slides that Ive prepared for MFA.
 
 \subsection{Flux Balance Analysis}
-\hl{There will be a review on} "What is flux balance analysis?" \cite{orth2010flux}
+\hl{In this section, there will be a review on} "What is flux balance analysis?" \cite{orth2010flux}
 
 \section{\emph{Saccharomyces cerevisiae}}
-\subsection{Industrial importance of \emph{S. cerevisiae}}
+
+The species "yeast" includes a range of eukaryotic single-celled microorganisms, although it is commonly used to describe \emph{Saccharomyces cerevisiae}. Also known as the baker's yeast, \emph{S. cerevisiae} is one of the extensively used microorganisms for alcoholic fermentation of beverages, bio-ethanol production, and processing various foods since ancient times \cite{gelinas2009inventions}. It was the first eukaryotic organism whose genome was fully sequenced and annotated \cite{goffeau1997multidrug}, and besides its benefits in the industry, it is used as a model system for other eukaryotic cells including humans \cite{dujon1996yeast, botstein1997yeast}.
+
+\subsection{Central Carbon Metabolism of \emph{S. cerevisiae}}
+From the end of the eighteenth century, mainly after the fermentation is defined as "respiration without oxygen", the metabolism of \emph{S. cerevisiae} has been studied extensively \cite{barnett1998history, barnett2000history}. Its capability to produce ethanol is one of the most characterized microbial processes due to industrial utilization.
+
+The set of anabolic and catabolic reactions in the cell are reffered as the metabolism. A shematic representation of the central carbon metabolism in \emph{S. cerevisiae} can be found in Figure \ref{fig:central_carbon_mech_of_s_cerevisiae_kegg}. Glycolysis, pentose-phosphate pathway (PPP), tricarboxylic acid cycle (TCA) or Krebs cycle, the glyoxylate cycle and the electron transport chain are the main pathways in central carbon metabolism.
+
+ \begin{figure}[ht]
+ \begin{center}
+ \includegraphics[width=1\columnwidth]{central_carbon_mech_of_s_cerevisiae_kegg.png}
+ \end{center}
+ \caption{Central carbon mechanism of \emph{S. cerevisiae} KEGG.}
+ \vskip\baselineskip % Leave a vertical skip below the figure
+ \label{fig:central_carbon_mech_of_s_cerevisiae_kegg}
+ \end{figure}
+
+ \hl{Description on each pathway will be added to this section, including NAD-FAD regulation}
+
 \subsection{Metabolic Models of \emph{S. cerevisiae}}
+After the first \emph{S. cerevisiae} genome sequence is published, the first cDNA spotted microarray exploring metabolic gene regulation in 1997 \cite{derisi1997exploring}, and the first commercial platform for oligonucleotide microarray data (Affymetrix) to investigate cellular regulations were reported in 1998 \cite{cho1998parallel}. Existing genome data is integrated with the extensive annotation based on microarray data and biochemical knowledge from literature, leading of the publication of the first GSMM of \emph{S. cerevisiae} in 2013 \cite{forster2003genome}.
+
+ \hl{In this section, there will be review on:} Genome-scale modeling of yeast: chronology, applications and critical perspectives \cite{lopes2017genome}
+
 \subsection{Applications of \emph{S. cerevisiae} GSMMs}
+ \hl{Literature research on the applications will be added.}
 
 \section{Significance of Thesis}
+The purpose of this master's thesis is to enlighten molecular mechanisms behind the tolerance in yeast. Intracellular flux distributions of resistant strains for various substances such as caffeine, ethanol, iron, phenylethanol, nickel and sodium chloride are going to be analyzed comparetively. This study will also contribute to the global understanding of metabolic regulations in the \emph{S. cerevisiae}, and will be further expandable into metabolic engineering studies.

@@ -147,6 +147,11 @@ INPUT .\images\modelreconstruction.png
 INPUT .\images\modelreconstruction.png
 INPUT .\images\modelreconstruction.png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbxti10.tfm
+INPUT images\central_carbon_mech_of_s_cerevisiae_kegg.png
+INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
+INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
+INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
+INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
 INPUT chapters\materialsmethods.tex
 INPUT chapters\materialsmethods.tex
 INPUT tables\experimental_concentrations.tex
@@ -167,6 +172,8 @@ INPUT tables\calculated_fluxes.tex
 INPUT tables\calculated_fluxes.tex
 INPUT main_thesis.bbl
 INPUT main_thesis.bbl
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def
 INPUT main_thesis.aux
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb

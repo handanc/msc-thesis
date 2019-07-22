@@ -34,10 +34,33 @@ Thiele, I. and B.~{\O}. Palsson, \enquote{A protocol for generating a
 Orth, J.~D., I.~Thiele and B.~{\O}. Palsson, \enquote{What is flux balance
   analysis?}, {\em Nature biotechnology\/}, Vol.~28, No.~3, p. 245, 2010.
 
+\bibitem{vallino1994carbon}
+Vallino, J.~J. and G.~Stephanopoulos, \enquote{Carbon flux distributions at the
+  glucose 6-phosphate branch point in Corynebacterium glutamicum during lysine
+  overproduction}, {\em Biotechnology Progress\/}, Vol.~10, No.~3, pp.
+  327--334, 1994.
+
+\bibitem{varma1993biochemical}
+Varma, A., B.~W. Boesch and B.~O. Palsson, \enquote{Biochemical production
+  capabilities of Escherichia coli}, {\em Biotechnology and bioengineering\/},
+  Vol.~42, No.~1, pp. 59--73, 1993.
+
 \bibitem{feist2009reconstruction}
 Feist, A.~M., M.~J. Herrg{\aa}rd, I.~Thiele, J.~L. Reed and B.~{\O}. Palsson,
   \enquote{Reconstruction of biochemical networks in microorganisms}, {\em
   Nature Reviews Microbiology\/}, Vol.~7, No.~2, p. 129, 2009.
+
+\bibitem{pitkanen2014comparative}
+Pitk{\"a}nen, E., P.~Jouhten, J.~Hou, M.~F. Syed, P.~Blomberg, J.~Kludas,
+  M.~Oja, L.~Holm, M.~Penttil{\"a}, J.~Rousu {\em et~al.\/},
+  \enquote{Comparative genome-scale reconstruction of gapless metabolic
+  networks for present and ancestral species}, {\em PLoS computational
+  biology\/}, Vol.~10, No.~2, p. e1003465, 2014.
+
+\bibitem{kerkhoven2014applications}
+Kerkhoven, E.~J., P.-J. Lahtvee and J.~Nielsen, \enquote{Applications of
+  computational modeling in metabolic engineering of yeast}, {\em FEMS Yeast
+  Res\/}, Vol.~15, No.~1, pp. 1567--1364, 2014.
 
 \bibitem{chen2012metabolic}
 Chen, N., I.~J. del Val, S.~Kyriakopoulos, K.~M. Polizzi and C.~Kontoravdi,
@@ -50,6 +73,11 @@ Durot, M., P.-Y. Bourguignon and V.~Schachter, \enquote{Genome-scale models of
   bacterial metabolism: reconstruction and applications}, {\em FEMS
   microbiology reviews\/}, Vol.~33, No.~1, pp. 164--190, 2008.
 
+\bibitem{dikicioglu2015biomass}
+Dikicioglu, D., B.~K{\i}rdar and S.~G. Oliver, \enquote{Biomass composition:
+  the “elephant in the room” of metabolic modelling}, {\em Metabolomics\/},
+  Vol.~11, No.~6, pp. 1690--1701, 2015.
+
 \bibitem{machado2014systematic}
 Machado, D. and M.~Herrg{\aa}rd, \enquote{Systematic evaluation of methods for
   integration of transcriptomic data into constraint-based models of
@@ -61,10 +89,82 @@ Ramkrishna, D. and H.-S. Song, \enquote{Dynamic models of metabolism: Review of
   the cybernetic approach}, {\em AIChE Journal\/}, Vol.~58, No.~4, pp.
   986--997, 2012.
 
+\bibitem{kim2012recent}
+Kim, T.~Y., S.~B. Sohn, Y.~B. Kim, W.~J. Kim and S.~Y. Lee, \enquote{Recent
+  advances in reconstruction and applications of genome-scale metabolic
+  models}, {\em Current opinion in biotechnology\/}, Vol.~23, No.~4, pp.
+  617--623, 2012.
+
+\bibitem{stephanopoulos1999metabolic}
+Stephanopoulos, G., \enquote{Metabolic fluxes and metabolic engineering}, {\em
+  Metabolic engineering\/}, Vol.~1, No.~1, pp. 1--11, 1999.
+
+\bibitem{stephanopoulos2012synthetic}
+Stephanopoulos, G., \enquote{Synthetic biology and metabolic engineering}, {\em
+  ACS synthetic biology\/}, Vol.~1, No.~11, pp. 514--525, 2012.
+
+\bibitem{osterlund2012fifteen}
+{\"O}sterlund, T., I.~Nookaew and J.~Nielsen, \enquote{Fifteen years of large
+  scale metabolic modeling of yeast: developments and impacts}, {\em
+  Biotechnology advances\/}, Vol.~30, No.~5, pp. 979--988, 2012.
+
 \bibitem{pinzon2018mathematical}
 Pinzon, W., H.~Vega, J.~Gonzalez and A.~Pinzon, \enquote{Mathematical Framework
   Behind the Reconstruction and Analysis of Genome Scale Metabolic Models},
   {\em Archives of Computational Methods in Engineering\/}, pp. 1--14, 2018.
+
+\bibitem{gelinas2009inventions}
+G{\'e}linas, P., \enquote{Inventions on baker's yeast strains and specialty
+  ingredients}, {\em Recent patents on food, nutrition \& agriculture\/},
+  Vol.~1, No.~2, pp. 104--132, 2009.
+
+\bibitem{goffeau1997multidrug}
+Goffeau, A., J.~Park, I.~T. Paulsen, J.-L. JONNIAUX, T.~Dinh, P.~Mordant and
+  M.~H. SAIER~JR, \enquote{Multidrug-resistant transport proteins in yeast:
+  complete inventory and phylogenetic characterization of yeast open reading
+  frames within the major facilitator superfamily}, {\em Yeast\/}, Vol.~13,
+  No.~1, pp. 43--54, 1997.
+
+\bibitem{dujon1996yeast}
+Dujon, B., \enquote{The yeast genome project: what did we learn?}, {\em Trends
+  in Genetics\/}, Vol.~12, No.~7, pp. 263--270, 1996.
+
+\bibitem{botstein1997yeast}
+Botstein, D., S.~A. Chervitz and M.~Cherry, \enquote{Yeast as a model
+  organism}, {\em Science\/}, Vol. 277, No. 5330, pp. 1259--1260, 1997.
+
+\bibitem{barnett1998history}
+Barnett, J.~A., \enquote{A history of research on yeasts 1: work by chemists
+  and biologists 1789--1850}, {\em Yeast\/}, Vol.~14, No.~16, pp. 1439--1451,
+  1998.
+
+\bibitem{barnett2000history}
+Barnett, J.~A., \enquote{A history of research on yeasts 2: Louis Pasteur and
+  his contemporaries, 1850--1880}, {\em Yeast\/}, Vol.~16, No.~8, pp. 755--771,
+  2000.
+
+\bibitem{derisi1997exploring}
+DeRisi, J.~L., V.~R. Iyer and P.~O. Brown, \enquote{Exploring the metabolic and
+  genetic control of gene expression on a genomic scale}, {\em Science\/}, Vol.
+  278, No. 5338, pp. 680--686, 1997.
+
+\bibitem{cho1998parallel}
+Cho, R.~J., M.~Fromont-Racine, L.~Wodicka, B.~Feierbach, T.~Stearns,
+  P.~Legrain, D.~J. Lockhart and R.~W. Davis, \enquote{Parallel analysis of
+  genetic selections using whole genome oligonucleotide arrays}, {\em
+  Proceedings of the National Academy of Sciences\/}, Vol.~95, No.~7, pp.
+  3752--3757, 1998.
+
+\bibitem{forster2003genome}
+F{\"o}rster, J., I.~Famili, P.~Fu, B.~{\O}. Palsson and J.~Nielsen,
+  \enquote{Genome-scale reconstruction of the Saccharomyces cerevisiae
+  metabolic network}, {\em Genome research\/}, Vol.~13, No.~2, pp. 244--253,
+  2003.
+
+\bibitem{lopes2017genome}
+Lopes, H. and I.~Rocha, \enquote{Genome-scale modeling of yeast: chronology,
+  applications and critical perspectives}, {\em FEMS yeast research\/},
+  Vol.~17, No.~5, 2017.
 
 \bibitem{arslan2018physiological}
 Arslan, M., C.~Holyavkin, H.~{\.I}. K{\i}sakesen, A.~Topalo{\u{g}}lu,
