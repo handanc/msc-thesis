@@ -133,6 +133,12 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
 OUTPUT main_thesis.toc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsl12.tfm
+INPUT main_thesis.lof
+INPUT main_thesis.lof
+OUTPUT main_thesis.lof
+INPUT main_thesis.lot
+INPUT main_thesis.lot
+OUTPUT main_thesis.lot
 INPUT chapters\introduction.tex
 INPUT chapters\introduction.tex
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
@@ -154,10 +160,10 @@ INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
 INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
 INPUT chapters\materialsmethods.tex
 INPUT chapters\materialsmethods.tex
-INPUT tables\experimental_concentrations.tex
-INPUT tables\experimental_concentrations.tex
 INPUT tables\experimental_OD600s_and_growths.tex
 INPUT tables\experimental_OD600s_and_growths.tex
+INPUT tables\experimental_concentrations.tex
+INPUT tables\experimental_concentrations.tex
 INPUT images\GrowthGraphsSmall.eps
 INPUT .\images\GrowthGraphsSmall.eps
 INPUT .\images\GrowthGraphsSmall.eps
@@ -170,10 +176,31 @@ INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
 INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
 INPUT tables\calculated_fluxes.tex
 INPUT tables\calculated_fluxes.tex
+INPUT tables\rxns_smallYeast.tex
+INPUT tables\rxns_smallYeast.tex
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd
+INPUT chapters\results.tex
+INPUT chapters\results.tex
+INPUT images\nonzerofluxes_2.eps
+INPUT .\images\nonzerofluxes_2.eps
+INPUT .\images\nonzerofluxes_2.eps
+INPUT .\images\nonzerofluxes_2-eps-converted-to.pdf
+INPUT .\images\nonzerofluxes_2-eps-converted-to.pdf
+INPUT .\images\nonzerofluxes_2.eps
+INPUT .\images\nonzerofluxes_2-eps-converted-to.pdf
+INPUT .\images\nonzerofluxes_2-eps-converted-to.pdf
+INPUT .\images\nonzerofluxes_2-eps-converted-to.pdf
+INPUT .\images\nonzerofluxes_2-eps-converted-to.pdf
+INPUT chapters\discussion.tex
+INPUT chapters\discussion.tex
+INPUT chapters\remainings.tex
+INPUT chapters\remainings.tex
 INPUT main_thesis.bbl
 INPUT main_thesis.bbl
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmtt12.tfm
 INPUT main_thesis.aux
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
@@ -187,3 +214,5 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmtt12.pfb

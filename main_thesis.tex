@@ -16,8 +16,9 @@
 \usepackage{algorithmic}
 %\pagestyle{empty}
 %\includeonly{introduction} % To only process the given file
+
 % For highligts:
-\usepackage{xcolor}
+\usepackage{xcolor} % For highligts
 \usepackage{soul}
 
 \newtheorem{thm}{Theorem}[chapter]
@@ -38,8 +39,8 @@
 	\pagenumbering{roman}
 	\makemstitle % M.S. thesis
 	\tableofcontents
-	%\listoffigures
-	%\listoftables
+	\listoffigures
+	\listoftables
 
   \clearpage
 
@@ -47,8 +48,9 @@
 	\input{chapters/introduction}
 %	\input{chapters/chapters_overall}
 	\input{chapters/materialsmethods}
-	%\input{chapters/results}
-	%\input{chapters/discussion}
+  \input{chapters/results}
+  \input{chapters/discussion}
+  \input{chapters/remainings}
 
 
 	\bibliographystyle{styles/fbe_tez_v11}
