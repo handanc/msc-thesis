@@ -1,0 +1,57 @@
+
+\section{FBA Introduction}
+
+\subsection{Dikicioglu}
+Metabolic pathways are sequences of biochemical reaction steps connecting a
+specified set of input and output metabolites. The rate at which input metabolites are
+processed to form output metabolites is named “pathway flux” (Olsson and Nielsen, 2000).
+A method for the in silico analysis of metabolic networks is the constraints-based
+approach. This approach is based on the fact that the underlying cellular functions of
+biochemical reaction networks are subject to certain constraints that limit their possible
+behaviors. In this approach, “hard” physicochemical constraints are used to define a closed
+solution space within which the steady-state solution to the flux vector must lie. The “best''
+solution is then found in the solution space using linear optimization. This analysis method
+has been called flux-balance analysis (FBA). The constraints-based framework, with FBA,
+has been used successfully to predict time course of growth and by-product secretion,
+effects of mutation and knock-outs, and gene expression profiles. Further, incorporation of
+transcriptional regulatory events in FBA is shown to be useful in interpretation and
+prediction of the effects of transcriptional regulation on cellular metabolism at the systemic
+level (Palsson, et al. 2001).
+
+\subsection{Mathematical modeling thesis}
+Although evaluating the robustness of a metabolic network using purely topological considerations can provide insight into the potential mechanisms of function and degradation, it does not address metabolism dynamics. To address this topic,  ux-balance analysis investigates the rate of change of metabolite concentrations ( uxes) at steady state, during which concentrations of metabolites and  uxes are constant [30]. That is, if x is a vector of metabolite concentrations, then the rate of change of x at steady state is zero: dx/dt ....
+
+\subparagraph{Mathematical modeling of i Coll}
+
+The framework of whole cell mathematical model proposed by Morgan et al., 2004 consists of a derived system of ordinary differential equations based on the assumptions that: (1) the total volume of the cell is the sum of the volumes of its cytoplasm and membrane when the cell is at rest; (2) the cell has constant osmotic pressure regulation; (3) reactions occur within the same regions or between adjacent regions in the cell; (4) the volume rate of change of the cytoplasm and membrane are not constant. So, given a system of reactions in a cell, the number of moles and concentrations of components in the cytoplasm and membrane are related through a set of ordinary differential equations governed by the rate of conversion of nutrients in the cell’s environment into metabolites in the cytoplasm, the rate of conversion of metabolites into proteins and genes within the cytoplasm, and the reversible rate of protein conversion between the cytoplasm and membrane. By letting M, N, G, P, and Pmem denote concentrations of metabolites, nutrients, genes, proteins in the cytoplasm, and proteins in the membrane, the ordinary differential equations were defined as follows: ...
+
+\subsection{FBA of metabolic models}
+A general overview of how a metabolic network is analyzed using FBA is illustrated in
+Figure 1 [2]. A set of ordinary differential equations describing cellular metabolism can be
+formed from the knowledge of the reactions involved. These equations take the following form: ... Here, the time dependent concentration of species i is the sum of the n associated reactions’
+fluxes (aivi), defined as the product of the reaction rate constant kj and the m stoichiometrically
+weighted species also involved in the reaction. These equations involve a number of difficult to
+measure kinetic constants [3], and the complexity of these systems would require a
+computational solution.
+
+\subsection{Dynamical Hybrid Modeling}
+COBRA methods enable the reconstruction of human biological systems through surveying
+the metabolic reactions in the literature, leveraging biological data in public repositories,
+or performing genome-wide experiments. The set of reactions obtained are written in a
+mathematical format as a stoichiometric matrix S¹m;nº, where the columns are represented by
+n reactions and the rows are the m metabolites intervening in the biochemical reactions. If
+the obtained set of reactions is ... the corresponding stoichiometric matrix S is: ...
+
+\subparagraph{Modeling in systems biology}
+The structure of a system is defined by its variables, parameters, constants, and
+boundaries. The boundaries define the interface to the surroundings of the system.
+Variables, parameters, and constants define quantities of the system. Variables
+are modifiable quantities, for which the model establishes a relation. A quantity
+with fixed value is called a constant, such as the Avogadro’s number NA =
+6.02214179(30) × 1023 mole−1 that defines the number of molecules per mole.
+A parameter is a fixed value for a certain considered state, but it can change when
+the system switches to another state. The parameter value is changeable and depends
+on measurements. For example, in the formula of the Michaelis–Menten equation ...
+
+\subsection{Mathematical modeling and model analysis}
+A single reaction known for cellular networks is given in the following form ... Coefficients γi are called stoichiometric coefficients. It is generally accepted that the γi on the left side (substrates) are negative while the γj on the right side are positive (products). With the arrows given in the equation above, a mathematical treatment is hardly possible; therefore one uses the equal sign to express the same as above and one gets after resorting and omitting the absolute signs:

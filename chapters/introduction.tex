@@ -1,5 +1,4 @@
 \chapter{INTRODUCTION}
-
 \section{Systems Biology}
 
 With the increasing availability of the computational tools and the development of high throughput techniques in the omics field, systems biology has shown a strong emergence in the last few years as a key multi-disciplinary field for integrating the multi-layer complexity of biological systems, particularly in the areas of transcriptomics, proteomics, metabolomics and fluxomics \cite{kitano2002systems}. This amount of available data allows researchers to investigate molecular cell processes in a large scales, applying theoretical, experimental and computational methods.
@@ -35,19 +34,32 @@ A generally applicable protocol is defined by the Palsson group \cite{thiele2010
 
 Once a metabolic network is reconstructed, a rational link between a genome sequence, the proteins encoded in the genome, and the reactions catalyzed by the proteins allowing to investigate the relationships between genotype and phenotype is achieved \cite{durot2008genome}. As the final step, GSMM needs to be validated by the new experimental data sets. GSMM validation process for various experimental conditions require detailed cultivation data from experiments. For example, information on the biomass composition of the specific organism leads more accurate biomass equation in the model, that is one of the key factors in the GSMM optimization and validation \cite{dikicioglu2015biomass}. Even tough multiple steps in the GSMM reconstruction can be achieved with the automated softwares available, it is usually necessary to curate the obtained model manually.
 
-Approaches for analyzing metabolic networks are mainly categorized as dynamic or structural approaches. Even though the former is promising more realistic approach, its implementation in the literature is obstructed due to the unavailability of kinetic parameters for the majority of enzymes within a metabolic network \cite{machado2014systematic, ramkrishna2012dynamic} Because of the lack of kinetic parameters, structural metabolic modeling has been widely used for analyzing cellular metabolism at a steady-state assumption.
+Approaches for analyzing metabolic networks are mainly categorized as dynamic or structural approaches. Even though the former is promising more realistic approach, its implementation in the literature is obstructed due to the unavailability of kinetic parameters for the majority of enzymes within a metabolic network \cite{machado2014systematic, ramkrishna2012dynamic} Because of the lack of kinetic parameters, structural metabolic modeling has been widely used for analyzing cellular metabolism at a steady-state assumption as a kind of snapshots taken at specific times.
 
 GSMMs are one of the most useful tools in systems biology, especially in metabolic engineering studies \cite{kim2012recent}. In 1998, with the publication of \emph{Metabolic Engineering: Principles and Methodologies}, the term metabolic engineering is defined as the optimization of natural processes within cells to increase the production of certain substances \cite{stephanopoulos1999metabolic}. Hence, studies of metabolic engineering can be considered as genetic engineering in strain development. However, while metabolic engineering manipulates strains by altering flux distributions in the pathways; genetic engineering modificates specific genes, proteins and/or enzymes of interest \cite{stephanopoulos2012synthetic}. Although GSMMs are mainly used in metabolic engineering strategies, other applications both for descriptive and predictive purposes can be found in the literature \cite{osterlund2012fifteen}.
 
 The ultimate goal of the GSMM reconstruction is to predict flux distribution profiles as close \emph{in silico} as they are \emph{in vivo}. Hence, GSMMs are in continuous research to improve predictability of organism-specific models.
 
-\hl{Here, a figure of "GSMM citation numbers vs year" can be added from WOS}
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=1\columnwidth]{wos_metabolicmodel_search.jpg}
+\end{center}
+\caption[Web of Science artice counts on "metabolic model"]{Web of Science artice counts on "metabolic model"}
+\label{fig:wos_metabolicmodel}
+\end{figure}
+
 
 \subsection{Mathematical Representation of Metabolic Networks}
 \hl{In this section, there will be a review on} "Mathematical Framework Behind the Reconstruction and Analysis of Genome Scale Metabolic Models" \cite{pinzon2018mathematical}, similar to slides that Ive prepared for MFA.
 
-\subsection{Flux Balance Analysis}
-\hl{In this section, there will be a review on} "What is flux balance analysis?" \cite{orth2010flux}
+
+In order to optimize, predict, evaluate and/or analyze the simulations done using GEM's, one must understand the mathematical formulation of metabolic networks. A set of differential equations can be formed from the knowledge of the reactions in a cell.
+
+
+\subsection{Constraint-Based Modeling}
+\subsubsection{Linear programming}
+\subsubsection{Quadratic programming}
+
 
 \section{\emph{Saccharomyces cerevisiae}}
 
@@ -65,6 +77,12 @@ The set of anabolic and catabolic reactions in the cell are reffered as the meta
  \label{fig:central_carbon_mech_of_s_cerevisiae_kegg}
  \end{figure}
 
+ %	\subsubsection{Glycolysis}
+ %	\subsubsection{Pentose Phosphate Pathway}
+ %	\subsubsection{TCA Cycle}
+ %	\subsubsection{Oxidative Phosphorylation}
+ %	\subsubsection{Fermentation}
+ %	\subsubsection{Metabolic Regulation}
 
 \subsection{Metabolic Models of \emph{S. cerevisiae}}
 After the first \emph{S. cerevisiae} genome sequence is published, the first cDNA spotted microarray exploring metabolic gene regulation in 1997 \cite{derisi1997exploring}, and the first commercial platform for oligonucleotide microarray data (Affymetrix) to investigate cellular regulations were reported in 1998 \cite{cho1998parallel}. Existing genome data is integrated with the extensive annotation based on microarray data and biochemical knowledge from literature, leading of the publication of the first GSMM of \emph{S. cerevisiae} in 2013 \cite{forster2003genome}.   \hl{More in this section, there will be review on:} Genome-scale modeling of yeast: chronology, applications and critical perspectives \cite{lopes2017genome}

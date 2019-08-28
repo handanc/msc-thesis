@@ -170,16 +170,61 @@ Lopes, H. and I.~Rocha, \enquote{Genome-scale modeling of yeast: chronology,
   applications and critical perspectives}, {\em FEMS yeast research\/},
   Vol.~17, No.~5, 2017.
 
+\bibitem{lu2019consensus}
+Lu, H., F.~Li, B.~J. S{\'a}nchez, Z.~Zhu, G.~Li, I.~Domenzain,
+  S.~Marci{\v{s}}auskas, P.~M. Anton, D.~Lappa, C.~Lieven {\em et~al.\/},
+  \enquote{A consensus S. cerevisiae metabolic model Yeast8 and its ecosystem
+  for comprehensively probing cellular metabolism}, {\em Nature
+  communications\/}, Vol.~10, No.~1, pp. 1--13, 2019.
+
+\bibitem{aung2013revising}
+Aung, H.~W., S.~A. Henry and L.~P. Walker, \enquote{Revising the representation
+  of fatty acid, glycerolipid, and glycerophospholipid metabolism in the
+  consensus model of yeast metabolism}, {\em Industrial biotechnology\/},
+  Vol.~9, No.~4, pp. 215--228, 2013.
+
+\bibitem{chowdhury2015using}
+Chowdhury, R., A.~Chowdhury and C.~Maranas, \enquote{Using gene essentiality
+  and synthetic lethality information to correct yeast and CHO cell
+  genome-scale models}, {\em Metabolites\/}, Vol.~5, No.~4, pp. 536--570, 2015.
+
+\bibitem{nilsson2016metabolic}
+Nilsson, A. and J.~Nielsen, \enquote{Metabolic trade-offs in yeast are caused
+  by F1F0-ATP synthase}, {\em Scientific reports\/}, Vol.~6, p. 22264, 2016.
+
+\bibitem{van1998effect}
+Van~Hoek, P., J.~P. Van~Dijken and J.~T. Pronk, \enquote{Effect of specific
+  growth rate on fermentative capacity of baker’s yeast}, {\em Appl. Environ.
+  Microbiol.\/}, Vol.~64, No.~11, pp. 4226--4233, 1998.
+
+\bibitem{thiele2010functional}
+Thiele, I., R.~M. Fleming, A.~Bordbar, J.~Schellenberger and B.~{\O}. Palsson,
+  \enquote{Functional characterization of alternate optimal solutions of
+  Escherichia coli's transcriptional and translational machinery}, {\em
+  Biophysical journal\/}, Vol.~98, No.~10, pp. 2072--2081, 2010.
+
+\bibitem{mahadevan2003effects}
+Mahadevan, R. and C.~Schilling, \enquote{The effects of alternate optimal
+  solutions in constraint-based genome-scale metabolic models}, {\em Metabolic
+  engineering\/}, Vol.~5, No.~4, pp. 264--276, 2003.
+
+\bibitem{reed2004genome}
+Reed, J.~L. and B.~{\O}. Palsson, \enquote{Genome-scale in silico models of E.
+  coli have multiple equivalent phenotypic states: assessment of correlated
+  reaction subsets that comprise network states}, {\em Genome research\/},
+  Vol.~14, No.~9, pp. 1797--1805, 2004.
+
+\bibitem{gudmundsson2010computationally}
+Gudmundsson, S. and I.~Thiele, \enquote{Computationally efficient flux
+  variability analysis}, {\em BMC bioinformatics\/}, Vol.~11, No.~1, p. 489,
+  2010.
+
 \bibitem{arslan2018physiological}
 Arslan, M., C.~Holyavkin, H.~{\.I}. K{\i}sakesen, A.~Topalo{\u{g}}lu,
   Y.~S{\"u}rmeli and Z.~P. {\c{C}}akar, \enquote{Physiological and
   transcriptomic analysis of a chronologically long-lived Saccharomyces
   cerevisiae strain obtained by evolutionary engineering}, {\em Molecular
   biotechnology\/}, Vol.~60, No.~7, pp. 468--484, 2018.
-
-\bibitem{nilsson2016metabolic}
-Nilsson, A. and J.~Nielsen, \enquote{Metabolic trade-offs in yeast are caused
-  by F1F0-ATP synthase}, {\em Scientific reports\/}, Vol.~6, p. 22264, 2016.
 
 \bibitem{agren2013raven}
 Agren, R., L.~Liu, S.~Shoaie, W.~Vongsangnak, I.~Nookaew and J.~Nielsen,

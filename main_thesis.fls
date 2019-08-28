@@ -147,8 +147,8 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
-OUTPUT main_thesis.toc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsl12.tfm
+OUTPUT main_thesis.toc
 INPUT main_thesis.lof
 INPUT main_thesis.lof
 OUTPUT main_thesis.lof
@@ -168,14 +168,41 @@ INPUT .\images\modelreconstruction.png
 INPUT .\images\modelreconstruction.png
 INPUT .\images\modelreconstruction.png
 INPUT .\images\modelreconstruction.png
+INPUT images\wos_metabolicmodel_search.jpg
+INPUT .\images\wos_metabolicmodel_search.jpg
+INPUT .\images\wos_metabolicmodel_search.jpg
+INPUT .\images\wos_metabolicmodel_search.jpg
+INPUT .\images\wos_metabolicmodel_search.jpg
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbxti10.tfm
 INPUT images\central_carbon_mech_of_s_cerevisiae_kegg.png
 INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
 INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
 INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
 INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
-INPUT chapters\materialsmethods.tex
-INPUT chapters\materialsmethods.tex
+INPUT chapters\materialsmethods_yeast8.tex
+INPUT chapters\materialsmethods_yeast8.tex
+INPUT images\yeast8_github.png
+INPUT .\images\yeast8_github.png
+INPUT .\images\yeast8_github.png
+INPUT .\images\yeast8_github.png
+INPUT .\images\yeast8_github.png
+INPUT images\Gam_fitting.jpg
+INPUT .\images\Gam_fitting.jpg
+INPUT .\images\Gam_fitting.jpg
+INPUT .\images\Gam_fitting.jpg
+INPUT .\images\Gam_fitting.jpg
+INPUT images\fba.jpg
+INPUT .\images\fba.jpg
+INPUT .\images\fba.jpg
+INPUT .\images\fba.jpg
+INPUT .\images\fba.jpg
+INPUT images\fva.jpg
+INPUT .\images\fva.jpg
+INPUT .\images\fva.jpg
+INPUT .\images\fva.jpg
+INPUT .\images\fva.jpg
+INPUT chapters\materialsmethods_petek.tex
+INPUT chapters\materialsmethods_petek.tex
 INPUT tables\experimental_OD600s_and_growths.tex
 INPUT tables\experimental_OD600s_and_growths.tex
 INPUT tables\experimental_concentrations.tex
@@ -201,8 +228,9 @@ INPUT chapters\results.tex
 INPUT images\nonzerofluxes_3.eps
 INPUT .\images\nonzerofluxes_3.eps
 INPUT .\images\nonzerofluxes_3.eps
-INPUT .\images\nonzerofluxes_3.eps
 INPUT .\images\nonzerofluxes_3-eps-converted-to.pdf
+INPUT .\images\nonzerofluxes_3-eps-converted-to.pdf
+INPUT .\images\nonzerofluxes_3.eps
 INPUT .\images\nonzerofluxes_3-eps-converted-to.pdf
 INPUT .\images\nonzerofluxes_3-eps-converted-to.pdf
 INPUT .\images\nonzerofluxes_3-eps-converted-to.pdf
