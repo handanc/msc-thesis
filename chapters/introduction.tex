@@ -48,17 +48,16 @@ The ultimate goal of the GSMM reconstruction is to predict flux distribution pro
 \label{fig:wos_metabolicmodel}
 \end{figure}
 
-
 \subsection{Mathematical Representation of Metabolic Networks}
-\hl{In this section, there will be a review on} "Mathematical Framework Behind the Reconstruction and Analysis of Genome Scale Metabolic Models" \cite{pinzon2018mathematical}, similar to slides that Ive prepared for MFA.
+\hl{In this section, there will be a review on} "Mathematical Framework Behind the Reconstruction and Analysis of Genome Scale Metabolic Models" \cite{pinzon2018mathematical}.
 
-
-In order to optimize, predict, evaluate and/or analyze the simulations done using GEM's, one must understand the mathematical formulation of metabolic networks. A set of differential equations can be formed from the knowledge of the reactions in a cell.
+ This section will be detailed as much as possible since biology majors must understand the basics before reading the methods sections. How the biochemical equations are converted into differential equations? Steady state assumption, mass balances? Stoichiometric matrix formulation and its rank, linearly independent vectors, singular values? etc. Subjects will be similar to course ChE529.
 
 
 \subsection{Constraint-Based Modeling}
-\subsubsection{Linear programming}
-\subsubsection{Quadratic programming}
+
+\hl{In this section, there will be a review on} "Bringing genomes to life: the use of genome-scale in silico models" \cite{thiele2007bringing}.
+Topics can be identification of constraints (physicochemical constraints, spatial constraints, environmental constraints, regulatory constraints), list of constraint-based modeling methods (optimal solutions, alternate optima, OptKnock, sampling as an unbiased modeling), linear programming, quadratic programming ...
 
 
 \section{\emph{Saccharomyces cerevisiae}}
@@ -77,18 +76,13 @@ The set of anabolic and catabolic reactions in the cell are reffered as the meta
  \label{fig:central_carbon_mech_of_s_cerevisiae_kegg}
  \end{figure}
 
- %	\subsubsection{Glycolysis}
- %	\subsubsection{Pentose Phosphate Pathway}
- %	\subsubsection{TCA Cycle}
- %	\subsubsection{Oxidative Phosphorylation}
- %	\subsubsection{Fermentation}
- %	\subsubsection{Metabolic Regulation}
+\hl{In this section, there will be subsections on} all biological pathways individually (explaining each in detail -probably referencing Lehninger biochemistry-) especially NAD regulation, fermantation (crabtree effect, industrial applications, bio-ethanol production) etc... Maybe also regulation strategies in cells (feedback/feedforward loops with figures)
 
 \subsection{Metabolic Models of \emph{S. cerevisiae}}
 After the first \emph{S. cerevisiae} genome sequence is published, the first cDNA spotted microarray exploring metabolic gene regulation in 1997 \cite{derisi1997exploring}, and the first commercial platform for oligonucleotide microarray data (Affymetrix) to investigate cellular regulations were reported in 1998 \cite{cho1998parallel}. Existing genome data is integrated with the extensive annotation based on microarray data and biochemical knowledge from literature, leading of the publication of the first GSMM of \emph{S. cerevisiae} in 2013 \cite{forster2003genome}.   \hl{More in this section, there will be review on:} Genome-scale modeling of yeast: chronology, applications and critical perspectives \cite{lopes2017genome}
 
 \subsection{Applications of \emph{S. cerevisiae} GSMMs}
- \hl{Literature research on the applications will be added.}
+ \hl{Literature review on the applications will be added.}
 
 \section{Significance of Thesis}
-The purpose of this master's thesis is to enlighten molecular mechanisms behind the tolerance in yeast. Intracellular flux distributions of resistant strains for various substances such as caffeine, ethanol, iron, phenylethanol, nickel and sodium chloride are going to be analyzed comparetively. This study will also contribute to the global understanding of metabolic regulations in the \emph{S. cerevisiae}, and will be further expandable into metabolic engineering studies.
+The purpose of this master's thesis is to enlighten molecular mechanisms behind the building tolerance / conditional adaptation in yeast. Intracellular flux distributions of evolved/tolerent strains for various conditions such as caffeine, ethanol, iron, phenylethanol, nickel and sodium chloride in mediums are going to be analyzed comparetively. This study will also contribute to the global understanding of metabolic regulations in the \emph{S. cerevisiae}, and will be further expandable into metabolic engineering studies of evolved strains.
