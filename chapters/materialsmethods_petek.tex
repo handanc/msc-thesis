@@ -1,4 +1,4 @@
-\chapter{MATERIALS AND METHODS - Petek}
+\chapter{MATERIALS AND METHODS (Petek)}
 
 \section{Experimental Data Preparation}
 \subsection{Data Acquisition}
@@ -35,7 +35,6 @@ Biomass equation (Eq. \ref{eq:model_biomass}) in the model was left as a functio
   = \textrm{BIOMASS}
    \label{eq:model_biomass}
 \end{multline}
-
 Enzymatic reactions that are found in the model is collected in Table \ref{table:rxns_smallYeast}. In contrast to other GSMM's, each reaction was irreversible in the iAN50. This was achieved by splitting each reversible reaction into two seperate reactions in both directions.
 
 Another reason to select iAN50 is that the total masses of enzymes catalyzing reactions in the GSMM were already estimated, and fluxes through these reactions were constrained to the biologic level, using an approach similar to intracellular crowding method using kinetic parameters \cite{beg2007intracellular, adadi2012prediction}. To clarify the method briefly, a flux value for each reaction was obtained by applying a standart flux balance analysis, and this value was divided by the maximum \emph{in vitro} activity collected from the enzyme database BRENDA \cite{schomburg2012brenda}, and a saturation factor of 0.5 (half) for simplification. Therefore, the mass of the enzymes required for that particular reaction was estimated and the constrains are applied to the corresponding enzymatic reactions.
@@ -69,5 +68,20 @@ Coefficients of the biomass constituents are defined as the same as the batch co
 \end{table}
 For the linear optimization, an implementation of pFBA from the reference publication was performed \cite{nilsson2016metabolic, AvlantGithub}. After solving the system using a linear solver with the objective maximizing growth, the solution was used as a constraint. From that point, a second optimization was run to minimize the sum of all other fluxes.
 
+%Nonzero flux distribution is shown in the Figure \ref{fig:nonzerofluxes}
+\begin{figure}[H]
+  \includegraphics[width=1\columnwidth]{nonzerofluxes_3.eps}
+  \caption[Non-zero fluxes in the solution]{Non-zero fluxes in the solution.}
+\label{fig:nonzerofluxes}
+\end{figure}
+
 \section{Visualization of the Model}
 The GSMM was visualized in Cytoscape \cite{cline2007integration} using the Fluxviz plug-in \cite{konig2010fluxviz} and the solution fluxes were mapped onto edges. Network was imported in SBML \cite{hucka2018systems} and the flux distributions were imported in XML format prepared according to the plug-ins guide.
+
+
+%Nonzero flux distribution is shown in the Figure \ref{fig:fluxesonmap}
+\begin{figure}[H]
+  \includegraphics[width=1\columnwidth]{FluxDistributionsonMap.eps}
+  \caption[Map view of the non-zero flux distributions]{Non-zero flux distributions on the map.}
+\label{fig:fluxesonmap}
+\end{figure}

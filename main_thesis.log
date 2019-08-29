@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.17)  29 AUG 2019 05:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.7.17)  29 AUG 2019 12:10
 entering extended mode
 **./main_thesis.tex
 (main_thesis.tex
@@ -470,21 +470,21 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \openout3 = `main_thesis.toc'.
 
  [2]
-(main_thesis.lof)
+(main_thesis.lof [3
+
+])
 \tf@lof=\write4
 \openout4 = `main_thesis.lof'.
 
- [3
-
-] (main_thesis.lot)
+ [4] (main_thesis.lot)
 \tf@lot=\write5
 \openout5 = `main_thesis.lot'.
 
- [4
+ [5
 
 ] (chapters/introduction.tex
 Chapter 1.
-<images/systemsbiology.png, id=22, 974.13937pt x 450.9347pt>
+<images/systemsbiology.png, id=25, 974.13937pt x 450.9347pt>
 File: images/systemsbiology.png Graphic file (type png)
 <use images/systemsbiology.png>
 Package pdftex.def Info: images/systemsbiology.png  used on input line 12.
@@ -493,14 +493,14 @@ Package pdftex.def Info: images/systemsbiology.png  used on input line 12.
 
 
 ] [2 <./images/systemsbiology.png>]
-<images/modelreconstruction.png, id=32, 1016.29688pt x 802.49812pt>
+<images/modelreconstruction.png, id=35, 1016.29688pt x 802.49812pt>
 File: images/modelreconstruction.png Graphic file (type png)
 <use images/modelreconstruction.png>
 Package pdftex.def Info: images/modelreconstruction.png  used on input line 28.
 
 (pdftex.def)             Requested size: 441.01772pt x 348.23895pt.
  [3 <./images/modelreconstruction.png>]
-<images/wos_metabolicmodel_search.jpg, id=37, 936.49875pt x 451.6875pt>
+<images/wos_metabolicmodel_search.jpg, id=40, 936.49875pt x 451.6875pt>
 File: images/wos_metabolicmodel_search.jpg Graphic file (type jpg)
 <use images/wos_metabolicmodel_search.jpg>
 Package pdftex.def Info: images/wos_metabolicmodel_search.jpg  used on input li
@@ -508,7 +508,7 @@ ne 45.
 (pdftex.def)             Requested size: 441.01772pt x 212.71356pt.
 
 [4] [5 <./images/wos_metabolicmodel_search.jpg>]
-<images/central_carbon_mech_of_s_cerevisiae_kegg.png, id=45, 1413.28pt x 1547.7
+<images/central_carbon_mech_of_s_cerevisiae_kegg.png, id=48, 1413.28pt x 1547.7
 825pt>
 File: images/central_carbon_mech_of_s_cerevisiae_kegg.png Graphic file (type pn
 g)
@@ -517,87 +517,13 @@ Package pdftex.def Info: images/central_carbon_mech_of_s_cerevisiae_kegg.png  u
 sed on input line 73.
 (pdftex.def)             Requested size: 441.01772pt x 482.99596pt.
  [6])
-(chapters/materialsmethods_yeast8.tex [7] [8 <./images/central_carbon_mech_of_s
-_cerevisiae_kegg.png>]
+(chapters/materialsmethods_petek.tex [7] [8 <./images/central_carbon_mech_of_s_
+cerevisiae_kegg.png>]
 Chapter 2.
-<images/modelstats.png, id=58, 1890.06125pt x 699.61375pt>
-File: images/modelstats.png Graphic file (type png)
-<use images/modelstats.png>
-Package pdftex.def Info: images/modelstats.png  used on input line 10.
-(pdftex.def)             Requested size: 441.01772pt x 163.24565pt.
-[9
-
- <./images/modelstats.png>]
-<images/yeast8_github.png, id=63, 618.81187pt x 675.27281pt>
-File: images/yeast8_github.png Graphic file (type png)
-<use images/yeast8_github.png>
-Package pdftex.def Info: images/yeast8_github.png  used on input line 20.
-(pdftex.def)             Requested size: 396.91324pt x 433.14168pt.
- [10 <./images/yeast8_github.png>]
-<images/Gam_fitting.jpg, id=68, 846.16125pt x 613.29124pt>
-File: images/Gam_fitting.jpg Graphic file (type jpg)
-<use images/Gam_fitting.jpg>
-Package pdftex.def Info: images/Gam_fitting.jpg  used on input line 31.
-(pdftex.def)             Requested size: 352.8155pt x 255.7183pt.
- [11 <./images/Gam_fitting.jpg>] [12]
-<images/fba.jpg, id=78, 1164.60094pt x 496.10344pt>
-File: images/fba.jpg Graphic file (type jpg)
-<use images/fba.jpg>
-Package pdftex.def Info: images/fba.jpg  used on input line 58.
-(pdftex.def)             Requested size: 441.01772pt x 187.86267pt.
- [13 <./images/fba.jpg>]
-<images/fva.jpg, id=82, 1175.14032pt x 681.29532pt>
-File: images/fva.jpg Graphic file (type jpg)
-<use images/fva.jpg>
-Package pdftex.def Info: images/fva.jpg  used on input line 80.
-(pdftex.def)             Requested size: 441.01772pt x 255.68263pt.
- [14] [15 <./images/fva.jpg>]
-chapters/materialsmethods_yeast8.tex:85: Extra \endgroup.
-\endlandscape ...ate 90} \fi \clearpage \endgroup 
-                                                  \global \@colht =\textheig...
-l.85 \end{landscape}
-                    
-Things are pretty mixed up, but I think the worst is over.
-
-
-chapters/materialsmethods_yeast8.tex:85: LaTeX Error: \begin{document} ended by
- \end{landscape}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.85 \end{landscape}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-chapters/materialsmethods_yeast8.tex:85: Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.85 \end{landscape}
-                    
-Things are pretty mixed up, but I think the worst is over.
-
-<images/phpp.jpg, id=90, 1343.0175pt x 545.03625pt>
-File: images/phpp.jpg Graphic file (type jpg)
-<use images/phpp.jpg>
-Package pdftex.def Info: images/phpp.jpg  used on input line 93.
-(pdftex.def)             Requested size: 441.01772pt x 178.97264pt.
-) (chapters/materialsmethods_petek.tex [16
-
- <./images/phpp.jpg>]
-Chapter 3.
 (tables/experimental_OD600s_and_growths.tex)
-(tables/experimental_concentrations.tex
-Overfull \hbox (5.98085pt too wide) in paragraph at lines 4--21
- [] 
- []
+(tables/experimental_concentrations.tex [9
 
-[17
-
-]) [18]
+]) [10]
 Package epstopdf Info: Source file: <images/GrowthGraphsSmall.eps>
 (epstopdf)                    date: 2019-07-20 23:07:59
 (epstopdf)                    size: 43310 bytes
@@ -613,63 +539,39 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./images/GrowthGraphsSmall-eps-converted-to.pdf)
 : PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/GrowthGraphsSmall-eps-converted-to.pdf, id=100, 473.77pt x 316.18124pt>
-
+<images/GrowthGraphsSmall-eps-converted-to.pdf, id=67, 473.77pt x 316.18124pt>
 File: images/GrowthGraphsSmall-eps-converted-to.pdf Graphic file (type pdf)
 <use images/GrowthGraphsSmall-eps-converted-to.pdf>
 Package pdftex.def Info: images/GrowthGraphsSmall-eps-converted-to.pdf  used on
  input line 20.
 (pdftex.def)             Requested size: 441.01772pt x 294.33015pt.
-[19] (tables/calculated_fluxes.tex) [20 <./images/GrowthGraphsSmall-eps-convert
-ed-to.pdf>]
+[11] (tables/calculated_fluxes.tex) [12 <./images/GrowthGraphsSmall-eps-convert
+ed-to.pdf>] (tables/rxns_smallYeast.tex [13]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 11.
 
-LaTeX Warning: Reference `table:rxns_smallYeast' on page 21 undefined on input 
-line 39.
-
-(tables/rxns_smallYeast.tex [21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 4--4
-[]|\OT1/cmr/bx/n/6 EC-
- []
-
-
-Overfull \hbox (3.47879pt too wide) in paragraph at lines 4--4
-\OT1/cmr/bx/n/6 NUMBER| 
- []
-
-
-Overfull \hbox (53.1466pt too wide) in alignment at lines 3--7
- [] [] [] [] [] 
- []
-
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 9.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <6> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 9.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 11.
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--18
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
 []|\OT1/cmr/m/n/6 YGR254W; YHR174W; YOR393W;
  []
 
 
-Underfull \hbox (badness 6032) in paragraph at lines 21--21
+Underfull \hbox (badness 6032) in paragraph at lines 23--23
 []|\OT1/cmr/m/n/6 YNR034W; YCR073W-A; YHR163W;
  []
 
 
-Overfull \hbox (53.1466pt too wide) in alignment at lines 7--29
- [] [] [] [] [] 
+Underfull \hbox (badness 1838) in paragraph at lines 34--34
+[]|\OT1/cmr/m/n/6 Isocitrate de-hy-dro-ge-nase [NADP], mi-to-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-[]|\OT1/cmr/m/n/6 Galactose
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-[]|\OT1/cmr/m/n/6 Galactose
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]|\OT1/cmr/m/n/6 AKG[m]+NAD[m]+ADP[m]+PI[m]
  []
 
 
@@ -683,81 +585,114 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+[]|\OT1/cmr/m/n/6 Galactose
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+[]|\OT1/cmr/m/n/6 Galactose
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
 []|\OT1/cmr/m/n/6 YMR170C; YMR169C; YOR374W;
  []
 
 
-Overfull \hbox (53.1466pt too wide) in alignment at lines 29--49
- [] [] [] [] [] 
+Underfull \hbox (badness 2050) in paragraph at lines 52--52
+[]|\OT1/cmr/m/n/6 NADH-ubiquinone ox-i-dore-duc-tase, mi-to-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
-[]|\OT1/cmr/m/n/6 NADH-ubiquinone ox-i-dore-duc-tase, mi-to-chon-drial
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
+[]|\OT1/cmr/m/n/6 NADH[m]+Ubiquinone-9[m]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
 []|\OT1/cmr/m/n/6 1.6.5.3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--51
-[]|\OT1/cmr/m/n/6 1.6.5.3
+Underfull \hbox (badness 5862) in paragraph at lines 53--53
+[]|\OT1/cmr/m/n/6 External NADH-ubiquinone ox-i-dore-duc-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[]|\OT1/cmr/m/n/6 NADH[c]+Ubiquinone-9[m]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[]|\OT1/cmr/m/n/6 1.6.5.3
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+[]|\OT1/cmr/m/n/6 FADH2[m]+Ubiquinone-9[m]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+[]|\OT1/cmr/m/n/6 Ubiquinol[m]+2 Fer-ri-cy-tochrome[]c[m]+1.5 H[m]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+\OT1/cmr/m/n/6 =\OML/cmm/m/it/6 >\OT1/cmr/m/n/6 Ubiquinone-9[m]+2 Fer-ro-cy-toc
+hrome[]c[m]+1.5
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
 []|\OT1/cmr/m/n/6 YEL024W; YBL045C; YHR001W-A;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
 \OT1/cmr/m/n/6 YPR191W; YFR033C; YDR529C;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
 []|\OT1/cmr/m/n/6 YNL052W; YIL111W; YLR395C;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
 \OT1/cmr/m/n/6 YGL191W; YLR038C; YMR256C;
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 55--55
+Underfull \hbox (badness 1107) in paragraph at lines 57--57
 \OT1/cmr/m/n/6 Q0130; Q0085; YJR121W; YKL016C;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
 \OT1/cmr/m/n/6 YDL004W; YDR322C-A; YPL271W;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
 \OT1/cmr/m/n/6 YDR377W; YPR020W; YBR039W;
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 55--55
+Underfull \hbox (badness 2261) in paragraph at lines 57--57
 \OT1/cmr/m/n/6 YLR295C; YML081C-A; YOL077W-A;
  []
 
 
-Overfull \hbox (53.1466pt too wide) in alignment at lines 49--60
- [] [] [] [] [] 
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+[]|\OT1/cmr/m/n/6 COA[m]+NAD[m]+PYR[m] = \OML/cmm/m/it/6 >\OT1/cmr/m/n/6 AC-
  []
 
-[23
+[14
 
-] [24])) (chapters/results.tex [25
-
-] [26]
-Chapter 4.
+] [15])
 Package epstopdf Info: Source file: <images/nonzerofluxes_3.eps>
 (epstopdf)                    date: 2019-07-23 02:29:16
 (epstopdf)                    size: 49328 bytes
@@ -767,19 +702,21 @@ f>
 (epstopdf)                    size: 6405 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/nonzerofluxes_3-eps-
 converted-to.pdf images/nonzerofluxes_3.eps>
-(epstopdf)             \includegraphics on input line 5.
+(epstopdf)             \includegraphics on input line 73.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./images/nonzerofluxes_3-eps-converted-to.pdf): 
 PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<images/nonzerofluxes_3-eps-converted-to.pdf, id=133, 813.0375pt x 587.19376pt>
-
+<images/nonzerofluxes_3-eps-converted-to.pdf, id=89, 813.0375pt x 587.19376pt>
 File: images/nonzerofluxes_3-eps-converted-to.pdf Graphic file (type pdf)
 <use images/nonzerofluxes_3-eps-converted-to.pdf>
 Package pdftex.def Info: images/nonzerofluxes_3-eps-converted-to.pdf  used on i
-nput line 5.
+nput line 73.
 (pdftex.def)             Requested size: 441.01772pt x 318.51347pt.
+[16
+
+]
 Package epstopdf Info: Source file: <images/FluxDistributionsonMap.eps>
 (epstopdf)                    date: 2019-07-23 02:10:21
 (epstopdf)                    size: 1690148 bytes
@@ -789,65 +726,528 @@ d-to.pdf>
 (epstopdf)                    size: 491151 bytes
 (epstopdf)             Command: <epstopdf --outfile=images/FluxDistributionsonM
 ap-eps-converted-to.pdf images/FluxDistributionsonMap.eps>
-(epstopdf)             \includegraphics on input line 13.
+(epstopdf)             \includegraphics on input line 84.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./images/FluxDistributionsonMap-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<images/FluxDistributionsonMap-eps-converted-to.pdf, id=134, 556.0775pt x 561.0
-9625pt>
+<images/FluxDistributionsonMap-eps-converted-to.pdf, id=93, 556.0775pt x 561.09
+625pt>
 File: images/FluxDistributionsonMap-eps-converted-to.pdf Graphic file (type pdf
 )
 <use images/FluxDistributionsonMap-eps-converted-to.pdf>
 Package pdftex.def Info: images/FluxDistributionsonMap-eps-converted-to.pdf  us
-ed on input line 13.
+ed on input line 84.
 (pdftex.def)             Requested size: 441.01772pt x 445.00775pt.
-) (chapters/discussion.tex [27
+) (chapters/materialsmethods_yeast8.tex [17 <./images/nonzerofluxes_3-eps-conve
+rted-to.pdf>] [18 <./images/FluxDistributionsonMap-eps-converted-to.pdf>]
+Chapter 3.
+<images/modelstats.png, id=106, 1890.06125pt x 699.61375pt>
+File: images/modelstats.png Graphic file (type png)
+<use images/modelstats.png>
+Package pdftex.def Info: images/modelstats.png  used on input line 10.
+(pdftex.def)             Requested size: 441.01772pt x 163.24565pt.
+[19
 
- <./images/nonzerofluxes_3-eps-converted-to.pdf>] [28 <./images/FluxDistributio
-nsonMap-eps-converted-to.pdf>]
+ <./images/modelstats.png>]
+<images/yeast8_github.png, id=112, 618.81187pt x 675.27281pt>
+File: images/yeast8_github.png Graphic file (type png)
+<use images/yeast8_github.png>
+Package pdftex.def Info: images/yeast8_github.png  used on input line 20.
+(pdftex.def)             Requested size: 396.91324pt x 433.14168pt.
+ [20 <./images/yeast8_github.png>]
+<images/Gam_fitting.jpg, id=117, 846.16125pt x 613.29124pt>
+File: images/Gam_fitting.jpg Graphic file (type jpg)
+<use images/Gam_fitting.jpg>
+Package pdftex.def Info: images/Gam_fitting.jpg  used on input line 31.
+(pdftex.def)             Requested size: 352.8155pt x 255.7183pt.
+ [21 <./images/Gam_fitting.jpg>] [22]
+<images/fba.jpg, id=127, 1164.60094pt x 496.10344pt>
+File: images/fba.jpg Graphic file (type jpg)
+<use images/fba.jpg>
+Package pdftex.def Info: images/fba.jpg  used on input line 58.
+(pdftex.def)             Requested size: 441.01772pt x 187.86267pt.
+ [23 <./images/fba.jpg>]
+<images/fva_ranges.jpg, id=131, 681.29532pt x 1175.14032pt>
+File: images/fva_ranges.jpg Graphic file (type jpg)
+<use images/fva_ranges.jpg>
+Package pdftex.def Info: images/fva_ranges.jpg  used on input line 80.
+(pdftex.def)             Requested size: 352.8155pt x 608.56612pt.
+ [24] [25 <./images/fva_ranges.jpg>]
+<images/phpp.jpg, id=139, 1343.0175pt x 545.03625pt>
+File: images/phpp.jpg Graphic file (type jpg)
+<use images/phpp.jpg>
+Package pdftex.def Info: images/phpp.jpg  used on input line 92.
+(pdftex.def)             Requested size: 441.01772pt x 178.97264pt.
+ [26 <./images/phpp.jpg>]
+<images/ll-achrb.png, id=143, 785.93625pt x 536.0025pt>
+File: images/ll-achrb.png Graphic file (type png)
+<use images/ll-achrb.png>
+Package pdftex.def Info: images/ll-achrb.png  used on input line 106.
+(pdftex.def)             Requested size: 441.01772pt x 300.78093pt.
+<images/sampling_scatter_gluo2.jpg, id=144, 747.54282pt x 328.97906pt>
+File: images/sampling_scatter_gluo2.jpg Graphic file (type jpg)
+<use images/sampling_scatter_gluo2.jpg>
+Package pdftex.def Info: images/sampling_scatter_gluo2.jpg  used on input line 
+116.
+(pdftex.def)             Requested size: 441.01772pt x 194.0809pt.
+ [27 <./images/ll-achrb.png>] [28 <./images/sampling_scatter_gluo2.jpg>]
+
+chapters/materialsmethods_yeast8.tex:127: LaTeX Error: Environment sidewaysfigu
+re undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127     \begin{sidewaysfigure}
+                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<images/sampling_Hist_Glycolysis.jpg, id=152, 1927.2pt x 976.64874pt>
+File: images/sampling_Hist_Glycolysis.jpg Graphic file (type jpg)
+<use images/sampling_Hist_Glycolysis.jpg>
+Package pdftex.def Info: images/sampling_Hist_Glycolysis.jpg  used on input lin
+e 128.
+(pdftex.def)             Requested size: 685.71141pt x 347.4951pt.
+
+chapters/materialsmethods_yeast8.tex:129: LaTeX Error: \begin{figure} on input 
+line 126 ended by \end{sidewaysfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129     \end{sidewaysfigure}
+                              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
+
+ []
+
+
+chapters/materialsmethods_yeast8.tex:135: LaTeX Error: Environment sidewaysfigu
+re undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135     \begin{sidewaysfigure}
+                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<images/sampling_Scatter_Glycolysis_1.jpg, id=153, 1927.2pt x 976.64874pt>
+File: images/sampling_Scatter_Glycolysis_1.jpg Graphic file (type jpg)
+<use images/sampling_Scatter_Glycolysis_1.jpg>
+Package pdftex.def Info: images/sampling_Scatter_Glycolysis_1.jpg  used on inpu
+t line 136.
+(pdftex.def)             Requested size: 685.71141pt x 347.4951pt.
+
+chapters/materialsmethods_yeast8.tex:137: LaTeX Error: \begin{figure} on input 
+line 134 ended by \end{sidewaysfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137     \end{sidewaysfigure}
+                              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
+
+ []
+
+[29
+
+ <./images/sampling_Hist_Glycolysis.jpg>]
+
+chapters/materialsmethods_yeast8.tex:143: LaTeX Error: Environment sidewaysfigu
+re undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.143    \begin{sidewaysfigure}
+                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<images/sampling_Scatter_Glycolysis_2.jpg, id=157, 1927.2pt x 976.64874pt>
+File: images/sampling_Scatter_Glycolysis_2.jpg Graphic file (type jpg)
+<use images/sampling_Scatter_Glycolysis_2.jpg>
+Package pdftex.def Info: images/sampling_Scatter_Glycolysis_2.jpg  used on inpu
+t line 144.
+(pdftex.def)             Requested size: 685.71141pt x 347.4951pt.
+
+chapters/materialsmethods_yeast8.tex:145: LaTeX Error: \begin{figure} on input 
+line 142 ended by \end{sidewaysfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145     \end{sidewaysfigure}
+                              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--146
+
+ []
+
+[30 <./images/sampling_Scatter_Glycolysis_1.jpg>]
+
+chapters/materialsmethods_yeast8.tex:151: LaTeX Error: Environment sidewaysfigu
+re undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151      \begin{sidewaysfigure}
+                                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<images/sampling_Hist_TCA.jpg, id=161, 1927.2pt x 976.64874pt>
+File: images/sampling_Hist_TCA.jpg Graphic file (type jpg)
+<use images/sampling_Hist_TCA.jpg>
+Package pdftex.def Info: images/sampling_Hist_TCA.jpg  used on input line 152.
+(pdftex.def)             Requested size: 685.71141pt x 347.4951pt.
+
+chapters/materialsmethods_yeast8.tex:153: LaTeX Error: \begin{figure} on input 
+line 150 ended by \end{sidewaysfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153      \end{sidewaysfigure}
+                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--154
+
+ []
+
+[31 <./images/sampling_Scatter_Glycolysis_2.jpg>]
+
+chapters/materialsmethods_yeast8.tex:160: LaTeX Error: Environment sidewaysfigu
+re undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160      \begin{sidewaysfigure}
+                                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<images/sampling_Scatter_TCA.jpg, id=166, 1927.2pt x 976.64874pt>
+File: images/sampling_Scatter_TCA.jpg Graphic file (type jpg)
+<use images/sampling_Scatter_TCA.jpg>
+Package pdftex.def Info: images/sampling_Scatter_TCA.jpg  used on input line 16
+1.
+(pdftex.def)             Requested size: 685.71141pt x 347.4951pt.
+
+chapters/materialsmethods_yeast8.tex:162: LaTeX Error: \begin{center} on input 
+line 159 ended by \end{sidewaysfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.162      \end{sidewaysfigure}
+                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[32 <./images/sampling_Hist_TCA.jpg>]
+
+chapters/materialsmethods_yeast8.tex:170: LaTeX Error: Environment sidewaysfigu
+re undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170       \begin{sidewaysfigure}
+                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<images/sampling_Hist_PPP.jpg, id=170, 1927.2pt x 976.64874pt>
+File: images/sampling_Hist_PPP.jpg Graphic file (type jpg)
+<use images/sampling_Hist_PPP.jpg>
+Package pdftex.def Info: images/sampling_Hist_PPP.jpg  used on input line 171.
+(pdftex.def)             Requested size: 685.71141pt x 347.4951pt.
+
+chapters/materialsmethods_yeast8.tex:172: LaTeX Error: \begin{center} on input 
+line 169 ended by \end{sidewaysfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.172       \end{sidewaysfigure}
+                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[33 <./images/sampling_Scatter_TCA.jpg>]
+
+chapters/materialsmethods_yeast8.tex:180: LaTeX Error: Environment sidewaysfigu
+re undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180       \begin{sidewaysfigure}
+                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<images/sampling_Scatter_PPP.jpg, id=174, 1927.2pt x 976.64874pt>
+File: images/sampling_Scatter_PPP.jpg Graphic file (type jpg)
+<use images/sampling_Scatter_PPP.jpg>
+Package pdftex.def Info: images/sampling_Scatter_PPP.jpg  used on input line 18
+1.
+(pdftex.def)             Requested size: 685.71141pt x 347.4951pt.
+
+chapters/materialsmethods_yeast8.tex:182: LaTeX Error: \begin{center} on input 
+line 179 ended by \end{sidewaysfigure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182       \end{sidewaysfigure}
+                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[34 <./images/sampling_Hist_PPP.jpg>] [35 <./images/sampling_Scatter_PPP.jpg>]
+<images/srd_fba.jpg, id=181, 1927.2pt x 976.64874pt>
+File: images/srd_fba.jpg Graphic file (type jpg)
+<use images/srd_fba.jpg>
+Package pdftex.def Info: images/srd_fba.jpg  used on input line 194.
+(pdftex.def)             Requested size: 441.01772pt x 223.4919pt.
+<images/srd_moma.jpg, id=182, 1927.2pt x 976.64874pt>
+File: images/srd_moma.jpg Graphic file (type jpg)
+<use images/srd_moma.jpg>
+Package pdftex.def Info: images/srd_moma.jpg  used on input line 202.
+(pdftex.def)             Requested size: 441.01772pt x 223.4919pt.
+<images/sgd_fba.jpg, id=183, 1927.2pt x 976.64874pt>
+File: images/sgd_fba.jpg Graphic file (type jpg)
+<use images/sgd_fba.jpg>
+Package pdftex.def Info: images/sgd_fba.jpg  used on input line 211.
+(pdftex.def)             Requested size: 441.01772pt x 223.4919pt.
+
+[36
+
+ <./images/srd_fba.jpg> <./images/srd_moma.jpg>]
+<images/sgd_moma.jpg, id=187, 1927.2pt x 976.64874pt>
+File: images/sgd_moma.jpg Graphic file (type jpg)
+<use images/sgd_moma.jpg>
+Package pdftex.def Info: images/sgd_moma.jpg  used on input line 219.
+(pdftex.def)             Requested size: 441.01772pt x 223.4919pt.
+ [37 <./images/sgd_fba.jpg> <./images/sgd_moma.jpg>] (tables/essential_genes_y8
+.tex [38]
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]|\OT1/cmr/m/n/6 YGL256W,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+[]|\OT1/cmr/m/n/6 ADH4,
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 10--10
+[]|\OT1/cmr/m/n/6 alcohol de-hy-dro-ge-nase, (ac-etalde-hyde to ethanol), alde-
+hyde, de-hy-dro-ge-nase (2-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\OT1/cmr/m/n/6 YDR127W,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+\OT1/cmr/m/n/6 YDR035W,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\OT1/cmr/m/n/6 ARO1,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+\OT1/cmr/m/n/6 ARO3,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\OT1/cmr/m/n/6 2-deoxy-D-arabino-heptulosonate 7-phosphate syn-thetase, 3-de
+oxy-D-arabino-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]|\OT1/cmr/m/n/6 5-formethyltetrahydrofolate cyclo-ligase, 5-formyltetrahydrof
+olate:10-
+ []
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 43--43
+[]|\OT1/cmr/m/n/6 aspartate transam-i-nase, ty-ro-sine transam-i-nase, L-erythr
+o-4-hydroxyglutamate:2-
+ []
+
+
+Underfull \hbox (badness 2197) in paragraph at lines 56--57
+[]|\OT1/cmr/m/n/6 Glycerophospholipid metabolism, Biosyn-the-sis of sec-ondary 
+metabo-lites, Phos-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\OT1/cmr/m/n/6 YDR345C,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\OT1/cmr/m/n/6 YHR096C,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\OT1/cmr/m/n/6 YDR343C,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\OT1/cmr/m/n/6 HXT3,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\OT1/cmr/m/n/6 HXT5,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+\OT1/cmr/m/n/6 HXT6,
+ []
+
+[39
+
+] [40]
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+[]|\OT1/cmr/m/n/6 Lysine biosyn-the-sis, Pyru-vate metabolism, Biosyn-the-sis o
+f an-tibi-otics, 2-
+ []
+
+[41]
+Underfull \hbox (badness 3701) in paragraph at lines 118--119
+[]|\OT1/cmr/m/n/6 Citrate cy-cle (TCA cy-cle), Cys-teine and me-thio-n-ine meta
+bolism, Pyru-vate
+ []
+
+[42]
+Overfull \hbox (36.44113pt too wide) in paragraph at lines 146--146
+[]|\OT1/cmr/m/n/6 raffinose in-ver-tase, 1-(5-phosphoribosyl)-5-[(5-phosphoribo
+sylamino)methylideneamino)imidazole-
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 153--154
+[]|\OT1/cmr/m/n/6 Steroid biosyn-the-sis, Glyc-erolipid metabolism, Glyc-eropho
+s-pho-lipid metabolism,
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 157--158
+\OT1/cmr/m/n/6 biosyn-the-sis, Biosyn-the-sis of sec-ondary metabo-lites, Biosy
+n-the-sis of an-tibi-otics,
+ []
+
+[43] [44] [45])) (chapters/results.tex [46
+
+]
+Chapter 4.
+) (chapters/discussion.tex [47
+
+]
 Chapter 5.
-) (chapters/remainings.tex [29
+) (chapters/remainings.tex [48
 
 ]
 Chapter 6.
-) (main_thesis.bbl [30
+) (main_thesis.bbl [49
 
-] [31
+] [50
 
 ]
 ("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-32.def"
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [32] [33] [34]
-[35] [36]) [37] (main_thesis.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+) [51] [52] [53]
+[54] [55]) [56] (main_thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 7616 strings out of 492895
- 110786 string characters out of 3133473
- 251302 words of memory out of 3000000
- 11185 multiletter control sequences out of 15000+200000
- 15444 words of font info for 104 fonts, out of 3000000 for 9000
+ 7702 strings out of 492895
+ 113277 string characters out of 3133473
+ 256326 words of memory out of 3000000
+ 11254 multiletter control sequences out of 15000+200000
+ 15241 words of font info for 104 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,38p,1133b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main_thesis.pdf (42 pages, 2604601 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmti12.pfb>
+Output written on main_thesis.pdf (62 pages, 5661761 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
+ 289 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11330 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 10883 words of extra memory for PDF output out of 12000 (max. 10000000)
 

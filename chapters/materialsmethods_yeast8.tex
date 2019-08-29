@@ -1,4 +1,4 @@
-\chapter{MATERIALS AND METHODS - Yeast8}
+\chapter{MATERIALS AND METHODS (Yeast8)}
 
 \section{Consensus \emph{S. cerevisiae} Metabolic Model}
 Variety of \emph{S. cerevisiae} genome-scale metabolic models have been used since 2003, and each reconstructed model introduced more manual curations, increasing gene numbers from annotations and better predictions regarding the previous ones \cite{lopes2017genome}. A consensus genome-scale metabolic model of \emph{S. cerevisiae}, Yeast8, is presented in an open-source, version-controlled maintainable way in 2019, claiming that the model can be represented and investigated in a systematic way using Git (https://git-scm.com/) and GitHub (https://github.com/) as a hosting service for the model repository \cite{lu2019consensus}. Systematic way of Yeast8 enables to study simultaneously in collaborative studies, provides record keeping of model changes, version updates, where each version of can be released periodically and accessible all the time (Figure \ref{fig:yeast8_github}).
@@ -37,16 +37,16 @@ In order to make sure the \emph{in-silico} obtained growth rate predictions are 
 \section{Flux Balance Analysis}
 Flux balance analysis (FBA) assumes that the living cells act as they optimized their lives towards some goal, and as if they were at steady state. To be more clear, steady-state assumption indicates that the metabolites are both produced and consumed at the same rate in a cell, without an accumulation. Therefore, in this system, metabolites are constrained by only the stoichiometric coefficients arised from mass balance of metabolites. As a result of this assumption, FBA solves a set of ordinary differential equations regarding to the stoichiometric matrix:
 \begin{equation}
-  \ S_{m \times n} \cdot v=0
+ \ S_{m \times n} \cdot v=0
 \end{equation}
 \noindent where S is the matrix of the stoichiometric reaction coefficients with m number of metabolites (as rows) and n number of reactions (as columns), and v is the vector of all associated reaction fluxes (mmol/gDWh). Because the matrix S usually has more reactions than metabolites (m<n), the system can result multiple solutions, and being called an underdetermined system. To solve it for an optimal solution, additional constraints are required.
 
 A "growth reaction" is usually included in the reactions of the system to represent the "goal" in the definition of living systems. Growth reactions act as the final consumption of metabolites necessary for the biomass production or cell replication. Additional to the growth, several exchange reactions (uptake or secretion of metabolites from or into extracellular space) are also included. Since the concentrations of extracellular metabolites are measurable experimentall, constraints can be applied to exchange reaction fluxes to shrink solution space. The more constraints introduced into the system, such as reversibility of reactions or known rate values, result smaller solution space. The growth reaction is usually used as an objective function to determine a unique solution from this solution space. The linear problem appears as:
 \begin{align}
-  \ \text{max}_v \quad & c^T \cdot v \\
-  \label{eq:fba}
-  \ \text{subject to} \quad & S_{m \times n} \cdot v=0 \\
-  \ & v_{lb} \leq v \leq v_{ub}
+ \ \text{max}_v \quad & c^T \cdot v \\
+ \label{eq:fba}
+ \ \text{subject to} \quad & S_{m \times n} \cdot v=0 \\
+ \ & v_{lb} \leq v \leq v_{ub}
 \end{align}
 \noindent where c is the objective function vector, v is the vector of fluxes, S is the stoichiometric matrix as above equation. Subscripts lb and ub are the lower and upper boundaries on v. These constraints defines a feasible region of the problem.
 
@@ -65,24 +65,23 @@ In order to simulate batch conditions where minimal yeast medium is used, all th
 Flux variability analysis (FVA) finds the minimum and maximum available fluxes for each reaction while obeying the provided constraints (for example fixed glucose uptake or growth rate). FVA is mainly used to evaluate the robustness of the model \cite{thiele2010functional}, to find alternative optimum states \cite{mahadevan2003effects}, to check flux distributions when growth is not at optimum level \cite{reed2004genome}, and it has many other applications \cite{gudmundsson2010computationally}.
 
 FVA, similar to FBA, solves two optimization problems for each reaction:
-  \begin{align}
-  \ \text{max}_v / \text{min}_v \quad & v_i \\
-  \ \text{subject to} \quad & S_{m \times n} \cdot v=0 \\
-  \ & w^T \cdot v \geq  \gamma \cdot Z_0 \\
-  \ & v_{lb} \leq v \leq v_{ub}
-  \end{align}
+ \begin{align}
+ \ \text{max}_v / \text{min}_v \quad & v_i \\
+ \ \text{subject to} \quad & S_{m \times n} \cdot v=0 \\
+ \ & w^T \cdot v \geq \gamma \cdot Z_0 \\
+ \ & v_{lb} \leq v \leq v_{ub}
+ \end{align}
 \noindent where $w$ is the objective function equals to $c$ in the problem \ref{eq:fba}, $Z_0 = w^T \cdot v_0$ describes an optimal solution to the problem \ref{eq:fba}, $\gamma$ is an indicator to check whether the FVA is done at the optimal state (where objective flux is the same and $\gamma = 1$) or any other state (where $0 \leq \gamma < 1$).
 
 Flux variabilites of Yeast8 reactions are analyzed by solving the linear problem with the objective functions to minimize and maximize all reactions iteratively with tolerance value of 1e-9 using the GUROBI solver. Minimum and maximum available fluxes are collected in the iterative process for each reaction, and results are plotted for glycolysis, pentose phosphate pathway and TCA pathway reactions as error boxes (Figure \ref{fig:fva}). Flux values obtained through the ordinary FBA solution are also shown as a line.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=1\columnwidth]{fva.jpg}
+\includegraphics[width=0.8\columnwidth]{fva_ranges.jpg}
 \end{center}
 \caption[Minimum and maximum fluxes of Glycolysis, PPP and TCA reactions]{Minimum and maximum fluxes of Glycolysis, PPP and TCA reactions.}
 \label{fig:fva}
 \end{figure}
-\end{landscape}
 
 \section{Phenotype Phase Plane Construction}
 
@@ -99,6 +98,134 @@ As mentioned in the FBA and FVA sections, there is no single solution to the lin
 \hl{In the results section of this, FBA simulations will be discussed with the phases observed in PhPP.}
 
 
-\section{ACHRB Sampling}
+\section{Random Sampling of Solution Space}
+Constraints applied to a model define a solution space, a convex polytope, where every flux distribution is accessible. Random sampling of the solution space is an unbiased tool to explore metabolic models. Mainly, Markov Chain Monte Carlo methods are used to sample this space using algorithms such as (Artificially Centered) Hit-and-Run (HRB) \cite{kiatsupaibul2011analysis, saa2016ll} algorithm, and this method has proven to be helpful in the analysis of genome-scale metabolic models \cite{schellenberger2009use}. Briefly, the random sampling method collects points that are uniformly distributed in the solution space and calculates the most probable flux value for each reaction.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{ll-achrb.png}
+\end{center}
+\caption[Workflow of the Loopless-ACHRB sampling on a toy model]{Workflow of the ll-ACHRB sampling on a toy model. A) Pre-processing phase, application of loopless-FBA to remove blocked reactions and constraining the directionalities of others. B) Warmup phase, modifying the reaction bounds to more interior space. C) Sampling phase with HRB algorithm. Figure is taken from \cite{saa2016ll}}
+\label{fig:achrb}
+\end{figure}
+
+Since the computational burden of loopless sampling is high, generated random points in the solution space of Yeast8 includes thermodynamically unfeasble states. Maximum glucose uptake rate was constrained to 1 mmol gDWh\textsuperscript{-1} and total of 5000 points are generated with maximum of 120 secondse alloted for the sampling.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{sampling_scatter_gluo2.jpg}
+\end{center}
+\caption[Scatter plot of glucose and oxygen uptake points from sampling]{Scatter plot of glucose and oxygen uptake points from sampling regarding growth rate.}
+\label{fig:sampling_scatter_gluo2}
+\end{figure}
+
+\hl{From this point, there are only plots or resulted tables (all results will be put into "results" section later. They are in methods for simplicity.)}
+
+
+\begin{landscape}
+ \begin{figure}[H]
+    \begin{sidewaysfigure}
+     \includegraphics[width=1\columnwidth]{sampling_Hist_Glycolysis.jpg}
+    \end{sidewaysfigure}
+ \caption[Histogram plots of available flux values for glycolysis reactions]{Histogram plot of sampled points in glycolysis reactions.}
+ \label{fig:sampling_Hist_Glycolysis}
+ \end{figure}
+
+ \begin{figure}[H]
+    \begin{sidewaysfigure}
+     \includegraphics[width=1\columnwidth]{sampling_Scatter_Glycolysis_1.jpg}
+    \end{sidewaysfigure}
+ \caption[Correlations in between glycolysis reactions]{Correlations in between glycolysis reactions.}
+ \label{fig:sampling_Scatter_Glycolysis_1}
+ \end{figure}
+
+ \begin{figure}[H]
+   \begin{sidewaysfigure}
+    \includegraphics[width=1\columnwidth]{sampling_Scatter_Glycolysis_2.jpg}
+    \end{sidewaysfigure}
+ \caption[Correlations in between glycolysis reactions, continued]{Correlations in between glycolysis reactions, continued.}
+ \label{fig:sampling_Scatter_Glycolysis_2}
+ \end{figure}
+
+  \begin{figure}[H]
+     \begin{sidewaysfigure}
+      \includegraphics[width=1\columnwidth]{sampling_Hist_TCA.jpg}
+     \end{sidewaysfigure}
+  \caption[Histogram plots of available flux values for TCA reactions]{Histogram plot of sampled points in TCA reactions.}
+  \label{fig:sampling_Hist_TCA}
+  \end{figure}
+
+  \begin{figure}[H]
+   \begin{center}
+     \begin{sidewaysfigure}
+      \includegraphics[width=1\columnwidth]{sampling_Scatter_TCA.jpg}
+     \end{sidewaysfigure}
+   \end{center}
+  \caption[Correlations in between TCA reactions]{Correlations in between TCA reactions}
+  \label{fig:sampling_Scatter_TCA}
+  \end{figure}
+
+   \begin{figure}[H]
+    \begin{center}
+      \begin{sidewaysfigure}
+       \includegraphics[width=1\columnwidth]{sampling_Hist_PPP.jpg}
+      \end{sidewaysfigure}
+    \end{center}
+   \caption[Histogram plots of available flux values for PPP reactions]{Histogram plot of sampled points in PPP reactions.}
+   \label{fig:sampling_Hist_PPP}
+   \end{figure}
+
+   \begin{figure}[H]
+    \begin{center}
+      \begin{sidewaysfigure}
+       \includegraphics[width=1\columnwidth]{sampling_Scatter_PPP.jpg}
+      \end{sidewaysfigure}
+    \end{center}
+   \caption[Correlations in between PPP reactions]{Correlations in between PPP reactions}
+   \label{fig:sampling_Scatter_PPP}
+   \end{figure}
+\end{landscape}
+
+
+\section{Knocking Out Single Genes and Reactions}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{srd_fba.jpg}
+\end{center}
+\caption[Effective reactions found from the deletion analysis using FBA]{Effective reactions (not entirely essential, but  their absence changes the flux distribution or value of the optimization function) obtained from single reaction deletion simulations using FBA and their effect on growth rate is plotted.}
+\label{fig:srd_fba}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{srd_moma.jpg}
+\end{center}
+\caption[Effective reactions found from the deletion analysis using MOMA]{Effective reactions (not entirely essential, but  their absence changes the flux distribution or value of the optimization function) obtained from single reaction deletion simulations using MOMA and their effect on growth rate is plotted.}
+\label{fig:srd_moma}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{sgd_fba.jpg}
+\end{center}
+\caption[Effective genes found from the deletion analysis using FBA]{Effective genes (not entirely essential, but  their absence changes the flux distribution or value of the optimization function) obtained from single gene deletion simulations using FBA and their effect on growth rate is plotted.}
+\label{fig:sgd_fba}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{sgd_moma.jpg}
+\end{center}
+\caption[Effective genes found from the deletion analysis using MOMA]{Effective genes (not entirely essential, but their absence changes the flux distribution or value of the optimization function) obtained from single gene deletion simulations using MOMA and their effect on growth rate is plotted.}
+\label{fig:sgd_moma}
+\end{figure}
+\hl{Explainations about knock-out strains, gene descriptions, comparison of found essential genes and their reactions corresponding to essential reactions found will be added.}
+
+\input{tables/essential_genes_y8.tex}
+
 \section{Expression Data Analysis}
+\hl{GSE numbers, experimental conditions, data normalization, gene enrichment analysis, comparison with essential genes in the model...}
 \section{Integration of Expression Data Into Model}
+\hl{Used method and its mathematical explaination on flux bounds...}
