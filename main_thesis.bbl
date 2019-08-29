@@ -113,6 +113,11 @@ Pinzon, W., H.~Vega, J.~Gonzalez and A.~Pinzon, \enquote{Mathematical Framework
   Behind the Reconstruction and Analysis of Genome Scale Metabolic Models},
   {\em Archives of Computational Methods in Engineering\/}, pp. 1--14, 2018.
 
+\bibitem{thiele2007bringing}
+Thiele, I. and B.~{\O}. Palsson, \enquote{Bringing genomes to life: the use of
+  genome-scale in silico models}, {\em Introduction to Systems Biology\/}, pp.
+  14--36, Springer, 2007.
+
 \bibitem{gelinas2009inventions}
 G{\'e}linas, P., \enquote{Inventions on baker's yeast strains and specialty
   ingredients}, {\em Recent patents on food, nutrition \& agriculture\/},
@@ -218,6 +223,11 @@ Reed, J.~L. and B.~{\O}. Palsson, \enquote{Genome-scale in silico models of E.
 Gudmundsson, S. and I.~Thiele, \enquote{Computationally efficient flux
   variability analysis}, {\em BMC bioinformatics\/}, Vol.~11, No.~1, p. 489,
   2010.
+
+\bibitem{edwards2002characterizing}
+Edwards, J.~S., R.~Ramakrishna and B.~O. Palsson, \enquote{Characterizing the
+  metabolic phenotype: a phenotype phase plane analysis}, {\em Biotechnology
+  and bioengineering\/}, Vol.~77, No.~1, pp. 27--36, 2002.
 
 \bibitem{arslan2018physiological}
 Arslan, M., C.~Holyavkin, H.~{\.I}. K{\i}sakesen, A.~Topalo{\u{g}}lu,
