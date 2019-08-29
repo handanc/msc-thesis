@@ -1,11 +1,11 @@
-\begin{table}[H]
-\vskip\baselineskip
-  \caption[Reaction list in the iAN50 model]{Reaction list in the iAN50 model.}
-  \begin{center}
-\resizebox{\textwidth}{!}{
-\begin{tabular}{p{11cm}p{17cm}p{8cm}lp{5cm}}
+{\tiny
+\begin{landscape}                              % From here on the page will be turned sidewards.
+\begin{longtable}{p{.25\linewidth} | p{.40\linewidth} | p{.19\linewidth} | p{.05\linewidth} | p{.10\linewidth}}
+\textbf{NAME} & \textbf{EQUATION} & \textbf{GENE ASSOCIATION} & \textbf{EC-NUMBER} & \textbf{SUBSYSTEM}                                                          \\ \hline
+
 \hline
-\textbf{NAME}                                                                             & \textbf{EQUATION}                                                                                                                               & \textbf{GENE ASSOCIATION}                                                                                                                                        & \textbf{EC-NUMBER} & \textbf{SUBSYSTEM}                                                          \\ \hline
+\endhead               % The lines above will be repeated at top of your table on each new page.
+
 Hexokinase                                                                                & GLC{[}c{]} + ATP{[}c{]} =\textgreater ADP{[}c{]} + G6P{[}c{]}                                                                                   & YFR053C; YGL253W; YCL040W                                                                                                                                        & 2.7.1.1 OR 2.7.1.2 & Glycolysis                                                                  \\
 Glucose-6-phosphate isomerase                                                             & G6P{[}c{]} \textless{}=\textgreater F6P{[}c{]}                                                                                                  & YBR196C                                                                                                                                                          & 5.3.1.9            & Glycolysis                                                                  \\
 Phosphofructokinase                                                                       & ATP{[}c{]} + F6P{[}c{]} =\textgreater ADP{[}c{]} + F16P{[}c{]}                                                                                  & YGR240C; YMR205C                                                                                                                                                 & 2.7.1.11           & Glycolysis                                                                  \\
@@ -56,8 +56,6 @@ ATP synthase subunit alpha, mitochondrial (Complex V)                           
 ATP hydrolysis                                                                            & ATP{[}c{]} =\textgreater ADP{[}c{]} + PI{[}c{]}                                                                                                 &                                                                                                                                                                  &                    & Other                                                                       \\
 Pyruvate dehydrogenase complex                                                            & COA{[}m{]} + NAD{[}m{]} + PYR{[}m{]} =\textgreater ACCOA{[}m{]} + CO2{[}m{]} + NADH{[}m{]}                                                      & YER178W; YFL018C; YBR221C                                                                                                                                        & 1.2.4.1            & Other                                                                       \\
 Acetyl-coenzyme A synthetase 1                                                            & AC{[}c{]} + 2 ATP{[}c{]} + COA{[}c{]} =\textgreater ACCOA{[}c{]} + 2 ADP{[}c{]} + 2 PI{[}c{]}                                                   & YAL054C; YLR153C                                                                                                                                                 & 6.2.1.1            & Other                                                                       \\
-Phosphoenolpyruvate carboxykinase                                                         & ATP{[}c{]} + OAA{[}c{]} =\textgreater ADP{[}c{]} + CO2{[}c{]} + PEP{[}c{]}                                                                      & YKR097W                                                                                                                                                          & 4.1.1.49           & Other                                                                       \\ \hline
-\end{tabular}}
-\label{table:rxns_smallYeast}
-\end{center}
-\end{table}
+Phosphoenolpyruvate carboxykinase                                                         & ATP{[}c{]} + OAA{[}c{]} =\textgreater ADP{[}c{]} + CO2{[}c{]} + PEP{[}c{]}                                                                      & YKR097W                                                                                                                                                          & 4.1.1.49           & Other                                                                      \\ \hline
+\end{longtable}
+\end{landscape}  }
