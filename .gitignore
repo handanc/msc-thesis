@@ -11,5 +11,8 @@
 *.cb
 *.cb2
 .*.lb
+<<<<<<< HEAD
 *.fdb_latexmk
 *
+=======
+>>>>>>> 3c0c40021738b6ce011eb3f6bcdecfd5108fe844
