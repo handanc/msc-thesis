@@ -23,6 +23,7 @@
 \usepackage{pdfpages}  % For model pdf
 \usepackage{pdflscape} % for landscape
 \usepackage{microtype} % to hide warnings abput width
+\usepackage{cleveref} % for chapter refs
 
 \newtheorem{thm}{Theorem}[chapter]
 \newtheorem{prop}[thm]{Proposition}
@@ -48,13 +49,13 @@
   \clearpage
 
 	\pagenumbering{arabic}
-	\input{chapters/introduction}
-%	\input{chapters/chapters_overall}
-	\input{chapters/materialsmethods_petek}
-	\input{chapters/materialsmethods_yeast8}
-  \input{chapters/results}
-  \input{chapters/discussion}
-  \input{chapters/remainings}
+	\input{chapters/introduction.tex}
+%	\input{chapters/chapters_overall.tex}
+	\input{chapters/materialsmethods_petek.tex}
+	\input{chapters/materialsmethods_yeast8.tex}
+  \input{chapters/results.tex}
+  \input{chapters/discussion.tex}
+  \input{chapters/remainings.tex}
 
 
 	\bibliographystyle{styles/fbe_tez_v11}

@@ -253,10 +253,10 @@ Chowdhury, R., A.~Chowdhury and C.~Maranas, \enquote{Using gene essentiality
   and synthetic lethality information to correct yeast and CHO cell
   genome-scale models}, {\em Metabolites\/}, Vol.~5, No.~4, pp. 536--570, 2015.
 
-\bibitem{van1998effect}
-Van~Hoek, P., J.~P. Van~Dijken and J.~T. Pronk, \enquote{Effect of specific
-  growth rate on fermentative capacity of baker’s yeast}, {\em Appl. Environ.
-  Microbiol.\/}, Vol.~64, No.~11, pp. 4226--4233, 1998.
+\bibitem{edwards2002characterizing}
+Edwards, J.~S., R.~Ramakrishna and B.~O. Palsson, \enquote{Characterizing the
+  metabolic phenotype: a phenotype phase plane analysis}, {\em Biotechnology
+  and bioengineering\/}, Vol.~77, No.~1, pp. 27--36, 2002.
 
 \bibitem{thiele2010functional}
 Thiele, I., R.~M. Fleming, A.~Bordbar, J.~Schellenberger and B.~{\O}. Palsson,
@@ -280,11 +280,6 @@ Gudmundsson, S. and I.~Thiele, \enquote{Computationally efficient flux
   variability analysis}, {\em BMC bioinformatics\/}, Vol.~11, No.~1, p. 489,
   2010.
 
-\bibitem{edwards2002characterizing}
-Edwards, J.~S., R.~Ramakrishna and B.~O. Palsson, \enquote{Characterizing the
-  metabolic phenotype: a phenotype phase plane analysis}, {\em Biotechnology
-  and bioengineering\/}, Vol.~77, No.~1, pp. 27--36, 2002.
-
 \bibitem{kiatsupaibul2011analysis}
 Kiatsupaibul, S., R.~L. Smith and Z.~B. Zabinsky, \enquote{An analysis of a
   variation of hit-and-run for uniform sampling from general regions}, {\em ACM
@@ -300,5 +295,10 @@ Saa, P.~A. and L.~K. Nielsen, \enquote{ll-ACHRB: a scalable algorithm for
 Schellenberger, J. and B.~{\O}. Palsson, \enquote{Use of randomized sampling
   for analysis of metabolic networks}, {\em Journal of biological chemistry\/},
   Vol. 284, No.~9, pp. 5457--5461, 2009.
+
+\bibitem{van1998effect}
+Van~Hoek, P., J.~P. Van~Dijken and J.~T. Pronk, \enquote{Effect of specific
+  growth rate on fermentative capacity of baker’s yeast}, {\em Appl. Environ.
+  Microbiol.\/}, Vol.~64, No.~11, pp. 4226--4233, 1998.
 
 \end{thebibliography}

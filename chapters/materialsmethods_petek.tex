@@ -2,7 +2,7 @@
 
 \section{Experimental Data Preparation}
 \subsection{Data Acquisition}
-Extracellular metabolomics data is obtained from Cakar's Lab \cite{arslan2018physiological}.Briefly, they perform ethyl methane sulfonate (EMS) mutagenesis  on the prototrophic \emph{Saccharomyces cerevisiae} strain CEN.PK 113-7D (MATa, MAL2-8c, SUC2) to increase the genetic diversity as an evolutionary engineering selection strategy. Cells were inoculated in 2\% Yeast Minimal Media (YMM), and the extracellular concentrations of glucose, ethanol, glycerol and acetate were measured at different time points. OD\textsubscript{600} values were determined by a spectrophotometer. Additionally, cell dry weight analysis was conducted to determine biomass production. Acquired extracellular metabolite concentrations, OD\textsubscript{600} values and dry weights of the reference strain (without mutagenesis) were used in this study are collected in Table \ref{table:experimental_data} and Table \ref{table:experimental_OD600s_and_growths}.
+Extracellular metabolomics data are obtained from Cakar's Lab \cite{arslan2018physiological}.Briefly, they perform ethyl methane sulfonate (EMS) mutagenesis  on the prototrophic \emph{Saccharomyces cerevisiae} strain CEN.PK 113-7D (MATa, MAL2-8c, SUC2) to increase the genetic diversity as an evolutionary engineering selection strategy. Cells were inoculated in 2\% Yeast Minimal Media (YMM), and the extracellular concentrations of glucose, ethanol, glycerol and acetate were measured at different time points. OD\textsubscript{600} values were determined by a spectrophotometer. Additionally, cell dry weight analysis was conducted to determine biomass production. Acquired extracellular metabolite concentrations, OD\textsubscript{600} values and dry weights of the reference strain (without mutagenesis) were used in this study are collected in Table \ref{table:experimental_data} and Table \ref{table:experimental_OD600s_and_growths}.
 
 \input{tables/experimental_OD600s_and_growths.tex}
 \input{tables/experimental_concentrations.tex}
@@ -23,7 +23,6 @@ In order to determine uptake and secretion rates of the metabolites, the steady-
 \label{fig:GrowthGraphs}
 \end{figure}
 
-\input{tables/calculated_fluxes.tex}
 
 \section{Model Selection}
 iAN50 \cite{nilsson2016metabolic}, a stoichiometric model of intermediary metabolism including glycolysis, the pentose phosphate pathway (PPP), anaerobic excretion, citric acid cycle (TCA cycle), oxidative phosphorylation, and uptake pathways for galactose, ethanol and acetate is used to simulate batch conditions. The model was implemented based on the first GSMM of yeast, iFF708 \cite{forster2003genome} with the addition of the yeast intermediary metabolism from the RAVEN toolbox \cite{agren2013raven}, and finally curated using the KEGG database \cite{kanehisa2000kegg}.
@@ -39,7 +38,8 @@ Enzymatic reactions that are found in the model is collected in Table \ref{table
 
 Another reason to select iAN50 is that the total masses of enzymes catalyzing reactions in the GSMM were already estimated, and fluxes through these reactions were constrained to the biologic level, using an approach similar to intracellular crowding method using kinetic parameters \cite{beg2007intracellular, adadi2012prediction}. To clarify the method briefly, a flux value for each reaction was obtained by applying a standart flux balance analysis, and this value was divided by the maximum \emph{in vitro} activity collected from the enzyme database BRENDA \cite{schomburg2012brenda}, and a saturation factor of 0.5 (half) for simplification. Therefore, the mass of the enzymes required for that particular reaction was estimated and the constrains are applied to the corresponding enzymatic reactions.
 
-\input{tables/rxns_smallYeast.tex}
+\hl{Model table is hidden.}
+%\input{tables/rxns_smallYeast.tex}
 
 \section{Flux Balance Analysis}
 Uptake reaction of glucose with the secretion reactions of glycerol and acetate were constrained according to the calculated flux values in Table \ref{table:calculated_fluxes}, for both time intervals seperately. Since the main goal was to validate model for experimental conditions, ethanol was not constrained in regard to be used as the control metabolite. Experiments were done in fully aerobic conditions, therefore oxygen uptake reaction was set unlimited.
@@ -66,7 +66,8 @@ Coefficients of the biomass constituents are defined as the same as the batch co
 \label{table:biomass_coefficients}
 \end{center}
 \end{table}
-For the linear optimization, an implementation of pFBA from the reference publication was performed \cite{nilsson2016metabolic, AvlantGithub}. After solving the system using a linear solver with the objective maximizing growth, the solution was used as a constraint. From that point, a second optimization was run to minimize the sum of all other fluxes.
+
+For the linear optimization, an implementation of parsimonious FBA (pFBA) from the reference publication was performed \cite{nilsson2016metabolic, AvlantGithub}. After solving the system using a linear solver, GUROBI, with the objective maximizing growth, the solution was used as a constraint. From that point, a second optimization was run to minimize the sum of all other fluxes.
 
 %Nonzero flux distribution is shown in the Figure \ref{fig:nonzerofluxes}
 \begin{figure}[H]

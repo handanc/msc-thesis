@@ -1,3 +1,87 @@
 \chapter{RESULTS}
 
-\hl{All (obtained) figures in Methods section will be moved here, and plots will be explained clearly.}
+
+\section{Petek Results}
+
+\input{tables/calculated_fluxes.tex}
+
+
+\section{Chemostat Simulation: GAM Fitting}
+In order to make sure the \emph{in-silico} obtained growth rate predictions are in agreement with the physiological kinetic parameters obtained from real experiments, fine adjustment on the energy reactions is a requirement. Since the growth-associated maintenance (GAM) and non-growth associated maintenance (NGAM) energy reactions play a determinant role in simulations, fluxes through these reactions must be constrained to a fixed value. Flux of NGAM is constrained to 0.7 mmol gDWh\textsuperscript{-1} for aerobic, and 0 mmol gDWh\textsuperscript{-1} for anaerobic simulations as calculated in the previous studies \cite{nilsson2016metabolic}. For the estimation of GAM, since it depends on the biomass composition, findings of a chemostat experiment  \cite{van1998effect} is used as a guide to fit predictions to. Model is simulated iteratively with a range of values for GAM, and the best fit is found at the level of 55.25 mmol gDWh\textsuperscript{-1} (Figure \ref{fig:Gam_fitting}), GAM flux is constrained accordingly.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{Gam_fitting.jpg}
+\end{center}
+\caption[Chemostat simulation to re-fit growth associated maintenance]{Chemostat simulation to re-fit growth associated maintenance.}
+\label{fig:Gam_fitting}
+\end{figure}
+
+
+\section{Flux Balance Analysis Results}
+\hl{I need to show experimental results -preferably from the same article where I got expression data- on the figure to compare with my FBA results}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{fba.jpg}
+\end{center}
+\caption[Flux balance simulation results]{Flux balance simulation results where oxygen uptake rate decreased and glucose uptake rate is increased simultaneously. Flux rates of several metabolites on the left, predicted growth rate on the right.}
+\label{fig:fba}
+\end{figure}
+
+\section{Flux Variability Analysis}
+Flux variabilites of Yeast8 reactions are analyzed by solving the linear problem with the objective functions to minimize and maximize all reactions iteratively with tolerance value of 1e-9 using the GUROBI solver. Minimum and maximum available fluxes are collected in the iterative process for each reaction, and results are plotted for glycolysis, pentose phosphate pathway and TCA pathway reactions as error boxes (Figure \ref{fig:fva}). Flux values obtained through the ordinary FBA solution are also shown as a line.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{fva_ranges.jpg}
+\end{center}
+\caption[Minimum and maximum fluxes of Glycolysis, PPP and TCA reactions]{Minimum and maximum fluxes of Glycolysis, PPP and TCA reactions.}
+\label{fig:fva}
+\end{figure}
+
+
+\section{Sampling Results}
+
+\hl{Sampling results are hidden.}
+% \input{chapters/results/sampling_results.tex}
+
+
+\section{Single Gene and Reaction Knock-Out Simulations}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{srd_fba.jpg}
+\end{center}
+\caption[Effective reactions found from the deletion analysis using FBA]{Effective reactions (not entirely essential, but  their absence changes the flux distribution or value of the optimization function) obtained from single reaction deletion simulations using FBA and their effect on growth rate is plotted.}
+\label{fig:srd_fba}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{srd_moma.jpg}
+\end{center}
+\caption[Effective reactions found from the deletion analysis using MOMA]{Effective reactions (not entirely essential, but  their absence changes the flux distribution or value of the optimization function) obtained from single reaction deletion simulations using MOMA and their effect on growth rate is plotted.}
+\label{fig:srd_moma}
+\end{figure}
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{sgd_fba.jpg}
+\end{center}
+\caption[Effective genes found from the deletion analysis using FBA]{Effective genes (not entirely essential, but  their absence changes the flux distribution or value of the optimization function) obtained from single gene deletion simulations using FBA and their effect on growth rate is plotted.}
+\label{fig:sgd_fba}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{sgd_moma.jpg}
+\end{center}
+\caption[Effective genes found from the deletion analysis using MOMA]{Effective genes (not entirely essential, but their absence changes the flux distribution or value of the optimization function) obtained from single gene deletion simulations using MOMA and their effect on growth rate is plotted.}
+\label{fig:sgd_moma}
+\end{figure}
+\hl{Explainations about knock-out strains, gene descriptions, comparison of found essential genes and their reactions corresponding to essential reactions found will be added.}
+
+\hl{Essential genes table is hidden.}
+% \input{tables/essential_genes_y8.tex}

@@ -101,6 +101,8 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype-pdftex.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.cfg
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\cleveref\cleveref.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\cleveref\cleveref.sty
 INPUT main_thesis.aux
 INPUT main_thesis.aux
 OUTPUT main_thesis.aux
@@ -208,12 +210,6 @@ INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
 INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
 INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
 INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
-INPUT tables\calculated_fluxes.tex
-INPUT tables\calculated_fluxes.tex
-INPUT tables\rxns_smallYeast.tex
-INPUT tables\rxns_smallYeast.tex
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd
 INPUT images\nonzerofluxes_3.eps
 INPUT .\images\nonzerofluxes_3.eps
 INPUT .\images\nonzerofluxes_3.eps
@@ -246,21 +242,11 @@ INPUT .\images\yeast8_github.png
 INPUT .\images\yeast8_github.png
 INPUT .\images\yeast8_github.png
 INPUT .\images\yeast8_github.png
-INPUT images\Gam_fitting.jpg
-INPUT .\images\Gam_fitting.jpg
-INPUT .\images\Gam_fitting.jpg
-INPUT .\images\Gam_fitting.jpg
-INPUT .\images\Gam_fitting.jpg
 INPUT images\fba.jpg
 INPUT .\images\fba.jpg
 INPUT .\images\fba.jpg
 INPUT .\images\fba.jpg
 INPUT .\images\fba.jpg
-INPUT images\fva_ranges.jpg
-INPUT .\images\fva_ranges.jpg
-INPUT .\images\fva_ranges.jpg
-INPUT .\images\fva_ranges.jpg
-INPUT .\images\fva_ranges.jpg
 INPUT images\phpp.jpg
 INPUT .\images\phpp.jpg
 INPUT .\images\phpp.jpg
@@ -271,46 +257,20 @@ INPUT .\images\ll-achrb.png
 INPUT .\images\ll-achrb.png
 INPUT .\images\ll-achrb.png
 INPUT .\images\ll-achrb.png
-INPUT images\sampling_scatter_gluo2.jpg
-INPUT .\images\sampling_scatter_gluo2.jpg
-INPUT .\images\sampling_scatter_gluo2.jpg
-INPUT .\images\sampling_scatter_gluo2.jpg
-INPUT .\images\sampling_scatter_gluo2.jpg
-INPUT images\sampling_Hist_Glycolysis.jpg
-INPUT .\images\sampling_Hist_Glycolysis.jpg
-INPUT .\images\sampling_Hist_Glycolysis.jpg
-INPUT .\images\sampling_Hist_Glycolysis.jpg
-INPUT .\images\sampling_Hist_Glycolysis.jpg
-INPUT images\sampling_Scatter_Glycolysis_1.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_1.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_1.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_1.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_1.jpg
-INPUT images\sampling_Scatter_Glycolysis_2.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_2.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_2.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_2.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_2.jpg
-INPUT images\sampling_Hist_TCA.jpg
-INPUT .\images\sampling_Hist_TCA.jpg
-INPUT .\images\sampling_Hist_TCA.jpg
-INPUT .\images\sampling_Hist_TCA.jpg
-INPUT .\images\sampling_Hist_TCA.jpg
-INPUT images\sampling_Scatter_TCA.jpg
-INPUT .\images\sampling_Scatter_TCA.jpg
-INPUT .\images\sampling_Scatter_TCA.jpg
-INPUT .\images\sampling_Scatter_TCA.jpg
-INPUT .\images\sampling_Scatter_TCA.jpg
-INPUT images\sampling_Hist_PPP.jpg
-INPUT .\images\sampling_Hist_PPP.jpg
-INPUT .\images\sampling_Hist_PPP.jpg
-INPUT .\images\sampling_Hist_PPP.jpg
-INPUT .\images\sampling_Hist_PPP.jpg
-INPUT images\sampling_Scatter_PPP.jpg
-INPUT .\images\sampling_Scatter_PPP.jpg
-INPUT .\images\sampling_Scatter_PPP.jpg
-INPUT .\images\sampling_Scatter_PPP.jpg
-INPUT .\images\sampling_Scatter_PPP.jpg
+INPUT chapters\results.tex
+INPUT chapters\results.tex
+INPUT tables\calculated_fluxes.tex
+INPUT tables\calculated_fluxes.tex
+INPUT images\Gam_fitting.jpg
+INPUT .\images\Gam_fitting.jpg
+INPUT .\images\Gam_fitting.jpg
+INPUT .\images\Gam_fitting.jpg
+INPUT .\images\Gam_fitting.jpg
+INPUT images\fva_ranges.jpg
+INPUT .\images\fva_ranges.jpg
+INPUT .\images\fva_ranges.jpg
+INPUT .\images\fva_ranges.jpg
+INPUT .\images\fva_ranges.jpg
 INPUT images\srd_fba.jpg
 INPUT .\images\srd_fba.jpg
 INPUT .\images\srd_fba.jpg
@@ -331,10 +291,6 @@ INPUT .\images\sgd_moma.jpg
 INPUT .\images\sgd_moma.jpg
 INPUT .\images\sgd_moma.jpg
 INPUT .\images\sgd_moma.jpg
-INPUT tables\essential_genes_y8.tex
-INPUT tables\essential_genes_y8.tex
-INPUT chapters\results.tex
-INPUT chapters\results.tex
 INPUT chapters\discussion.tex
 INPUT chapters\discussion.tex
 INPUT chapters\remainings.tex
@@ -350,14 +306,10 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
-INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi6.pfb
-INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr6.pfb
-INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
