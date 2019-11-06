@@ -4,6 +4,29 @@
   \def\url#1{{\tt #1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{}\fi
 
+\bibitem{futuyma2001evolution}
+Futuyma, D.~J. and T.~R. Meagher, \enquote{Evolution, science and society:
+  evolutionary biology and the national research agenda.}, {\em California
+  Journal of Science Education\/}, Vol.~1, No.~2, pp. 19--32, 2001.
+
+\bibitem{hird2017evolutionary}
+Hird, S.~M., \enquote{Evolutionary biology needs wild microbiomes}, {\em
+  Frontiers in microbiology\/}, Vol.~8, p. 725, 2017.
+
+\bibitem{nielsen2016engineering}
+Nielsen, J. and J.~D. Keasling, \enquote{Engineering cellular metabolism}, {\em
+  Cell\/}, Vol. 164, No.~6, pp. 1185--1197, 2016.
+
+\bibitem{garland2009experimental}
+Garland, T. and M.~R. Rose, {\em Experimental evolution: concepts, methods, and
+  applications of selection experiments\/}, University of California Press
+  Berkeley, CA, 2009.
+
+\bibitem{mcdonald2019microbial}
+McDonald, M.~J., \enquote{Microbial Experimental Evolution--a proving ground
+  for evolutionary theory and a tool for discovery}, {\em EMBO reports\/},
+  Vol.~20, No.~8, 2019.
+
 \bibitem{kitano2002systems}
 Kitano, H., \enquote{Systems biology: a brief overview}, {\em science\/}, Vol.
   295, No. 5560, pp. 1662--1664, 2002.
@@ -175,66 +198,6 @@ Lopes, H. and I.~Rocha, \enquote{Genome-scale modeling of yeast: chronology,
   applications and critical perspectives}, {\em FEMS yeast research\/},
   Vol.~17, No.~5, 2017.
 
-\bibitem{arslan2018physiological}
-Arslan, M., C.~Holyavkin, H.~{\.I}. K{\i}sakesen, A.~Topalo{\u{g}}lu,
-  Y.~S{\"u}rmeli and Z.~P. {\c{C}}akar, \enquote{Physiological and
-  transcriptomic analysis of a chronologically long-lived Saccharomyces
-  cerevisiae strain obtained by evolutionary engineering}, {\em Molecular
-  biotechnology\/}, Vol.~60, No.~7, pp. 468--484, 2018.
-
-\bibitem{nilsson2016metabolic}
-Nilsson, A. and J.~Nielsen, \enquote{Metabolic trade-offs in yeast are caused
-  by F1F0-ATP synthase}, {\em Scientific reports\/}, Vol.~6, p. 22264, 2016.
-
-\bibitem{agren2013raven}
-Agren, R., L.~Liu, S.~Shoaie, W.~Vongsangnak, I.~Nookaew and J.~Nielsen,
-  \enquote{The RAVEN toolbox and its use for generating a genome-scale
-  metabolic model for Penicillium chrysogenum}, {\em PLoS computational
-  biology\/}, Vol.~9, No.~3, p. e1002980, 2013.
-
-\bibitem{beg2007intracellular}
-Beg, Q.~K., A.~Vazquez, J.~Ernst, M.~A. de~Menezes, Z.~Bar-Joseph, A.-L.
-  Barab{\'a}si and Z.~N. Oltvai, \enquote{Intracellular crowding defines the
-  mode and sequence of substrate uptake by Escherichia coli and constrains its
-  metabolic activity}, {\em Proceedings of the National Academy of Sciences\/},
-  Vol. 104, No.~31, pp. 12663--12668, 2007.
-
-\bibitem{adadi2012prediction}
-Adadi, R., B.~Volkmer, R.~Milo, M.~Heinemann and T.~Shlomi, \enquote{Prediction
-  of microbial growth rate versus biomass yield by a metabolic network with
-  kinetic parameters}, {\em PLoS computational biology\/}, Vol.~8, No.~7, p.
-  e1002575, 2012.
-
-\bibitem{schomburg2012brenda}
-Schomburg, I., A.~Chang, S.~Placzek, C.~S{\"o}hngen, M.~Rother, M.~Lang,
-  C.~Munaretto, S.~Ulas, M.~Stelzer, A.~Grote {\em et~al.\/}, \enquote{BRENDA
-  in 2013: integrated reactions, kinetic data, enzyme function data, improved
-  disease classification: new options and contents in BRENDA}, {\em Nucleic
-  acids research\/}, Vol.~41, No.~D1, pp. D764--D772, 2012.
-
-\bibitem{AvlantGithub}
-Nilsson, A., \enquote{solveLinMin: Code of Implementation of pFBA}, GitHub,
-  SysBioChalmers, EnzymeConstrainedSmallYeast, sourceCode, solveLinMin, 2019.
-
-\bibitem{cline2007integration}
-Cline, M.~S., M.~Smoot, E.~Cerami, A.~Kuchinsky, N.~Landys, C.~Workman,
-  R.~Christmas, I.~Avila-Campilo, M.~Creech, B.~Gross {\em et~al.\/},
-  \enquote{Integration of biological networks and gene expression data using
-  Cytoscape}, {\em Nature protocols\/}, Vol.~2, No.~10, p. 2366, 2007.
-
-\bibitem{konig2010fluxviz}
-K{\"o}nig, M. and H.-G. Holzh{\"u}tter, \enquote{Fluxviz—Cytoscape plug-in
-  for visualization of flux distributions in networks}, {\em Genome Informatics
-  2010: Genome Informatics Series Vol. 24\/}, pp. 96--103, World Scientific,
-  2010.
-
-\bibitem{hucka2018systems}
-Hucka, M., F.~T. Bergmann, A.~Dr{\"a}ger, S.~Hoops, S.~M. Keating,
-  N.~Le~Nov{\`e}re, C.~J. Myers, B.~G. Olivier, S.~Sahle, J.~C. Schaff {\em
-  et~al.\/}, \enquote{The Systems Biology Markup Language (SBML): language
-  specification for level 3 version 2 core}, {\em Journal of integrative
-  bioinformatics\/}, Vol.~15, No.~1, 2018.
-
 \bibitem{lu2019consensus}
 Lu, H., F.~Li, B.~J. S{\'a}nchez, Z.~Zhu, G.~Li, I.~Domenzain,
   S.~Marci{\v{s}}auskas, P.~M. Anton, D.~Lappa, C.~Lieven {\em et~al.\/},
@@ -295,10 +258,5 @@ Saa, P.~A. and L.~K. Nielsen, \enquote{ll-ACHRB: a scalable algorithm for
 Schellenberger, J. and B.~{\O}. Palsson, \enquote{Use of randomized sampling
   for analysis of metabolic networks}, {\em Journal of biological chemistry\/},
   Vol. 284, No.~9, pp. 5457--5461, 2009.
-
-\bibitem{van1998effect}
-Van~Hoek, P., J.~P. Van~Dijken and J.~T. Pronk, \enquote{Effect of specific
-  growth rate on fermentative capacity of baker’s yeast}, {\em Appl. Environ.
-  Microbiol.\/}, Vol.~64, No.~11, pp. 4226--4233, 1998.
 
 \end{thebibliography}

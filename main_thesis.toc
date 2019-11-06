@@ -1,41 +1,22 @@
-\contentsline {chapter}{LIST OF FIGURES}{iii}% 
-\contentsline {chapter}{LIST OF TABLES}{v}% 
-\contentsline {chapter}{\numberline {1.}INTRODUCTION}{1}% 
-\contentsline {section}{\numberline {1.1.} Adaptive Evolutionary Engineering}{1}% 
-\contentsline {section}{\numberline {1.2.} Significance of Thesis}{1}% 
-\contentsline {chapter}{\numberline {2.}Theoretical Background}{2}% 
-\contentsline {section}{\numberline {2.1.} Systems Biology}{2}% 
-\contentsline {subsection}{\numberline {2.1.1.} Metabolic Networks}{3}% 
-\contentsline {subsection}{\numberline {2.1.2.} Mathematical Representation of Metabolic Networks}{6}% 
-\contentsline {subsection}{\numberline {2.1.3.} Constraint-Based Modeling}{6}% 
-\contentsline {section}{\numberline {2.2.} \emph {Saccharomyces cerevisiae}}{7}% 
-\contentsline {subsection}{\numberline {2.2.1.} Central Carbon Metabolism of \emph {S. cerevisiae}}{7}% 
-\contentsline {subsection}{\numberline {2.2.2.} Adaptive Evolution Studies on \emph {S. cerevisiae} (Palsson 2015)}{8}% 
-\contentsline {subsection}{\numberline {2.2.3.} Metabolic Models of \emph {S. cerevisiae}}{8}% 
-\contentsline {subsection}{\numberline {2.2.4.} Applications of \emph {S. cerevisiae} GSMMs}{8}% 
-\contentsline {chapter}{\numberline {3.}MATERIALS AND METHODS (Petek)}{10}% 
-\contentsline {section}{\numberline {3.1.} Experimental Data Preparation}{10}% 
-\contentsline {subsection}{\numberline {3.1.1.} Data Acquisition}{10}% 
-\contentsline {subsection}{\numberline {3.1.2.} Determination of Rates}{12}% 
-\contentsline {section}{\numberline {3.2.} Model Selection}{13}% 
-\contentsline {section}{\numberline {3.3.} Flux Balance Analysis}{14}% 
-\contentsline {section}{\numberline {3.4.} Visualization of the Model}{16}% 
-\contentsline {chapter}{\numberline {4.}MATERIALS AND METHODS (Yeast8)}{18}% 
-\contentsline {section}{\numberline {4.1.} Consensus \emph {S. cerevisiae} Metabolic Model}{18}% 
-\contentsline {section}{\numberline {4.2.} Flux Balance Analysis}{19}% 
-\contentsline {section}{\numberline {4.3.} Phenotype Phase Plane Construction}{21}% 
-\contentsline {section}{\numberline {4.4.} Flux Variability Analysis}{22}% 
-\contentsline {section}{\numberline {4.5.} Random Sampling of Solution Space}{23}% 
-\contentsline {section}{\numberline {4.6.} Expression Data Analysis}{24}% 
-\contentsline {section}{\numberline {4.7.} Integration of Expression Data Into Model}{25}% 
-\contentsline {chapter}{\numberline {5.}RESULTS}{26}% 
-\contentsline {section}{\numberline {5.1.} Petek Results}{26}% 
-\contentsline {section}{\numberline {5.2.} Chemostat Simulation: GAM Fitting}{26}% 
-\contentsline {section}{\numberline {5.3.} Flux Balance Analysis Results}{27}% 
-\contentsline {section}{\numberline {5.4.} Flux Variability Analysis}{27}% 
-\contentsline {section}{\numberline {5.5.} Sampling Results}{29}% 
-\contentsline {section}{\numberline {5.6.} Single Gene and Reaction Knock-Out Simulations}{29}% 
-\contentsline {chapter}{\numberline {6.}DISCUSSION}{32}% 
-\contentsline {chapter}{\numberline {7.}EXPANDABLE TOPICS}{33}% 
-\contentsline {section}{\numberline {7.1.} Following will be added into introduction}{33}% 
-\contentsline {chapter}{REFERENCES}{34}% 
+\contentsline {chapter}{\numberline {1.}INTRODUCTION}{2}% 
+\contentsline {chapter}{\numberline {2.}THEORETICAL BACKGROUND}{3}% 
+\contentsline {section}{\numberline {2.1.} Adaptive Laboratory Evolution}{3}% 
+\contentsline {section}{\numberline {2.2.} Systems Biology}{3}% 
+\contentsline {subsection}{\numberline {2.2.1.} Metabolic Networks}{4}% 
+\contentsline {subsection}{\numberline {2.2.2.} Mathematical Representation of Metabolic Networks}{7}% 
+\contentsline {subsection}{\numberline {2.2.3.} Constraint-Based Modeling}{7}% 
+\contentsline {section}{\numberline {2.3.} \emph {Saccharomyces cerevisiae}}{8}% 
+\contentsline {subsection}{\numberline {2.3.1.} Central Carbon Metabolism of \emph {S. cerevisiae}}{8}% 
+\contentsline {subsection}{\numberline {2.3.2.} Adaptive Evolution Studies on \emph {S. cerevisiae} (Palsson 2015)}{9}% 
+\contentsline {subsection}{\numberline {2.3.3.} Metabolic Models of \emph {S. cerevisiae}}{9}% 
+\contentsline {subsection}{\numberline {2.3.4.} Applications of \emph {S. cerevisiae} GSMMs}{9}% 
+\contentsline {chapter}{\numberline {3.}MATERIALS AND METHODS}{11}% 
+\contentsline {section}{\numberline {3.1.} Consensus \emph {S. cerevisiae} Metabolic Model}{11}% 
+\contentsline {section}{\numberline {3.2.} Flux Balance Analysis}{12}% 
+\contentsline {section}{\numberline {3.3.} Phenotype Phase Plane Construction}{14}% 
+\contentsline {section}{\numberline {3.4.} Flux Variability Analysis}{15}% 
+\contentsline {section}{\numberline {3.5.} Random Sampling of Solution Space}{16}% 
+\contentsline {section}{\numberline {3.6.} Expression Data Analysis}{17}% 
+\contentsline {section}{\numberline {3.7.} Integration of Expression Data Into Model}{18}% 
+\contentsline {chapter}{REFERENCES}{19}% 
+\noindent APPENDIX\ A:\hspace {1.6ex}APPLICATION \nobreak \leaders \hbox {$\mathsurround \z@ \mkern 4.5mu.\mkern 4.5mu$} \hfill \nobreak \hbox to1.55em{\hss 25}\par 

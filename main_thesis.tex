@@ -17,6 +17,7 @@
 %\pagestyle{empty}
 %\includeonly{introduction} % To only process the given file
 
+
 % For highligts:
 \usepackage{xcolor} % For highligts
 \usepackage{soul}
@@ -25,40 +26,95 @@
 \usepackage{microtype} % to hide warnings abput width
 \usepackage{cleveref} % for chapter refs
 
-\newtheorem{thm}{Theorem}[chapter]
-\newtheorem{prop}[thm]{Proposition}
-\newtheorem{lem}[thm]{Lemma}
-\newtheorem{cor}[thm]{Corollary}
+
+%\newtheorem{thm}{Theorem}[chapter]
+%\newtheorem{prop}[thm]{Proposition}
+%\newtheorem{lem}[thm]{Lemma}
+%\newtheorem{cor}[thm]{Corollary}
 % COVER PAGE
-\title{Computational investigation of adaptive evolution in \emph{S. cerevisiae} by using genome-scale metabolic models}
-\turkcebaslik{TURKCE}
-\degree{B.S., Molecular Biology and Genetics, Canakkale Onsekiz Mart University, 2018}
+\title{Investigation of the metabolic changes in the adaptive evolution strains of \\
+\emph{S. cerevisiae} by using genome-scale metabolic models}
+%\turkcebaslik{Investigation of the metabolic changes in the adaptive evolution strains of \emph{S. cerevisiae} by using genome-scale metabolic models}
+\degree{B.S., Molecular Biology and Genetics, \\
+Canakkale Onsekiz Mart University, 2018}
 \author{Handan Çetin}
 \program{Computational Science and Engineering}
 \subyear{2020}
 
+% APPROVED BY PAGE
+\supervisor{Prof. Name Surname}
+%\cosuperi{Title and Name of Cosupervisor I}
+%\cosuperii{Title and Name of Cosupervisor II}
+\examineri{Assoc. Prof. Name Surname}
+\examinerii{Assist. Prof. Name Surname}
+\examineriii{Name Surname, Ph.D.}
+%\examineriv{}
+%\examinerv{}
+\dateofapproval{DD.MM.YYYY}
 
 \begin{document}
 
-	\pagenumbering{roman}
-	\makemstitle % M.S. thesis
-	\tableofcontents
-	\listoffigures
-	\listoftables
+\pagenumbering{roman}
+\makemstitle % M.S. thesis
+% \makeapprovalpage
+% \begin{acknowledgements}
+% Acknowledgements come here...
+% \end{acknowledgements}
+% \begin{abstract}
+% One page abstract will come here.
+% \end{abstract}
+% \begin{ozet}
+% Bir sayfa uzunluğunda özet gelecektir.
+% \end{ozet}
+\tableofcontents
+%\listoffigures
+%\listoftables
 
-  \clearpage
+%\begin{symbols}
+% The title will be typeset as "LIST OF SYMBOLS".
+%
+% Use a separate \sym command for each symbols definition.
+% First Latin symbols in alphabetical order
 
-	\pagenumbering{arabic}
-	\input{chapters/introduction.tex}
-%	\input{chapters/chapters_overall.tex}
-	\input{chapters/materialsmethods_petek.tex}
-	\input{chapters/materialsmethods_yeast8.tex}
-  \input{chapters/results.tex}
-  \input{chapters/discussion.tex}
-  \input{chapters/remainings.tex}
+%\sym{$a_{ij}$}{Description of $a_{ij}$}
+%\sym{$\mathbf{A}$}{State transition matrix of a hidden Markov model}
+% Then Greek symbols in alphabetical order
+%\sym{}{}
+%\sym{$\alpha$}{Blending parameter \textit{or} scale}
+%\sym{$\beta_t(i)$}{Backward variable}
+%\sym{$\Theta$}{Parameter set}
+%\sym{ }{}
+
+%\end{symbols}
+
+%\begin{abbreviations}
+ % Abbreviations in alphabetical order
+%\sym{2D}{Two Dimensional}
+%\sym{3D}{Three Dimensional}
+%\sym{AAM}{Active Appearance Model}
+%\sym{ASM}{Active Shape Model}
+%\end{abbreviations}
 
 
-	\bibliographystyle{styles/fbe_tez_v11}
-	\bibliography{references}
+
+\pagenumbering{arabic}
+\input{chapters/introduction.tex}
+% \input{chapters/materialsmethods_petek.tex}
+\input{chapters/materialsmethods_yeast8.tex}
+% \input{chapters/results.tex}
+% \input{chapters/discussion.tex}
+% \input{chapters/remainings.tex}
+
+% \nocite{NewEntry1,NewEntry2,NewEntry3,NewEntry4,NewEntry5,
+% NewEntry6,
+% NewEntry7,NewEntry8,NewEntry9,NewEntry10,NewEntry11,NewEntry12}
+
+%\cite{*}
+\bibliographystyle{styles/fbe_tez_v11}
+\bibliography{references}
+
+\appendix
+\chapter{APPLICATION}
+The appendices start here. After references section.
 
 \end{document}

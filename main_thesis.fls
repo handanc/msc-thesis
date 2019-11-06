@@ -1,5 +1,5 @@
-PWD C:\Users\hncetin\OneDrive\Belgeler\Thesis Studies\Thesis
-INPUT C:\Users\hncetin\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
+PWD C:\Users\cetinh\Documents\OneDrive\Belgeler\Thesis Studies\Thesis
+INPUT C:\Users\cetinh\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
 INPUT main_thesis.tex
 OUTPUT main_thesis.log
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls
@@ -84,16 +84,18 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\ifpdf.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\ifpdf.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\iftex.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\ifxetex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\ifxetex.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype-pdftex.def
@@ -122,8 +124,8 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\ifluatex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\ifluatex.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-cmr.cfg
@@ -132,7 +134,7 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def
 OUTPUT main_thesis.pdf
-INPUT C:\Users\hncetin\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT C:\Users\cetinh\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT main_thesis.toc
@@ -162,16 +164,10 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsl12.tfm
 OUTPUT main_thesis.toc
-INPUT main_thesis.lof
-INPUT main_thesis.lof
-OUTPUT main_thesis.lof
-INPUT main_thesis.lot
-INPUT main_thesis.lot
-OUTPUT main_thesis.lot
 INPUT chapters\introduction.tex
 INPUT chapters\introduction.tex
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsl12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT images\systemsbiology.png
 INPUT .\images\systemsbiology.png
@@ -194,42 +190,6 @@ INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
 INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
 INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
 INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
-INPUT chapters\materialsmethods_petek.tex
-INPUT chapters\materialsmethods_petek.tex
-INPUT tables\experimental_OD600s_and_growths.tex
-INPUT tables\experimental_OD600s_and_growths.tex
-INPUT tables\experimental_concentrations.tex
-INPUT tables\experimental_concentrations.tex
-INPUT images\GrowthGraphsSmall.eps
-INPUT .\images\GrowthGraphsSmall.eps
-INPUT .\images\GrowthGraphsSmall.eps
-INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
-INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
-INPUT .\images\GrowthGraphsSmall.eps
-INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
-INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
-INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
-INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
-INPUT images\nonzerofluxes_3.eps
-INPUT .\images\nonzerofluxes_3.eps
-INPUT .\images\nonzerofluxes_3.eps
-INPUT .\images\nonzerofluxes_3-eps-converted-to.pdf
-INPUT .\images\nonzerofluxes_3-eps-converted-to.pdf
-INPUT .\images\nonzerofluxes_3.eps
-INPUT .\images\nonzerofluxes_3-eps-converted-to.pdf
-INPUT .\images\nonzerofluxes_3-eps-converted-to.pdf
-INPUT .\images\nonzerofluxes_3-eps-converted-to.pdf
-INPUT .\images\nonzerofluxes_3-eps-converted-to.pdf
-INPUT images\FluxDistributionsonMap.eps
-INPUT .\images\FluxDistributionsonMap.eps
-INPUT .\images\FluxDistributionsonMap.eps
-INPUT .\images\FluxDistributionsonMap-eps-converted-to.pdf
-INPUT .\images\FluxDistributionsonMap-eps-converted-to.pdf
-INPUT .\images\FluxDistributionsonMap.eps
-INPUT .\images\FluxDistributionsonMap-eps-converted-to.pdf
-INPUT .\images\FluxDistributionsonMap-eps-converted-to.pdf
-INPUT .\images\FluxDistributionsonMap-eps-converted-to.pdf
-INPUT .\images\FluxDistributionsonMap-eps-converted-to.pdf
 INPUT chapters\materialsmethods_yeast8.tex
 INPUT chapters\materialsmethods_yeast8.tex
 INPUT images\modelstats.png
@@ -242,11 +202,6 @@ INPUT .\images\yeast8_github.png
 INPUT .\images\yeast8_github.png
 INPUT .\images\yeast8_github.png
 INPUT .\images\yeast8_github.png
-INPUT images\fba.jpg
-INPUT .\images\fba.jpg
-INPUT .\images\fba.jpg
-INPUT .\images\fba.jpg
-INPUT .\images\fba.jpg
 INPUT images\phpp.jpg
 INPUT .\images\phpp.jpg
 INPUT .\images\phpp.jpg
@@ -257,44 +212,6 @@ INPUT .\images\ll-achrb.png
 INPUT .\images\ll-achrb.png
 INPUT .\images\ll-achrb.png
 INPUT .\images\ll-achrb.png
-INPUT chapters\results.tex
-INPUT chapters\results.tex
-INPUT tables\calculated_fluxes.tex
-INPUT tables\calculated_fluxes.tex
-INPUT images\Gam_fitting.jpg
-INPUT .\images\Gam_fitting.jpg
-INPUT .\images\Gam_fitting.jpg
-INPUT .\images\Gam_fitting.jpg
-INPUT .\images\Gam_fitting.jpg
-INPUT images\fva_ranges.jpg
-INPUT .\images\fva_ranges.jpg
-INPUT .\images\fva_ranges.jpg
-INPUT .\images\fva_ranges.jpg
-INPUT .\images\fva_ranges.jpg
-INPUT images\srd_fba.jpg
-INPUT .\images\srd_fba.jpg
-INPUT .\images\srd_fba.jpg
-INPUT .\images\srd_fba.jpg
-INPUT .\images\srd_fba.jpg
-INPUT images\srd_moma.jpg
-INPUT .\images\srd_moma.jpg
-INPUT .\images\srd_moma.jpg
-INPUT .\images\srd_moma.jpg
-INPUT .\images\srd_moma.jpg
-INPUT images\sgd_fba.jpg
-INPUT .\images\sgd_fba.jpg
-INPUT .\images\sgd_fba.jpg
-INPUT .\images\sgd_fba.jpg
-INPUT .\images\sgd_fba.jpg
-INPUT images\sgd_moma.jpg
-INPUT .\images\sgd_moma.jpg
-INPUT .\images\sgd_moma.jpg
-INPUT .\images\sgd_moma.jpg
-INPUT .\images\sgd_moma.jpg
-INPUT chapters\discussion.tex
-INPUT chapters\discussion.tex
-INPUT chapters\remainings.tex
-INPUT chapters\remainings.tex
 INPUT main_thesis.bbl
 INPUT main_thesis.bbl
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def

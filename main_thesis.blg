@@ -17,10 +17,6 @@ Repeated entry---line 800 of file references.bib
  : @article{aung2013revising
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 820 of file references.bib
- : @article{nilsson2016metabolic
- :                              ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 850 of file references.bib
  : @article{mahadevan2003effects
  :                              ,
@@ -29,4 +25,4 @@ Repeated entry---line 939 of file references.bib
  : @article{saa2016ll
  :                   ,
 I'm skipping whatever remains of this entry
-(There were 7 error messages)
+(There were 6 error messages)
