@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.4)  6 NOV 2019 20:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.4)  12 NOV 2019 11:28
 entering extended mode
 **./main_thesis.tex
 (main_thesis.tex
@@ -448,13 +448,85 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-0.def"
-File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) [1
+(chapters/introduction.tex
+Chapter 1.
+[1{C:/Users/cetinh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-{C:/Users/cetinh/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (main_thes
-is.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
+
+]
+Chapter 2.
+<images/ALE.png, id=8, 774.64406pt x 581.17125pt>
+File: images/ALE.png Graphic file (type png)
+<use images/ALE.png>
+Package pdftex.def Info: images/ALE.png  used on input line 17.
+(pdftex.def)             Requested size: 441.01772pt x 330.872pt.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 2
+4.
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\omlcmr.fd"
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 24.
+ [2
+
+] [3 <./images/ALE.png (PNG copy)>]
+<images/systemsbiology.png, id=16, 974.13937pt x 450.9347pt>
+File: images/systemsbiology.png Graphic file (type png)
+<use images/systemsbiology.png>
+Package pdftex.def Info: images/systemsbiology.png  used on input line 37.
+(pdftex.def)             Requested size: 352.8155pt x 163.3203pt.
+ [4] [5 <./images/systemsbiology.png>]
+<images/modelreconstruction.png, id=25, 1016.29688pt x 802.49812pt>
+File: images/modelreconstruction.png Graphic file (type png)
+<use images/modelreconstruction.png>
+Package pdftex.def Info: images/modelreconstruction.png  used on input line 53.
+
+(pdftex.def)             Requested size: 441.01772pt x 348.23895pt.
+ [6 <./images/modelreconstruction.png>] [7]
+<images/ToyNetwork.png, id=34, 922.19531pt x 173.89969pt>
+File: images/ToyNetwork.png Graphic file (type png)
+<use images/ToyNetwork.png>
+Package pdftex.def Info: images/ToyNetwork.png  used on input line 83.
+(pdftex.def)             Requested size: 441.01772pt x 83.16309pt.
+<images/ToyNetworkEquations.png, id=35, 1061.46562pt x 214.55156pt>
+File: images/ToyNetworkEquations.png Graphic file (type png)
+<use images/ToyNetworkEquations.png>
+Package pdftex.def Info: images/ToyNetworkEquations.png  used on input line 95.
+
+(pdftex.def)             Requested size: 441.01772pt x 89.14198pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <./images/ToyNetwork.png>] [9 <./images/ToyNetworkEquations.png>]
+<images/central_carbon_mech_of_s_cerevisiae_kegg.png, id=44, 1413.28pt x 1547.7
+825pt>
+File: images/central_carbon_mech_of_s_cerevisiae_kegg.png Graphic file (type pn
+g)
+<use images/central_carbon_mech_of_s_cerevisiae_kegg.png>
+Package pdftex.def Info: images/central_carbon_mech_of_s_cerevisiae_kegg.png  u
+sed on input line 122.
+(pdftex.def)             Requested size: 441.01772pt x 482.99596pt.
+ [10])
+(chapters/materialsmethods_yeast8.tex [11] [12 <./images/central_carbon_mech_of
+_s_cerevisiae_kegg.png>]
+Chapter 3.
+<images/modelstats.png, id=56, 1890.06125pt x 699.61375pt>
+File: images/modelstats.png Graphic file (type png)
+<use images/modelstats.png>
+Package pdftex.def Info: images/modelstats.png  used on input line 10.
+(pdftex.def)             Requested size: 441.01772pt x 163.24565pt.
+[13
+
+ <./images/modelstats.png>]
+<images/yeast8_github.png, id=62, 618.81187pt x 675.27281pt>
+File: images/yeast8_github.png Graphic file (type png)
+<use images/yeast8_github.png>
+Package pdftex.def Info: images/yeast8_github.png  used on input line 20.
+(pdftex.def)             Requested size: 396.91324pt x 433.14168pt.
+ [14 <./images/yeast8_github.png>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -462,97 +534,37 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ("C:\Program Files\MiKTeX 2.9\tex/latex/microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-))
-\tf@toc=\write3
-\openout3 = `main_thesis.toc'.
+) [15]
 
+LaTeX Warning: Reference `fig:fba' on page 16 undefined on input line 42.
 
-(chapters/introduction.tex [1
-
-]
-Chapter 1.
-[2
-
-]
-Chapter 2.
-[3
-
-]
-<images/systemsbiology.png, id=18, 974.13937pt x 450.9347pt>
-File: images/systemsbiology.png Graphic file (type png)
-<use images/systemsbiology.png>
-Package pdftex.def Info: images/systemsbiology.png  used on input line 23.
-(pdftex.def)             Requested size: 352.8155pt x 163.3203pt.
- [4 <./images/systemsbiology.png>]
-<images/modelreconstruction.png, id=24, 1016.29688pt x 802.49812pt>
-File: images/modelreconstruction.png Graphic file (type png)
-<use images/modelreconstruction.png>
-Package pdftex.def Info: images/modelreconstruction.png  used on input line 39.
-
-(pdftex.def)             Requested size: 441.01772pt x 348.23895pt.
- [5] [6 <./images/modelreconstruction.png>]
-<images/wos_metabolicmodel_search.jpg, id=33, 936.49875pt x 451.6875pt>
-File: images/wos_metabolicmodel_search.jpg Graphic file (type jpg)
-<use images/wos_metabolicmodel_search.jpg>
-Package pdftex.def Info: images/wos_metabolicmodel_search.jpg  used on input li
-ne 56.
-(pdftex.def)             Requested size: 441.01772pt x 212.71356pt.
- [7 <./images/wos_metabolicmodel_search.jpg>]
-<images/central_carbon_mech_of_s_cerevisiae_kegg.png, id=38, 1413.28pt x 1547.7
-825pt>
-File: images/central_carbon_mech_of_s_cerevisiae_kegg.png Graphic file (type pn
-g)
-<use images/central_carbon_mech_of_s_cerevisiae_kegg.png>
-Package pdftex.def Info: images/central_carbon_mech_of_s_cerevisiae_kegg.png  u
-sed on input line 84.
-(pdftex.def)             Requested size: 441.01772pt x 482.99596pt.
- [8])
-(chapters/materialsmethods_yeast8.tex [9] [10 <./images/central_carbon_mech_of_
-s_cerevisiae_kegg.png>]
-Chapter 3.
-<images/modelstats.png, id=50, 1890.06125pt x 699.61375pt>
-File: images/modelstats.png Graphic file (type png)
-<use images/modelstats.png>
-Package pdftex.def Info: images/modelstats.png  used on input line 10.
-(pdftex.def)             Requested size: 441.01772pt x 163.24565pt.
-[11
-
- <./images/modelstats.png>]
-<images/yeast8_github.png, id=55, 618.81187pt x 675.27281pt>
-File: images/yeast8_github.png Graphic file (type png)
-<use images/yeast8_github.png>
-Package pdftex.def Info: images/yeast8_github.png  used on input line 20.
-(pdftex.def)             Requested size: 396.91324pt x 433.14168pt.
- [12 <./images/yeast8_github.png>] [13]
-
-LaTeX Warning: Reference `fig:fba' on page 14 undefined on input line 42.
-
-<images/phpp.jpg, id=67, 1343.0175pt x 545.03625pt>
+<images/phpp.jpg, id=73, 1343.0175pt x 545.03625pt>
 File: images/phpp.jpg Graphic file (type jpg)
 <use images/phpp.jpg>
 Package pdftex.def Info: images/phpp.jpg  used on input line 51.
 (pdftex.def)             Requested size: 441.01772pt x 178.97264pt.
-[14] [15 <./images/phpp.jpg>]
-<images/ll-achrb.png, id=75, 785.93625pt x 536.0025pt>
+[16] [17 <./images/phpp.jpg>]
+<images/ll-achrb.png, id=81, 785.93625pt x 536.0025pt>
 File: images/ll-achrb.png Graphic file (type png)
 <use images/ll-achrb.png>
 Package pdftex.def Info: images/ll-achrb.png  used on input line 79.
 (pdftex.def)             Requested size: 441.01772pt x 300.78093pt.
- [16]) (main_thesis.bbl [17 <./images/ll-achrb.png>] [18] [19
+ [18]) (main_thesis.bbl [19 <./images/ll-achrb.png>] [20] [21
 
-] [20] ("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-32.def"
+] [22] ("C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-32.def"
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-[21] [22] [23]) [24]
+[23] [24] [25] [26]) [27]
 APPENDIX A.
-[25
+[28
 
 ] (main_thesis.aux)
 
@@ -560,13 +572,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 9478 strings out of 492453
- 149451 string characters out of 3129817
+ 9029 strings out of 492453
+ 145041 string characters out of 3129817
  266862 words of memory out of 3000000
- 13536 multiletter control sequences out of 15000+200000
- 14707 words of font info for 98 fonts, out of 3000000 for 9000
+ 13084 multiletter control sequences out of 15000+200000
+ 14865 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,10n,42p,1136b,556s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,10n,42p,1145b,374s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/Mi
@@ -576,9 +588,9 @@ e1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
 2.pfb>
-Output written on main_thesis.pdf (26 pages, 1647781 bytes).
+Output written on main_thesis.pdf (28 pages, 2038157 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
+ 147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 10793 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 10803 words of extra memory for PDF output out of 12000 (max. 10000000)
 

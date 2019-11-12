@@ -1,14 +1,29 @@
 \chapter{INTRODUCTION}
-Evolution has been intensively studied since the publication of \emph{On the Origin of Species} in order to untie the mysteries behind fascinating machineries within living systems. In a broader sense, most of the studies on evolutionary biology have two main goals: (1) To document history of life through evolutionary point of view, and (2) to understand causal mechanisms responsible for the biological diversity that we have on Earth \cite{futuyma2001evolution, hird2017evolutionary}. In addition to these goals, the idea of using pre-existing living systems as cell factories for industrial purposes gained close attention in the last decades \cite{nielsen2016engineering}.
+Evolution has been intensively studied since the publication of \emph{On the Origin of Species} in order to untie the mysteries behind fascinating machineries within living systems. In a broader sense, most of the studies on evolutionary biology have two main goals: (I) To document history of life through evolutionary point of view, and (2) to understand causal mechanisms responsible for the biological diversity that we have on Earth \cite{futuyma2001evolution, hird2017evolutionary}. In addition to these goals, the idea of using pre-existing living systems as cell factories for industrial purposes gained close attention in the last decades \cite{nielsen2016engineering}.
 
-Evolutionary engineering, adaptive laboratory evolution in particular, refers to the experiments in which the environmental conditions are altered gradually to obtain adapted populations in the laboratories \cite{garland2009experimental}. Accumulation of mutations obtained due to environmental alterations through generations, where the favored individuals (mainly the ones with increased fitness) are selected to become parents of the next generation, result a population with advantageous traits compared to starting population. Challenges in the experimental design of evolutionary studies, such as maintenance of the organisms, controlling the environment, and feasibility to the omics analyses make the use of microorganisms in evolutionary studies more suited \cite{mcdonald2019microbial}.
+Evolutionary engineering studies, adaptive laboratory evolution in particular, refers to the experiments in which the environmental conditions are altered gradually to obtain adapted populations in the laboratories \cite{garland2009experimental}. Accumulation of mutations obtained due to environmental alterations through generations, where the favored individuals (mainly the ones with increased fitness) are selected to become parents of the next generation, result a population with advantageous traits compared to starting population. Since one of the main challenges in the evolutionary engineering field is being able to analyze experimental to answer fundamental questions, adaptive evolution studies usually require interdisciplinary research in order to answer fundamental questions. What has changed in the cells through generations? What are the genetic basis for adaptation? Can we evolve any organism to any condition? If so, how? These questions and many more are asked everyday, and the corresponding answers potentially give rise to more questions.
 
-The purpose of this thesis is to show metabolic changes in the adaptation of the yeast \emph{Saccharomyces cerevisiae} using computational methods, specifically genome-scale metabolic models. Evolved yeast strains (such as ethanol tolerant, long-lived, multi-stress resistant strains) are going to be analyzed comparetively to the unevolved strains using intracellular flux distributions obtained with the integration of transcriptomics data. This study will also contribute to the global understanding of metabolic regulations in the organism \emph{S. cerevisiae}, and will be further expandable into metabolic engineering studies.
+The purpose of this thesis is to enlighten metabolic changes in the adaptation of the yeast \emph{S. cerevisiae} using computational methods, specifically genome-scale metabolic models. Evolved yeast strains (such as ethanol tolerant, long-lived, multi-stress resistant strains) are going to be analyzed comparetively to the unevolved strains using intracellular flux distributions obtained with the integration of transcriptomics data. This study will also contribute to the global understanding of metabolic regulations in yeast, and will be further expandable into metabolic engineering studies.
 
 \chapter{THEORETICAL BACKGROUND}
 
 \section{Adaptive Laboratory Evolution}
-Since the very first laboratory evolution experiment was published in the late 19th century by William Dallinger, technological advancements allowed researchers to employ fully-controlled experiments for strain engineering, especially on \emph{Escherichia coli} and \emph{Saccharomyces cerevisiae} strains, to achieve desired traits \cite{dragosits2013adaptive}.
+Since the very first laboratory evolution experiment was published in the late 19th century by William Dallinger, technological advancements allowed researchers to employ fully-controlled experiments for strain engineering to achieve desired traits \cite{dragosits2013adaptive}. Challenges in the experimental design of evolutionary studies, such as maintenance of the generations, controlling the environment, and feasibility to perform data analysis make the use of microorganisms in evolutionary studies more suited, especially \emph{Escherichia coli} and \emph{Saccharomyces cerevisiae} given their extensive characterization \cite{mcdonald2019microbial}.
+
+Commonly used approaches of adaptive laboratory evolution (ALE) includes chemostat cultures and serial batch or colony transfers (Figure \ref{fig:ale}). Serial transfer experiments in which the initial population is aliquoted and transferred into a new medium are simpler and cheaper to set up, however the possibility of genetic drift is higher due to random sampling of the population. On the other hand, continuous systems such as chemostat experiments in bioreactors have advantages on maintaining constant growth rates and population sizes, but with increasing experimental cost \cite{winkler2013adaptive}.
+
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[width=1\columnwidth]{ALE.png}
+\end{center}
+\caption[Adaptive laboratory evolution workflow]{ALE methods and workflow. Figure is taken from \cite{dragosits2013adaptive} and \cite{shepelin2018selecting} and will be redrawn altogether.}
+\vskip\baselineskip % Leave a vertical skip below the figure
+\label{fig:ale}
+\end{figure}
+
+In addition to the methodological choice, decision of the selection criteria and the time span for the experiments are critical factors in ALE \cite{dragosits2013adaptive}. Growth rates, survivability in stressful environmental conditions and biomass yields are the most common fitness criteria for a population to be selected. Throughout the selection process, reaching \textgreater 500 generations may take a few weeks or a few months depending on the organism, therefore, detailed planning is essential \cite{conrad2011microbial}.
+
+Capturing genomic changes in the dynamic evolution process is the main goal of an ALE study, therefore frequent data collection in longitudinal manner is a must to unveil molecular details. Next-generation technologies empower researchers to catch even single-nucleotide mutations through genome sequencing and also provide an understanding on broader regulatory changes through gene expression profiles \cite{conrad2011microbial}. Focus of the studying the differences between evolved and unevolved strains may be on the individual protein level or as a system-level trait. Interpreting the system as a network enables verious ways to investigate causality behind adaptive mechanisms and dynamics of evolution \cite{soyer2013evolutionary, long2018adaptive}.
 
 \section{Systems Biology}
 With the increasing availability of the computational tools and the development of high throughput techniques in the omics field, systems biology has shown a strong emergence in the last few years as a key multi-disciplinary field for integrating the multi-layer complexity of biological systems, particularly in the areas of transcriptomics, proteomics, metabolomics and fluxomics \cite{kitano2002systems}. This amount of available data allows researchers to investigate molecular cell processes in a large scales, applying theoretical, experimental and computational methods.
@@ -52,22 +67,46 @@ The ultimate goal of the GSMM reconstruction is to predict flux distribution pro
 
 \begin{figure}[ht]
 \begin{center}
-\includegraphics[width=1\columnwidth]{wos_metabolicmodel_search.jpg}
+% \includegraphics[width=1\columnwidth]{wos_metabolicmodel_search.jpg}
 \end{center}
 \caption[Web of Science artice counts on "metabolic model"]{Web of Science artice counts on "metabolic model"}
 \label{fig:wos_metabolicmodel}
 \end{figure}
 
 \subsection{Mathematical Representation of Metabolic Networks}
-\hl{In this section, there will be a review on} "Mathematical Framework Behind the Reconstruction and Analysis of Genome Scale Metabolic Models" \cite{pinzon2018mathematical}.
+Basic applications of metabolic network modelling, although its framework is developed by engineers or mathematicians, is used by biologists with various mathematical backgrounds \cite{pinzon2018mathematical}. In order to speak with one voice, fundamental concepts of mathematical representation of metabolic networks in GSMM reconstructions will be provided in this section.
 
- This section will be detailed as much as possible since biology majors must understand the basics before reading the methods sections. How the biochemical equations are converted into differential equations? Steady state assumption, mass balances? Stoichiometric matrix formulation and its rank, linearly independent vectors, singular values? etc. Subjects will be similar to course ChE529.
+One can propose a steady-state model for the correlation between the metabolites exist in the network. This model claims that the production and consumption of a metabolites must balance each other \cite{reimers2016steady}. For example, consider the metabolite "A" in the toy network in Figure \ref{fig:ToyNetwork}. It can be taken into cell with the rate of b1, and can be converted into B or C with the rates of v1 and v2 respectively; at the same time, metabolite C can be converted into A with the rate of v3. Note that enzyme kinetics are not considered and these equations are formed only considering mass balances.
 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\columnwidth]{ToyNetwork.png}
+\end{center}
+\caption[Toy network for steady-state assumption]{Toy network for steady-state assumption (will be redrawn).}
+\label{fig:ToyNetwork}
+\end{figure}
+
+If we accept the steady-state assumption, and since we know all the possible reactions passing through metabolite A, we can write following differential equation
+
+d(A)/dt = - v1 - v2 + v3 + b1 = 0
+
+meaning that production rate of metabolite A is equal to its consumption rate. In other words, there will be no accumulation of metabolite A in the cell. Considering we have 3 metabolites and 7 reactions, this representation of reactions can written as a system of linear equations:
+\begin{figure}[h]
+\includegraphics[width=1\columnwidth]{ToyNetworkEquations.png}
+\begin{center}S . v = 0 \end{center}
+\end{figure}
+
+In the above equation, a matrix "S" appears. S matrix consists of stoichiometric coefficients of the reactions A single column of S matrix, representing a single reaction, provides information about the connections between the metabolites participating in that reaction; and a single row of S matrix, representing a metabolite, provides information about the connection of all the reactions in which that metabolite participates.
+
+Next to S matrix a vector "v" appears. Vector "v" is called the flux vector, and it contains the change in concentration of metabolites. In other words, flux vector represents the flow rates or "fluxes" of each metabolite over time.
+
+The solution space of S matrix, in the steady-state assumption, is generated by the null space base vectors of S. Studying on the null space vectors, we can define dead-end reactions (zero rows which mean reactions cannot carry flux), enzyme subsets (rows of scalar multiplies of each other, possibly chain reactions) and independent components (diagonal block structures in the null space, reactions that are independed from the network). Due to the large number of reactions in biological networks, the system is underdetermined and have multiple solutions in a convex flux cone space, referring to multiple steady-states of the cell.
 
 \subsection{Constraint-Based Modeling}
+As explained in the previous section, solution of a the metabolic network is not unique, meaning the model can be found in multiple states of flux distributions. In order to obtain more biologically relavant solutions, v vector can be constrained. \cite{thiele2007bringing}.
 
-\hl{In this section, there will be a review on} "Bringing genomes to life: the use of genome-scale in silico models" \cite{thiele2007bringing}.
-Topics can be identification of constraints (physicochemical constraints, spatial constraints, environmental constraints, regulatory constraints), list of constraint-based modeling methods (optimal solutions, alternate optima, OptKnock, sampling as an unbiased modeling), linear programming, quadratic programming ...
+
+Cellular functions are limited by different types of constraints, which can be grouped in four general categories: fundamental physicochemical, spatial or topological, condition-dependent environmental, and regulatory or self-imposed constraints. Although the first two categories of constraints are assumed to be independent from the environment, the latter two may vary in the simulation.
 
 
 \section{\emph{Saccharomyces cerevisiae}}

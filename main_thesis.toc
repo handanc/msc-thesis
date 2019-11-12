@@ -4,12 +4,12 @@
 \contentsline {section}{\numberline {2.2.} Systems Biology}{3}% 
 \contentsline {subsection}{\numberline {2.2.1.} Metabolic Networks}{4}% 
 \contentsline {subsection}{\numberline {2.2.2.} Mathematical Representation of Metabolic Networks}{7}% 
-\contentsline {subsection}{\numberline {2.2.3.} Constraint-Based Modeling}{7}% 
+\contentsline {subsection}{\numberline {2.2.3.} Constraint-Based Modeling}{8}% 
 \contentsline {section}{\numberline {2.3.} \emph {Saccharomyces cerevisiae}}{8}% 
 \contentsline {subsection}{\numberline {2.3.1.} Central Carbon Metabolism of \emph {S. cerevisiae}}{8}% 
-\contentsline {subsection}{\numberline {2.3.2.} Adaptive Evolution Studies on \emph {S. cerevisiae} (Palsson 2015)}{9}% 
-\contentsline {subsection}{\numberline {2.3.3.} Metabolic Models of \emph {S. cerevisiae}}{9}% 
-\contentsline {subsection}{\numberline {2.3.4.} Applications of \emph {S. cerevisiae} GSMMs}{9}% 
+\contentsline {subsection}{\numberline {2.3.2.} Adaptive Evolution Studies on \emph {S. cerevisiae} (Palsson 2015)}{10}% 
+\contentsline {subsection}{\numberline {2.3.3.} Metabolic Models of \emph {S. cerevisiae}}{10}% 
+\contentsline {subsection}{\numberline {2.3.4.} Applications of \emph {S. cerevisiae} GSMMs}{10}% 
 \contentsline {chapter}{\numberline {3.}MATERIALS AND METHODS}{11}% 
 \contentsline {section}{\numberline {3.1.} Consensus \emph {S. cerevisiae} Metabolic Model}{11}% 
 \contentsline {section}{\numberline {3.2.} Flux Balance Analysis}{12}% 

@@ -22,10 +22,40 @@ Garland, T. and M.~R. Rose, {\em Experimental evolution: concepts, methods, and
   applications of selection experiments\/}, University of California Press
   Berkeley, CA, 2009.
 
+\bibitem{dragosits2013adaptive}
+Dragosits, M. and D.~Mattanovich, \enquote{Adaptive laboratory
+  evolution--principles and applications for biotechnology}, {\em Microbial
+  cell factories\/}, Vol.~12, No.~1, p.~64, 2013.
+
 \bibitem{mcdonald2019microbial}
 McDonald, M.~J., \enquote{Microbial Experimental Evolution--a proving ground
   for evolutionary theory and a tool for discovery}, {\em EMBO reports\/},
   Vol.~20, No.~8, 2019.
+
+\bibitem{winkler2013adaptive}
+Winkler, J., L.~H. Reyes and K.~C. Kao, \enquote{Adaptive laboratory evolution
+  for strain engineering}, {\em Systems Metabolic Engineering\/}, pp. 211--222,
+  Springer, 2013.
+
+\bibitem{shepelin2018selecting}
+Shepelin, D., A.~S.~L. Hansen, R.~Lennen, H.~Luo and M.~J. Herrg{\aa}rd,
+  \enquote{Selecting the best: evolutionary engineering of chemical production
+  in microbes}, {\em Genes\/}, Vol.~9, No.~5, p. 249, 2018.
+
+\bibitem{conrad2011microbial}
+Conrad, T.~M., N.~E. Lewis and B.~{\O}. Palsson, \enquote{Microbial laboratory
+  evolution in the era of genome-scale science}, {\em Molecular systems
+  biology\/}, Vol.~7, No.~1, 2011.
+
+\bibitem{soyer2013evolutionary}
+Soyer, O.~S. and M.~A. O'Malley, \enquote{Evolutionary systems biology: what it
+  is and why it matters}, {\em BioEssays\/}, Vol.~35, No.~8, pp. 696--705,
+  2013.
+
+\bibitem{long2018adaptive}
+Long, C.~P. and M.~R. Antoniewicz, \enquote{How adaptive evolution reshapes
+  metabolism to improve fitness: recent advances and future outlook}, {\em
+  Current opinion in chemical engineering\/}, Vol.~22, pp. 209--215, 2018.
 
 \bibitem{kitano2002systems}
 Kitano, H., \enquote{Systems biology: a brief overview}, {\em science\/}, Vol.
@@ -135,6 +165,11 @@ Stephanopoulos, G., \enquote{Synthetic biology and metabolic engineering}, {\em
 Pinzon, W., H.~Vega, J.~Gonzalez and A.~Pinzon, \enquote{Mathematical Framework
   Behind the Reconstruction and Analysis of Genome Scale Metabolic Models},
   {\em Archives of Computational Methods in Engineering\/}, pp. 1--14, 2018.
+
+\bibitem{reimers2016steady}
+Reimers, A.-M. and A.~C. Reimers, \enquote{The steady-state assumption in
+  oscillating and growing systems}, {\em Journal of theoretical biology\/},
+  Vol. 406, pp. 176--186, 2016.
 
 \bibitem{thiele2007bringing}
 Thiele, I. and B.~{\O}. Palsson, \enquote{Bringing genomes to life: the use of

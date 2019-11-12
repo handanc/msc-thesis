@@ -130,18 +130,63 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-cmr.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-cmr.cfg
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def
-OUTPUT main_thesis.pdf
-INPUT C:\Users\cetinh\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT chapters\introduction.tex
+INPUT chapters\introduction.tex
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-INPUT main_thesis.toc
-INPUT main_thesis.toc
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsl12.tfm
+OUTPUT main_thesis.pdf
+INPUT C:\Users\cetinh\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT images\ALE.png
+INPUT .\images\ALE.png
+INPUT .\images\ALE.png
+INPUT .\images\ALE.png
+INPUT .\images\ALE.png
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
+INPUT images\systemsbiology.png
+INPUT .\images\systemsbiology.png
+INPUT .\images\systemsbiology.png
+INPUT .\images\systemsbiology.png
+INPUT .\images\systemsbiology.png
+INPUT images\modelreconstruction.png
+INPUT .\images\modelreconstruction.png
+INPUT .\images\modelreconstruction.png
+INPUT .\images\modelreconstruction.png
+INPUT .\images\modelreconstruction.png
+INPUT images\ToyNetwork.png
+INPUT .\images\ToyNetwork.png
+INPUT .\images\ToyNetwork.png
+INPUT .\images\ToyNetwork.png
+INPUT .\images\ToyNetwork.png
+INPUT images\ToyNetworkEquations.png
+INPUT .\images\ToyNetworkEquations.png
+INPUT .\images\ToyNetworkEquations.png
+INPUT .\images\ToyNetworkEquations.png
+INPUT .\images\ToyNetworkEquations.png
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbxti10.tfm
+INPUT images\central_carbon_mech_of_s_cerevisiae_kegg.png
+INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
+INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
+INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
+INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
+INPUT chapters\materialsmethods_yeast8.tex
+INPUT chapters\materialsmethods_yeast8.tex
+INPUT images\modelstats.png
+INPUT .\images\modelstats.png
+INPUT .\images\modelstats.png
+INPUT .\images\modelstats.png
+INPUT .\images\modelstats.png
+INPUT images\yeast8_github.png
+INPUT .\images\yeast8_github.png
+INPUT .\images\yeast8_github.png
+INPUT .\images\yeast8_github.png
+INPUT .\images\yeast8_github.png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
@@ -164,44 +209,6 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-OUTPUT main_thesis.toc
-INPUT chapters\introduction.tex
-INPUT chapters\introduction.tex
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsl12.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-INPUT images\systemsbiology.png
-INPUT .\images\systemsbiology.png
-INPUT .\images\systemsbiology.png
-INPUT .\images\systemsbiology.png
-INPUT .\images\systemsbiology.png
-INPUT images\modelreconstruction.png
-INPUT .\images\modelreconstruction.png
-INPUT .\images\modelreconstruction.png
-INPUT .\images\modelreconstruction.png
-INPUT .\images\modelreconstruction.png
-INPUT images\wos_metabolicmodel_search.jpg
-INPUT .\images\wos_metabolicmodel_search.jpg
-INPUT .\images\wos_metabolicmodel_search.jpg
-INPUT .\images\wos_metabolicmodel_search.jpg
-INPUT .\images\wos_metabolicmodel_search.jpg
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbxti10.tfm
-INPUT images\central_carbon_mech_of_s_cerevisiae_kegg.png
-INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
-INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
-INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
-INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
-INPUT chapters\materialsmethods_yeast8.tex
-INPUT chapters\materialsmethods_yeast8.tex
-INPUT images\modelstats.png
-INPUT .\images\modelstats.png
-INPUT .\images\modelstats.png
-INPUT .\images\modelstats.png
-INPUT .\images\modelstats.png
-INPUT images\yeast8_github.png
-INPUT .\images\yeast8_github.png
-INPUT .\images\yeast8_github.png
-INPUT .\images\yeast8_github.png
-INPUT .\images\yeast8_github.png
 INPUT images\phpp.jpg
 INPUT .\images\phpp.jpg
 INPUT .\images\phpp.jpg
