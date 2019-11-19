@@ -1,29 +1,5 @@
 \chapter{MATERIALS AND METHODS (Petek)}
 
-\section{Experimental Data Preparation}
-\subsection{Data Acquisition}
-Extracellular metabolomics data are obtained from Cakar's Lab \cite{arslan2018physiological}.Briefly, they perform ethyl methane sulfonate (EMS) mutagenesis  on the prototrophic \emph{Saccharomyces cerevisiae} strain CEN.PK 113-7D (MATa, MAL2-8c, SUC2) to increase the genetic diversity as an evolutionary engineering selection strategy. Cells were inoculated in 2\% Yeast Minimal Media (YMM), and the extracellular concentrations of glucose, ethanol, glycerol and acetate were measured at different time points. OD\textsubscript{600} values were determined by a spectrophotometer. Additionally, cell dry weight analysis was conducted to determine biomass production. Acquired extracellular metabolite concentrations, OD\textsubscript{600} values and dry weights of the reference strain (without mutagenesis) were used in this study are collected in Table \ref{table:experimental_data} and Table \ref{table:experimental_OD600s_and_growths}.
-
-\input{tables/experimental_OD600s_and_growths.tex}
-\input{tables/experimental_concentrations.tex}
-
-\subsection{Determination of Rates}
-As the slope in the curve of lnOD\textsubscript{600} as a function of time gives the growth rates of cells, natural logarithm of OD\textsubscript{600} values were calculated to obtain specific growth rates by using the equation \ref{eq:growthrates}.
-  \begin{equation}
-      \ \mu = \frac{\Delta \ln{OD_{600}}}{\Delta t}
-      \label{eq:growthrates}
-  \end{equation}
-
-In order to determine uptake and secretion rates of the metabolites, the steady-state assumption is applied in three hours intervals as the shortest measured time-points. Missing data on cell dry weights are estimated from the OD\textsubscript{600} values, and these cell dry weight data is used to calculate fluxes (in the unit of mmol/gDWh). Measurement of the cell dry weight at the 3rd hour was crucial for the steady-state assumption, however data was not available from the experiments. Curve trend of the OD\textsubscript{600} plot is used as a guide to estimate cell dry weight (Figure \ref{fig:GrowthGraphs}) \hl{Need a method here: Estimation approach, maybe regression or curve fitting?}. Calculated flux values can be found in the Table \ref{table:calculated_fluxes}.
-\begin{figure}[H]
-  \begin{center}
-  \includegraphics[width=1\columnwidth]{GrowthGraphsSmall.eps}
-  \end{center}
-  \caption[OD\textsubscript{600}, lnOD\textsubscript{600}, cell dry weights and growth rates]{OD\textsubscript{600}, lnOD\textsubscript{600}, cell dry weights and growth rates graphs. Estimated missing cell dry weight data is shown in red color.}
-\label{fig:GrowthGraphs}
-\end{figure}
-
-
 \section{Model Selection}
 iAN50 \cite{nilsson2016metabolic}, a stoichiometric model of intermediary metabolism including glycolysis, the pentose phosphate pathway (PPP), anaerobic excretion, citric acid cycle (TCA cycle), oxidative phosphorylation, and uptake pathways for galactose, ethanol and acetate is used to simulate batch conditions. The model was implemented based on the first GSMM of yeast, iFF708 \cite{forster2003genome} with the addition of the yeast intermediary metabolism from the RAVEN toolbox \cite{agren2013raven}, and finally curated using the KEGG database \cite{kanehisa2000kegg}.
 
@@ -34,6 +10,7 @@ Biomass equation (Eq. \ref{eq:model_biomass}) in the model was left as a functio
   = \textrm{BIOMASS}
    \label{eq:model_biomass}
 \end{multline}
+
 Enzymatic reactions that are found in the model is collected in Table \ref{table:rxns_smallYeast}. In contrast to other GSMM's, each reaction was irreversible in the iAN50. This was achieved by splitting each reversible reaction into two seperate reactions in both directions.
 
 Another reason to select iAN50 is that the total masses of enzymes catalyzing reactions in the GSMM were already estimated, and fluxes through these reactions were constrained to the biologic level, using an approach similar to intracellular crowding method using kinetic parameters \cite{beg2007intracellular, adadi2012prediction}. To clarify the method briefly, a flux value for each reaction was obtained by applying a standart flux balance analysis, and this value was divided by the maximum \emph{in vitro} activity collected from the enzyme database BRENDA \cite{schomburg2012brenda}, and a saturation factor of 0.5 (half) for simplification. Therefore, the mass of the enzymes required for that particular reaction was estimated and the constrains are applied to the corresponding enzymatic reactions.
@@ -44,28 +21,6 @@ Another reason to select iAN50 is that the total masses of enzymes catalyzing re
 \section{Flux Balance Analysis}
 Uptake reaction of glucose with the secretion reactions of glycerol and acetate were constrained according to the calculated flux values in Table \ref{table:calculated_fluxes}, for both time intervals seperately. Since the main goal was to validate model for experimental conditions, ethanol was not constrained in regard to be used as the control metabolite. Experiments were done in fully aerobic conditions, therefore oxygen uptake reaction was set unlimited.
 
-Coefficients of the biomass constituents are defined as the same as the batch conditions in the reference article \cite{nilsson2016metabolic}, for the reason that detailed knowledge is not available in the acquired experimental data. Coefficients for the final biomass equation can be found in the Table \ref{table:biomass_coefficients}.
-
-\begin{table}[H]
-\vskip\baselineskip
-\caption[Biomass coefficients]{Biomass coefficients that are used in the simulation.}
-\begin{center}
-  \begin{tabular}{ll}
-  \hline
-  \textbf{Constituent} & \textbf{Coefficient} \\ \hline
-  Protein              & 3.703704             \\
-  RNA                  & 0.37037              \\
-  DNA                  & 0.018519             \\
-  Lipid                & 0.041667             \\
-  Glycogen             & 0.030864             \\
-  Trehalose            & 0.029214             \\
-  Mannan               & 0                    \\
-  Glucan               & 2.469136             \\
-  Maintainance         & 40                   \\ \hline
-  \end{tabular}
-\label{table:biomass_coefficients}
-\end{center}
-\end{table}
 
 For the linear optimization, an implementation of parsimonious FBA (pFBA) from the reference publication was performed \cite{nilsson2016metabolic, AvlantGithub}. After solving the system using a linear solver, GUROBI, with the objective maximizing growth, the solution was used as a constraint. From that point, a second optimization was run to minimize the sum of all other fluxes.
 

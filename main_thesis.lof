@@ -1,4 +1,27 @@
-\contentsline {figure}{\numberline {Figure 2.1.}{\ignorespaces Systems biology approaches}\vspace \baselineskip }{4}% 
-\contentsline {figure}{\numberline {Figure 2.2.}{\ignorespaces Overview of metabolic network reconstruction protocol}\vspace \baselineskip }{6}% 
-\contentsline {figure}{\numberline {Figure 2.3.}{\ignorespaces Web of Science artice counts on "metabolic model"}\vspace \baselineskip }{7}% 
-\contentsline {figure}{\numberline {Figure 2.4.}{\ignorespaces Central carbon mechanism of \emph {S. cerevisiae}}\vspace \baselineskip }{10}% 
+\contentsline {figure}{\numberline {Figure 2.1.}{\ignorespaces Adaptive laboratory evolution workflow}\vspace \baselineskip }{4}% 
+\contentsline {figure}{\numberline {Figure 2.2.}{\ignorespaces Systems biology approaches}\vspace \baselineskip }{6}% 
+\contentsline {figure}{\numberline {Figure 2.3.}{\ignorespaces Overview of metabolic network reconstruction protocol}\vspace \baselineskip }{7}% 
+\contentsline {figure}{\numberline {Figure 2.4.}{\ignorespaces Web of Science artice counts on "metabolic model"}\vspace \baselineskip }{9}% 
+\contentsline {figure}{\numberline {Figure 2.5.}{\ignorespaces Toy network for steady-state assumption}\vspace \baselineskip }{9}% 
+\contentsline {figure}{\numberline {Figure 2.6.}{\ignorespaces Central carbon mechanism of \emph {S. cerevisiae}}\vspace \baselineskip }{14}% 
+\contentsline {figure}{\numberline {Figure 3.1.}{\ignorespaces Repository of yeast GEM on GitHub}\vspace \baselineskip }{16}% 
+\contentsline {figure}{\numberline {Figure 3.2.}{\ignorespaces Coefficients and singular values of the stoichiometric matrix of Yeast8}\vspace \baselineskip }{17}% 
+\contentsline {figure}{\numberline {Figure 3.3.}{\ignorespaces OD\textsubscript {600}, lnOD\textsubscript {600}, cell dry weights and growth rates}\vspace \baselineskip }{22}% 
+\contentsline {figure}{\numberline {Figure 3.4.}{\ignorespaces GECKO}\vspace \baselineskip }{23}% 
+\contentsline {figure}{\numberline {Figure 3.5.}{\ignorespaces Workflow of the Loopless-ACHRB sampling on a toy model}\vspace \baselineskip }{28}% 
+\contentsline {figure}{\numberline {Figure 4.1.}{\ignorespaces Chemostat simulation to re-fit growth associated maintenance}\vspace \baselineskip }{30}% 
+\contentsline {figure}{\numberline {Figure 4.2.}{\ignorespaces Flux balance simulation results}\vspace \baselineskip }{31}% 
+\contentsline {figure}{\numberline {Figure 4.3.}{\ignorespaces Minimum and maximum fluxes of Glycolysis, PPP and TCA reactions}\vspace \baselineskip }{32}% 
+\contentsline {figure}{\numberline {Figure 4.4.}{\ignorespaces Phenotype Phase Plane of Yeast8}\vspace \baselineskip }{33}% 
+\contentsline {figure}{\numberline {Figure 4.5.}{\ignorespaces Scatter plot of glucose and oxygen uptake points from sampling}\vspace \baselineskip }{33}% 
+\contentsline {figure}{\numberline {Figure 4.6.}{\ignorespaces Histogram plots of available flux values for glycolysis reactions}\vspace \baselineskip }{34}% 
+\contentsline {figure}{\numberline {Figure 4.7.}{\ignorespaces Correlations in between glycolysis reactions}\vspace \baselineskip }{35}% 
+\contentsline {figure}{\numberline {Figure 4.8.}{\ignorespaces Correlations in between glycolysis reactions, continued}\vspace \baselineskip }{36}% 
+\contentsline {figure}{\numberline {Figure 4.9.}{\ignorespaces Histogram plots of available flux values for TCA reactions}\vspace \baselineskip }{37}% 
+\contentsline {figure}{\numberline {Figure 4.10.}{\ignorespaces Correlations in between TCA reactions}\vspace \baselineskip }{38}% 
+\contentsline {figure}{\numberline {Figure 4.11.}{\ignorespaces Histogram plots of available flux values for PPP reactions}\vspace \baselineskip }{39}% 
+\contentsline {figure}{\numberline {Figure 4.12.}{\ignorespaces Correlations in between PPP reactions}\vspace \baselineskip }{40}% 
+\contentsline {figure}{\numberline {Figure 4.13.}{\ignorespaces Effective reactions found from the deletion analysis using FBA}\vspace \baselineskip }{41}% 
+\contentsline {figure}{\numberline {Figure 4.14.}{\ignorespaces Effective reactions found from the deletion analysis using MOMA}\vspace \baselineskip }{41}% 
+\contentsline {figure}{\numberline {Figure 4.15.}{\ignorespaces Effective genes found from the deletion analysis using FBA}\vspace \baselineskip }{42}% 
+\contentsline {figure}{\numberline {Figure 4.16.}{\ignorespaces Effective genes found from the deletion analysis using MOMA}\vspace \baselineskip }{42}% 

@@ -1,10 +1,5 @@
-\chapter{RESULTS}
-
-
-\section{Petek Results}
-
-\input{tables/calculated_fluxes.tex}
-
+\chapter{RESULTS *NOT UPDATED*}
+Results section is not updated after GECKO integration! Since the method changes frequently, below figures and texts are not updated and they only give the idea about what is going to be in the final thesis.
 
 \section{Chemostat Simulation: GAM Fitting}
 In order to make sure the \emph{in-silico} obtained growth rate predictions are in agreement with the physiological kinetic parameters obtained from real experiments, fine adjustment on the energy reactions is a requirement. Since the growth-associated maintenance (GAM) and non-growth associated maintenance (NGAM) energy reactions play a determinant role in simulations, fluxes through these reactions must be constrained to a fixed value. Flux of NGAM is constrained to 0.7 mmol gDWh\textsuperscript{-1} for aerobic, and 0 mmol gDWh\textsuperscript{-1} for anaerobic simulations as calculated in the previous studies \cite{nilsson2016metabolic}. For the estimation of GAM, since it depends on the biomass composition, findings of a chemostat experiment  \cite{van1998effect} is used as a guide to fit predictions to. Model is simulated iteratively with a range of values for GAM, and the best fit is found at the level of 55.25 mmol gDWh\textsuperscript{-1} (Figure \ref{fig:Gam_fitting}), GAM flux is constrained accordingly.
@@ -19,7 +14,8 @@ In order to make sure the \emph{in-silico} obtained growth rate predictions are 
 
 
 \section{Flux Balance Analysis Results}
-\hl{I need to show experimental results -preferably from the same article where I got expression data- on the figure to compare with my FBA results}
+Experimental fluxes... Compared to simulations...
+\input{tables/calculated_fluxes.tex}
 
 \begin{figure}[H]
 \begin{center}
@@ -41,10 +37,20 @@ Flux variabilites of Yeast8 reactions are analyzed by solving the linear problem
 \end{figure}
 
 
+\section{Phenotype Phase Plane}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{phpp.jpg}
+\end{center}
+\caption[Phenotype Phase Plane of Yeast8]{Phenotype Phase Plane of Yeast8, corresponding to glucose and oxygen availabilities on the left. Shadow prices of glucose on the right.}
+\label{fig:phpp}
+\end{figure}
+
 \section{Sampling Results}
 
-\hl{Sampling results are hidden.}
-% \input{chapters/results/sampling_results.tex}
+% \hl{Sampling results are hidden.}
+\input{chapters/results/sampling_results.tex}
 
 
 \section{Single Gene and Reaction Knock-Out Simulations}
@@ -83,5 +89,5 @@ Flux variabilites of Yeast8 reactions are analyzed by solving the linear problem
 \end{figure}
 \hl{Explainations about knock-out strains, gene descriptions, comparison of found essential genes and their reactions corresponding to essential reactions found will be added.}
 
-\hl{Essential genes table is hidden.}
-% \input{tables/essential_genes_y8.tex}
+% \hl{Essential genes table is hidden.}
+\input{tables/essential_genes_y8.tex}

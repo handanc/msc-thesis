@@ -5,7 +5,7 @@ Variety of \emph{S. cerevisiae} genome-scale metabolic models have been used sin
 
 Yeast8 model can be considered as an updated version of Yeast7 \cite{aung2013revising} with additional corrections based on the annotations available in KEGG and ChEBI, and several gene inclusions from the model iSce926 \cite{chowdhury2015using}. Final version of Yeast8 to date, version 8.3.4 released on July 28, has 3991 reactions, 2691 metabolites, 1149 genes and 14 intracellular compartments. Additional statistical analysis on its stoichiometric matrix can be seen in Figure \ref{fig:modelstats}.
 
-All simulations in this thesis are done on the model Yeast8 v8.3.4 which is hosted in Github (https://github.com/SysBioChalmers/yeast-GEM). All optimization problems were solved with the COBRA Toolbox v3.0.6 in MATLAB (version 9.7.0.1216025 (R2019b)), using Gurobi solver (version 8.1.1).
+All simulations in the Methods section are done on the model Yeast8 v8.3.4 which is hosted in Github (https://github.com/SysBioChalmers/yeast-GEM). All optimization problems were solved with the COBRA Toolbox v3.0.6 in MATLAB (version 9.7.0.1216025 (R2019b)), using Gurobi solver (version 8.1.1).
 
 \begin{figure}[H]
 \begin{center}
@@ -30,56 +30,170 @@ Flux balance analysis (FBA) assumes that the living cells act as they optimized 
 \begin{equation}
  \ S_{m \times n} \cdot v=0
 \end{equation}
-\noindent where S is the matrix of the stoichiometric reaction coefficients with m number of metabolites (as rows) and n number of reactions (as columns), and v is the vector of all associated reaction fluxes (mmol/gDWh). Because the matrix S usually has more reactions than metabolites (m<n), the system can result multiple solutions, and being called an underdetermined system (read more on \ref{metabolicnetworks} section). To solve it for an optimal solution, additional constraints are required.
+\noindent where S is the matrix of the stoichiometric reaction coefficients with m number of metabolites (as rows) and n number of reactions (as columns), and v is the vector of all associated reaction fluxes (mmol/gDWh). Because the matrix S usually has more reactions than metabolites (m<n), the system can result multiple solutions, and being called an underdetermined system (read more on Section \ref{metabolicnetworks}). To solve it for an optimal solution, additional constraints or an objective function is required.
 
-A "growth reaction" is usually included in the reactions of the system to represent the "goal" in the definition of living systems. Growth reactions act as the final consumption of metabolites necessary for the biomass production or cell replication. Additional to the growth, several exchange reactions (uptake or secretion of metabolites from or into extracellular space) are also included. Since the concentrations of extracellular metabolites are measurable experimentall, constraints can be applied to exchange reaction fluxes to shrink solution space. The more constraints introduced into the system, such as reversibility of reactions or known rate values, result smaller solution space. The growth reaction is usually used as an objective function to determine a unique solution from this solution space. The linear problem appears as:
+A "growth reaction" is usually included in the reactions of the system to represent the "goal" in the definition of living systems. Growth reactions act as the final consumption of metabolites necessary for the biomass production or cell replication. Additional to the growth, several exchange reactions (uptake or secretion of metabolites from or into extracellular space) are also included. Since the concentrations of extracellular metabolites are measurable experimental, constraints can be applied to exchange reaction fluxes to shrink solution space. The more constraints introduced into the system, such as reversibility of reactions or known rate values, result smaller solution space. The growth reaction is usually used as an objective function to determine a unique solution from this solution space. The linear problem appears as:
 \begin{align}
  \ \text{max}_v \quad & c^T \cdot v \\
  \label{eq:fba}
  \ \text{subject to} \quad & S_{m \times n} \cdot v=0 \\
  \ & v_{lb} \leq v \leq v_{ub}
 \end{align}
-\noindent where c is the objective function vector, v is the vector of fluxes, S is the stoichiometric matrix as above equation. Subscripts lb and ub are the lower and upper boundaries on v. These constraints defines a feasible region of the problem.
+\noindent where c is the objective function vector, v is the vector of fluxes, S is the stoichiometric matrix as in above equation. Subscripts lb and ub are the lower and upper boundaries on v. These constraints defines a feasible region of the problem. Coefficients of the biomass constituents are defined as the same as the batch conditions in the reference article \cite{nilsson2016metabolic}, for the reason that detailed knowledge is not available in the acquired experimental data (see section \ref{experimentaldataacquisition}). Coefficients for the final biomass equation can be found in the Table \ref{table:biomass_coefficients}.
 
-\section{Integration of Enzymatic Constraints}
-
-Solution space of the Yeast8 is further constrained by limiting fluxes of reactions with integration of enzymatic levels by using GECKO (GEM with Enzymatic Constraints using Kinetic and Omics data) method \cite{sanchez2017improving}. In GECKO methodology, if a reaction has an annotated enzyme requirement in order to occur, extra enzyme entity is included in the reaction itself. Stoichiometric coefficient of this entity is defined by its kinetic information and abundance in the cell (Figure \ref{fig:gecko1}).
-
-\begin{figure}[H]
+\begin{table}[H]
+\vskip\baselineskip
+\caption[Biomass coefficients]{Biomass coefficients that are used in the FBA simulation (numbers are not updated)}
 \begin{center}
-\includegraphics[width=1\columnwidth]{gecko1.png}
+  \begin{tabular}{ll}
+  \hline
+  \textbf{Constituent} & \textbf{Coefficient} \\ \hline
+  Protein              & 3.703704             \\
+  RNA                  & 0.37037              \\
+  DNA                  & 0.018519             \\
+  Lipid                & 0.041667             \\
+  Glycogen             & 0.030864             \\
+  Trehalose            & 0.029214             \\
+  Mannan               & 0                    \\
+  Glucan               & 2.469136             \\
+  Maintainance         & 40                   \\ \hline
+  \end{tabular}
+\label{table:biomass_coefficients}
 \end{center}
-\caption[GECKO]{GECKO}
-\label{fig:gecko1}
-\end{figure}
+\end{table}
 
-% The entity is limited by the protein abundance, which can be provided as input to the model. Thus, we can conveniently simulate metabolism with constraints based on protein abundance measurements, correctly representing capacity constraints on fluxes. The method enhances a GEM with Enzymatic Constraints using Kinetic and Omics data and is referred to as GECKO
+
+
+\section{Experimental Data Acquisition} \label{experimentaldataacquisition}
+Extracellular metabolomics data are obtained from Cakar's Lab \cite{arslan2018physiological}. Briefly, they perform ethyl methane sulfonate (EMS) mutagenesis  on the prototrophic \emph{Saccharomyces cerevisiae} strain CEN.PK 113-7D (MATa, MAL2-8c, SUC2) to increase the genetic diversity as an evolutionary engineering selection strategy. Cells were inoculated in 2\% Yeast Minimal Media (YMM), and the extracellular concentrations of glucose, ethanol, glycerol and acetate were measured at different time points. OD\textsubscript{600} values were determined by a spectrophotometer. Additionally, cell dry weight analysis was conducted to determine biomass production. Acquired extracellular metabolite concentrations, OD\textsubscript{600} values and dry weights of the reference strain (without mutagenesis) were used in this study are collected in Table \ref{table:experimental_data} and Table \ref{table:experimental_OD600s_and_growths}.
+
+\input{tables/experimental_OD600s_and_growths.tex}
+\input{tables/experimental_concentrations.tex}
+
+As the slope in the curve of lnOD\textsubscript{600} as a function of time gives the growth rates of cells, natural logarithm of OD\textsubscript{600} values were calculated to obtain specific growth rates by using the equation \ref{eq:growthrates}.
+  \begin{equation}
+      \ \mu = \frac{\Delta \ln{OD_{600}}}{\Delta t}
+      \label{eq:growthrates}
+  \end{equation}
+
+In order to determine uptake and secretion rates of the metabolites, the steady-state assumption is applied in three hours intervals as the shortest measured time-points. Missing data on cell dry weights are estimated from the OD\textsubscript{600} values, and these cell dry weight data is used to calculate fluxes (in the unit of mmol/gDWh). Measurement of the cell dry weight at the 3rd hour was crucial for the steady-state assumption, however data was not available from the experiments. Curve trend of the OD\textsubscript{600} plot is used as a guide to estimate cell dry weight (Figure \ref{fig:GrowthGraphs}).
+\begin{figure}[H]
+  \begin{center}
+  \includegraphics[width=1\columnwidth]{GrowthGraphsSmall.eps}
+  \end{center}
+  \caption[OD\textsubscript{600}, lnOD\textsubscript{600}, cell dry weights and growth rates]{OD\textsubscript{600}, lnOD\textsubscript{600}, cell dry weights and growth rates graphs. Estimated missing cell dry weight data is shown in red color.}
+\label{fig:GrowthGraphs}
+\end{figure}
 
 
 
 \section{Batch Simulation}
-In order to simulate batch conditions where minimal yeast medium is used, all the exchange reactions in the model are blocked first (lower bounds are set to 0). Then, only the exchange reactions of ions that are available to the cells in the experimental design (ammonium, phosphate, sulphate, iron(2+), H+, water, chloride, Mn\textsuperscript{2+}, Zn\textsuperscript{2+}, Mg\textsuperscript{2+}, sodium, Cu2\textsuperscript{2+}, Ca\textsuperscript{2+}, potassium) are set free (lower bounds are set to -1000), means that cells can uptake as it needs. While oxygen and glucose uptake rates decreased from 20 mmol gDWh\textsuperscript{-1} and increased to 20 mmol gDWh\textsuperscript{-1}, respectively, fluxes of ethanol, acetate, glycerol, formate, succinate secretion reactions with the growth rate is collected (Figure \ref{fig:fba}).
+In order to simulate batch conditions where minimal yeast medium is used, all the exchange reactions in the model are blocked first (lower bounds are set to 0). Then, only the exchange reactions of ions that are available to the cells in the experimental design (ammonium, phosphate, sulphate, iron(2+), H+, water, chloride, Mn\textsuperscript{2+}, Zn\textsuperscript{2+}, Mg\textsuperscript{2+}, sodium, Cu2\textsuperscript{2+}, Ca\textsuperscript{2+}, potassium) are set free (lower bounds are set to -1000), means that cells can uptake as it needs. While oxygen and glucose uptake rates decreased from 20 mmol gDWh\textsuperscript{-1} and increased to 20 mmol gDWh\textsuperscript{-1}, respectively, fluxes of ethanol, acetate, glycerol, formate, succinate secretion reactions with the growth rate is collected.
+
+
+\section{Integration of Enzymatic Constraints}
+
+Solution space of the Yeast8 can be further constrained by limiting fluxes of reactions with integration of enzymatic informations by using GECKO (GEM with Enzymatic Constraints using Kinetic and Omics data) method \cite{sanchez2017improving}.  In GECKO methodology, if a reaction has an annotated enzyme requirement in order to occur in the cell, extra enzyme entity is included in the reaction equation itself. Stoichiometric coefficient of this entity is defined by its kinetic information and abundance in the cell (Figure \ref{fig:gecko1}). S matrix of the system is expanded with the addition of new rows for the enzymes and new columns for the each enzyme's usage.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=1\columnwidth]{fba.jpg}
+\includegraphics[width=1\columnwidth]{gecko1.png}
+\begin{align}
+\label{eq:geckoreaction}
+ \ A \xrightarrow{E_i} B \\
+ \label{eq:gecko}
+ \ A + n_{ij}E_i \xrightarrow{} B
+\end{align}
 \end{center}
-\caption[FBA]{FBA (figure is not updated)}
-\label{fig:fba}
+\caption[GECKO]{GECKO, will be redrawn.}
+\label{fig:gecko1}
 \end{figure}
+
+The idea behind this methodology arises from the biochemical constraints, such that the maximum rate of a reaction is smaller or equal to its enzyme's turnover number and the concentration (mmol/gDW).
+\begin{align}
+ \label{eq:gecko_simple}
+ \ v_{j} \leq k_{cat}^{ij} \cdot [E_{i}]
+\end{align}
+Enzymes in the reaction equations must be considered as pseudo-metabolites because they do not affect the mass balance of the reaction, i.e. enzymes are not consumed in the reactions but they are occupied for a short period of time. To maintain mass balances of enzymes, an overall enzyme usage pseudo-reaction is introduced into system in order to supplement enzymes into rections, similar to exchange reactions:
+\begin{align}
+ \label{eq:gecko_suppelement}
+ \  EU_i: \quad \to E_i
+ \
+\end{align}
+If the flux carried by this reaction is $e_i$, we can say that $e_i$ ranges from 0 (i.e. no enzyme available) to a maximum value of $[E_i]$ (i.e. all the enzyme is used in the reaction):
+\begin{align}
+ \label{eq:gecko_enzymeflux}
+ \  0 \leq e_i \leq [E_i]
+\end{align}
+Then a mass balance for the enzyme $E_i$ can be defined under steady state assumption:
+\begin{align}
+ \label{eq:gecko_enzymemass}
+ \  -n_{ij} \cdot v_j + e_i = 0
+\end{align}
+By rearranging the equations \ref{eq:gecko_enzymeflux} and \ref{eq:gecko_enzymemass}, we obtain:
+\begin{align}
+ \label{eq:gecko_enzymemassrearranged}
+ \ v_j \leq \frac{1}{n_{ij}} \cdot [E_i]
+\end{align}
+and if we compare this equation with the equation \ref{eq:gecko_simple}, we can finally calculate the stoichiometric coefficient for the enzyme.
+\begin{align}
+ \label{eq:gecko_enzymestoichiometry}
+ \ n_{ij}=\frac{1}{k_{cat}^{ij}}
+\end{align}
+
+However the equation \ref{eq:gecko_simple} does not hold in all cases since reactions can be more complex. For isozymes in which multiple enzymes catalyze the same reaction, the equation becomes:
+\begin{align}
+ \label{eq:gecko_isozymes}
+ \ v_{j} \leq \sum\limits_{i} k_{cat}^{ij} \cdot [E_{i}]
+ \
+\end{align}
+Since the reaction can be catalyzed by all the isozymes equally, new reactions can be defined for each isozyme (note that each enzyme can have different $k_{cat}$ values). For example, if we think that the equation \ref{eq:geckoreaction} had two isozymes, $A \xrightarrow{E_1 or E_2} B$, the new reactions defined would be,
+\begin{align}
+ \ R_{j/1}: \quad \frac{1}{k_{cat}^{1j}}E_1 + A \to B \\
+ \ R_{j/2}: \quad \frac{1}{k_{cat}^{2j}}E_2 + A \to B
+\end{align}
+These additional reactions distrupt the boundaries for the initial reaction. In order to maintain original boundaries, another "arm-reaction" is also introduced to the system where it acts as an intermediate metabolite.
+\begin{align}
+ \ R_{j/arm}: \quad A \to M_{int} \\
+ \ R_{j/1}: \quad \frac{1}{k_{cat}^{1j}}E_1 + M_{int} \to B \\
+ \ R_{j/2}: \quad \frac{1}{k_{cat}^{2j}}E_2 + M_{int} \to B
+\end{align}
+
+%For an enzyme that can catalyze multiple reactions,the for each reaction:
+%\begin{align}
+% \label{eq:gecko_promiscuous}
+% \ \sum\limits_{j} \frac{ v_{j} }{ k_{cat}^{ij} } \leq [E_{i}]
+% \
+%\end{align}
+
+For an enzyme complex catalyzing a single reaction, since the reaction is catalyzed by all the enzymes which share the same $k_{cat}$ value, the equation \ref{eq:gecko_simple} becomes:
+\begin{align}
+ \label{eq:gecko_complex}
+ \ v_{j} \leq  k_{cat}^{ij} \cdot \min\limits_{k} \frac{ [U_{ik}] }{ S_{ik} }
+ \
+\end{align}
+\noindent where $[U_{ik}]$  is the concentration of the subunit of the catalyzing enzyme $E_{i}$, and $S_{ik}$ is the stoichiometry of the subunit. For the reaction, if we think that the equation \ref{eq:geckoreaction} was catalyzed by an enzyme complex of 2 subunits, $A \xrightarrow{E_1 and E_2} B$, then it would be:
+\begin{align}
+ \label{eq:gecko_complex2}
+ \ R_{j}: \quad \frac{S_1}{k_{cat}^{ij}}E_1 +\frac{S_2}{k_{cat}^{ij}}E_2 + A \to B
+\end{align}
+
+Finally, for the reversible reactions, two reactions must be defined for both forward and backward direction reactions with the same catalyzing enzyme but possibly with different $k_{cat}$ values. Assume the equation \ref{eq:geckoreaction} is reversible, following equations would be introduced to the system:
+\begin{align}
+ \label{eq:gecko_reversible}
+ \ R_{j/f}: \quad \frac{1}{k_{cat}^{ij/f}}E_i + A \to B \\
+ \ R_{j/b}: \quad \frac{1}{k_{cat}^{ij/b}}E_i + B \to A
+\end{align}
+
+
+
+\section{Integration of Transcriptome Data}
+Transcriptome data is initially converted into protein abundances and used to change the stoichiometry of the enzyme usage pseudo-reaction. Will be explained when a solid function for expression=abundance assumption is found.
 
 
 \section{Phenotype Phase Plane Construction}
 
-As mentioned in the FBA section, there is no single solution to the linear problem of the model. Phenotype phase planes (PhPP) are used to describe all feasible metabolic states in a two or three dimentional surfaces, depending on the number of metabolites chosen to see how they affect the objective function \cite{edwards2002characterizing}. In general, for aerobic models, various levels of glucose and oxygen availability through their uptake reactions are used to generate PhPP surfaces in three dimention with objective function. Fundamentally, PhPP construction refers to a double robustness analysis on the model for selected reactions.
-
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=1\columnwidth]{phpp.jpg}
-\end{center}
-\caption[Phenotype Phase Plane of Yeast8]{Phenotype Phase Plane of Yeast8, corresponding to glucose and oxygen availabilities on the left. Shadow prices of glucose on the right.}
-\label{fig:phpp}
-\end{figure}
+As previously mentioned, there is no single solution to the linear problem of the model. Phenotype phase planes (PhPP) are used to describe all feasible metabolic states in a two or three dimentional surfaces, depending on the number of metabolites chosen to see how they affect the objective function \cite{edwards2002characterizing}. In general, for aerobic models, various levels of glucose and oxygen availability through their uptake reactions are used to generate PhPP surfaces in three dimention with objective function. Fundamentally, PhPP construction refers to a double robustness analysis on the model for selected reactions.
 
 
 \section{Flux Variability Analysis}
@@ -95,9 +209,6 @@ FVA, similar to FBA, solves two optimization problems for each reaction:
 \noindent where $w$ is the objective function equals to $c$ in the problem \ref{eq:fba}, $Z_0 = w^T \cdot v_0$ describes an optimal solution to the problem \ref{eq:fba}, $\gamma$ is an indicator to check whether the FVA is done at the optimal state (where objective flux is the same and $\gamma = 1$) or any other state (where $0 \leq \gamma < 1$).
 
 
-\hl{In the results section of this, FBA simulations will be discussed with the phases observed in PhPP.}
-
-
 \section{Random Sampling of Solution Space}
 Constraints applied to a model define a solution space, a convex polytope, where every flux distribution is accessible. Random sampling of the solution space is an unbiased tool to explore metabolic models. Mainly, Markov Chain Monte Carlo methods are used to sample this space using algorithms such as (Artificially Centered) Hit-and-Run (HRB) \cite{kiatsupaibul2011analysis, saa2016ll} algorithm, and this method has proven to be helpful in the analysis of genome-scale metabolic models \cite{schellenberger2009use}. Briefly, the random sampling method collects points that are uniformly distributed in the solution space and calculates the most probable flux value for each reaction.
 
@@ -110,8 +221,3 @@ Constraints applied to a model define a solution space, a convex polytope, where
 \end{figure}
 
 Since the computational burden of loopless sampling is high, generated random points in the solution space of Yeast8 includes thermodynamically unfeasble states. Maximum glucose uptake rate was constrained to 1 mmol gDWh\textsuperscript{-1} and total of 5000 points are generated with maximum of 120 secondse alloted for the sampling.
-
-\section{Expression Data Analysis}
-\hl{GSE numbers, experimental conditions, data normalization, gene enrichment analysis, comparison with essential genes in the model...}
-\section{Integration of Expression Data Into Model}
-\hl{Used method and its mathematical explaination on flux bounds...}

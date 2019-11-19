@@ -1,22 +1,33 @@
+\contentsline {chapter}{LIST OF FIGURES}{iii}% 
+\contentsline {chapter}{LIST OF TABLES}{1}% 
 \contentsline {chapter}{\numberline {1.}INTRODUCTION}{2}% 
 \contentsline {chapter}{\numberline {2.}THEORETICAL BACKGROUND}{3}% 
 \contentsline {section}{\numberline {2.1.} Adaptive Laboratory Evolution}{3}% 
-\contentsline {section}{\numberline {2.2.} Systems Biology}{3}% 
-\contentsline {subsection}{\numberline {2.2.1.} Metabolic Networks}{4}% 
-\contentsline {subsection}{\numberline {2.2.2.} Mathematical Representation of Metabolic Networks}{7}% 
-\contentsline {subsection}{\numberline {2.2.3.} Constraint-Based Modeling}{8}% 
-\contentsline {section}{\numberline {2.3.} \emph {Saccharomyces cerevisiae}}{8}% 
-\contentsline {subsection}{\numberline {2.3.1.} Central Carbon Metabolism of \emph {S. cerevisiae}}{8}% 
-\contentsline {subsection}{\numberline {2.3.2.} Adaptive Evolution Studies on \emph {S. cerevisiae} (Palsson 2015)}{10}% 
-\contentsline {subsection}{\numberline {2.3.3.} Metabolic Models of \emph {S. cerevisiae}}{10}% 
-\contentsline {subsection}{\numberline {2.3.4.} Applications of \emph {S. cerevisiae} GSMMs}{10}% 
-\contentsline {chapter}{\numberline {3.}MATERIALS AND METHODS}{11}% 
-\contentsline {section}{\numberline {3.1.} Consensus \emph {S. cerevisiae} Metabolic Model}{11}% 
-\contentsline {section}{\numberline {3.2.} Flux Balance Analysis}{12}% 
-\contentsline {section}{\numberline {3.3.} Phenotype Phase Plane Construction}{14}% 
-\contentsline {section}{\numberline {3.4.} Flux Variability Analysis}{15}% 
-\contentsline {section}{\numberline {3.5.} Random Sampling of Solution Space}{16}% 
-\contentsline {section}{\numberline {3.6.} Expression Data Analysis}{17}% 
-\contentsline {section}{\numberline {3.7.} Integration of Expression Data Into Model}{18}% 
-\contentsline {chapter}{REFERENCES}{19}% 
-\noindent APPENDIX\ A:\hspace {1.6ex}APPLICATION \nobreak \leaders \hbox {$\mathsurround \z@ \mkern 4.5mu.\mkern 4.5mu$} \hfill \nobreak \hbox to1.55em{\hss 25}\par 
+\contentsline {section}{\numberline {2.2.} Systems Biology}{4}% 
+\contentsline {subsection}{\numberline {2.2.1.} Metabolic Networks}{5}% 
+\contentsline {subsection}{\numberline {2.2.2.} Mathematical Representation of Metabolic Networks}{8}% 
+\contentsline {subsection}{\numberline {2.2.3.} Constraint-Based Modelling}{11}% 
+\contentsline {section}{\numberline {2.3.} \emph {Saccharomyces cerevisiae}}{12}% 
+\contentsline {subsection}{\numberline {2.3.1.} Central Carbon Metabolism of \emph {S. cerevisiae}}{12}% 
+\contentsline {subsection}{\numberline {2.3.2.} Adaptive Evolution Studies on \emph {S. cerevisiae} (Palsson 2015)}{13}% 
+\contentsline {subsection}{\numberline {2.3.3.} Metabolic Models of \emph {S. cerevisiae}}{13}% 
+\contentsline {subsection}{\numberline {2.3.4.} Applications of \emph {S. cerevisiae} GSMMs}{13}% 
+\contentsline {chapter}{\numberline {3.}MATERIALS AND METHODS}{15}% 
+\contentsline {section}{\numberline {3.1.} Consensus \emph {S. cerevisiae} Metabolic Model}{15}% 
+\contentsline {section}{\numberline {3.2.} Flux Balance Analysis}{17}% 
+\contentsline {section}{\numberline {3.3.} Experimental Data Acquisition}{19}% 
+\contentsline {section}{\numberline {3.4.} Batch Simulation}{22}% 
+\contentsline {section}{\numberline {3.5.} Integration of Enzymatic Constraints}{23}% 
+\contentsline {section}{\numberline {3.6.} Integration of Transcriptome Data}{26}% 
+\contentsline {section}{\numberline {3.7.} Phenotype Phase Plane Construction}{26}% 
+\contentsline {section}{\numberline {3.8.} Flux Variability Analysis}{26}% 
+\contentsline {section}{\numberline {3.9.} Random Sampling of Solution Space}{27}% 
+\contentsline {chapter}{\numberline {4.}RESULTS *NOT UPDATED*}{29}% 
+\contentsline {section}{\numberline {4.1.} Chemostat Simulation: GAM Fitting}{29}% 
+\contentsline {section}{\numberline {4.2.} Flux Balance Analysis Results}{30}% 
+\contentsline {section}{\numberline {4.3.} Flux Variability Analysis}{31}% 
+\contentsline {section}{\numberline {4.4.} Phenotype Phase Plane}{33}% 
+\contentsline {section}{\numberline {4.5.} Sampling Results}{33}% 
+\contentsline {section}{\numberline {4.6.} Single Gene and Reaction Knock-Out Simulations}{41}% 
+\contentsline {chapter}{REFERENCES}{51}% 
+\noindent APPENDIX\ A:\hspace {1.6ex}APPLICATION \penalty \@M \leaders \hbox {$\mathsurround \z@ \mkern 4.5mu.\mkern 4.5mu$} \hfill \penalty \@M \hbox to1.55em{\hss 58}\par 
