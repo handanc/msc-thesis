@@ -3,12 +3,12 @@
 \section{Model Constraints and Curation}
 
 
-To make sure the \emph{in-silico} growth rate predictions are in agreement with the physiological kinetic parameters obtained from the laboratory experiments, fine adjustment on the chosen metabolic model is a requirement. Since the growth-associated maintenance (GAM) and non-growth associated maintenance (NGAM) reactions in a model play a determinant role in the simulation results, fluxes through these reactions must be constrained to a fixed value. Flux of the NGAM reaction is constrained to 0.7 mmol gDWh\textsuperscript{-1} for aerobic model, and 0 mmol gDWh\textsuperscript{-1} for anaerobic model simulations as calculated in the previous studies \cite{nilsson2016metabolic}. Since the GAM depends on the biomass composition defined, results of a chemostat experiment \cite{van1998effect} are used as a guide to fit simulation predictions to. The model is simulated iteratively with a range of values for the GAM and the best fit is found at the level of 31.4 mmol gDWh\textsuperscript{-1} (Figure \ref{fig:gam_fitting}).
+To make sure the \emph{in-silico} growth rate predictions are in agreement with the physiological kinetic parameters obtained from the laboratory experiments, fine adjustment on the chosen metabolic model is a requirement. Since the growth-associated maintenance (GAM) and non-growth associated maintenance (NGAM) reactions in a model play a determinant role in the simulation results, fluxes through these reactions must be constrained to a fixed value. Flux of the NGAM reaction is constrained to 0.7 mmol/gDWh\textsuperscript{-1} for aerobic model, and 0 mmol/gDWh\textsuperscript{-1} for anaerobic model simulations as calculated in the previous studies \cite{nilsson2016metabolic}. Since the GAM depends on the biomass composition defined, results of a chemostat experiment \cite{van1998effect} are used as a guide to fit simulation predictions to. The model is simulated iteratively with a range of values for the GAM and the best fit is found at the level of 31.4 mmol/gDWh\textsuperscript{-1} (Figure \ref{fig:gam_fitting}).
 
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/gamfitting.png}
-  \caption[Growth associated maintenance fitting]{Growth associated maintenance fitting results.}
+  \caption[The required flux for the growth associated maintenance reaction is determined by the fitting simulation results to the experimental data]{The required flux for the growth associated maintenance reaction is determined by the fitting simulation results to the experimental data. The best fit is found at 31.4 mmol/gDWh\textsuperscript{-1} and the reaction is constrained to that flux value.}
   \end{center}
   \label{fig:gam_fitting}
 \end{figure}
@@ -18,7 +18,7 @@ Average enzyme saturation value is set to 50\% where the lowest error rate is ob
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/sigmafitting.png}
-  \caption[Average enzyme saturation factor fitting]{Average enzyme saturation factor fitting results.}
+  \caption[Average enzyme saturation factor for the GECKO method is determined by the iterative simulations for the lowest absolute relative error to the experimantal data]{Average enzyme saturation factor for the GECKO method is determined by the iterative simulations for the lowest absolute relative error to the experimantal data. The value is set to 50\% where the lowest error rate is obtained.}
   \end{center}
   \label{fig:sigma_fitting}
 \end{figure}
@@ -30,42 +30,74 @@ To prevent over-constraining the model with the enzyme kinetics, the most limiti
 \vspace{-0.5cm}
 \section{Differential Expression Analysis and Integration}
 
-The obtained expression datasets were quantile-normalized. Three replicates for both reference and the evolved strains for each experiment (exception with the ethanol-b8 strain which has two replicates) is used for the differential analysis. The distribution across normalized gene expression levels across each experiment can be seen in the Figure \ref{fig:expr_boxplot}.
+The obtained expression datasets were quantile-normalized for their own experiments. Three replicates for both reference and the evolved strains for each experiment (exception with the ethanol-b8 strain which has two replicates) is used for the differential expression analysis. The distribution across normalized gene expression levels across each experiment can be seen in the Figure \ref{fig:expr_boxplot}. No further normalization applied to prevent introducing errors and datasets are used as obtained from the database.
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=1\columnwidth]{figures/expr_boxplots.png}
-\caption[Boxplots of the normalized gene expression levels]{Boxplots of the normalized gene expression levels obtained from Gene Expression Omnibus.}
+\caption[Boxplots of the normalized gene expression levels]{Boxplots of the normalized gene expression levels obtained from Gene Expression Omnibus. Quantile normalization performance is indicated by the medians (black horizontal lines) that are almost at the same level with their reference reads.}
 \end{center}
 \label{fig:expr_boxplot}
 \end{figure}
 
-A statistical threshold (p $<$ 0.05) for the differential analysis of the normalized gene expression levels detected a total of 1606 genes in ethanol-b2, 2947 genes in ethanol-b8, 4743 genes in caffeine, 2267 genes in coniferylaldehyde, 3448 genes in iron, 152 genes in nickel, 4796 genes in phenylethanol, and 4796 genes in silver resistant strains differentially expressed. Commonly upregulated and downregulated genes frequencies across all strains can be found in the Figure \ref{fig:intersections_genes}.
+A statistical threshold (p $<$ 0.05) for the differential analysis of the normalized gene expression levels detected a total of 1606 genes in ethanol-b2, 2947 genes in ethanol-b8, 4743 genes in caffeine, 2267 genes in coniferylaldehyde, 3448 genes in iron, 152 genes in nickel, 4796 genes in phenylethanol, and 4796 genes in silver resistant strains differentially expressed. Commonly upregulated and downregulated genes frequencies across all strains can be found in the Figure \ref{fig:intersections_by_degree}.
+
+
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=1\columnwidth]{figures/intersections_by_degree.png}
-\caption[Differential gene expression intersections across experiments]{Differential gene expression intersections across experiments. (A) Upregulated, (B) downregulated gene frequencies.}
+\caption[UpSet plot showing the number of common genes that are differentially expressed significantly]{UpSet plot showing the number of common genes that are differentially expressed significantly (p $<$ 0.05) across evolved strains. Connected black circles in the below panel's matrix represents a certain intersection between experiment strains, and the number of genes in that intersection are shown in the top bar graphs. Differentially expressed genes are seperately plotted for (A) upregulated genes, and (B) downregulated genes.}
 \end{center}
-\label{fig:intersections_genes}
+\label{fig:intersections_by_degree}
 \end{figure}
 
-The log2(fold-change) values of differentially expressed genes and their frequencies are plotted for each experiment in Figure \ref{fig:expr_frequencies}. Although the high number of differentially expressed genes are collected, due to the limited reaction number in the genome-scale metabolic model, only a part of obtained fold-change expression values are integrated into model. Total of 277 genes in ethanol-b2, 464 genes in ethanol-b8, 783 genes in caffeine, 374 genes in coniferylaldehyde, 552 genes in iron, 28 genes in nickel, 759 genes in phenylethanol and 759 genes in silver resistant strains were integrated into the metabolic model to generate strain-specific models.
+Despite the high number of differentially expressed genes in the silver resistant strain, the intersection with the most number of strains discluded it. There were not any common differentially expresssed genes considering all strains. The most common genes (as shown in the first bars in the UpSet plot) are reported in Table \ref{table:common_genes}.
+
+\begin{table}[H]
+\small
+\vskip\baselineskip
+  \begin{center}
+  \caption[Common upregulated and downregulated genes]{The common upregulated and downregulated genes within ethanolb2, ethanolb8, caffeine, coniferylaldehyde, iron, nickel and phenylethanol resistant strains.}
+  \begin{tabular}{|p{4cm}|p{10cm}|}
+     \hline
+    \textbf{Upregulated Genes} & \textbf{Downregulated Genes}  \\
+      \hline
+      YDR075W, YDR492W, YGR239C, YIL118W, YLR215C, YML005W, YML125C, YNL024C, YNL188W, YNR044W, YOL002C, YOR107W, YPR052C & YBL015W, YBR132C, YBR285W, YBR299W, YCR068W, YDL238C, YDR055W, YER033C, YGL146C, YGL250W, YGR023W, YGR149W, YGR161C, YGR288W, YGR289C, YGR292W, YIL097W, YIR017C, YJL042W, YJL053W, YJL082W, YJL132W, YLR092W, YLR176C, YLR240W, YLR446W, YMR052C-A, YMR053C, YMR081C, YMR103C, YMR104C, YMR105C, YMR160W, YMR194C-A, YMR258C, YMR291W, YNL093W, YNL277W, YNR001C, YOL117W, YOR027W, YOR132W, YOR178C, YOR230W, YPR079W, YPR154W \\ \hline
+  \end{tabular}
+
+  \label{table:common_genes}
+  \end{center}
+\end{table}
+
+
+
+The log2(fold-change) values of differentially expressed genes and their frequencies are plotted for each experiment in Figure \ref{fig:expr_frequencies_before}. Although the high number of differentially expressed genes are collected, due to the limited reaction number in the genome-scale metabolic models, only a part of obtained fold-change expression values were able to integrated into the models. Because of the limitations in the model, no further cutoff considered for the fold change values.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=1\columnwidth]{figures/expr_frequencies.png}
-\caption[Frequencies of the differentially expressed genes]{Frequencies of the differentially expressed genes in A. Frequencies of the integrated genes in B.}
+\includegraphics[width=1\columnwidth]{figures/expr_frequencies_before.png}
+\caption[Frequencies of the differentially expressed genes after the gene expression analysis]{Frequencies of the differentially expressed genes after the gene expression analysis}
 \end{center}
-\label{fig:expr_frequencies}
+\label{fig:expr_frequencies_before}
+\end{figure}
+
+Total of 277 genes in ethanol-b2, 464 genes in ethanol-b8, 783 genes in caffeine, 374 genes in coniferylaldehyde, 552 genes in iron, 28 genes in nickel, 759 genes in phenylethanol and 759 genes in silver resistant strains were integrated into the metabolic model to generate strain-specific models (\ref{fig:expr_frequencies_after}).
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{figures/expr_frequencies_after.png}
+\caption[Frequencies of the differentially expressed genes that are integrated into the metabolic model]{Frequencies of the differentially expressed genes that are integrated into the metabolic model.}
+\end{center}
+\label{fig:expr_frequencies_after}
 \end{figure}
 
 In order to validate the expression data integration method, fluxes for each enzyme (i.e. protein flux from protein pool to reaction for each protein) is predicted by flux balance analysis on all the strain models and on the wild-type model (wild-type here is referred as the metabolic model without expression data integrated). Flux ratios between wild-type and evolved models are calculated, and linear regression analysis is fitted after elimination of the outliers by the generalized extreme studentized deviate test to compare the flux-changes with the protein fold-changes from the expression data. Results confirm a good correlation between simulations and protein fold-change values (Figure \ref{fig:expr_linear_regressions}).
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=1\columnwidth]{figures/expr_linear_regressions.png}
-\caption[Linear regression analyses of the fold-changes]{Linear regression analyses of the enzyme-draw flux fold-changes and differential expression fold-changes of corresponding proteins.}
+\includegraphics[width=0.8\columnwidth]{figures/expr_linear_regressions.png}
+\caption[Linear regression analyses of the fold-changes]{Linear regression analyses of the differential expression fold-changes obtained from microarray studies and the enzyme-draw flux fold-changes obtained from flux balance analysis simulations of corresponding proteins.}
 \end{center}
 \label{fig:expr_linear_regressions}
 \end{figure}
@@ -97,51 +129,91 @@ Robustness analysis is performed on the wild-type model for the growth rate with
 \label{fig:wt_robustness}
 \end{figure}
 
-\ifnotskip
-For the anaerobic conditions, double robustness analysis of oxygen uptake and ethanol secretion rate is perfomed on the model to show the effect of oxygen availability on the system (Figure \ref{fig:v2_wt_robustness_ethanol}). The model predicted higher ethanol secretion under the lower oxygen availibility, as expected.
+%For the anaerobic conditions, double robustness analysis of oxygen uptake and ethanol secretion rate is perfomed on the model to show the effect of oxygen availability on the system (Figure \ref{fig:v2_wt_robustness_ethanol}). The model predicted higher ethanol secretion under the lower oxygen availibility, as expected.
+
+%\begin{figure}[H]
+%\begin{center}
+%\includegraphics[width=0.8\columnwidth]{v2_wt_robustness_ethanol.png}
+%\caption[Double robustness analysis on oxygen uptake and ethanol secretion reactions]{Double robustness analysis on oxygen uptake and ethanol secretion reactions. (A) Phenotype phase-plane, (B) shadow prices of reactions.}
+%\end{center}
+%\label{fig:v2_wt_robustness_ethanol}
+%\end{figure}
+
+After the validation of the wild-type model, all models for strains are simulated for the growth rates as a function of iteratively increasing glucose uptake rates (Figure \ref{fig:growth_glucose_ales}). Models were able to grow up to the point where the protein accesibility becomes a limiting factor. It has been found that the evolution models except for the caffeine tolerant model show similar patterns on the points where the enzymes become limiting (break points in the lines). Caffeine tolerant model shows different pattern in a way that it can consume more glucose to reach higher growth rates compared to others. Also it must be noted that while only caffeine and coniferylaldehyde tolerant models can grow at higher rates than wild-type model, ethanol, iron, nickel, phenylethanol and silver models can grow at lower maximum rates. The maximum growth rates and corresponding glucose uptake rates for each model are summarized in the Table \ref{table:growth_glucose_table}.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=0.8\columnwidth]{v2_wt_robustness_ethanol.png}
-\caption[Double robustness analysis on oxygen uptake and ethanol secretion reactions]{Double robustness analysis on oxygen uptake and ethanol secretion reactions. (A) Phenotype phase-plane, (B) shadow prices of reactions.}
-\end{center}
-\label{fig:v2_wt_robustness_ethanol}
-\end{figure}
-\fi
-
-
-After the validation of the wild-type model, all models for strains are simulated for the growth rates as a function of iteratively increasing glucose uptake rates (Figure \ref{fig:v2_fba_gur_vs_growth}). Models were able to grow up to the point where the protein accesibility becomes a limiting factor. It has been found that the evolved models except for the caffeine tolerant model show similar patterns on the points where proteins become limiting (break points in the lines). Ethanol tolerant model shows different pattern which it can consume more glucose to reach higher growth rates compared to others. Also it must be noted that while nacl and ethanol tolerant models can grow at higher rates than wild-type model, ethanol, iron, phenylethanol and nickel models can grow at lower rates.
-
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=1\columnwidth]{v2_fba_gur_vs_growth.png}
+\includegraphics[width=1\columnwidth]{figures/growth_glucose_ales.png}
 \caption[Growth rates as a function of iteratively increasing glucose uptake rates]{Growth rates as a function of iteratively increasing glucose uptake rates.}
 \end{center}
-\label{fig:v2_fba_gur_vs_growth}
+\label{fig:growth_glucose_ales}
 \end{figure}
 \vspace{-1.0cm}
 
-In order to characterize differentiating points in the flux balance analysis solutions, cumulative flux vectors of each experiment are plotted (Figure \ref{fig:cumflux_free}). Standart deviations between strains for each reaction are calculated to find most diverging points.
+
+
+\begin{table}[H]
+\small
+\vskip\baselineskip
+  \begin{center}
+  \caption[Maximum growth rates obtained from flux balance analysis simulations for each strain and their maximum glucose uptake rates (GUR) required for the growth]{Maximum growth rates obtained from flux balance analysis simulations for each strain and their maximum glucose uptake rates (GUR) required for the growth.}
+    \vspace{5mm}
+  \begin{tabular}{|c|c|c|}
+     \hline
+    \textbf{Experiment} & \textbf{Growth Rate (1/h)} & \textbf{GUR (mmol/gDWh)} \\
+      \hline
+      ethanolb2           & 0.35466                    & 14                                       \\ \hline
+      ethanolb8           & 0.34736                    & 16                                       \\ \hline
+      caffeine            & 0.46769                    & 28                                       \\ \hline
+      coniferylaldehyde   & 0.39132                    & 20                                       \\ \hline
+      iron                & 0.37554                    & 15                                       \\ \hline
+      nickel              & 0.37523                    & 18                                       \\ \hline
+      phenylethanol       & 0.34382                    & 18                                       \\ \hline
+      silver              & 0.34163                    & 25                                       \\ \hline
+      wildtype            & 0.37618                    & 19                                       \\ \hline
+  \end{tabular}
+
+  \label{table:growth_glucose_table}
+  \end{center}
+\end{table}
+
+In order to characterize the differentiating reactions in the flux balance analysis solution vectors, cumulative flux vectors of each experiment are plotted (Figure \ref{fig:cumflux_free}). Standart deviations for each reaction between strains are calculated to find most diverging points and plotted as a bar graph.
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[width=1\columnwidth]{figures/cumflux_free.png}
-\caption[Cumulative flux vectors of each simulation and standart deviations]{Cumulative flux vectors of each simulation and standart deviations.}
+\caption[Cumulative flux vectors of each simulation and standart deviations]{Cumulative flux vectors of each model and the standart deviations of reactions across each adaptatoin.}
 \end{center}
 \label{fig:cumflux_free}
 \end{figure}
 
-Standart deviation values more then 10 are listed in Table \ref{table:cumulative_free_stds}
+Reactions with the standart deviation values more than 10 mmol/gDWh are listed in Table \ref{table:cumulative_free_stds}. The same reactions with different numbers in their names use different enzymes. For example, glyceraldehyde-3-phosphate dehydrogenase (GADPH) reaction can be carried out in the presence of YGR192C or YJL052W or YJR009C genes' proteins, in other words, TDH1 or TDH2 or TDH3 isozymes. Therefore there are No1, No2 and No3 versions of that reaction. It must be noted that these multiple reactions carried out with isozymes in the metabolic model may not mean a significant difference if the enzymes do not catalyze any other reaction. This means that the chosen isozyme does not matter if the flux value across isozymes are the same.
 \input{tables/cumulative_free_stds.tex}
 
-Cumulative flux vectors of each experiment are plotted once more when the boundaries of the glucose uptake reaction is constrained to 10 gDWh\textsuperscript{-1} for each model (Figure \ref{fig:v2_fba_cumulative_gur10}). This has done to eliminate differences might be arising because of the free glucose uptake rates (as shown in below section, each model can uptake different maximum amount of glucose) and therefore affecting the downstream reaction fluxes.
+Cumulative flux vectors of each experiment are plotted once more when the boundaries of the glucose uptake reaction is constrained to 10 gDWh\textsuperscript{-1} for each model (Figure \ref{fig:cumflux_gur10}). This has done to eliminate differences might be arising because of the free glucose uptake rates (as shown in below section, each model can uptake different maximum amount of glucose) and therefore affecting the downstream reaction fluxes.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=1\columnwidth]{v2_fba_cumulative_gur10.png}
-\caption[Cumulative flux vectors of each experiment when glucose uptake rate is constrained]{Cumulative flux vectors of each simulation and standart deviations. Glucose uptake rate is constrainted to  10 gDWh\textsuperscript{-1} for all models. }
+\includegraphics[width=1\columnwidth]{figures/cumflux_gur10.png}
+\caption[Cumulative flux vectors of each experiment when glucose uptake rate is constrained]{Cumulative flux vectors of each simulation and standart deviations. Glucose uptake rate is constrainted to  10 mmol/gDWh for all models. }
 \end{center}
-\label{fig:v2_fba_cumulative_gur10}
+\label{fig:cumflux_gur10}
+\end{figure}
+
+Reactions with the standart deviation values more than 5 mmol/gDWh are listed in Table \ref{table:cumulative_free_stds}. Despite the decrease in the flux values (caused by the lower uptake rates of glucose), the top divergent reactions obtained are in agreement with the no-constraint flux balance analysis results.
+
+\input{tables/cumulative_gur10_stds.tex}
+
+Finally, only arm reactions (where the isozyme reactions are combined, see Methods) when the glucose uptake rate is constrained to 10 mmol/gDWh are plotted as heatmap in Figure \ref{fig:flux_stds_heatmap} after normalization. As it can be seen from the previous tables, most of the differences are caused by the isozymes with the flux values close to each other. By considering only arm reactions and a fixed glucose uptake rate, the reactions that are actually differ because of the expression integration are found.
+
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{figures/flux_stds_heatmap.png}
+\caption[Heatmap plot of the reaction fluxes where the standart deviation between models are highest. Reaction names with the reversible tag means intake of the substrate, while the arm tag means that the flux of that particular reaction is a sum of multiple isozyme reactions]{Heatmap plot of the reaction fluxes where the standart deviation between models are highest. Reaction names with the reversible tag means intake of the substrate, while the arm tag means that the flux of that particular reaction is a sum of multiple isozyme reactions. }
+\end{center}
+\label{fig:flux_stds_heatmap}
 \end{figure}
 
 
