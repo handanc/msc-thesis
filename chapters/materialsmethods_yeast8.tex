@@ -25,50 +25,11 @@ All simulations in the Methods section are done on the model Yeast8 v8.3.4 which
 
 
 
-\section{Flux Balance Analysis}
-Flux balance analysis (FBA) assumes that the living cells act as they optimized their lives towards some goal, and as if they were at steady state. To be more clear, steady-state assumption indicates that the metabolites are both produced and consumed at the same rate in a cell, without an accumulation. Therefore, in this system, metabolites are constrained by only the stoichiometric coefficients arised from mass balance of metabolites. FBA solves a set of ordinary differential equations regarding to the stoichiometric matrix:
-\begin{equation}
- \ S_{m \times n} \cdot v=0
-\end{equation}
-\noindent where S is the matrix of the stoichiometric reaction coefficients with m number of metabolites (as rows) and n number of reactions (as columns), and v is the vector of all associated reaction fluxes (mmol/gDWh). Because the matrix S usually has more reactions than metabolites (m<n), the system can result multiple solutions, and being called an underdetermined system (read more on Section \ref{metabolicnetworks}). To solve it for an optimal solution, additional constraints or an objective function is required.
-
-A "growth reaction" is usually included in the reactions of the system to represent the "goal" in the definition of living systems. Growth reactions act as the final consumption of metabolites necessary for the biomass production or cell replication. Additional to the growth, several exchange reactions (uptake or secretion of metabolites from or into extracellular space) are also included. Since the concentrations of extracellular metabolites are measurable experimental, constraints can be applied to exchange reaction fluxes to shrink solution space. The more constraints introduced into the system, such as reversibility of reactions or known rate values, result smaller solution space. The growth reaction is usually used as an objective function to determine a unique solution from this solution space. The linear problem appears as:
-\begin{align}
- \ \text{max}_v \quad & c^T \cdot v \\
- \label{eq:fba}
- \ \text{subject to} \quad & S_{m \times n} \cdot v=0 \\
- \ & v_{lb} \leq v \leq v_{ub}
-\end{align}
-\noindent where c is the objective function vector, v is the vector of fluxes, S is the stoichiometric matrix as in above equation. Subscripts lb and ub are the lower and upper boundaries on v. These constraints defines a feasible region of the problem. Coefficients of the biomass constituents are defined as the same as the batch conditions in the reference article \cite{nilsson2016metabolic}, for the reason that detailed knowledge is not available in the acquired experimental data (see section \ref{experimentaldataacquisition}). Coefficients for the final biomass equation can be found in the Table \ref{table:biomass_coefficients}.
-
-\begin{table}[H]
-\vskip\baselineskip
-\caption[Biomass coefficients]{Biomass coefficients that are used in the FBA simulation (numbers are not updated)}
-\begin{center}
-  \begin{tabular}{ll}
-  \hline
-  \textbf{Constituent} & \textbf{Coefficient} \\ \hline
-  Protein              & 3.703704             \\
-  RNA                  & 0.37037              \\
-  DNA                  & 0.018519             \\
-  Lipid                & 0.041667             \\
-  Glycogen             & 0.030864             \\
-  Trehalose            & 0.029214             \\
-  Mannan               & 0                    \\
-  Glucan               & 2.469136             \\
-  Maintainance         & 40                   \\ \hline
-  \end{tabular}
-\label{table:biomass_coefficients}
-\end{center}
-\end{table}
-
-
-
 \section{Experimental Data Acquisition} \label{experimentaldataacquisition}
 Extracellular metabolomics data are obtained from Cakar's Lab \cite{arslan2018physiological}. Briefly, they perform ethyl methane sulfonate (EMS) mutagenesis  on the prototrophic \emph{Saccharomyces cerevisiae} strain CEN.PK 113-7D (MATa, MAL2-8c, SUC2) to increase the genetic diversity as an evolutionary engineering selection strategy. Cells were inoculated in 2\% Yeast Minimal Media (YMM), and the extracellular concentrations of glucose, ethanol, glycerol and acetate were measured at different time points. OD\textsubscript{600} values were determined by a spectrophotometer. Additionally, cell dry weight analysis was conducted to determine biomass production. Acquired extracellular metabolite concentrations, OD\textsubscript{600} values and dry weights of the reference strain (without mutagenesis) were used in this study are collected in Table \ref{table:experimental_data} and Table \ref{table:experimental_OD600s_and_growths}.
 
-\input{tables/experimental_OD600s_and_growths.tex}
 \input{tables/experimental_concentrations.tex}
+\input{tables/experimental_OD600s_and_growths.tex}
 
 As the slope in the curve of lnOD\textsubscript{600} as a function of time gives the growth rates of cells, natural logarithm of OD\textsubscript{600} values were calculated to obtain specific growth rates by using the equation \ref{eq:growthrates}.
   \begin{equation}
@@ -87,13 +48,30 @@ In order to determine uptake and secretion rates of the metabolites, the steady-
 
 
 
-\section{Batch Simulation}
-In order to simulate batch conditions where minimal yeast medium is used, all the exchange reactions in the model are blocked first (lower bounds are set to 0). Then, only the exchange reactions of ions that are available to the cells in the experimental design (ammonium, phosphate, sulphate, iron(2+), H+, water, chloride, Mn\textsuperscript{2+}, Zn\textsuperscript{2+}, Mg\textsuperscript{2+}, sodium, Cu2\textsuperscript{2+}, Ca\textsuperscript{2+}, potassium) are set free (lower bounds are set to -1000), means that cells can uptake as it needs. While oxygen and glucose uptake rates decreased from 20 mmol gDWh\textsuperscript{-1} and increased to 20 mmol gDWh\textsuperscript{-1}, respectively, fluxes of ethanol, acetate, glycerol, formate, succinate secretion reactions with the growth rate is collected.
+\section{Flux Balance Analysis}
+Flux balance analysis (FBA) assumes that the living cells act as they optimized their lives towards some goal, and as if they were at steady state. To be more clear, steady-state assumption indicates that the metabolites are both produced and consumed at the same rate in a cell, without an accumulation. Therefore, in this system, metabolites are constrained by only the stoichiometric coefficients arised from mass balance of metabolites. FBA solves a set of ordinary differential equations regarding to the stoichiometric matrix:
+\begin{equation}
+ \ S_{m \times n} \cdot v=0
+\end{equation}
+\noindent where S is the matrix of the stoichiometric reaction coefficients with m number of metabolites (as rows) and n number of reactions (as columns), and v is the vector of all associated reaction fluxes (mmol/gDWh). Because the matrix S usually has more reactions than metabolites (m<n), the system can result multiple solutions, and being called an underdetermined system (read more on Section \ref{metabolicnetworks}). To solve it for an optimal solution, additional constraints or an objective function is required.
+
+A "growth reaction" is usually included in the reactions of the system to represent the "goal" in the definition of living systems. Growth reactions act as the final consumption of metabolites necessary for the biomass production or cell replication. Additional to the growth, several exchange reactions (uptake or secretion of metabolites from or into extracellular space) are also included. Since the concentrations of extracellular metabolites are measurable experimental, constraints can be applied to exchange reaction fluxes to shrink solution space. The more constraints introduced into the system, such as reversibility of reactions or known rate values, result smaller solution space. The growth reaction is usually used as an objective function to determine a unique solution from this solution space. The linear problem appears as:
+\begin{align}
+ \ \text{max}_v \quad & c^T \cdot v \\
+ \label{eq:fba}
+ \ \text{subject to} \quad & S_{m \times n} \cdot v=0 \\
+ \ & v_{lb} \leq v \leq v_{ub}
+\end{align}
+\noindent where c is the objective function vector, v is the vector of fluxes, S is the stoichiometric matrix as in above equation. Subscripts lb and ub are the lower and upper boundaries on v. These constraints defines a feasible region of the problem. Coefficients of the biomass constituents are defined as the same as the batch conditions in the reference article \cite{nilsson2016metabolic}, for the reason that detailed knowledge is not available in the acquired experimental data (see section \ref{experimentaldataacquisition}). Coefficients for the final biomass equation can be found in the Table \ref{table:biomass_coefficients}.
+
+\input{tables/biomass_composition.tex}
+
+In order to simulate batch conditions where the minimal yeast medium is used, all the exchange reactions in the model are first blocked (lower bounds are set to 0). Then, only the exchange reactions of the ions that are available to the cells in the experimental design (ammonium, phosphate, sulphate, iron(2+), H+, water, chloride, Mn\textsuperscript{2+}, Zn\textsuperscript{2+}, Mg\textsuperscript{2+}, sodium, Cu2\textsuperscript{2+}, Ca\textsuperscript{2+}, potassium) are set free (lower bounds are set to -1000), means that cells can uptake as it needs. While oxygen and glucose uptake rates decreased from 20 mmol gDWh\textsuperscript{-1} and increased to 20 mmol gDWh\textsuperscript{-1}, respectively, fluxes of ethanol, acetate, glycerol, formate, succinate secretion reactions with the growth rate is collected.
 
 
 \section{Integration of Enzymatic Constraints}
 
-Solution space of the Yeast8 can be further constrained by limiting fluxes of reactions with integration of enzymatic informations by using GECKO (GEM with Enzymatic Constraints using Kinetic and Omics data) method \cite{sanchez2017improving}.  In GECKO methodology, if a reaction has an annotated enzyme requirement in order to occur in the cell, extra enzyme entity is included in the reaction equation itself. Stoichiometric coefficient of this entity is defined by its kinetic information and abundance in the cell (Figure \ref{fig:gecko1}). S matrix of the system is expanded with the addition of new rows for the enzymes and new columns for the each enzyme's usage.
+Solution space of the yeast model can be further constrained by limiting fluxes of reactions with integration of enzymatic informations by using GECKO (GEM with Enzymatic Constraints using Kinetic and Omics data) method \cite{sanchez2017improving}.  In GECKO methodology, if a reaction has an annotated enzyme, enzyme entity itself is included in the same reaction equation. Stoichiometric coefficient of this entity is defined by its kinetic information and abundance in the cell (Figure \ref{fig:gecko1}). S matrix of the system is expanded with the addition of new rows for the enzymes and new columns for the each enzyme's usage.
 
 \begin{figure}[H]
 \begin{center}
@@ -159,13 +137,6 @@ These additional reactions distrupt the boundaries for the initial reaction. In 
  \ R_{j/2}: \quad \frac{1}{k_{cat}^{2j}}E_2 + M_{int} \to B
 \end{align}
 
-%For an enzyme that can catalyze multiple reactions,the for each reaction:
-%\begin{align}
-% \label{eq:gecko_promiscuous}
-% \ \sum\limits_{j} \frac{ v_{j} }{ k_{cat}^{ij} } \leq [E_{i}]
-% \
-%\end{align}
-
 For an enzyme complex catalyzing a single reaction, since the reaction is catalyzed by all the enzymes which share the same $k_{cat}$ value, the equation \ref{eq:gecko_simple} becomes:
 \begin{align}
  \label{eq:gecko_complex}
@@ -185,21 +156,26 @@ Finally, for the reversible reactions, two reactions must be defined for both fo
  \ R_{j/b}: \quad \frac{1}{k_{cat}^{ij/b}}E_i + B \to A
 \end{align}
 
+\section{Differential Expression Analysis and Integration}
+Normalized gene expression profiles of the GSE series (Table \ref{table:gse_experiment}) obtained from the Gene Expression Omnibus are first differentially analyzed using Biobase \cite{huber2015orchestrating}, GEOquery \cite{davis2007geoquery} and limma \cite{ritchie2015limma} packages in R environment. Briefly, design matrices are constructed for each ALE experiment seperately. Contrast matrices are obtained to make pair-wise comparison between the reference and the evolved strains. Linear models for each gene are fitted to the expression data for each contrast matrix, and empirical Bayes method was used on the fitted models for the assessment of differential expressions. Genes with the p-values of $<$0.05 are selected to be integrated into the constrained-based model.
+
+\input{tables/gse_experiment.tex}
+
+Obtained relative fold changes of the genes are integrated into metabolic model as the multipliers of the enzyme coefficients that are used to draw enzymes from the enzyme pool (Eq. \ref{eq:gecko_suppelement}). In that sense, proteins with higher fold-change values ($>1$) are considered over-expressed and they are easily drawn from the pool, while proteins with lower fold change values ($<1$) are considered under-expressed and the reactions that are using these enzymes are become more costly to the system.
 
 
-\section{Integration of Transcriptome Data}
-Transcriptome data is initially converted into protein abundances and used to change the stoichiometry of the enzyme usage pseudo-reaction. Will be explained when a solid function for expression=abundance assumption is found.
 
+\section{Phenotype Phase Plane Construction and Robustness Analysis}
 
-\section{Phenotype Phase Plane Construction}
+As previously mentioned, there is no single solution to the linear problem of the metabolic model. Phenotype phase planes (PhPP) are used to describe all the feasible metabolic states in a two or three dimentional surfaces, depending on the number of metabolites chosen to see how they affect the objective function \cite{edwards2002characterizing}. Commonly for aerobic models, various levels of glucose and oxygen availability through their uptake reactions are used to generate PhPP surfaces in three dimention with the objective function of growth.
 
-As previously mentioned, there is no single solution to the linear problem of the model. Phenotype phase planes (PhPP) are used to describe all feasible metabolic states in a two or three dimentional surfaces, depending on the number of metabolites chosen to see how they affect the objective function \cite{edwards2002characterizing}. In general, for aerobic models, various levels of glucose and oxygen availability through their uptake reactions are used to generate PhPP surfaces in three dimention with objective function. Fundamentally, PhPP construction refers to a double robustness analysis on the model for selected reactions.
-
+Phenotype phase plane construction refers to a double robustness analysis on the model for selected reactions. Fundemantally, a phenotype phane plane is a two-dimentional plane defined by axes of the exchange rates of the selected nutrients. Since there are finite number of points in this plane, flux balance analysis finds the the optimal flux distribution with the maximum or the minimum value of the objective function from all the points exist. The robustness of the network is determined by calculating the optimal flux distribution over iteratively altering the the selected nutrient exchange reaction boundaries from maximum (100\%) to minimum (0\%). In short, robustness analysis shows how the objective changes as the flux through the selected reaction varies in magnitude \cite{edwards2002characterizing}.
 
 \section{Flux Variability Analysis}
-Flux variability analysis (FVA) finds the minimum and maximum available fluxes for each reaction while obeying the provided constraints (for example fixed glucose uptake or growth rate). FVA is mainly used to evaluate the robustness of the model \cite{thiele2010functional}, to find alternative optimum states \cite{mahadevan2003effects}, to check flux distributions when growth is not at optimum level \cite{reed2004genome}, and it has many other applications \cite{gudmundsson2010computationally}.
+Flux variability analysis (FVA) finds the minimum and maximum available fluxes for each reaction while obeying the provided constraints (for example fixed glucose uptake or growth rate). FVA is mainly used  1) to evaluate the robustness of the model \cite{thiele2010functional}, 2) to find alternative optimum states \cite{mahadevan2003effects}, 3) to check flux distributions when growth is not at optimum level \cite{reed2004genome}. Many other applications of FVA can be found in the literature \cite{gudmundsson2010computationally}.
 
-FVA, similar to FBA, solves two optimization problems for each reaction:
+\vspace{1cm}
+Flux variability analysis, similar to FBA, solves two optimization problems for each reaction:
  \begin{align}
  \ \text{max}_v / \text{min}_v \quad & v_i \\
  \ \text{subject to} \quad & S_{m \times n} \cdot v=0 \\
@@ -208,9 +184,42 @@ FVA, similar to FBA, solves two optimization problems for each reaction:
  \end{align}
 \noindent where $w$ is the objective function equals to $c$ in the problem \ref{eq:fba}, $Z_0 = w^T \cdot v_0$ describes an optimal solution to the problem \ref{eq:fba}, $\gamma$ is an indicator to check whether the FVA is done at the optimal state (where objective flux is the same and $\gamma = 1$) or any other state (where $0 \leq \gamma < 1$).
 
+\section{Minimization of Metabolic Adjustment}
+An approach for predicting mutant behavior similar to Flux Balance Analysis is based on the Minimization of Metabolic Adjustment (MOMA). The idea behind this methodology arises because a mutant is more likely to display a sub-optimal flux distribution since the selection through evolutionary adaptation has altered the genetic background of the evolved strains. Therefore the application FBA on both wild-type and mutant strains is considered insubstantial. While the FBA method uses the objective function to present an optimal solution, MOMA choses the objective function as the minimization of the euclidean distance between the optimal flux distribution calculated by FBA on wild type strain and the sub-optimal flux distribution of the mutant where it remains initially as close as possible to the optimal flux distribution of the wild-type.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{moma.png}
+\caption[Comparison of FBA and MOMA flux distributions]{Comparison of FBA and MOMA flux distributions.}
+\end{center}
+\label{fig:moma}
+\end{figure}
+\noindent
+Distance in the flux space is a quadratic function, thus, quadratic programming (QP) algorithm is used in MOMA instead of linear programming (LP). To apply MOMA, the following FBA problem is solved first,
+\begin{align}
+ \ \text{max} \quad & c^T_{wt} \cdot v_{wt} \\
+ \label{eq:moma_1}
+ \ \text{subject to} \quad & S_{wt} \cdot v_{wt}=0 \\
+ \ & lb_{wt} \leq v_{wt} \leq ub_{wt}
+\end{align}
+\noindent
+Then the second problem is solved,
+\begin{align}
+ \ \text{min} \quad & \sum (v_{wt} - v_{mut})^2\\
+ \label{eq:moma_2}
+ \ \text{subject to} \quad & S_{wt} \cdot v_{wt}=0 \\
+ \ & S_{mut} \cdot v_{mut}=0 \\
+ \ & lb_{wt} \leq v_{wt} \leq ub_{wt} \\
+ \ & lb_{mut} \leq v_{mut} \leq ub_{mut} \\
+ \ & c^T_{wt} \cdot v_{wt} = f_{wt}
+\end{align}
+\noindent
+where $f_{wt}$ is the optimal objective value found by FBA in the first problem.
 
 \section{Random Sampling of Solution Space}
 Constraints applied to a model define a solution space, a convex polytope, where every flux distribution is accessible. Random sampling of the solution space is an unbiased tool to explore metabolic models. Mainly, Markov Chain Monte Carlo methods are used to sample this space using algorithms such as (Artificially Centered) Hit-and-Run (HRB) \cite{kiatsupaibul2011analysis, saa2016ll} algorithm, and this method has proven to be helpful in the analysis of genome-scale metabolic models \cite{schellenberger2009use}. Briefly, the random sampling method collects points that are uniformly distributed in the solution space and calculates the most probable flux value for each reaction.
+
+Since the computational burden of the loopless sampling is high, generated random points in the solution space of Yeast8 includes thermodynamically unfeasible states. Maximum glucose uptake rate was constrained to 1 mmol gDWh\textsuperscript{-1} and total of 5000 points are generated with maximum of 120 secondse alloted for the sampling.
 
 \begin{figure}[H]
 \begin{center}
@@ -219,5 +228,3 @@ Constraints applied to a model define a solution space, a convex polytope, where
 \caption[Workflow of the Loopless-ACHRB sampling on a toy model]{Workflow of the ll-ACHRB sampling on a toy model. A) Pre-processing phase, application of loopless-FBA to remove blocked reactions and constraining the directionalities of others. B) Warmup phase, modifying the reaction bounds to more interior space. C) Sampling phase with HRB algorithm. Figure is taken from \cite{saa2016ll}}
 \label{fig:achrb}
 \end{figure}
-
-Since the computational burden of loopless sampling is high, generated random points in the solution space of Yeast8 includes thermodynamically unfeasble states. Maximum glucose uptake rate was constrained to 1 mmol gDWh\textsuperscript{-1} and total of 5000 points are generated with maximum of 120 secondse alloted for the sampling.
