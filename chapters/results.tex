@@ -255,10 +255,9 @@ Flux ranges of each enzyme to find used enzymes and pathways on models are analy
   \label{fig:fva_enzymes}
   \end{figure}
 
-  \input{tables/fva_results.tex}
-
 As it can be seen in the Table \ref{table:fva_results} where the most divergent proteins (std $>$ 50) across all experiments are listed, paralog components of the glutathione system namely glutaredoxin-1 (GRX1) and glutaredoxin-2 (GRX2) shows the highest divergence across strains, followed by the glyceraldehyde-3-phosphate dehydrogenase (GAPDH) isozymes, triose-phosphate dehydrogenase 2 and 3 (TDH3 and TDH2).
 
+\input{tables/fva_results.tex}
 
 Pathway-wise investigation is carried out from the flux variability analysis results. First, the reactions that have subsystem annotations are collected for each seperately. It must be noted that some reactions can exist in multiple subsystems, for example, phosphoenolpyruvate carboxykinase reaction exists in all gluconeogenesis, glycolysis, citrate cycle (TCA cycle), pyruvate metabolism, biosynthesis of secondary metabolites, biosynthesis of antibiotics, and carbon metabolism subsystems. Secondly, the mean flux values for each subsystem for all models in flux variability analysis are collected. These flux values for the most common subsystems are plotted as stacked bars in Figure \ref{fig:fva_subsystem_spans} to distinguish subsystem activity for each model after the normalization arised from the assumption of the total flux value for each model should be equal in order to allow comparison.
 
@@ -298,7 +297,7 @@ Although all the models were able to grow in any single deletion on the reaction
 Minimization of metabolic adjustment (MOMA) analysis is applied to evolved models to find the closest points to wild-type model simulations (in terms of the Euclidean distances). Analysis is done with the objective of maximization of the growth rate and no constraints applied to the models except for the total protein amount availability. Results are collected for the metabolic reactions and the proteins (as enzyme-draw reactions) seperately. The sum of the distances from the wildtype simulations is used as a ranking system to find most distant reactions and proteins. Individual fluxes through reactions can be seen in Figure \ref{fig:moma_cumdist}.
 
 
- The most distant reactions in the evolved models from the wild type model found as palmitoyl-CoA hydrolase, followed by the long chain fatty acid CoA ligase, deoxyuridine kinase, methylglyoxal synthase, 5' nucleotidases, glutathione metabolism reactions. On the other hand, the enzymes TDH1 (glyceraldehyde-3-phosphate dehydrogenase isozyme 1), OLI1 (F0 ATP synthase subunit c), GPT2 (glycerol-3-phosphate/dihydroxyacetone phosphate sn-1 acyltransferase), RIB7 (Diamino-hydroxy-phoshoribosyl-amino-pyrimidine deaminase), SCT1 (glycerol 3-phosphate/dihydroxyacetone phosphate sn-1 acyltransferase) and COB (cytochrome b) were the top distant enzymes in terms of protein-draw reaction fluxes.
+ The most distant reactions in the evolved models from the wild type model found as palmitoyl-CoA hydrolase, followed by the long chain fatty acid CoA ligase, deoxyuridine kinase, methylglyoxal synthase, 5' nucleotidases, glutathione metabolism reactions. On the other hand, the enzymes TDH1 (glyceraldehyde-3-phosphate dehydrogenase isozyme 1), OLI1 (F0 ATP synthase subunit c), GPT2 (glycerol-3-phosphate/dihydroxyacetone phosphate sn-1 acyltransferase), RIB7 (Diamino-hydroxy-phoshoribosyl-amino-pyrimidine deaminase), SCT1 (glycerol 3-phosphate/dihydroxyacetone phosphate sn-1 acyltransferase) and COB (cytochrome b) were the top distant enzymes in terms of enzyme-draw reaction fluxes.
 
 \begin{figure}[H]
   \begin{center}
@@ -318,7 +317,7 @@ The most divergent reactions excluding diffusion, transport and exchange reactio
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/sampling_fba_top12.png}
-  \caption[sampling_fba_top12]{sampling_fba_top12}
+  \caption[Flux distributions of the reactions that diverge the most in flux balance analysis, obtained from the random sampling of solution spaces for each model shown as histogram plots]{Flux distributions of the reactions that diverge the most in flux balance analysis, obtained from the random sampling of solution spaces for each model shown as histogram plots.}
   \label{fig:sampling_fba_top12}
   \end{center}
 \end{figure}
@@ -329,7 +328,7 @@ Ferrocytochrome-c:oxygen oxidoreductase reaction shows a great divergence across
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/sampling_fva_top12.png}
-  \caption[sampling_fva_top12]{sampling_fva_top12}
+  \caption[Flux distributions of the reactions that diverge the most in flux variability analysis, obtained from the random sampling of solution spaces for each model shown as histogram plots]{Flux distributions of the reactions that diverge the most in flux variability analysis, obtained from the random sampling of solution spaces for each model shown as histogram plots.}
   \label{fig:sampling_fva_top12}
   \end{center}
 \end{figure}
@@ -341,7 +340,7 @@ In order to investigate enzyme relationships, correlation coefficients for each 
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/sampling_correlation_grx.png}
-  \caption[sampling]{sampling}
+  \caption[Correlations of GRX1 (top) and GRX2 (bottom) enzymes to other enzymes calculated from the random sampling of solution spaces. Only the name of enzymes with the correlation value c$>$0.8 are shown in the y-axes]{Correlations of GRX1 (top) and GRX2 (bottom) enzymes to other enzymes calculated from the random sampling of solution spaces. Only the name of enzymes with the correlation value c$>$0.3 are shown in the y-axes}
   \label{fig:sampling_correlation_grx}
   \end{center}
 \end{figure}
@@ -351,42 +350,38 @@ TDH3 enzyme shows positive correlation only in the caffeine resistant model to 4
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/sampling_correlation_tdh.png}
-  \caption[sampling]{sampling}
+  \caption[Correlations of TDH1 (top), TDH3 (middle) and TDH2 (bottom) enzymes to other enzymes calculated from the random sampling of solution spaces. Only the name of enzymes with the correlation value c$>$0.5 are shown in the y-axes]{Correlations of TDH1 (top), TDH3 (middle) and TDH2 (bottom) enzymes to other enzymes calculated from the random sampling of solution spaces. Only the name of enzymes with the correlation value c$>$0.5 are shown in the y-axes.}
   \label{fig:sampling_correlation_tdh}
   \end{center}
 \end{figure}
 
-
-
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/sampling_correlation_oli_gpt_rib.png}
-  \caption[sampling]{sampling}
+  \caption[Correlations of OLI1 (top), GPT2 (middle) and RIB7 (bottom) enzymes to other enzymes calculated from the random sampling of solution spaces. Only the name of enzymes with the correlation value c$>$0.5 are shown in the y-axes]{Correlations of OLI1 (top), GPT2 (middle) and RIB7 (bottom) enzymes to other enzymes calculated from the random sampling of solution spaces. Only the name of enzymes with the correlation value c$>$0.5 are shown in the y-axes.}
   \label{fig:sampling_correlation_oli_gpt_rib}
   \end{center}
 \end{figure}
 
+When we further investigate the enzymatic correlations of OLI1 (F0 ATP synthase subunit c), GPT2 (glycerol-3-phosphate/dihydroxyacetone phosphate sn-1 acyltransferase), and RIB7 (Diamino-hydroxy-phoshoribosyl-amino-pyrimidine deaminase) to other enzymes. We see that RIB7 shows similar results across models with the exception of correlations with HEM4 enzyme (uroporphyrinogen III synthase) absent in ethanolb8, caffeine and phenylethanol resistant models. Similar to HEM4 enzyme, COX15 (heme a synthase), ARH1 (mitochondrial oxidoreductase), NMA1 (nicotinic acid mononucleotide adenylyltransferase) and YAH1 (ferredoxin) enzymes must be investigated since they show different correlations across models although they are all involved in the heme biosynthesis pathways. In the case of OLI1, both positive and negative correlations are observed within all models, although the most distinct strain appears as caffeine resistant model by showying less correlations. GPT2 enzyme positively corralates with YJU3 (monoglyceride lipase) and ALE1 (lysophospholipid acyltransferase) enzymes in wildtype, silver and nickel resistant models with lower correlation values in caffeine resistant model.
+
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/sampling_moma_top12.png}
-  \caption[sampling_moma_top12]{sampling_moma_top12}
+  \caption[Flux distributions of the reactions that diverge the most in the minimization of metabolic adjustment analysis, obtained from the random sampling of solution spaces for each model shown as histogram plots]{Flux distributions of the reactions that diverge the most in the minimization of metabolic adjustment analysis, obtained from the random sampling of solution spaces for each model shown as histogram plots.}
   \label{fig:sampling_moma_top12}
   \end{center}
 \end{figure}
 
-Glyceraldehyde-3-phosphate dehydrogenase reaction ranks once again #1 in a different analysis, MOMA. It can be seen that seperation is clear in all models with a wider flux range in the silver resistant model meaning that its flux value differ in multiple solutions. Followed by palmitoyl-CoA hydrolase, long chain fattyacid-CoA ligase and methylglyoxal synthase reactions are only in the Figure because they are only active in the silver resistant model. However since their flux ranges are too close to 0, they cannot be investigated as concrete foundings. Pyruvate kinase reaction shows the same pattern as in previous analyses. Interestingly, proton leak reaction (leakage of hydrogen atoms from cytoplasm to mitochondria) carries flux up to solid 20 mmol/gDWh, indicating that in the phenylethanol, coniferylaldehyde and nickel resistant models, more than available proton is required in the mitochondria. Lastly, 5'-nucleotidase reactions, guanosine kinase and pyridoxamine kinase reactions are only active for silver resistant model, same as the previously mentioned reactions.
+Glyceraldehyde-3-phosphate dehydrogenase reaction ranks once again #1 in a different analysis, MOMA. It can be seen that seperation is clear in all models with a wider flux range in the silver resistant model meaning that its flux value differ in multiple solutions. Followed by palmitoyl-CoA hydrolase, long chain fattyacid-CoA ligase and methylglyoxal synthase reactions are only in the Figure because they are only active in the silver resistant model. However since their flux ranges are too close to 0, they cannot be investigated as solid foundings. Pyruvate kinase reaction shows the same pattern as in previous analyses. Interestingly, proton leak reaction (leakage of hydrogen atoms from cytoplasm to mitochondria) carries flux up to 20 mmol/gDWh, indicating that in the phenylethanol, coniferylaldehyde and nickel resistant models, more than available proton is required in the mitochondria. Lastly, 5'-nucleotidase reactions, guanosine kinase and pyridoxamine kinase reactions are only active for silver resistant model, same as the previously mentioned reactions.
 
-
-
-
-
-
------------------
+Finally, mean values for each enzyme from solution spaces are calculated. Z-scores are obtained from the difference between this means in each strain model to the wildtype model fluxes, divided by
+the square root of the sum of standard deviations of this difference. Z-scores for enzymes are converted to p-values within gaussian distribution, and compared to the p-values obtained from the differential expression analysis. Discarding the non-significant enzymes in both cases, the following Figure \ref{fig:sampling_regulation_heatmaps} is constructed to compare regulations.
 
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/sampling_regulation_heatmaps.png}
-  \caption[sampling]{sampling}
+  \caption[Regulation of the enzymes obtained from the random sampling of solution spaces (F) and differential expression analysis (E) in all models. Enzymes that only have significant (p$<$0.05) changes are plotted in both flux and expression changes]{Regulation of the enzymes obtained from the random sampling of solution spaces (F) and differential expression analysis (E) in all models. Enzymes that only have significant (p$<$0.05) changes are plotted in both flux and expression changes. }
   \label{fig:sampling_regulation_heatmaps}
   \end{center}
 \end{figure}
