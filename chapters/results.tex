@@ -23,7 +23,7 @@ Average enzyme saturation value is set to 50\% where the lowest error rate is ob
   \end{center}
 \end{figure}
 
-To prevent over-constraining the model with the enzyme kinetics, the most limiting proteins in the model are found based on their sensitivity on the objective function, i.e. growth. The $k_{cat}$ values for the the limiting enzymes are updated with the maximum available values from BRENDA\cite{jeske2019brenda} database by automated iterations until the simulation results for the growth rate agrees with the experimental growth rate. Modifications to the $k_{cat}$ values with their objective control coefficients can be found in the Table \ref{table:gecko_iterations}.
+To prevent over-constraining the model with the enzyme kinetics, the most limiting proteins in the model are found based on their sensitivity on the objective function, i.e. growth. The $k_{cat}$ values for the the limiting enzymes are updated with the maximum available values from BRENDA\cite{jeske2019brenda} database by automated iterations until the simulation results for the growth rate agrees with the experimental growth rate. These alterations for enzymes with their objective control coefficients can be found in the Table \ref{table:gecko_iterations}.
 
 \input{tables/gecko_iterations.tex}
 
@@ -73,7 +73,7 @@ Despite the high number of differentially expressed genes in the silver resistan
 
 
 
-The log2(fold-change) values of differentially expressed genes and their frequencies are plotted for each experiment in Figure \ref{fig:expr_frequencies_before}. Although the high number of differentially expressed genes are collected, due to the limited reaction number in the genome-scale metabolic models, only a part of obtained fold-change expression values were able to integrated into the models. Because of the limitations in the model, no further cutoff considered for the fold change values.
+The log2(fold-change) values of differentially expressed genes and their frequencies are plotted for each experiment in Figure \ref{fig:expr_frequencies_before}. Although the high number of differentially expressed genes are collected, due to the limited reaction number in the genome-scale metabolic models, only a part of obtained fold-change expression values were able to be integrated. Because of the limitations in the model, no further cutoff considered for the fold change values.
 
 \begin{figure}[H]
   \begin{center}
@@ -83,7 +83,7 @@ The log2(fold-change) values of differentially expressed genes and their frequen
   \end{center}
 \end{figure}
 
-Total of 277 genes in ethanol-b2, 464 genes in ethanol-b8, 783 genes in caffeine, 374 genes in coniferylaldehyde, 552 genes in iron, 28 genes in nickel, 759 genes in phenylethanol and 759 genes in silver resistant strains were integrated into the metabolic model to generate strain-specific models (\ref{fig:expr_frequencies_after}).
+Total of 277 genes in ethanol-b2, 464 genes in ethanol-b8, 783 genes in caffeine, 374 genes in coniferylaldehyde, 552 genes in iron, 28 genes in nickel, 759 genes in phenylethanol and 759 genes in silver resistant strains were integrated into the metabolic model to generate strain-specific models (Figure \ref{fig:expr_frequencies_after}).
 
 \begin{figure}[H]
   \begin{center}
@@ -92,6 +92,8 @@ Total of 277 genes in ethanol-b2, 464 genes in ethanol-b8, 783 genes in caffeine
   \label{fig:expr_frequencies_after}
   \end{center}
 \end{figure}
+
+In comparison, 14.13\% of genes in ethanol-b2, 15.74\% of genes in ethanol-b8, 16.51\% of genes in caffeine	16.50\% of genes in coniferylaldehyde, 16.01\% of genes in iron, 18.42\% of genes	in nickel, 15.83\% of genes in phenylethanol and 15.83\%  of genes in silver resistant strains were found in the metabolic model and they are integrated.
 
 In order to validate the expression data integration method, fluxes for each enzyme (i.e. protein flux from protein pool to reaction for each protein) is predicted by flux balance analysis on all the strain models and on the wild-type model (wild-type here is referred as the metabolic model without expression data integrated). Flux ratios between wild-type and evolved models are calculated, and linear regression analysis is fitted after elimination of the outliers by the generalized extreme studentized deviate test to compare the flux-changes with the protein fold-changes from the expression data. Results confirm a good correlation between simulations and protein fold-change values (Figure \ref{fig:expr_linear_regressions}).
 
@@ -109,7 +111,7 @@ In order to validate the expression data integration method, fluxes for each enz
 
 The metabolic model is first simulated without the integration of the expression data (this model will be referred as wild-type model). Since the model is already enzymatically constrained, the only additional constraint required is the total amout of enzymes available in the enzyme pool. All the lower bounds for reactions were set to 0, and the upper bounds were set to 1000, except for the enzyme pool reaction. By doing that, the model was set free to be able to allocate enzymes as the reactions require. Flux rates of several exchange reactions as a function of growth rate are plotted in Figure \ref{fig:wt_crabtree}.
 
-A behavioral change is observed around the time when growth rate is approximately 0.3 h\textsuperscript{-1}. Since the model is simulated under fully areobic conditions (no constraints applied) and produces ethanol, this behavior can be explained by the Crabtree effect, where the yeast metabolism switches to perform both respiration and fermantation at the same time at a critical specific growth rate.
+A behavioral change is observed around the time when growth rate is approximately 0.3 h\textsuperscript{-1}. Since the model is simulated under fully areobic conditions (no constraints applied) and produces ethanol, this behavior can be explained by the Crabtree effect, where the yeast metabolism switches to perform both respiration and fermentation at the same time at a critical specific growth rate.
 
 \begin{figure}[H]
   \begin{center}
@@ -135,8 +137,8 @@ After the validation of the wild-type model, all models for strains are simulate
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/growth_glucose_ales.png}
   \caption[Growth rates as a function of iteratively increasing glucose uptake rates]{Growth rates as a function of iteratively increasing glucose uptake rates.}
-  \end{center}
   \label{fig:growth_glucose_ales}
+  \end{center}
   \end{figure}
 \vspace{-1.0cm}
 
@@ -162,17 +164,27 @@ After the validation of the wild-type model, all models for strains are simulate
       silver              & 0.34163                    & 25                                       \\ \hline
       wildtype            & 0.37618                    & 19                                       \\ \hline
   \end{tabular}
-
   \label{table:growth_glucose_table}
   \end{center}
 \end{table}
 
-In order to characterize the differentiating reactions in the flux balance analysis solution vectors, cumulative flux vectors of each experiment are plotted (Figure \ref{fig:cumflux_free}). Standart deviations for each reaction between strains are calculated to find most diverging points and plotted as a bar graph.
+Phenotype phase planes are obtained through double robustness analysis to see the effect of oxygen on growth while different glucose levels are fed to the system. Contour plots showing different regions can be seen in the Figure \ref{fig:robustness_glu_oxy}.
+
+\begin{figure}[H]
+  \begin{center}
+  \includegraphics[width=0.85\columnwidth]{figures/robustness_glu_oxy.png}
+  \caption[The glucose uptake rate (mmol/gDWh) versus oxygen uptake rate (mmol/gDWh) phenotype phase planes show the cellular growth rate as colored contours for each adapted model simulations]{The glucose uptake rate (mmol/gDWh) versus oxygen uptake rate (mmol/gDWh) phenotype phase planes show the cellular growth rate as colored contours for each adapted model simulations.}
+  \label{fig:robustness_glu_oxy}
+  \end{center}
+  \end{figure}
+\vspace{-1.0cm}
+
+In order to characterize the differentiating reactions in the flux balance analysis solution vectors, cumulative flux vectors of each experiment are plotted (Figure \ref{fig:cumflux_free}). It must be remembered that at this point, the only constraint applied to the models is the level of enzymes available in the enzyme pool. In other words, the models are able to allocate enzymes as the reactions require while all other sources (carbon, nitrogen, etc.) are unlimited. Standart deviations for each reaction between strains are calculated to find most diverging points and plotted as a bar graph.
 
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/cumflux_free.png}
-  \caption[Cumulative flux vectors of each simulation and standart deviations]{Cumulative flux vectors of each model and the standart deviations of reactions across each adaptatoin.}
+  \caption[Cumulative flux vectors of each model simulations under unlimited glucose uptake constraints and the standart deviations of reactions across each adaptation]{Cumulative flux vectors of each model simulations under unlimited glucose uptake constraints and the standart deviations of reactions across each adaptation.}
   \label{fig:cumflux_free}
   \end{center}
 \end{figure}
@@ -180,12 +192,12 @@ In order to characterize the differentiating reactions in the flux balance analy
 Reactions with the standart deviation values more than 10 mmol/gDWh are listed in Table \ref{table:cumulative_free_stds}. The same reactions with different numbers in their names use different enzymes. For example, glyceraldehyde-3-phosphate dehydrogenase (GADPH) reaction can be carried out in the presence of YGR192C or YJL052W or YJR009C genes' proteins, in other words, TDH1 or TDH2 or TDH3 isozymes. Therefore there are No1, No2 and No3 versions of the same reaction, using different enzymes. It must be noted that these multiple reactions carried out with isozymes in the metabolic model may not mean a significant difference if the enzymes do not catalyze any other reaction. This means that the chosen isozyme may not matter mathematically if the flux value across the isozyme reactions are the same.
 \input{tables/cumulative_free_stds.tex}
 
-Cumulative flux vectors of each experiment are plotted once more when the boundaries of the glucose uptake reaction is constrained to 10 gDWh\textsuperscript{-1} for each model (Figure \ref{fig:cumflux_gur10}). This has done to eliminate differences might be arising because of the free glucose uptake rates (as shown in below section, each model can uptake different maximum amount of glucose) and therefore affecting the downstream reaction fluxes.
+Because of the reason behind the differentiation is mostly caused by different uptake values of glucose, cumulative flux vectors of each experiment are plotted once more when the boundaries of the glucose uptake reaction is constrained to 10 gDWh\textsuperscript{-1} for each model (Figure \ref{fig:cumflux_gur10}). This has done to eliminate the differences caused by the free glucose uptake rates (as shown in below section, each model can uptake different maximum amount of glucose) and therefore affecting the downstream reaction fluxes.
 
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/cumflux_gur10.png}
-  \caption[Cumulative flux vectors of each experiment when glucose uptake rate is constrained]{Cumulative flux vectors of each simulation and standart deviations. Glucose uptake rate is constrainted to  10 mmol/gDWh for all models. }
+  \caption[Cumulative flux vectors of each experiment when glucose uptake rate is constrained]{Cumulative flux vectors of each simulation and standart deviations. Glucose uptake rate is constrainted to 10 mmol/gDWh for all models. }
   \label{fig:cumflux_gur10}
   \end{center}
 \end{figure}
@@ -194,7 +206,7 @@ Reactions with the standart deviation values more than 5 mmol/gDWh are listed in
 
 \input{tables/cumulative_gur10_stds.tex}
 
-Finally, only arm reactions (where the isozyme reactions are combined, see Methods) when the glucose uptake rate is constrained to 10 mmol/gDWh are plotted as heatmap in Figure \ref{fig:fba_heatmap}. As it can be seen from the previous tables, most of the differences were caused by the isozymes with the flux values close to each other. By considering only arm reactions and a fixed glucose uptake rate, the reactions that are actually differ because of the expression integration are found.
+Finally, only the arm reactions (where the isozyme reactions were seperated from, see Methods) when the glucose uptake rate is constrained to 10 mmol/gDWh are plotted as heatmap in Figure \ref{fig:fba_heatmap}. Arm reactions in this context refer to the combined reactions that normally have multiple sub-reactions because of isozymes catalyzing the same reaction. As it can be seen from the previous tables, most of the differences were caused by the isozymes with the flux values close to each other. By considering only arm reactions and a fixed glucose uptake rate, the reactions that actually differ because of the expression integration are found.
 
 \begin{figure}[H]
   \begin{center}
@@ -206,7 +218,7 @@ Finally, only arm reactions (where the isozyme reactions are combined, see Metho
 
 Overall the most divergent strain can be seen as silver resistant strain while the nickel strain has the closest values to the wildtype model as expected considering the integrated expression data. The highest deviation caused in the water diffusion from mitochondria to cytoplasm indicates that even at the same glucose feeding rates, phenylethanol resistant strain requires higher (89.5\%) water in the mitochondria. Followed with the ferrocytochrome-c:oxygen oxidoreductase, pyruvate decarboxylase reactions and different exchange reactions, the results conclude that the models of evolved strains follow different paths to produce biomass with the same environmental conditions provided.
 
-As these different models belong the evolved strains, hierarchical relationship between models are drawn as dendrogram in Figure \ref{fig:fba_dendrogram}. Euclidean pairwise distance is calculated between flux balance analysis solution vectors for each model where the glucose uptake rate is constrained to 10 mmol/gDWh first and then clustered by the unweighted average distance (UPGMA) method to draw a tree. Cophenetic correlation coefficient is found as 0.9744 while theSpearman's rank correlation between the dissimilarities and the cophenetic distances is calculated as 0.9096, indicating a high-quality solution.
+As these different models belong to evolved strains, hierarchical relationship between models are drawn as dendrogram in Figure \ref{fig:fba_dendrogram}. Euclidean pairwise distance is calculated in MATLAB between flux balance analysis solution vectors for each model where the glucose uptake rate is constrained to 10 mmol/gDWh first and then clustered by the unweighted average distance (UPGMA) method to draw a tree. Cophenetic correlation coefficient is found as 0.9744 while theSpearman's rank correlation between the dissimilarities and the cophenetic distances is calculated as 0.9096, indicating a high-quality solution.
 
 \begin{figure}[H]
   \begin{center}
@@ -216,7 +228,7 @@ As these different models belong the evolved strains, hierarchical relationship 
   \end{center}
 \end{figure}
 
-Despite the high correlation between the fold changes obtained from differential expression analysis and the flux balance analyses for particular enzymes, outliers must be investigated for the indirect regulation of enzymes. Three groups can be formed for these: Firstly, enzymes may show transcriptional regulation behaviors (TR) if their flux fold changes (between evolved and wildtype strain models) corralate with the differential gene expression results. Secondly, enzymes may show metabolic regulation behaviors (MR) if the flux change is observed even in the absences of the expressional changes. And lastly, enzymes may show post-transcriptional regulation behaviors (PR) if their expression levels change without showying any flux changes (Table \ref{table:regulation_table}). In the Figure \ref{fig:fba_regulation}, enzymes that have significant expressional fold changes (p $<$ 0.05) in all models are categorized for this purpose.
+Despite the high correlation between the fold changes obtained from differential expression analysis and the flux balance analyses for particular enzymes, outliers must be investigated for the indirect regulation of enzymes. Three groups can be formed for these: Firstly, enzymes may show transcriptional regulation behaviors (TR) if their flux fold changes (between evolved and wildtype strain models) correlate with the differential gene expression results. Secondly, enzymes may show metabolic regulation behaviors (MR) if the flux change is observed even in the absences of the expressional changes. And lastly, enzymes may show post-transcriptional regulation behaviors (PR) if their expression levels change without showing any flux changes (Table \ref{table:regulation_table}). In the Figure \ref{fig:fba_regulation}, enzymes that have significant expressional fold changes (p $<$ 0.05) in all models are categorized for this purpose.
 
 \vskip 1\baselineskip
 \begin{table}[H]
@@ -245,7 +257,7 @@ Interestingly, most of the enzymes show post-transcriptional regulation behavior
 \end{figure}
 
 \section{Flux Variability Analysis}
-Flux ranges of each enzyme to find used enzymes and pathways on models are analyzed by the linear problem in the Flux Variability Analysis method where the objective functions to minimize and maximize all reactions iteratively with growth as the objective function kept at 90\%. Minimum and maximum available fluxes are collected in the iterative process for each reaction, and results are plotted in Figure \ref{fig:fva_enzymes}). Standart deviations on flux ranges for each reaction are also plotted to find most divergent targets. .
+Flux ranges of each enzyme to find used enzymes and pathways on models are analyzed by the linear problem in the Flux Variability Analysis method where the objective functions to minimize and maximize all reactions iteratively with growth rate as the objective function kept at 90\% of its maximum value. Minimum and maximum available fluxes are collected in the iterative process for each reaction, and results are plotted in Figure \ref{fig:fva_enzymes}). Standart deviations on flux ranges for each reaction are also plotted to find most divergent targets. .
 
 \begin{figure}[H]
   \begin{center}
@@ -322,7 +334,7 @@ The most divergent reactions excluding diffusion, transport and exchange reactio
   \end{center}
 \end{figure}
 
-Ferrocytochrome-c:oxygen oxidoreductase reaction shows a great divergence across all models despite having the 0 flux on the caffeine resistant model. This 0 flux on the caffeine model explains the higher fluxes through alcohol dehydrogenase reaction, meaning thet the oxidative phosphorylation rates are lower in the cafferine resistant model compared to ethanol producing pathways. Pyruvate decarboxylase reaction shows almost the pattern with the pyruvate kinase reaction indicating a chain reaction. Remember that the although the models are fed with the same amount of carbon sources, small differences in their reaction fluxes comes from the adaptive evolution expression analyses. That reminded, the small flux values on the 6-phosphogluconolactonase reaction biologically may not mean a big difference, however the different behavior of the silver resistant model (having a wider range over other models) could mean the availability of the althernative pathways for the same biological objective.
+Ferrocytochrome-c:oxygen oxidoreductase reaction shows a great divergence across all models despite having the 0 flux on the caffeine resistant model. This 0 flux on the caffeine model explains the higher fluxes through alcohol dehydrogenase reaction, meaning thet the oxidative phosphorylation rates are lower in the caffeine resistant model compared to ethanol producing pathways. Pyruvate decarboxylase reaction shows almost the pattern with the pyruvate kinase reaction indicating a chain reaction. Remember that the although the models are fed with the same amount of carbon sources, small differences in their reaction fluxes comes from the adaptive evolution expression analyses. That reminded, the small flux values on the 6-phosphogluconolactonase reaction biologically may not mean a big difference, however the different behavior of the silver resistant model (having a wider range over other models) could mean the availability of the althernative pathways for the same biological objective.
 
 
 \begin{figure}[H]
@@ -335,7 +347,7 @@ Ferrocytochrome-c:oxygen oxidoreductase reaction shows a great divergence across
 
 Enzyme fluxes are numerically hard to distinguish in histogram plots because of the lower magnitude of the enzyme kinetics. The main target enzymes from the flux variability analysis are found as the glutaredoxin paralogs (GRX1 and GRX2) mostly did not show a very different behaviors on the sampled solution spaces. Glyceraldehyde-3-phosphate dehydrogenase isozymes (TDH1, TDH2 and TDH3) on the other hand show the different preferences between models.
 
-In order to investigate enzyme relationships, correlation coefficients for each enzyme is calculated from the solution spaces for all models. Considering only the correlation values higher than R $>$ 0.5, GRX enzymes are found the be positively correlated with the phospholipid hydroperoxide glutathione peroxidase (GPX) enzymes (Figure \ref{fig:sampling_correlation_grx}).
+In order to investigate enzyme relationships, correlation coefficients for each enzyme is calculated from the solution spaces for all models. Considering only the correlation values higher than R $>$ 0.5, GRX enzymes are found to be positively correlated with the phospholipid hydroperoxide glutathione peroxidase (GPX) enzymes (Figure \ref{fig:sampling_correlation_grx}).
 
 \begin{figure}[H]
   \begin{center}
@@ -363,7 +375,7 @@ TDH3 enzyme shows positive correlation only in the caffeine resistant model to 4
   \end{center}
 \end{figure}
 
-When we further investigate the enzymatic correlations of OLI1 (F0 ATP synthase subunit c), GPT2 (glycerol-3-phosphate/dihydroxyacetone phosphate sn-1 acyltransferase), and RIB7 (Diamino-hydroxy-phoshoribosyl-amino-pyrimidine deaminase) to other enzymes. We see that RIB7 shows similar results across models with the exception of correlations with HEM4 enzyme (uroporphyrinogen III synthase) absent in ethanolb8, caffeine and phenylethanol resistant models. Similar to HEM4 enzyme, COX15 (heme a synthase), ARH1 (mitochondrial oxidoreductase), NMA1 (nicotinic acid mononucleotide adenylyltransferase) and YAH1 (ferredoxin) enzymes must be investigated since they show different correlations across models although they are all involved in the heme biosynthesis pathways. In the case of OLI1, both positive and negative correlations are observed within all models, although the most distinct strain appears as caffeine resistant model by showying less correlations. GPT2 enzyme positively corralates with YJU3 (monoglyceride lipase) and ALE1 (lysophospholipid acyltransferase) enzymes in wildtype, silver and nickel resistant models with lower correlation values in caffeine resistant model.
+When we further investigate the enzymatic correlations of OLI1 (F0 ATP synthase subunit c), GPT2 (glycerol-3-phosphate/dihydroxyacetone phosphate sn-1 acyltransferase), and RIB7 (Diamino-hydroxy-phoshoribosyl-amino-pyrimidine deaminase) to other enzymes. We see that RIB7 shows similar results across models with the exception of correlations with HEM4 enzyme (uroporphyrinogen III synthase) absent in ethanolb8, caffeine and phenylethanol resistant models. Similar to HEM4 enzyme, COX15 (heme a synthase), ARH1 (mitochondrial oxidoreductase), NMA1 (nicotinic acid mononucleotide adenylyltransferase) and YAH1 (ferredoxin) enzymes must be investigated since they show different correlations across models although they are all involved in the heme biosynthesis pathways. In the case of OLI1, both positive and negative correlations are observed within all models, although the most distinct strain appears as caffeine resistant model by showying less correlations. GPT2 enzyme positively correlates with YJU3 (monoglyceride lipase) and ALE1 (lysophospholipid acyltransferase) enzymes in wildtype, silver and nickel resistant models with lower correlation values in caffeine resistant model.
 
 \begin{figure}[H]
   \begin{center}
@@ -373,7 +385,7 @@ When we further investigate the enzymatic correlations of OLI1 (F0 ATP synthase 
   \end{center}
 \end{figure}
 
-Glyceraldehyde-3-phosphate dehydrogenase reaction ranks once again #1 in a different analysis, MOMA. It can be seen that seperation is clear in all models with a wider flux range in the silver resistant model meaning that its flux value differ in multiple solutions. Followed by palmitoyl-CoA hydrolase, long chain fattyacid-CoA ligase and methylglyoxal synthase reactions are only in the Figure because they are only active in the silver resistant model. However since their flux ranges are too close to 0, they cannot be investigated as solid foundings. Pyruvate kinase reaction shows the same pattern as in previous analyses. Interestingly, proton leak reaction (leakage of hydrogen atoms from cytoplasm to mitochondria) carries flux up to 20 mmol/gDWh, indicating that in the phenylethanol, coniferylaldehyde and nickel resistant models, more than available proton is required in the mitochondria. Lastly, 5'-nucleotidase reactions, guanosine kinase and pyridoxamine kinase reactions are only active for silver resistant model, same as the previously mentioned reactions.
+Glyceraldehyde-3-phosphate dehydrogenase reaction ranks once again #1 in a different analysis, MOMA. It can be seen that separation is clear in all models with a wider flux range in the silver resistant model meaning that its flux value differ in multiple solutions. Followed by palmitoyl-CoA hydrolase, long chain fatty acid-CoA ligase and methylglyoxal synthase reactions are only in the Figure because they are only active in the silver resistant model. However since their flux ranges are too close to 0, they cannot be investigated as solid foundings. Pyruvate kinase reaction shows the same pattern as in previous analyses. Interestingly, proton leak reaction (leakage of hydrogen atoms from cytoplasm to mitochondria) carries flux up to 20 mmol/gDWh, indicating that in the phenylethanol, coniferylaldehyde and nickel resistant models, more than available proton is required in the mitochondria. Lastly, 5'-nucleotidase reactions, guanosine kinase and pyridoxamine kinase reactions are only active for silver resistant model, same as the previously mentioned reactions.
 
 Finally, mean values for each enzyme from solution spaces are calculated. Z-scores are obtained from the difference between this means in each strain model to the wildtype model fluxes, divided by
 the square root of the sum of standard deviations of this difference. Z-scores for enzymes are converted to p-values within gaussian distribution, and compared to the p-values obtained from the differential expression analysis. Discarding the non-significant enzymes in both cases, the following Figure \ref{fig:sampling_regulation_heatmaps} is constructed to compare regulations.
