@@ -25,6 +25,42 @@ In addition to the methodological choice, decision of the selection criteria and
 
 Capturing genomic changes in the dynamic evolution process is the main goal of an ALE study, therefore frequent data collection in longitudinal manner is a must to unveil molecular details. Next-generation technologies empower researchers to catch even single-nucleotide mutations through genome sequencing and also provide an understanding on broader regulatory changes through equation expression profiles \cite{conrad2011microbial}. Focus of the studying the differences between evolved and unevolved strains may be on the individual protein level or as a system-level trait. Interpreting the system as a network enables verious ways to investigate causality behind adaptive mechanisms and dynamics of evolution \cite{soyer2013evolutionary, long2018adaptive}.
 
+\subsection{Computational Tools for ALE Experiments}
+
+Adaptive laboratory evolution, in laboratories, uses natural selection to capture microbial adaptations for decades. Although the results of these experiments would provide the ideal selection pressure to be imposed on organisms to obtain favored strains, the difference between the starting and the evolved strain is not easy to find. Throughout the years, various additional methods and computational tools are invested to investigate findings. With decreasing cost of whole genome sequencing and resequencing, identification of mutations can reveal the mistery behind the adaptations. Due to complexity of cellular systems and missing points in the metabolic regulations, the interpretation of the mutation effects is still the main challenge in the field \cite{palsson2011adaptive}.
+
+A web-based database platform, ALEdb (aledb.org) \cite{phaneuf2019aledb}, has been created last year. Platform collects and reports on ALE acquired mutations and their experimental conditions and provides several feature such as searching for specific mutations within reports, exporting of mutation query results for custom analysis, and many more. With these useful features and beign freely available for non-commercial uses, ALEdb becomes a resourceful tool in the field (Figure \ref{fig:intro_aledb}).
+\vspace{1cm}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{figures/intro_aledb.jpeg}
+\caption[Illustrated pipeline of ALEdb from experimental design to reportingt]{Illustrated pipeline of ALEdb\cite{phaneuf2019aledb} from experimental design to reporting.}
+\label{fig:intro_aledb}
+\end{center}
+\end{figure}
+
+eVOLVER\cite{wong2018precise}, an open-source DIY framework that promises a solution to the main challenge of balancing the tradeoff between controllable (such us bioreactor designs) and throughput (such us batch designs) experiments in the ALE. Framework comes with both software and hardware, and it offers to define the various experimental parameters e.g. temperature, density, media, in a virtually automated fashion (Figure \ref{fig:intro_evolver}). It simultaneously controls multiple experimental designs, collects and measures data in real-time. eVOLVER is also designed to be scaleable to high-throughput, therefore, it is a promising tool to carry out automated multidimensional growth and selection experiments.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{figures/intro_evolver.png}
+\caption[Integrated framework of eVOLVER for high-throughput ALE experiments]{Integrated framework of eVOLVER for high-throughput ALE experiments.}
+\label{fig:intro_evolver}
+\end{center}
+\end{figure}
+
+
+Another simulator, ALEsim\cite{lacroix2017model}, was developed for the optimization of ALE experiments and promises to improve ALE results. It is a model built on the basic principles of growth in order to predict growth rates in batch cultures of ALE experiments (Figure \ref{fig:intro_alesim}). By evaluating various passage sizes, ALEsim can calculate how and when to deploy resources to shorten experiment timelines and to achieve desired results. ALEsim provides a way to design better experiments and quantify them, to obtain the desired outcome with the resources available on hand.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{figures/intro_alesim.jpg}
+\caption[ALEsim flow chart]{ALEsim flow chart.}
+\label{fig:intro_alesim}
+\end{center}
+\end{figure}
+
+
 \section{Systems Biology}
 With the increasing availability of the computational tools and the development of high throughput techniques in the omics field, systems biology has shown a strong emergence in the last few years as a key multi-disciplinary field for integrating the multi-layer complexity of biological systems, particularly in the areas of transcriptomics, proteomics, metabolomics and fluxomics \cite{kitano2002systems}. This amount of available data allows researchers to investigate molecular cell processes in a large scales, applying theoretical, experimental and computational methods.
 
@@ -67,9 +103,9 @@ The ultimate goal of the GSMM reconstruction is to predict flux distribution pro
 
 \begin{figure}[ht]
 \begin{center}
-\includegraphics[width=1\columnwidth]{wos_metabolicmodel_search.jpg}
+\includegraphics[width=1\columnwidth]{figures/intro_wos.png}
 \end{center}
-\caption[Web of Science artice counts on "metabolic model"]{Web of Science artice counts on "metabolic model"}
+\caption[Web of Science artice counts on the query "metabolic model" keyword]{Web of Science artice counts on the query "metabolic model" keyword.}
 \label{fig:wos_metabolicmodel}
 \end{figure}
 
@@ -80,9 +116,9 @@ One can propose a steady-state model for the correlation between the metabolites
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=1\columnwidth]{ToyNetwork.png}
+\includegraphics[width=1\columnwidth]{figures/intro_toymodel.png}
 \end{center}
-\caption[Toy network for steady-state assumption]{Toy network for steady-state assumption (will be redrawn).}
+\caption[Toy network for steady-state assumption]{Toy network for steady-state assumption.}
 \label{fig:ToyNetwork}
 \end{figure}
 
@@ -95,7 +131,7 @@ If we accept the steady-state assumption, and since we know all the possible rea
 
 meaning that production rate of metabolite A is equal to its consumption rate. In other words, there will be no accumulation of metabolite A in the cell. Considering we have 3 metabolites and 7 reactions, this representation of reactions can written as a system of linear equations:
 \begin{figure}[h]
-\includegraphics[width=1\columnwidth]{ToyNetworkEquations.png}
+\includegraphics[width=1\columnwidth]{figures/intro_toymodel_eq.png}
 \begin{center}S . v = 0 \end{center}
 \end{figure}
 
@@ -112,7 +148,19 @@ In terms of physico-chemical properties of a biological system, mass and charge 
 
 Since the experiments are carried out in a defined medium, environmental constraints must be added in silico simulations as well. These constraints include nutrient availability (such as carbon, nitrogen or oxygen sources), the pH value, temperature, or any other experiment-specific conditions. Additionally, spatial constraints can be given to the system to limit substrate and enzyme availability for a specific compartment, especially for the metabolites which are transferred between compartments by facilitated diffusion.
 
-More recently, regulatory constraints have started to be used to simulate experimental observations on cellular regulatory mechanisms, such as variable amounts of gene products (transcriptional, translational regulations) and their activities (enzymatic regulations). Integration of omics data, mainly transcriptome data, is used to capture these regulations in silico.
+
+There are several methods used in constraint-based modelling (Figure \ref{fig:intro_constraintbasedmodelling}) and additional constraints are introduced into the field everyday. More recently, regulatory constraints have started to be used to simulate experimental observations on cellular regulatory mechanisms, such as variable amounts of gene products (transcriptional, translational regulations) and their activities (enzymatic regulations). Integration of omics data, mainly transcriptome data, is used to capture these regulations in silico.
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{figures/intro_constraintbasedmodelling.png}
+\end{center}
+\caption[Various constraint-based modeling methods]{Various constraint-based modeling methods \cite{lewis2012constraining}.}
+\label{fig:intro_constraintbasedmodelling}
+\end{figure}
+
+
 
 \section{\emph{Saccharomyces cerevisiae}}
 
@@ -123,19 +171,28 @@ From the end of the eighteenth century, mainly after the fermentation is defined
 
 The set of anabolic and catabolic reactions in the cell are reffered as the metabolism. A shematic representation of the central carbon metabolism in \emph{S. cerevisiae} can be found in Figure \ref{fig:central_carbon_mech_of_s_cerevisiae_kegg}. Glycolysis, pentose-phosphate pathway (PPP), tricarboxylic acid cycle (TCA) or Krebs cycle, the glyoxylate cycle and the electron transport chain are the main pathways in central carbon metabolism.
 
- \begin{figure}[ht]
+ \begin{figure}[H]
  \includegraphics[width=1\columnwidth]{central_carbon_mech_of_s_cerevisiae_kegg.png}
  \caption[Central carbon mechanism of \emph{S. cerevisiae}]{Central carbon mechanism of \emph{S. cerevisiae} obtained from  KEGG \cite{kanehisa2000kegg}.}
  \vskip\baselineskip % Leave a vertical skip below the figure
  \label{fig:central_carbon_mech_of_s_cerevisiae_kegg}
  \end{figure}
 
-\hl{In this section, there will be subsections on} all biological pathways individually (explaining each in detail -probably referencing Lehninger biochemistry-) especially NAD regulation, fermantation (crabtree effect, industrial applications, bio-ethanol production) etc. Maybe also regulation strategies in cells (feedback/feedforward loops with figures)
+Central carbon metabolism is finely tuned throughout the organic evolution to supply required energy and to produce building blocks for a yeast cell. All the pathways mentioned are interconnected through metabolites (reaction products or substrates) and/or cofactors (such as ATP, NAD, and NADP) within the cell. These pathways are activated or down-regulated by a tight regulation in order to satisfy what is required according to environmental conditions.
 
-\subsection{Adaptive Evolution Studies on \emph{S. cerevisiae} (Palsson 2015)}
+The most characterized regulatory effects of yeasts can be listed as 1) Pasteur Effect, the inhibition of fermentation in the presence of oxygen with a decreased affinity for sugar uptake \cite{lagunas1983role}, 2) Kluyver Effect, for the species \emph{Candida utilis}, \emph{Kluyveromyces wickerhamii} and \emph{Debaryomyces yamadae}, being able to ferment glucose anaerobically but not being able to ferment maltose, lactose, and sucrose \cite{kaliterna1995transient}, 3) Custer Effect, the species \emph{Dekkera} and \emph{Brettanomyces} ferment glucose to ethanol faster under aerobic conditions \cite{scheffers1966stimulation}, and 4) Crabtree Effect, the supression of respiration by high glucose condition.
+
+\subsection{Adaptive Evolution Studies on \emph{S. cerevisiae}}
+Experimental designs, reverse engineering results from top cited articles.
+
+Possibly 3-4 paragraph
 
 \subsection{Metabolic Models of \emph{S. cerevisiae}}
-After the first \emph{S. cerevisiae} genome sequence is published, the first cDNA spotted microarray exploring metabolic gene regulation in 1997 \cite{derisi1997exploring}, and the first commercial platform for oligonucleotide microarray data (Affymetrix) to investigate cellular regulations were reported in 1998 \cite{cho1998parallel}. Existing genome data is integrated with the extensive annotation based on microarray data and biochemical knowledge from literature, leading of the publication of the first GSMM of \emph{S. cerevisiae} in 2013 \cite{forster2003genome}.   \hl{More in this section, there will be review on:} Genome-scale modeling of yeast: chronology, applications and critical perspectives \cite{lopes2017genome}
+After the first \emph{S. cerevisiae} genome sequence is published, the first cDNA spotted microarray exploring metabolic gene regulation in 1997 \cite{derisi1997exploring}, and the first commercial platform for oligonucleotide microarray data (Affymetrix) to investigate cellular regulations were reported in 1998 \cite{cho1998parallel}. Existing genome data is integrated with the extensive annotation based on microarray data and biochemical knowledge from literature, leading of the publication of the first GSMM of \emph{S. cerevisiae} in 2013 \cite{forster2003genome}.
+
+Add more: Year by year improvements on the yeast models, their numeric values on gene/rxn numbers, requirement of a consensus model, automated generations..\cite{lopes2017genome} Possibly 3-4 paragraph
 
 \subsection{Applications of \emph{S. cerevisiae} GSMMs}
- \hl{Literature review on the applications will be added.}
+General, medical and industrial applications of yeast GSMMs from the literature, more detailed results on ALE studies using GSMMs.
+
+Possibly 4-5 paragraph.
