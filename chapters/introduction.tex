@@ -39,7 +39,10 @@ A web-based database platform, ALEdb (aledb.org) \cite{phaneuf2019aledb}, has be
 \end{center}
 \end{figure}
 
-eVOLVER\cite{wong2018precise}, an open-source DIY framework that promises a solution to the main challenge of balancing the tradeoff between controllable (such us bioreactor designs) and throughput (such us batch designs) experiments in the ALE. Framework comes with both software and hardware, and it offers to define the various experimental parameters e.g. temperature, density, media, in a virtually automated fashion (Figure \ref{fig:intro_evolver}). It simultaneously controls multiple experimental designs, collects and measures data in real-time. eVOLVER is also designed to be scaleable to high-throughput, therefore, it is a promising tool to carry out automated multidimensional growth and selection experiments.
+eVOLVER\cite{wong2018precise}, an open-source DIY framework that promises a solution to the main challenge of balancing the tradeoff between controllable (such as bioreactor designs) and throughput (such as batch designs) experiments in the ALE. Framework comes with both software and hardware, and it offers to define the various experimental parameters e.g. temperature, density, media, in a virtually automated fashion (Figure \ref{fig:intro_evolver}). It simultaneously controls multiple experimental designs, collects and measures data in real-time. eVOLVER is also designed to be scaleable to high-throughput, therefore, it is a promising tool to carry out automated multidimensional growth and selection experiments.
+
+In order to demonstrate the potential of eVOLVER framework, they designed a device to conduct automated sexual reproduction for adapting yeast populations under different selections. In the experiment, instead of manual sampling at arbitrary time points, the sampling process and mating carried out automatically within the device at the times when the cultures reach the defined points such as growth-rates. Media selection, vial-to-vial transfers, and decive cleaning routines were all included in the framework. This experiment illustrated the potential of eVOLVER framework in terms of automatizing the custom build and controllable millifluidics for continuous cultures.
+
 
 \begin{figure}[H]
 \begin{center}
@@ -51,6 +54,8 @@ eVOLVER\cite{wong2018precise}, an open-source DIY framework that promises a solu
 
 
 Another simulator, ALEsim\cite{lacroix2017model}, was developed for the optimization of ALE experiments and promises to improve ALE results. It is a model built on the basic principles of growth in order to predict growth rates in batch cultures of ALE experiments (Figure \ref{fig:intro_alesim}). By evaluating various passage sizes, ALEsim can calculate how and when to deploy resources to shorten experiment timelines and to achieve desired results. ALEsim provides a way to design better experiments and quantify them, to obtain the desired outcome with the resources available on hand.
+
+For a simulation using a developed model, experimental (i.e., culture size, passage size, passage optical density), statistical (i.e., number of experiments), and biological (i.e., beneficial mutation rate) parameters must be set for results to be biologically meaningful. These parameters can differ for different strains and conditions, and it is crucial to define the parameters for models to be constrained. ALEsim provides an advantage by allowing automated simulations, with the cells being allowed to grow under the user-defined conditions so that the experimental and biological parameters can be strictly controlled over the course of an experiment.
 
 \begin{figure}[H]
 \begin{center}
@@ -171,6 +176,8 @@ From the end of the eighteenth century, mainly after the fermentation is defined
 
 The set of anabolic and catabolic reactions in the cell are reffered as the metabolism. A shematic representation of the central carbon metabolism in \emph{S. cerevisiae} can be found in Figure \ref{fig:central_carbon_mech_of_s_cerevisiae_kegg}. Glycolysis, pentose-phosphate pathway (PPP), tricarboxylic acid cycle (TCA) or Krebs cycle, the glyoxylate cycle and the electron transport chain are the main pathways in central carbon metabolism.
 
+Glycolysis is a cytosolic pathway where 1 molecule of glucose breaks down into 2 molecules of pyruvates while 1 molecules of ATP on the substrate level and 2 molecules of NADH. Within the glycolysis, important precursors for biomass such as 3-phosphoglycerate, 3PG, PEP are generated. The final product of glycolysis, pyruvate, is an important branch point metabolite in the central carbon metabolism.
+
  \begin{figure}[H]
  \includegraphics[width=1\columnwidth]{central_carbon_mech_of_s_cerevisiae_kegg.png}
  \caption[Central carbon mechanism of \emph{S. cerevisiae}]{Central carbon mechanism of \emph{S. cerevisiae} obtained from  KEGG \cite{kanehisa2000kegg}.}
@@ -178,21 +185,96 @@ The set of anabolic and catabolic reactions in the cell are reffered as the meta
  \label{fig:central_carbon_mech_of_s_cerevisiae_kegg}
  \end{figure}
 
-Central carbon metabolism is finely tuned throughout the organic evolution to supply required energy and to produce building blocks for a yeast cell. All the pathways mentioned are interconnected through metabolites (reaction products or substrates) and/or cofactors (such as ATP, NAD, and NADP) within the cell. These pathways are activated or down-regulated by a tight regulation in order to satisfy what is required according to environmental conditions.
+The end product of glycolysis, pyruvate, can be converted into acetaldehyde through pyruvate decarboxylase (PDC) and, to ethanol with consumption of 1 NADH molecule by alcohol dehydrogenase (ADH). Acetaldehyde is also an important branch point metabolite and it can be converted into acetate by the acetaldehyde dehydrogenase (AcDH) with reduction of 1 NADP+ to NADPH. Acetate can be converted into acetyl-CoA by the acetate synthase (ACS) in the cytoplasm, and used as precursor for biosynthesis of secondary metabolites and in lysine biosynthesis. The stoichiometric reaction for the glycolysis can be found in Equation \ref{eq:glycolysis}.
+
+\begin{align}
+\begin{split}
+\label{eq:glycolysis}
+\ GLU + 2 ADP + 2 P + 2 NAD+ \xrightarrow{} \\
+\ 2 PYR + 2 ATP + 2 NADH + 2 H2O + 2H+
+\end{split}
+\end{align}
+
+Some enzymes in the glycolytic pathway are regulated allosterically. For example, presence of ATP in the cytoplasm inhibits the hexokinase (HXK) which deactivates the first step of glycolysis \cite{larsson2000importance}. It is also known that during low concentrations of glucose-6-phosphate (G6P) and fructose 6-phosphate (F6P), mitondrial oxidative phosphorilation enzymes are activated and it is antagonized by the fructose 1,6- bisphosphate (F1-6bP) \cite{diaz2008mitochondrial}. This phenomenon shows that the metabolite F1-6bP inhibits the respiratory flux rates.
+
+To determine whether the regulation of metabolism was taking place at transcriptional and translational level or through metabolic regulation, microarray studies and obtained transcriptomic data are analyzed by ter Kuile and Westerhoff\cite{ter2001transcriptome}. By using mathematical modeling, they concluded that regulation is almost never completely at translational level and metabolic regulation points must be investigated. Daran-Lapujade, et al., found the correlation between transcript levels, flux profiles and enzyme activity is very little \emph{in vivo} \cite{daran2004role}.
+
+Gluconeogenesis, as a form of a reversed glycolysis, generates glucose-6-phosphate (G6P) from amino acids (except lysine and leucine) and, C2 and C3 compounds. C2 compounds can also be converted into C4 dicarboxylic acids bypassing oxidative decarboxylation through glyoxylate cycle. During fully respiratory conditions, if the available glucose ratio is above 1\%, synthesis of the enzymes for glyoxylate cycle is repressed while oxidative decarboxylation is bypassed. Although this pathway is considered as a modification of the TCA cycle, the localization of this pathway is still unknown.
+
+\begin{figure}[H]
+\includegraphics[width=1\columnwidth]{figures/intro_centralcarbon.png}
+\caption[Diagram of pathways (glycolytic pathways, pentose phosphate pathway, TCA cycle, glyoxylate cycle) involved in the central carbon metabolism of \emph{S. cerevisiae}]{Diagram of pathways (glycolytic pathways, pentose phosphate pathway, TCA cycle, glyoxylate cycle) involved in the central carbon metabolism of \emph{S. cerevisiae}.}
+\label{fig:intro_centralcarbon}
+\end{figure}
+
+Krebs cycle or the citric acid cycle (TCA cycle for short), forms the compounds NADH, CO2 and FADH2. For 1 mole of pyruvate oxidized in TCA cycle, 4 mol of NADH, 1 mol of FADH2, 3 mol of CO2 and 1 mol of GTP are generated. The overall stoichiometric reaction for the TCA cycle can be found in Equation \ref{eq:TCA}.
+
+\begin{align}
+\begin{split}
+\label{eq:TCA}
+\ PYR + 3 H2O + GDP + 2 P + 4 NAD+ + FAD \xrightarrow{} \\
+\ 3 CO2 + GTP + 4 NADH + FADH2 + 4 H+
+\end{split}
+\end{align}
+
+The TCA cycle is mostly regulated at transcriptional level and it is known that the cycle is repressed by high glucose concentrations \cite{liu1999transcriptional}. The main regulatory points in the TCA cycle are the citrate synthase, isocitrate dehydrogenase and α-ketoglutarate dehydrogenase. The cycle is also regulated by feedback inhibition mechanisms and regulation is highly controlled at enzymatic level. For example, the isocitrate dehydrogenase (IDH) is increases its activity with the presence of AMP and inhibited by the presence of ATP\cite{coleman1975regulation}; while the low level of NADH/NAD+ molecules activates the majority of enzymes in the cycle \cite{gadde1997mutations}. The TCA cycle is a major pathway in mitochondria and it is used to generate important precursor metabolites such as citrate, oxaloacetate, and succinyl-coA.
+
+The reduced cofactors generated from metabolic pathways in the mitochondrial matrix, such as NADH molecules, are re-oxidized to H2O molecules by NADH:ubiquinone oxidoreductase (also called internal NADH dehydrogenase) which is localized on the inner membrane on mitochondria \cite{bakker2001stoichiometry}. This oxidation process is called mitochondrial respiration, or oxidative phosphorylation, and it provides a way to the cell to generate energy in the form of ATP molecules. NADH molecules generated in the cytosol can also be oxidized in yeast by external NADH dehydrogenase, or it can be taken inside mitochondria via glycerol-3-phosphate shuttle to be coupled with the respiratory chain, where the ubiquinone pool donates \cite{zitomer1979transcriptional} its electrons to the cytochrome-c through the bc1-complex, and oxidation of cytochrome-c by is catalyzed by cytochrome-c oxidase \cite{de1987mitochondrial}. Similar to NADH molecules, produced FADH2 molecules in the TCA cycle (during oxidation of succinate into fumarate) act as electron donors for ubiquinase \cite{cimini2009global}.
+
+Overall, the central carbon metabolism is finely tuned throughout the organic evolution to supply required energy and to produce building blocks for a yeast cell. All the pathways mentioned are interconnected through metabolites (reaction products or substrates) and/or cofactors (such as ATP, NAD, and NADP) within the cell. These pathways are activated or down-regulated by a tight regulation in order to satisfy what is required according to environmental conditions.
 
 The most characterized regulatory effects of yeasts can be listed as 1) Pasteur Effect, the inhibition of fermentation in the presence of oxygen with a decreased affinity for sugar uptake \cite{lagunas1983role}, 2) Kluyver Effect, for the species \emph{Candida utilis}, \emph{Kluyveromyces wickerhamii} and \emph{Debaryomyces yamadae}, being able to ferment glucose anaerobically but not being able to ferment maltose, lactose, and sucrose \cite{kaliterna1995transient}, 3) Custer Effect, the species \emph{Dekkera} and \emph{Brettanomyces} ferment glucose to ethanol faster under aerobic conditions \cite{scheffers1966stimulation}, and 4) Crabtree Effect, the supression of respiration by high glucose condition.
 
-\subsection{Adaptive Evolution Studies on \emph{S. cerevisiae}}
-Experimental designs, reverse engineering results from top cited articles.
 
-Possibly 3-4 paragraph
+
+\subsection{Adaptive Evolution Studies on \emph{S. cerevisiae}}
+
+Various strategies for evolutionary engineering in \emph{S. cerevisiae} are developed throughout the years. These strategies can be collected as 1) serial transfers in shake flasks, 2) sequential batch reactor cultivations, 3) continuous cultivations, 4) dynamic selection regimes, and 5) synthetic selection circuits \cite{mans2018under}.
+
+Ho, Ping-Wei, et al. succesfully obtained a faster glycerol utilization in two evolved derivatives of the strain CEN.PK113-1A by serial transfer in synthetic medium with glycerol as sole carbon source. After 55 generations, evolved strains were able to grow in synthetic glycerol medium, and evolved strains showed a higher growth rate on glycerol \cite{ho2017sole}.
+
+New \emph{S. cerevisiae} strains that grew as fast in the absence of biotin as in its presence are obtained by Bracher, Jasmine M., et al \cite{bracher2017laboratory}. The evolved strains were obtained by sequential batch reactor cultivation on synthetic medium in the absence of biotin, and showed 32-fold increased maximum specific growth rates.
+
+Smith, Van Rensburg, and Görgens improved xylose fermentation in \emph{S. cerevisiae} strain D5A+ in the presence of lignocellulosic inhibitors by ethyl methanesulfonate (EMS) mutagenesis and anaerobic chemostat cultivation after 100 generations\cite{smith2014simultaneously}. The study showed that the laboratory evolution profoundly altered the yeast metabolism, provided that evolved strains achieved 7.5-fold reduction of lag phase and were able to remove HMF, furfural and acetic acid completely in 24 h.
+
+Ethanol tolerance is the most important trait of industrial yeasts, and the ability to grow in high levels of ethanol is an industrially desired feature without question. Voordeckers, Karin, et al. improved ethanol tolerance
+in S288c strain FY5 by aerobic turbidostat cultivation on complex medium with gradually increasing concentrations of ethanol (from 6\% up to 12\%). After 200 generations, up to 2.5-fold increased fitness achieved in medium containing 9\% ethanol and growth in the presence of 12\% ethanol \cite{voordeckers2015adaptation}.
 
 \subsection{Metabolic Models of \emph{S. cerevisiae}}
-After the first \emph{S. cerevisiae} genome sequence is published, the first cDNA spotted microarray exploring metabolic gene regulation in 1997 \cite{derisi1997exploring}, and the first commercial platform for oligonucleotide microarray data (Affymetrix) to investigate cellular regulations were reported in 1998 \cite{cho1998parallel}. Existing genome data is integrated with the extensive annotation based on microarray data and biochemical knowledge from literature, leading of the publication of the first GSMM of \emph{S. cerevisiae} in 2013 \cite{forster2003genome}.
+After the first \emph{S. cerevisiae} genome sequence is published, the first cDNA spotted microarray exploring metabolic gene regulation in 1997 \cite{derisi1997exploring}, and the first commercial platform for oligonucleotide microarray data (Affymetrix) to investigate cellular regulations were reported in 1998 \cite{cho1998parallel}. Existing genome data is integrated with the extensive annotation based on microarray data and biochemical knowledge from literature, leading of the publication of the first GSMM of \emph{S. cerevisiae} in 2003 \cite{forster2003genome}.
 
-Add more: Year by year improvements on the yeast models, their numeric values on gene/rxn numbers, requirement of a consensus model, automated generations..\cite{lopes2017genome} Possibly 3-4 paragraph
+The first genome-scale model of S. cerevisiae, iFF708, contained a total of 1175 reactions, 708 genes and 584 metabolites compartmentalized between the cytosol and mitochondrion. The model was validated and used in \emph{in-silico} gene deletion studies\cite{forster2003large} and the calculation of physiological parameters\cite{famili2003saccharomyces}.
+
+From the first model reconstruction, more biologically accurate data were integrated into models such as the logical relationship between genes (GPR associations), the comprehensive conservation of mass and charge through elementally and charge-balanced reactions (proton balance), and the full compartmentalization of metabolites and proteins. iND750, the second genome-scale metabolic model of \emph{S. cerevisiae} contained 1149 unique reactions, 750	genes, 646 metabolites and five additional compartments (peroxisome, nucleus, golgi apparatus, endoplasmic reticulum, and vacuole)\cite{duarte2004reconstruction}.
+
+\begin{figure}[H]
+\includegraphics[width=1\columnwidth]{figures/intro_yeastgemschronology.png}
+\caption[Evolutionary timeline of different yeast species genome-scale metabolic models]{Evolutionary timeline of different yeast species genome-scale metabolic models.}
+\label{fig:intro_yeastgemschronology}
+\end{figure}
+
+Afterwards, the model iLL672 was reconstructed based on the older iFF708 with improved connectivity of the network\cite{kuepfer2005metabolic}. Previous models were reconciled by deleting duplicates and multiple dead-end reactions, resulting a model with a total of 636 metabolites and 1038 reactions. Improvements of the metabolic models are followed by the iIN800 \cite{nookaew2008genome}, which tRNA synthesis, transport processes and a detailed lipid metabolism included.
+
+Later, an improved version of the iND750 model, named iMM904, is reconstructed introducing a new database-independent nomenclature for 1226 metabolites, 1577 reactions, and 905 genes such as SMILES or InChI strings \cite{mo2009connecting}. The idea behind the reconstruction of the iMM904 was to provide a common model that serves as a base for studying the systems biology of yeast. Additionally, authors claimed that the  integration of the exometabolomic data into the model allowed to essentiality predictions using GSMMs.
+
+Corrections to the iMM904 model formed the next model, named iAZ900 containing 900 genes, 1240 metabolites and 1602 reactions distributed among seven compartments \cite{zomorrodi2010improving}. In addition to the corrections on reversibility of the reactions, GPR associations and biomass definition, revision of the previous model included addition/removal of reactions, metabolites and/or genes.
+
+\begin{figure}[H]
+\includegraphics[width=1\columnwidth]{figures/intro_yeastgemschronology2.png}
+\caption[Published genome-scale models of yeast in gene, reaction, metabolite and compartment numbers]{Published genome-scale models of yeast in gene, reaction, metabolite and compartment numbers.}
+\label{fig:intro_yeastgemschronology2}
+\end{figure}
+
+Yeast1, the first collaboratively constructed consensus genome-scale metabolic network was built using standardized identifiers \cite{herrgaard2008consensus}. The consensus model was cumulatively improved despite its inability to perform computational simulations. With Yeast4 \cite{dobson2010further}, which includes metabolite transport reactions, an improved lipid metabolism (based on iIN800) and improved network connectivity, a consensus model was able perform simulations. Following updates on the consensus model included expansions on the lipid metabolism with Yeast 5 \cite{heavner2012yeast}; improved predictions with Yeast 6\cite{heavner2013version}; and major changes in the fatty acid, glycerolipid, and glycerophospholipid metabolisms with Yeast 7 \cite{aung2013revising} models. The latest version of the consensus model of \emph{S. cerevisiae}, Yeast8 \cite{lu2019consensus}, is released in the last year and continues to be updated by the community.
+
 
 \subsection{Applications of \emph{S. cerevisiae} GSMMs}
-General, medical and industrial applications of yeast GSMMs from the literature, more detailed results on ALE studies using GSMMs.
+Several genome-scale metabolic models of \emph{S. cerevisiae} have been used in metabolic engineering applications. These studies were mostly carried out for the development of yeast cell factories to increase yield industrially. Despite the high number of GSMM availability, only a selection of the models have been succesfully validated experimentally.
 
-Possibly 4-5 paragraph.
+For improved bioethanol production, Bro et al. simulated a number of strategies that increased ethanol yields under anaerobic conditions using the model 	iFF708\cite{bro2006silico}. FBA analyses showed the alterations on the redox metabolism, and the resulting strain had reduced glycerol yield 40\% on glucose and increased ethanol yield (+3\%) with the same maximum specific growth rate.
+
+iMM904 model is succesfully used with Optknock framework \cite{burgard2003optknock} (an FBA-based algorithm to predict gene deletion strategies) and new industrally preferable strains, which has improved 2,3-butanediol production, were designed. This succesful implementation was the first report about increased 2,3-butanediol yield, and designed strains were validated experimentally \cite{ng2012production}.
+
+Another report was the producing fumaric acid by direct fermentation in yeast, using the model iND750 \cite{xu2012fumaric}. This prediction was also based on literature mining, i.e. the target gene was selected after intense research, and FBA analyses on the metabolic model showed that deletion of the selected gene can lead to fumaric acid production without any significant change in growth rates.
+
+The same iMM904 model was also used by Sun et al., to obtain a strain with 8- to 10-fold increased amorphadiene product yield compared to the wild type \cite{sun2014identification}. Results gathered by indentifying the knockout positios with a potential to promote terpenoid production in the cell. Predictions were validated by the constructed single mutanti and the study indicated that the metabolic models are powerful tools in the engineering of knockout strains before performing any molecular manipulations.
