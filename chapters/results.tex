@@ -313,7 +313,7 @@ As these different models belong to evolved strains, hierarchical relationship b
 
 \subsection{Regulation}
 
-Despite the high correlation between the fold changes obtained from differential expression analysis and the flux balance analyses for particular enzymes, outliers must be investigated for the indirect regulation of enzymes. Three groups can be formed for these: Firstly, enzymes may show transcriptional regulation behaviors (TR) if their flux fold changes (between evolved and wildtype strain models) correlate with the differential gene expression results. Secondly, enzymes may show metabolic regulation behaviors (MR) if the flux change is observed even in the absences of the expressional changes. And lastly, enzymes may show post-transcriptional regulation behaviors (PR) if their expression levels change without showing any flux changes (Table \ref{table:regulation_table}). One should remember that only 965 enzymes exist in the metabolic model and the values for the non-differentially expressed enzymes are assigned as 1 to show no change.
+Despite the high correlation between the fold changes obtained from differential expression analysis and the flux balance analyses for particular enzymes, outliers must be investigated for the indirect regulation of enzymes. Three groups can be formed for these: Firstly, enzymes may show transcriptional regulation behaviors (TR) if their flux fold changes (between evolved and wildtype strain models) correlate with the differential gene expression results. Secondly, enzymes may show metabolic regulation behaviors (MR) if the flux change is observed even in the absences of the expressional changes. And lastly, enzymes may show post-transcriptional regulation behaviors (PR) if their expression levels change without showing any flux changes (Table \ref{table:regulation_table}). One should remember that only 965 enzymes exist in a metabolic model and the values for the non-differentially expressed enzymes are assigned as 1 to show no change. Enzymes that have all the required values for the regulation decision calculation are collected in the Figure \ref{fig:fba_regulation3}.
 
 \vskip 1\baselineskip
 \begin{table}[H]
@@ -331,10 +331,18 @@ Despite the high correlation between the fold changes obtained from differential
 \end{center}
 \end{table}
 
+\begin{figure}[H]
+  \begin{center}
+  \includegraphics[width=1\columnwidth]{figures/fba_regulation3.png}
+  \caption[Regulation of enzymes according to decision table shown as heatmap.]{Regulation of enzymes according to Table \ref{table:regulation_table} shown as heatmap.}
+  \label{fig:fba_regulation3}
+  \end{center}
+\end{figure}
+
 Interestingly, most of the enzymes show post-transcriptional regulation behaviors indicating that even though the expression values are found significantly changed in the microarray analysis, their carried flux values did not differ in the \emph{in silico} simulations. Single simulation differences (such as FAS1, DFR1, CHO1 and ERG11 genes showing transcriptional regulation in all models except nickel model where they show metabolic regulation) must be investigated in order to understand the causal relationship.
 
 \subsection{Shadow Prices}
-Shadow prices are calculated by solving the optimization problem for the objective function (growth rate) by increasing the upper constraints by one unit for all reactions. This way, the sensitivity of the reactions to the growth rate is calculated for all models. In Table \ref{table:fba_shadowprices_free_table}, the shadow prices of the reactions that limit the growth rate and their values can be seen. Only the reactions that has a higher impact than growth reaction are included in the table. The values for each reaction are divided to the wild-type model's shadow price values to uncover the adaptive evolution effects and plotted in Figure \ref{fig:fba_shadowprices_free}.
+Shadow prices are calculated by solving the optimization problem for the objective function (growth rate) by increasing the upper constraints by one unit for all reactions. This way, the sensitivity of the reactions to the growth rate is calculated for all models. In Table \ref{table:fba_shadowprices_free_table}, the shadow prices of the reactions that limit the growth rate and their values can be seen. Only the reactions that has a higher negative value compared to growth reaction are included in the table. The values for each reaction are divided to the wild-type model's shadow price values to uncover the adaptive evolution effects and plotted in Figure \ref{fig:fba_shadowprices_free}.
 
 \vskip 1\baselineskip
 \input{tables/fba_shadowprices.tex}
