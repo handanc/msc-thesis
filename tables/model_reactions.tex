@@ -1,0 +1,1015 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{lscape}
+% \usepackage{longtable}
+% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+\begin{landscape}
+{\footnotesize
+\begin{longtable}{|l|p{7cm}|p{15cm}|}
+\caption{Reactions of the metabolic model used in this study (1000/8137)}
+\label{tab:my-table}\\
+\hline
+\textbf{Abbr.} & \textbf{Description} & \textbf{Formula} \\ \hline
+\endhead
+%
+r\_0006 & 1,6-beta-glucan synthase & UDP-D-glucose  -\textgreater (1-\textgreater{}6)-beta-D-glucan + H+ + UDP \\ \hline
+r\_0070 & 4-hydroxybenzoate formation & 4-hydroxybenzoyl-CoA + H2O  -\textgreater 4-hydroxybenzoate + coenzyme A + H+ \\ \hline
+r\_0094 & 8-amino-7-oxononanoate synthase & H+ + L-alanine + pimeloyl-CoA  -\textgreater 8-amino-7-oxononanoate + carbon dioxide + coenzyme A \\ \hline
+r\_0099 & acetyl-CoA ACP transacylase & acetyl-CoA + ACP1  -\textgreater acetyl-ACP + coenzyme A \\ \hline
+r\_0200 & Aminoacetone:oxygen oxidoreductase(deaminating)(flavin-containing) & aminoacetone + H2O + oxygen  -\textgreater ammonium + hydrogen peroxide + methylglyoxal \\ \hline
+r\_0461 & geranylgeranyltranstransferase & geranylgeranyl diphosphate + isopentenyl diphosphate  -\textgreater diphosphate + pentaprenyl diphosphate \\ \hline
+r\_0465 & glucosamine-6-phosphate deaminase & alpha-D-glucosamine 6-phosphate + H2O  -\textgreater ammonium + D-fructose 6-phosphate \\ \hline
+r\_0484 & glutathione peroxidase, mitochondria & 2 glutathione + hydrogen peroxide  -\textgreater glutathione disulfide + 2 H2O \\ \hline
+r\_0500 & glycine C-acetyltransferase & coenzyme A + L-2-amino-3-oxobutanoate  -\textgreater acetyl-CoA + L-glycine \\ \hline
+r\_0695 & L-tyrosine N-formyltransferase & 10-formyl-THF + L-tyrosine  -\textgreater H+ + N-formyl-L-tyrosine + THF \\ \hline
+r\_0970 & ribonucleoside-triphosphate reductase (ATP) & ATP + H+ + TRX1  -\textgreater dATP + H2O + TRX1 disulphide \\ \hline
+r\_0971 & ribonucleoside-triphosphate reductase (CTP) & CTP + H+ + TRX1  -\textgreater dCTP + H2O + TRX1 disulphide \\ \hline
+r\_0972 & ribonucleoside-triphosphate reductase (GTP) & GTP + H+ + TRX1  -\textgreater dGTP + H2O + TRX1 disulphide \\ \hline
+r\_0973 & ribonucleoside-triphosphate reductase (UTP) & H+ + UTP + TRX1  -\textgreater dUTP + H2O + TRX1 disulphide \\ \hline
+r\_1008 & spontaneous cis-aconitate(3-) to trans-aconitate & cis-aconitate  -\textgreater trans-aconitate \\ \hline
+r\_1009 & spontaneous cis-aconitate(3-) to trans-aconitate & cis-aconitate  -\textgreater trans-aconitate \\ \hline
+r\_1619 & 5'-nucleotidase (GMP) & GMP + H2O  -\textgreater guanosine + phosphate \\ \hline
+r\_2113 & spontaneous kynurenic acid to quinaldic acid & 2 H+ + NADPH + kynurenic acid  -\textgreater H2O + NADP(+) + quinaldic acid \\ \hline
+r\_2114 & spontaneous 2-amino-3-carboxymuconate-6-semialdehyde to quinolinate & 2-amino-3-carboxymuconate-6-semialdehyde  -\textgreater H+ + H2O + quinolinate \\ \hline
+r\_2213 & fatty-acid--CoA ligase (behenate), ER membrane & coenzyme A + ATP + behenate  -\textgreater docosanoyl-CoA + AMP + diphosphate \\ \hline
+r\_2214 & fatty-acid--CoA ligase (lignoceric acid), ER membrane & coenzyme A + ATP + lignoceric acid  -\textgreater tetracosanoyl-CoA + AMP + diphosphate \\ \hline
+r\_2215 & fatty-acid--CoA ligase (cerotic acid), ER membrane & coenzyme A + ATP + cerotic acid  -\textgreater hexacosanoyl-CoA + AMP + diphosphate \\ \hline
+r\_2216 & fatty-acid--CoA ligase (behenate), lipid particle & coenzyme A + ATP + behenate  -\textgreater diphosphate + AMP + docosanoyl-CoA \\ \hline
+r\_2217 & fatty-acid--CoA ligase (lignoceric acid), lipid particle & coenzyme A + ATP + lignoceric acid  -\textgreater diphosphate + AMP + tetracosanoyl-CoA \\ \hline
+r\_2218 & fatty-acid--CoA ligase (cerotic acid), lipid particle & coenzyme A + ATP + cerotic acid  -\textgreater diphosphate + AMP + hexacosanoyl-CoA \\ \hline
+r\_3240 & lysoPA phosphatase (16:0), cytoplasm & H2O + 1-acyl-sn-glycerol 3-phosphate (16:0)  -\textgreater 2 H+ + phosphate + 1-monoglyceride (16:0) \\ \hline
+r\_3241 & lysoPA phosphatase (16:1), cytoplasm & H2O + 1-acyl-sn-glycerol 3-phosphate (16:1)  -\textgreater 2 H+ + phosphate + 1-monoglyceride (16:1) \\ \hline
+r\_3242 & lysoPA phosphatase (18:0), cytoplasm & H2O + 1-acyl-sn-glycerol 3-phosphate (18:0)  -\textgreater 2 H+ + phosphate + 1-monoglyceride (18:0) \\ \hline
+r\_3243 & lysoPA phosphatase (18:1), cytoplasm & H2O + 1-acyl-sn-glycerol 3-phosphate (18:1)  -\textgreater 2 H+ + phosphate + 1-monoglyceride (18:1) \\ \hline
+r\_0964 & reduced glutathione via ABC system & ATP + glutathione + H2O  -\textgreater ADP + glutathione + H+ + phosphate \\ \hline
+r\_1028 & taurcholate via ABC system & ATP + H2O + taurocholic acid  -\textgreater ADP + H+ + phosphate + taurocholic acid \\ \hline
+r\_1096 & (R)-mevalonate transport & (R)-mevalonate  -\textgreater (R)-mevalonate \\ \hline
+r\_1097 & (R,R)-butanediol transport & (R,R)-2,3-butanediol  -\textgreater (R,R)-2,3-butanediol \\ \hline
+r\_1098 & 2-methylbutyl transport & 2-methylbutyl acetate  -\textgreater 2-methylbutyl acetate \\ \hline
+r\_1099 & 2-oxoadipate and 2-oxoglutarate transport & 2-oxoadipic acid + 2-oxoglutarate  -\textgreater 2-oxoadipic acid + 2-oxoglutarate \\ \hline
+r\_1100 & 3-hexaprenyl-4,5-dihydroxybenzoate transport & 3-hexaprenyl-4,5-dihydroxybenzoic acid  -\textgreater 3-hexaprenyl-4,5-dihydroxybenzoic acid \\ \hline
+r\_1101 & 4-aminobutyrate transport & gamma-aminobutyrate + H+  -\textgreater gamma-aminobutyrate + H+ \\ \hline
+r\_1102 & 5-aminolevulinate transport & 5-aminolevulinate + H+  -\textgreater 5-aminolevulinate + H+ \\ \hline
+r\_1103 & 5-formyltetrahydrofolic acid transport & 5-formyltetrahydrofolic acid  -\textgreater 5-formyltetrahydrofolic acid \\ \hline
+r\_1104 & 8-Amino-7-oxononanoate transport & 8-amino-7-oxononanoate + H+  -\textgreater 8-amino-7-oxononanoate + H+ \\ \hline
+r\_1106 & acetate transport & acetate  -\textgreater acetate \\ \hline
+r\_1107 & acetic ester transport & ethyl acetate  -\textgreater ethyl acetate \\ \hline
+r\_1108 & adenine transport & adenine + H+  -\textgreater adenine + H+ \\ \hline
+r\_1109 & adenosine transport & adenosine + H+  -\textgreater adenosine + H+ \\ \hline
+r\_1110 & ADP/ATP transporter & ADP + ATP  -\textgreater ADP + ATP \\ \hline
+r\_1111 & ADP/ATP transporter & ADP + ATP + H+  -\textgreater ADP + ATP + H+ \\ \hline
+r\_1112 & AKG transporter, mitochonrial & 2-oxoglutarate + citrate  -\textgreater 2-oxoglutarate + citrate \\ \hline
+r\_1113 & allantoate uniport & allantoate  -\textgreater allantoate \\ \hline
+r\_1114 & allantoin uniport & allantoin  -\textgreater allantoin \\ \hline
+r\_1115 & ammonia transport & ammonium  -\textgreater ammonium \\ \hline
+r\_1116 & AMP/ATP transporter & AMP + ATP + H+  -\textgreater AMP + ATP + H+ \\ \hline
+r\_1118 & aspartate-glutamate transporter & L-aspartate + L-glutamate  -\textgreater L-aspartate + L-glutamate \\ \hline
+r\_1119 & biotin uptake & biotin + H+  -\textgreater biotin + H+ \\ \hline
+r\_1120 & carnithine-acetylcarnithine carrier & (R)-carnitine + O-acetylcarnitine  -\textgreater (R)-carnitine + O-acetylcarnitine \\ \hline
+r\_1121 & ceramide-2' (sphinganine:n-C24:0OH) transport & ceramide-2'' (C24)  -\textgreater ceramide-2'' (C24) \\ \hline
+r\_1122 & ceramide-2' (sphinganine:n-C26:0OH) transport & ceramide-2'' (C26)  -\textgreater ceramide-2'' (C26) \\ \hline
+r\_1123 & ceramide-3 (Phytosphingosine:n-C24:0OH) transport & ceramide-3 (C24)  -\textgreater ceramide-3 (C24) \\ \hline
+r\_1124 & ceramide-3 (Phytosphingosine:n-C26:0OH) transport & ceramide-3 (C26)  -\textgreater ceramide-3 (C26) \\ \hline
+r\_1125 & choline transport & choline + H+  -\textgreater choline + H+ \\ \hline
+r\_1126 & citrate transport & (S)-malate + citrate  -\textgreater (S)-malate + citrate \\ \hline
+r\_1127 & citrate transport & citrate + phosphoenolpyruvate  -\textgreater citrate + phosphoenolpyruvate \\ \hline
+r\_1128 & citrate transport & citrate + isocitrate  -\textgreater citrate + isocitrate \\ \hline
+r\_1129 & coenzyme A transport & coenzyme A  -\textgreater coenzyme A \\ \hline
+r\_1130 & CTP transport & CMP + CTP + H+  -\textgreater CMP + CTP + H+ \\ \hline
+r\_1131 & CTP/CMP antiport & CMP + CTP + 2 H+  -\textgreater CMP + CTP + 2 H+ \\ \hline
+r\_1132 & cytidine transport & cytidine + H+  -\textgreater cytidine + H+ \\ \hline
+r\_1133 & cytosine transport & cytosine + H+  -\textgreater cytosine + H+ \\ \hline
+r\_1134 & D-fructose transport & D-fructose + H+  -\textgreater D-fructose + H+ \\ \hline
+r\_1135 & D-galactose transport & D-galactose + H+  -\textgreater D-galactose + H+ \\ \hline
+r\_1136 & D-lactate transport & (R)-lactate + H+  -\textgreater (R)-lactate + H+ \\ \hline
+r\_1137 & D-lactate transport & (R)-lactate + H+  -\textgreater (R)-lactate + H+ \\ \hline
+r\_1138 & D-lactate/pyruvate antiport & (R)-lactate + pyruvate  -\textgreater (R)-lactate + pyruvate \\ \hline
+r\_1139 & D-mannose transport & D-mannose + H+  -\textgreater D-mannose + H+ \\ \hline
+r\_1146 & episterol transport & episterol  -\textgreater episterol \\ \hline
+r\_1147 & ergosterol transport & ergosterol  -\textgreater ergosterol \\ \hline
+r\_1148 & ergosterol transport & ergosterol  -\textgreater ergosterol \\ \hline
+r\_1149 & ethanolamine transport & ethanolamine  -\textgreater ethanolamine \\ \hline
+r\_1151 & fadH2 transport & FADH2  -\textgreater FADH2 \\ \hline
+r\_1161 & fecosterol transport & fecosterol  -\textgreater fecosterol \\ \hline
+r\_1162 & fecosterol transport & fecosterol  -\textgreater fecosterol \\ \hline
+r\_1164 & folic acid transport & folate  -\textgreater folate \\ \hline
+r\_1165 & GDP-mannose antiport & GDP-alpha-D-mannose + GMP  -\textgreater GDP-alpha-D-mannose + GMP \\ \hline
+r\_1166 & glucose transport & D-glucose  -\textgreater D-glucose \\ \hline
+r\_1167 & glutathione transport & glutathione  -\textgreater glutathione \\ \hline
+r\_1168 & glutathione transport & glutathione  -\textgreater glutathione \\ \hline
+r\_1169 & glycero-3-phospho-1-inositol transport & 1-(sn-glycero-3-phospho)-1D-myo-inositol  -\textgreater 1-(sn-glycero-3-phospho)-1D-myo-inositol \\ \hline
+r\_1170 & glycero-3-phosphocholine transport & sn-glycero-3-phosphocholine  -\textgreater sn-glycero-3-phosphocholine \\ \hline
+r\_1171 & glycerol transport & glycerol + H+  -\textgreater glycerol + H+ \\ \hline
+r\_1172 & glycerol transport via channel & glycerol  -\textgreater glycerol \\ \hline
+r\_1173 & glycine transport & H+ + L-glycine  -\textgreater H+ + L-glycine \\ \hline
+r\_1174 & glycogen vacuolar 'transport' via autophagy & glycogen  -\textgreater glycogen \\ \hline
+r\_1175 & GTP/GDP translocase & GDP + GTP + H+  -\textgreater GDP + GTP + H+ \\ \hline
+r\_1176 & guanine transport & guanine + H+  -\textgreater guanine + H+ \\ \hline
+r\_1177 & inositol transport & H+ + myo-inositol  -\textgreater H+ + myo-inositol \\ \hline
+r\_1179 & iron (II) transport & iron(2+)  -\textgreater iron(2+) \\ \hline
+r\_1180 & isoamyl acetate transport & isoamyl acetate  -\textgreater isoamyl acetate \\ \hline
+r\_1181 & isobutyl acetate transport & isobutyl acetate  -\textgreater isobutyl acetate \\ \hline
+r\_1182 & isopentenyl diphosphate transport & isopentenyl diphosphate  -\textgreater isopentenyl diphosphate \\ \hline
+r\_1183 & L-alanine transport & H+ + L-alanine  -\textgreater H+ + L-alanine \\ \hline
+r\_1184 & L-arganine transport & H+ + L-arginine  -\textgreater H+ + L-arginine \\ \hline
+r\_1185 & L-arganine transport & H+ + L-arginine  -\textgreater H+ + L-arginine \\ \hline
+r\_1186 & L-asparagine transport & H+ + L-asparagine  -\textgreater H+ + L-asparagine \\ \hline
+r\_1187 & L-asparagine transport & H+ + L-asparagine  -\textgreater H+ + L-asparagine \\ \hline
+r\_1188 & L-aspartate transport & H+ + L-asparagine  -\textgreater H+ + L-asparagine \\ \hline
+r\_1189 & L-aspartate transport & H+ + L-aspartate  -\textgreater H+ + L-aspartate \\ \hline
+r\_1190 & L-aspartate transport & H+ + L-aspartate  -\textgreater H+ + L-aspartate \\ \hline
+r\_1191 & L-carnitine transport & (R)-carnitine  -\textgreater (R)-carnitine \\ \hline
+r\_1192 & L-cystine transport & H+ + L-cysteine  -\textgreater H+ + L-cysteine \\ \hline
+r\_1193 & L-cystine transport & H+ + L-cystine  -\textgreater H+ + L-cystine \\ \hline
+r\_1194 & L-glutamate transport & L-glutamate  -\textgreater L-glutamate \\ \hline
+r\_1195 & L-glutamate transport & H+ + L-glutamate  -\textgreater H+ + L-glutamate \\ \hline
+r\_1196 & L-glutamate transport & H+ + L-glutamate  -\textgreater H+ + L-glutamate \\ \hline
+r\_1197 & L-glutamine transport & H+ + L-glutamine  -\textgreater H+ + L-glutamine \\ \hline
+r\_1198 & L-glutamine transport & H+ + L-glutamine  -\textgreater H+ + L-glutamine \\ \hline
+r\_1199 & L-glutamine transport & H+ + L-glutamine  -\textgreater H+ + L-glutamine \\ \hline
+r\_1200 & L-histidine transport, vacuolar & H+ + L-histidine  -\textgreater H+ + L-histidine \\ \hline
+r\_1201 & L-histidine transport & H+ + L-histidine  -\textgreater H+ + L-histidine \\ \hline
+r\_1202 & L-isoleucine transport & L-isoleucine  -\textgreater L-isoleucine \\ \hline
+r\_1203 & L-isoleucine transport & H+ + L-isoleucine  -\textgreater H+ + L-isoleucine \\ \hline
+r\_1204 & L-isoleucine transport & H+ + L-isoleucine  -\textgreater H+ + L-isoleucine \\ \hline
+r\_1205 & L-isoleucine transport & H+ + L-isoleucine  -\textgreater H+ + L-isoleucine \\ \hline
+r\_1206 & L-lactate transport & (S)-lactate  -\textgreater (S)-lactate \\ \hline
+r\_1207 & L-lactate transport & (S)-lactate + H+  -\textgreater (S)-lactate + H+ \\ \hline
+r\_1208 & L-leucine transport, vacuoluar & L-leucine  -\textgreater L-leucine \\ \hline
+r\_1209 & L-leucine transport, vacuoluar & H+ + L-leucine  -\textgreater H+ + L-leucine \\ \hline
+r\_1210 & L-leucine transport, vacuoluar & H+ + L-leucine  -\textgreater H+ + L-leucine \\ \hline
+r\_1211 & L-leucine transport & H+ + L-leucine  -\textgreater H+ + L-leucine \\ \hline
+r\_1212 & L-lysine transport & H+ + L-lysine  -\textgreater H+ + L-lysine \\ \hline
+r\_1213 & L-lysine transport & H+ + L-lysine  -\textgreater H+ + L-lysine \\ \hline
+r\_1214 & L-methionine transport & H+ + L-methionine  -\textgreater H+ + L-methionine \\ \hline
+r\_1215 & L-phenylalanine transport & H+ + L-phenylalanine  -\textgreater H+ + L-phenylalanine \\ \hline
+r\_1216 & L-proline transport & H+ + L-proline  -\textgreater H+ + L-proline \\ \hline
+r\_1217 & L-serine transport & H+ + L-serine  -\textgreater H+ + L-serine \\ \hline
+r\_1218 & L-threonine transport & H+ + L-threonine  -\textgreater H+ + L-threonine \\ \hline
+r\_1219 & L-tryptophan transport & H+ + L-tryptophan  -\textgreater H+ + L-tryptophan \\ \hline
+r\_1220 & L-tyrosine transport & L-tyrosine  -\textgreater L-tyrosine \\ \hline
+r\_1221 & L-tyrosine transport & H+ + L-tyrosine  -\textgreater H+ + L-tyrosine \\ \hline
+r\_1222 & L-tyrosine transport & H+ + L-tyrosine  -\textgreater H+ + L-tyrosine \\ \hline
+r\_1223 & L-tyrosine transport & H+ + L-tyrosine  -\textgreater H+ + L-tyrosine \\ \hline
+r\_1224 & L-valine transport & H+ + L-valine  -\textgreater H+ + L-valine \\ \hline
+r\_1225 & lanosterol transport & lanosterol  -\textgreater lanosterol \\ \hline
+r\_1226 & malate transport & (S)-malate + phosphate  -\textgreater (S)-malate + phosphate \\ \hline
+r\_1227 & maltose transport & H+ + maltose  -\textgreater H+ + maltose \\ \hline
+r\_1228 & N,N'-diformyldityrosine transport & N,N''-diformyldityrosine  -\textgreater N,N''-diformyldityrosine \\ \hline
+r\_1229 & NAD transport & NAD  -\textgreater NAD \\ \hline
+r\_1230 & NAD transport & dAMP + NAD  -\textgreater dAMP + NAD \\ \hline
+r\_1231 & NAD transport & AMP + NAD  -\textgreater AMP + NAD \\ \hline
+r\_1232 & NAD transport & dGMP + NAD  -\textgreater dGMP + NAD \\ \hline
+r\_1235 & nicotinate transport & nicotinate  -\textgreater nicotinate \\ \hline
+r\_1236 & octadecanoate (n-C18:0) transport & stearate  -\textgreater stearate \\ \hline
+r\_1237 & ornithine transport & H+ + ornithine  -\textgreater H+ + ornithine \\ \hline
+r\_1238 & orntithine transport & H+ + ornithine  -\textgreater H+ + ornithine \\ \hline
+r\_1239 & oxaloacetate transport & H+ + oxaloacetate  -\textgreater H+ + oxaloacetate \\ \hline
+r\_1241 & pantothenate transport & (R)-pantothenate + H+  -\textgreater (R)-pantothenate + H+ \\ \hline
+r\_1242 & pentaprenyl diphosphate transport & pentaprenyl diphosphate  -\textgreater pentaprenyl diphosphate \\ \hline
+r\_1243 & phenethyl acetate transport & phenethyl acetate  -\textgreater phenethyl acetate \\ \hline
+r\_1244 & phosphate transport & H+ + phosphate  -\textgreater H+ + phosphate \\ \hline
+r\_1245 & phosphate transport & H+ + phosphate  -\textgreater H+ + phosphate \\ \hline
+r\_1249 & potassium transport & H+ + potassium  -\textgreater H+ + potassium \\ \hline
+r\_1251 & putrescine transport & H+ + putrescine  -\textgreater H+ + putrescine \\ \hline
+r\_1252 & putrescine transport & H+ + putrescine  -\textgreater H+ + putrescine \\ \hline
+r\_1253 & pyridoxine symport & H+ + pyridoxine  -\textgreater H+ + pyridoxine \\ \hline
+r\_1254 & pyruvate transport & H+ + pyruvate  -\textgreater H+ + pyruvate \\ \hline
+r\_1255 & S-adenosyl-L-methionine transport & H+ + S-adenosyl-L-methionine  -\textgreater H+ + S-adenosyl-L-methionine \\ \hline
+r\_1256 & S-adenosyl-L-methionine transport & S-adenosyl-L-methionine  -\textgreater S-adenosyl-L-methionine \\ \hline
+r\_1257 & S-methylmethionine permease & H+ + S-methyl-L-methionine  -\textgreater H+ + S-methyl-L-methionine \\ \hline
+r\_1258 & sodium proton antiporter & H+ + sodium  -\textgreater H+ + sodium \\ \hline
+r\_1260 & spermidine transport & H+ + spermidine  -\textgreater H+ + spermidine \\ \hline
+r\_1261 & spermidine transport & H+ + spermidine  -\textgreater H+ + spermidine \\ \hline
+r\_1262 & spermine transport & H+ + spermine  -\textgreater H+ + spermine \\ \hline
+r\_1263 & spermine transport & H+ + spermine  -\textgreater H+ + spermine \\ \hline
+r\_1264 & succinate transport & phosphate + succinate  -\textgreater phosphate + succinate \\ \hline
+r\_1265 & succinate-fumarate transport & fumarate + succinate  -\textgreater fumarate + succinate \\ \hline
+r\_1266 & sulfate uniport & sulphate  -\textgreater sulphate \\ \hline
+r\_1267 & sulfite transport & sulphite  -\textgreater sulphite \\ \hline
+r\_1268 & taurine transport & taurine  -\textgreater taurine \\ \hline
+r\_1269 & thiamine diphosphate transport & TDP  -\textgreater TDP \\ \hline
+r\_1270 & thiamine transport & H+ + thiamine  -\textgreater H+ + thiamine \\ \hline
+r\_1271 & UDPgalactose transport & UDP-D-galactose  -\textgreater UDP-D-galactose \\ \hline
+r\_1272 & uracil transport & H+ + uracil  -\textgreater H+ + uracil \\ \hline
+r\_1273 & urea transport & 2 H+ + urea  -\textgreater 2 H+ + urea \\ \hline
+r\_1274 & uridine transport & H+ + uridine  -\textgreater H+ + uridine \\ \hline
+r\_1275 & UTP transport & FMN + H+ + UMP + UTP  -\textgreater FMN + H+ + UMP + UTP \\ \hline
+r\_1276 & UTP/UMP antiport & 2 H+ + UMP + UTP  -\textgreater 2 H+ + UMP + UTP \\ \hline
+r\_1277 & water diffusion & H2O  -\textgreater H2O \\ \hline
+r\_1278 & zymosterol transport & zymosterol  -\textgreater zymosterol \\ \hline
+r\_1657 & arginine transport & H+ + L-arginine  -\textgreater H+ + L-arginine \\ \hline
+r\_2034 & pyruvate transport & H+ + pyruvate  -\textgreater H+ + pyruvate \\ \hline
+r\_2079 & trehalose transporter & H+ + trehalose  -\textgreater H+ + trehalose \\ \hline
+r\_2132 & oxoglutarate/malate exchange & (S)-malate + 2-oxoglutarate  -\textgreater (S)-malate + 2-oxoglutarate \\ \hline
+r\_2219 & fatty acyl-CoA transport via ABC system (C12:0) & ATP + H2O + lauroyl-CoA  -\textgreater ADP + H+ + lauroyl-CoA + phosphate \\ \hline
+r\_2220 & fatty acyl-CoA transport via ABC system (C14:0) & ATP + H2O + myristoyl-CoA  -\textgreater ADP + H+ + myristoyl-CoA + phosphate \\ \hline
+r\_2221 & fatty acyl-CoA transport via ABC system (C16:0) & ATP + H2O + palmitoyl-CoA  -\textgreater ADP + H+ + palmitoyl-CoA + phosphate \\ \hline
+r\_2222 & fatty acyl-CoA transport via ABC system (C16:1) & ATP + H2O + palmitoleoyl-CoA(4-)  -\textgreater ADP + H+ + phosphate + palmitoleoyl-CoA(4-) \\ \hline
+r\_2223 & fatty acyl-CoA transport via ABC system (C18:0) & ATP + H2O + stearoyl-CoA  -\textgreater ADP + H+ + phosphate + stearoyl-CoA \\ \hline
+r\_2224 & fatty acyl-CoA transport via ABC system (C18:1) & ATP + H2O + oleoyl-CoA  -\textgreater ADP + H+ + oleoyl-CoA + phosphate \\ \hline
+r\_2225 & fatty acyl-CoA transport via ABC system (C20:0) & ATP + H2O + icosanoyl-CoA  -\textgreater ADP + H+ + phosphate + icosanoyl-CoA \\ \hline
+r\_2226 & fatty acyl-CoA transport via ABC system (C22:0) & ATP + H2O + docosanoyl-CoA  -\textgreater ADP + H+ + phosphate + docosanoyl-CoA \\ \hline
+r\_2227 & fatty acyl-CoA transport via ABC system (C24:0) & ATP + H2O + tetracosanoyl-CoA  -\textgreater ADP + H+ + phosphate + tetracosanoyl-CoA \\ \hline
+r\_2228 & fatty acyl-CoA transport via ABC system (C26:0) & ATP + H2O + hexacosanoyl-CoA  -\textgreater ADP + H+ + hexacosanoyl-CoA + phosphate \\ \hline
+r\_1449 & inositol-P-ceramide B' (C24) {[}Golgi{]} SLIME rxn & inositol-P-ceramide B'' (C24)  -\textgreater 0.910264 inositol-P-ceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1450 & inositol-P-ceramide B' (C26) {[}Golgi{]} SLIME rxn & inositol-P-ceramide B'' (C26)  -\textgreater 0.938317 inositol-P-ceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_1451 & inositol-P-ceramide C (C24) {[}Golgi{]} SLIME rxn & inositol-P-ceramide C (C24)  -\textgreater 0.926263 inositol-P-ceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1452 & inositol-P-ceramide C (C26) {[}Golgi{]} SLIME rxn & inositol-P-ceramide C (C26)  -\textgreater 0.954317 inositol-P-ceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_1453 & inositol-P-ceramide A (C24) {[}Golgi{]} SLIME rxn & inositol-P-ceramide A (C24)  -\textgreater 0.894264 inositol-P-ceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1454 & inositol-P-ceramide A (C26) {[}Golgi{]} SLIME rxn & inositol-P-ceramide A (C26)  -\textgreater 0.922318 inositol-P-ceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_1455 & inositol-P-ceramide B (C24) {[}Golgi{]} SLIME rxn & inositol-P-ceramide B (C24)  -\textgreater 0.910264 inositol-P-ceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1456 & inositol-P-ceramide B (C26) {[}Golgi{]} SLIME rxn & inositol-P-ceramide B (C26)  -\textgreater 0.938317 inositol-P-ceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_1457 & inositol-P-ceramide D (C24) {[}Golgi{]} SLIME rxn & inositol-P-ceramide D (C24)  -\textgreater 0.942262 inositol-P-ceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1458 & inositol-P-ceramide D (C26) {[}Golgi{]} SLIME rxn & inositol-P-ceramide D (C26)  -\textgreater 0.970316 inositol-P-ceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_1479 & inositol phosphomannosylinositol phosphoceramide A (C24) {[}Golgi{]} SLIME rxn & inositol phosphomannosylinositol phosphoceramide A (C24)  -\textgreater 1.29853 inositol phosphomannosylinositol phosphoceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1480 & inositol phosphomannosylinositol phosphoceramide A (C26) {[}Golgi{]} SLIME rxn & inositol phosphomannosylinositol phosphoceramide A (C26)  -\textgreater 1.32658 inositol phosphomannosylinositol phosphoceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_1481 & inositol phosphomannosylinositol phosphoceramide B' (C24) {[}Golgi{]} SLIME rxn & inositol phosphomannosylinositol phosphoceramide B'' (C24)  -\textgreater 1.31453 inositol phosphomannosylinositol phosphoceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1482 & inositol phosphomannosylinositol phosphoceramide B' (C26) {[}Golgi{]} SLIME rxn & inositol phosphomannosylinositol phosphoceramide B'' (C26)  -\textgreater 1.34258 inositol phosphomannosylinositol phosphoceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_1483 & inositol phosphomannosylinositol phosphoceramide B (C24) {[}Golgi{]} SLIME rxn & inositol phosphomannosylinositol phosphoceramide B (C24)  -\textgreater 1.31453 inositol phosphomannosylinositol phosphoceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1484 & inositol phosphomannosylinositol phosphoceramide B (C26) {[}Golgi{]} SLIME rxn & inositol phosphomannosylinositol phosphoceramide B (C26)  -\textgreater 1.34258 inositol phosphomannosylinositol phosphoceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_1485 & inositol phosphomannosylinositol phosphoceramide C (C24) {[}Golgi{]} SLIME rxn & inositol phosphomannosylinositol phosphoceramide C (C24)  -\textgreater 1.33053 inositol phosphomannosylinositol phosphoceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1486 & inositol phosphomannosylinositol phosphoceramide C (C26) {[}Golgi{]} SLIME rxn & inositol phosphomannosylinositol phosphoceramide C (C26)  -\textgreater 1.35858 inositol phosphomannosylinositol phosphoceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_1487 & inositol phosphomannosylinositol phosphoceramide D (C24) {[}Golgi{]} SLIME rxn & inositol phosphomannosylinositol phosphoceramide D (C24)  -\textgreater 1.34653 inositol phosphomannosylinositol phosphoceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1488 & inositol phosphomannosylinositol phosphoceramide D (C26) {[}Golgi{]} SLIME rxn & inositol phosphomannosylinositol phosphoceramide D (C26)  -\textgreater 1.37458 inositol phosphomannosylinositol phosphoceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_1509 & mannosylinositol phosphorylceramide B' (C24) {[}Golgi{]} SLIME rxn & mannosylinositol phosphorylceramide B'' (C24)  -\textgreater 1.07241 mannosylinositol phosphorylceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1510 & mannosylinositol phosphorylceramide B' (C26) {[}Golgi{]} SLIME rxn & mannosylinositol phosphorylceramide B'' (C26)  -\textgreater 1.10046 mannosylinositol phosphorylceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_1511 & mannosylinositol phosphorylceramide C (C24) {[}Golgi{]} SLIME rxn & mannosylinositol phosphorylceramide C (C24)  -\textgreater 1.08841 mannosylinositol phosphorylceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1512 & mannosylinositol phosphorylceramide C (C26) {[}Golgi{]} SLIME rxn & mannosylinositol phosphorylceramide C (C26)  -\textgreater 1.11646 mannosylinositol phosphorylceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_1513 & mannosylinositol phosphorylceramide A (C24) {[}Golgi{]} SLIME rxn & mannosylinositol phosphorylceramide A (C24)  -\textgreater 1.05641 mannosylinositol phosphorylceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1514 & mannosylinositol phosphorylceramide A (C26) {[}Golgi{]} SLIME rxn & mannosylinositol phosphorylceramide A (C26)  -\textgreater 1.08446 mannosylinositol phosphorylceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_1515 & mannosylinositol phosphorylceramide B (C24) {[}Golgi{]} SLIME rxn & mannosylinositol phosphorylceramide B (C24)  -\textgreater 1.07241 mannosylinositol phosphorylceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1516 & mannosylinositol phosphorylceramide B (C26) {[}Golgi{]} SLIME rxn & mannosylinositol phosphorylceramide B (C26)  -\textgreater 1.10046 mannosylinositol phosphorylceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_1517 & mannosylinositol phosphorylceramide D (C24) {[}Golgi{]} SLIME rxn & mannosylinositol phosphorylceramide D (C24)  -\textgreater 1.1044 mannosylinositol phosphorylceramide backbone + 0.284483 C18:0 chain + 0.368644 C24:0 chain \\ \hline
+r\_1518 & mannosylinositol phosphorylceramide D (C26) {[}Golgi{]} SLIME rxn & mannosylinositol phosphorylceramide D (C26)  -\textgreater 1.13246 mannosylinositol phosphorylceramide backbone + 0.284483 C18:0 chain + 0.396698 C26:0 chain \\ \hline
+r\_3963 & 1-phosphatidyl-1D-myo-inositol (1-16:0, 2-16:1) {[}cytoplasm{]} SLIME rxn & 1-phosphatidyl-1D-myo-inositol (1-16:0, 2-16:1)  -\textgreater 0.809028 1-phosphatidyl-1D-myo-inositol backbone + 0.256429 C16:0 chain + 0.254413 C16:1 chain \\ \hline
+r\_3964 & 1-phosphatidyl-1D-myo-inositol (1-16:1, 2-16:1) {[}cytoplasm{]} SLIME rxn & 1-phosphatidyl-1D-myo-inositol (1-16:1, 2-16:1)  -\textgreater 0.807012 1-phosphatidyl-1D-myo-inositol backbone + 0.508826 C16:1 chain \\ \hline
+r\_3965 & 1-phosphatidyl-1D-myo-inositol (1-18:0, 2-16:1) {[}cytoplasm{]} SLIME rxn & 1-phosphatidyl-1D-myo-inositol (1-18:0, 2-16:1)  -\textgreater 0.837082 1-phosphatidyl-1D-myo-inositol backbone + 0.254413 C16:1 chain + 0.284483 C18:0 chain \\ \hline
+r\_3966 & 1-phosphatidyl-1D-myo-inositol (1-18:1, 2-16:1) {[}cytoplasm{]} SLIME rxn & 1-phosphatidyl-1D-myo-inositol (1-18:1, 2-16:1)  -\textgreater 0.835066 1-phosphatidyl-1D-myo-inositol backbone + 0.254413 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_3967 & 1-phosphatidyl-1D-myo-inositol (1-16:0, 2-18:1) {[}cytoplasm{]} SLIME rxn & 1-phosphatidyl-1D-myo-inositol (1-16:0, 2-18:1)  -\textgreater 0.837082 1-phosphatidyl-1D-myo-inositol backbone + 0.256429 C16:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_3968 & 1-phosphatidyl-1D-myo-inositol (1-16:1, 2-18:1) {[}cytoplasm{]} SLIME rxn & 1-phosphatidyl-1D-myo-inositol (1-16:1, 2-18:1)  -\textgreater 0.835066 1-phosphatidyl-1D-myo-inositol backbone + 0.254413 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_3969 & 1-phosphatidyl-1D-myo-inositol (1-18:0, 2-18:1) {[}cytoplasm{]} SLIME rxn & 1-phosphatidyl-1D-myo-inositol (1-18:0, 2-18:1)  -\textgreater 0.865136 1-phosphatidyl-1D-myo-inositol backbone + 0.284483 C18:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_3970 & 1-phosphatidyl-1D-myo-inositol (1-18:1, 2-18:1) {[}cytoplasm{]} SLIME rxn & 1-phosphatidyl-1D-myo-inositol (1-18:1, 2-18:1)  -\textgreater 0.86312 1-phosphatidyl-1D-myo-inositol backbone + 0.564934 C18:1 chain \\ \hline
+r\_3971 & ergosteryl palmitoleate {[}endoplasmic reticulum membrane{]} SLIME rxn & ergosteryl palmitoleate  -\textgreater 0.633054 ergosterol ester backbone + 0.254413 C16:1 chain \\ \hline
+r\_3972 & ergosteryl oleate {[}endoplasmic reticulum membrane{]} SLIME rxn & ergosteryl oleate  -\textgreater 0.661108 ergosterol ester backbone + 0.282467 C18:1 chain \\ \hline
+r\_3975 & palmitate {[}cytoplasm{]} SLIME rxn & palmitate  -\textgreater 0.255421 fatty acid backbone + 0.256429 C16:0 chain \\ \hline
+r\_3976 & palmitoleate {[}cytoplasm{]} SLIME rxn & palmitoleate  -\textgreater 0.253405 fatty acid backbone + 0.254413 C16:1 chain \\ \hline
+r\_3977 & stearate {[}cytoplasm{]} SLIME rxn & stearate  -\textgreater 0.283475 fatty acid backbone + 0.284483 C18:0 chain \\ \hline
+r\_3978 & oleate {[}cytoplasm{]} SLIME rxn & oleate  -\textgreater 0.281459 fatty acid backbone + 0.282467 C18:1 chain \\ \hline
+r\_3979 & phosphatidyl-L-serine (1-16:0, 2-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidyl-L-serine (1-16:0, 2-16:1)  -\textgreater 0.733964 phosphatidyl-L-serine backbone + 0.256429 C16:0 chain + 0.254413 C16:1 chain \\ \hline
+r\_3980 & phosphatidyl-L-serine (1-16:1, 2-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidyl-L-serine (1-16:1, 2-16:1)  -\textgreater 0.731948 phosphatidyl-L-serine backbone + 0.508826 C16:1 chain \\ \hline
+r\_3981 & phosphatidyl-L-serine (1-18:0, 2-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidyl-L-serine (1-18:0, 2-16:1)  -\textgreater 0.762018 phosphatidyl-L-serine backbone + 0.254413 C16:1 chain + 0.284483 C18:0 chain \\ \hline
+r\_3982 & phosphatidyl-L-serine (1-18:1, 2-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidyl-L-serine (1-18:1, 2-16:1)  -\textgreater 0.760002 phosphatidyl-L-serine backbone + 0.254413 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_3983 & phosphatidyl-L-serine (1-16:0, 2-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidyl-L-serine (1-16:0, 2-18:1)  -\textgreater 0.762018 phosphatidyl-L-serine backbone + 0.256429 C16:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_3984 & phosphatidyl-L-serine (1-16:1, 2-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidyl-L-serine (1-16:1, 2-18:1)  -\textgreater 0.760002 phosphatidyl-L-serine backbone + 0.254413 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_3985 & phosphatidyl-L-serine (1-18:0, 2-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidyl-L-serine (1-18:0, 2-18:1)  -\textgreater 0.790072 phosphatidyl-L-serine backbone + 0.284483 C18:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_3986 & phosphatidyl-L-serine (1-18:1, 2-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidyl-L-serine (1-18:1, 2-18:1)  -\textgreater 0.788056 phosphatidyl-L-serine backbone + 0.564934 C18:1 chain \\ \hline
+r\_3988 & phosphatidylcholine (1-16:0, 2-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylcholine (1-16:0, 2-16:1)  -\textgreater 0.732035 phosphatidylcholine backbone + 0.256429 C16:0 chain + 0.254413 C16:1 chain \\ \hline
+r\_3989 & phosphatidylcholine (1-16:1, 2-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylcholine (1-16:1, 2-16:1)  -\textgreater 0.730019 phosphatidylcholine backbone + 0.508826 C16:1 chain \\ \hline
+r\_3990 & phosphatidylcholine (1-18:0, 2-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylcholine (1-18:0, 2-16:1)  -\textgreater 0.744089 phosphatidylcholine backbone + 0.254413 C16:1 chain + 0.284483 C18:0 chain \\ \hline
+r\_3991 & phosphatidylcholine (1-18:1, 2-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylcholine (1-18:1, 2-16:1)  -\textgreater 0.742074 phosphatidylcholine backbone + 0.254413 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_3992 & phosphatidylcholine (1-16:0, 2-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylcholine (1-16:0, 2-18:1)  -\textgreater 0.760089 phosphatidylcholine backbone + 0.256429 C16:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_3993 & phosphatidylcholine (1-16:1, 2-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylcholine (1-16:1, 2-18:1)  -\textgreater 0.758073 phosphatidylcholine backbone + 0.254413 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_3994 & phosphatidylcholine (1-18:0, 2-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylcholine (1-18:0, 2-18:1)  -\textgreater 0.772143 phosphatidylcholine backbone + 0.284483 C18:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_3995 & phosphatidylcholine (1-18:1, 2-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylcholine (1-18:1, 2-18:1)  -\textgreater 0.770127 phosphatidylcholine backbone + 0.564934 C18:1 chain \\ \hline
+r\_3997 & phosphatidylethanolamine (1-16:0, 2-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylethanolamine (1-16:0, 2-16:1)  -\textgreater 0.689954 phosphatidylethanolamine backbone + 0.256429 C16:0 chain + 0.254413 C16:1 chain \\ \hline
+r\_3998 & phosphatidylethanolamine (1-16:1, 2-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylethanolamine (1-16:1, 2-16:1)  -\textgreater 0.687939 phosphatidylethanolamine backbone + 0.508826 C16:1 chain \\ \hline
+r\_3999 & phosphatidylethanolamine (1-18:0, 2-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylethanolamine (1-18:0, 2-16:1)  -\textgreater 0.718008 phosphatidylethanolamine backbone + 0.254413 C16:1 chain + 0.284483 C18:0 chain \\ \hline
+r\_4000 & phosphatidylethanolamine (1-18:1, 2-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylethanolamine (1-18:1, 2-16:1)  -\textgreater 0.715992 phosphatidylethanolamine backbone + 0.254413 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_4001 & phosphatidylethanolamine (1-16:0, 2-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylethanolamine (1-16:0, 2-18:1)  -\textgreater 0.718008 phosphatidylethanolamine backbone + 0.256429 C16:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_4002 & phosphatidylethanolamine (1-16:1, 2-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylethanolamine (1-16:1, 2-18:1)  -\textgreater 0.715992 phosphatidylethanolamine backbone + 0.254413 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_4003 & phosphatidylethanolamine (1-18:0, 2-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylethanolamine (1-18:0, 2-18:1)  -\textgreater 0.746062 phosphatidylethanolamine backbone + 0.284483 C18:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_4004 & phosphatidylethanolamine (1-18:1, 2-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & phosphatidylethanolamine (1-18:1, 2-18:1)  -\textgreater 0.744046 phosphatidylethanolamine backbone + 0.564934 C18:1 chain \\ \hline
+r\_4006 & triglyceride (1-16:0, 2-16:1, 3-16:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:0, 2-16:1, 3-16:0)  -\textgreater 0.80532 triglyceride backbone + 0.512858 C16:0 chain + 0.254413 C16:1 chain \\ \hline
+r\_4007 & triglyceride (1-16:0, 2-18:1, 3-16:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:0, 2-18:1, 3-16:0)  -\textgreater 0.833373 triglyceride backbone + 0.512858 C16:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_4008 & triglyceride (1-16:1, 2-16:1, 3-16:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:1, 2-16:1, 3-16:0)  -\textgreater 0.803304 triglyceride backbone + 0.256429 C16:0 chain + 0.508826 C16:1 chain \\ \hline
+r\_4009 & triglyceride (1-16:1, 2-18:1, 3-16:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:1, 2-18:1, 3-16:0)  -\textgreater 0.831358 triglyceride backbone + 0.256429 C16:0 chain + 0.254413 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_4010 & triglyceride (1-18:0, 2-16:1, 3-16:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:0, 2-16:1, 3-16:0)  -\textgreater 0.833373 triglyceride backbone + 0.256429 C16:0 chain + 0.254413 C16:1 chain + 0.284483 C18:0 chain \\ \hline
+r\_4011 & triglyceride (1-18:0, 2-18:1, 3-16:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:0, 2-18:1, 3-16:0)  -\textgreater 0.861427 triglyceride backbone + 0.256429 C16:0 chain + 0.284483 C18:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_4012 & triglyceride (1-18:1, 2-16:1, 3-16:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:1, 2-16:1, 3-16:0)  -\textgreater 0.831358 triglyceride backbone + 0.256429 C16:0 chain + 0.254413 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_4013 & triglyceride (1-18:1, 2-18:1, 3-16:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:1, 2-18:1, 3-16:0)  -\textgreater 0.859411 triglyceride backbone + 0.256429 C16:0 chain + 0.564934 C18:1 chain \\ \hline
+r\_4014 & triglyceride (1-16:0, 2-16:1, 3-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:0, 2-16:1, 3-16:1)  -\textgreater 0.803304 triglyceride backbone + 0.256429 C16:0 chain + 0.508826 C16:1 chain \\ \hline
+r\_4015 & triglyceride (1-16:0, 2-18:1, 3-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:0, 2-18:1, 3-16:1)  -\textgreater 0.831358 triglyceride backbone + 0.256429 C16:0 chain + 0.254413 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_4016 & triglyceride (1-16:1, 2-16:1, 3-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:1, 2-16:1, 3-16:1)  -\textgreater 0.801288 triglyceride backbone + 0.763239 C16:1 chain \\ \hline
+r\_4017 & triglyceride (1-16:1, 2-18:1, 3-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:1, 2-18:1, 3-16:1)  -\textgreater 0.829342 triglyceride backbone + 0.508826 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_4018 & triglyceride (1-18:0, 2-16:1, 3-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:0, 2-16:1, 3-16:1)  -\textgreater 0.831358 triglyceride backbone + 0.508826 C16:1 chain + 0.284483 C18:0 chain \\ \hline
+r\_4019 & triglyceride (1-18:0, 2-18:1, 3-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:0, 2-18:1, 3-16:1)  -\textgreater 0.859411 triglyceride backbone + 0.254413 C16:1 chain + 0.284483 C18:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_4020 & triglyceride (1-18:1, 2-16:1, 3-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:1, 2-16:1, 3-16:1)  -\textgreater 0.829342 triglyceride backbone + 0.508826 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_4021 & triglyceride (1-18:1, 2-18:1, 3-16:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:1, 2-18:1, 3-16:1)  -\textgreater 0.857395 triglyceride backbone + 0.254413 C16:1 chain + 0.564934 C18:1 chain \\ \hline
+r\_4022 & triglyceride (1-16:0, 2-16:1, 3-18:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:0, 2-16:1, 3-18:0)  -\textgreater 0.833373 triglyceride backbone + 0.256429 C16:0 chain + 0.254413 C16:1 chain + 0.284483 C18:0 chain \\ \hline
+r\_4023 & triglyceride (1-16:0, 2-18:1, 3-18:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:0, 2-18:1, 3-18:0)  -\textgreater 0.861427 triglyceride backbone + 0.256429 C16:0 chain + 0.284483 C18:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_4024 & triglyceride (1-16:1, 2-16:1, 3-18:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:1, 2-16:1, 3-18:0)  -\textgreater 0.831358 triglyceride backbone + 0.508826 C16:1 chain + 0.284483 C18:0 chain \\ \hline
+r\_4025 & triglyceride (1-16:1, 2-18:1, 3-18:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:1, 2-18:1, 3-18:0)  -\textgreater 0.859411 triglyceride backbone + 0.254413 C16:1 chain + 0.284483 C18:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_4026 & triglyceride (1-18:0, 2-16:1, 3-18:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:0, 2-16:1, 3-18:0)  -\textgreater 0.861427 triglyceride backbone + 0.254413 C16:1 chain + 0.568965 C18:0 chain \\ \hline
+r\_4027 & triglyceride (1-18:0, 2-18:1, 3-18:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:0, 2-18:1, 3-18:0)  -\textgreater 0.889481 triglyceride backbone + 0.568965 C18:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_4028 & triglyceride (1-18:1, 2-16:1, 3-18:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:1, 2-16:1, 3-18:0)  -\textgreater 0.859411 triglyceride backbone + 0.254413 C16:1 chain + 0.284483 C18:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_4029 & triglyceride (1-18:1, 2-18:1, 3-18:0) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:1, 2-18:1, 3-18:0)  -\textgreater 0.887465 triglyceride backbone + 0.284483 C18:0 chain + 0.564934 C18:1 chain \\ \hline
+r\_4030 & triglyceride (1-16:0, 2-16:1, 3-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:0, 2-16:1, 3-18:1)  -\textgreater 0.831358 triglyceride backbone + 0.256429 C16:0 chain + 0.254413 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_4031 & triglyceride (1-16:0, 2-18:1, 3-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:0, 2-18:1, 3-18:1)  -\textgreater 0.859411 triglyceride backbone + 0.256429 C16:0 chain + 0.564934 C18:1 chain \\ \hline
+r\_4032 & triglyceride (1-16:1, 2-16:1, 3-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:1, 2-16:1, 3-18:1)  -\textgreater 0.829342 triglyceride backbone + 0.508826 C16:1 chain + 0.282467 C18:1 chain \\ \hline
+r\_4033 & triglyceride (1-16:1, 2-18:1, 3-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-16:1, 2-18:1, 3-18:1)  -\textgreater 0.857395 triglyceride backbone + 0.254413 C16:1 chain + 0.564934 C18:1 chain \\ \hline
+r\_4034 & triglyceride (1-18:0, 2-16:1, 3-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:0, 2-16:1, 3-18:1)  -\textgreater 0.859411 triglyceride backbone + 0.254413 C16:1 chain + 0.284483 C18:0 chain + 0.282467 C18:1 chain \\ \hline
+r\_4035 & triglyceride (1-18:0, 2-18:1, 3-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:0, 2-18:1, 3-18:1)  -\textgreater 0.887465 triglyceride backbone + 0.284483 C18:0 chain + 0.564934 C18:1 chain \\ \hline
+r\_4036 & triglyceride (1-18:1, 2-16:1, 3-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:1, 2-16:1, 3-18:1)  -\textgreater 0.857395 triglyceride backbone + 0.254413 C16:1 chain + 0.564934 C18:1 chain \\ \hline
+r\_4037 & triglyceride (1-18:1, 2-18:1, 3-18:1) {[}endoplasmic reticulum membrane{]} SLIME rxn & triglyceride (1-18:1, 2-18:1, 3-18:1)  -\textgreater 0.885449 triglyceride backbone + 0.8474 C18:1 chain \\ \hline
+r\_1542 & (1-\textgreater{}3)-beta-D-glucan exchange & (1-\textgreater{}3)-beta-D-glucan  -\textgreater{} \\ \hline
+r\_1543 & (1-\textgreater{}3)-beta-D-glucan transport & (1-\textgreater{}3)-beta-D-glucan  -\textgreater (1-\textgreater{}3)-beta-D-glucan \\ \hline
+r\_1545 & (R)-carnitine exchange & (R)-carnitine  -\textgreater{} \\ \hline
+r\_1546 & (R)-lactate exchange & (R)-lactate  -\textgreater{} \\ \hline
+r\_1547 & (R)-mevalonate exchange & (R)-mevalonate  -\textgreater{} \\ \hline
+r\_1548 & (R)-pantothenate exchange & (R)-pantothenate  -\textgreater{} \\ \hline
+r\_1549 & (R,R)-2,3-butanediol exchange & (R,R)-2,3-butanediol  -\textgreater{} \\ \hline
+r\_1550 & (S)-3-methyl-2-oxopentanoate exchange & (S)-3-methyl-2-oxopentanoate  -\textgreater{} \\ \hline
+r\_1551 & (S)-lactate exchange & (S)-lactate  -\textgreater{} \\ \hline
+r\_1552 & (S)-malate exchange & (S)-malate  -\textgreater{} \\ \hline
+r\_1553 & 1-(sn-glycero-3-phospho)-1D-myo-inositol exchange & 1-(sn-glycero-3-phospho)-1D-myo-inositol  -\textgreater{} \\ \hline
+r\_1554 & 1-acylglycerophosphocholine exchange & 1-acylglycerophosphocholine  -\textgreater{} \\ \hline
+r\_1560 & 1D-myo-inositol 1,3,4,5,6-pentakisphosphate diffusion & myo-inositol 1,3,4,5,6-pentakisphosphate  -\textgreater myo-inositol 1,3,4,5,6-pentakisphosphate \\ \hline
+r\_1562 & 1D-myo-inositol 1-phosphate transport & 1D-myo-inositol 1-phosphate  -\textgreater 1D-myo-inositol 1-phosphate \\ \hline
+r\_1563 & 2'-deoxyadenosine exchange & 2''-deoxyadenosine  -\textgreater{} \\ \hline
+r\_1564 & 2'-deoxyguanosine exchange & 2''-deoxyguanosine  -\textgreater{} \\ \hline
+r\_1565 & 2'-deoxyinosine exchange & 2''-deoxyinosine  -\textgreater{} \\ \hline
+r\_1566 & 2'-deoxyuridine exchange & 2''-deoxyuridine  -\textgreater{} \\ \hline
+r\_1567 & 2-dehydro-3-deoxy-D-arabino-heptonate7-phohsphate transport & 7-phospho-2-dehydro-3-deoxy-D-arabino-heptonic acid  -\textgreater 7-phospho-2-dehydro-3-deoxy-D-arabino-heptonic acid \\ \hline
+r\_1568 & 2-dehydropantoate transport & 2-dehydropantoate  -\textgreater 2-dehydropantoate \\ \hline
+r\_1572 & 2-isopropylmalate exchange & 2-isopropylmalate  -\textgreater{} \\ \hline
+r\_1573 & 2-isopropylmalate transport & 2-isopropylmalate  -\textgreater 2-isopropylmalate \\ \hline
+r\_1574 & 2-isopropylmalate transport & 2-isopropylmalate  -\textgreater 2-isopropylmalate \\ \hline
+r\_1575 & 2-methyl-1-butanol transport & 2-methylbutanol  -\textgreater 2-methylbutanol \\ \hline
+r\_1576 & 2-methyl-1-butanol transport & 2-methylbutanol  -\textgreater 2-methylbutanol \\ \hline
+r\_1577 & 2-methylbutanal exchange & 2-methylbutanal  -\textgreater{} \\ \hline
+r\_1578 & 2-methylbutanal transport & 2-methylbutanal  -\textgreater 2-methylbutanal \\ \hline
+r\_1579 & 2-methylbutanal transport & 2-methylbutanal  -\textgreater 2-methylbutanal \\ \hline
+r\_1580 & 2-methylbutanol exchange & 2-methylbutanol  -\textgreater{} \\ \hline
+r\_1581 & 2-methylbutyl acetate exchange & 2-methylbutyl acetate  -\textgreater{} \\ \hline
+r\_1582 & 2-methylpropanal transport & isobutyraldehyde  -\textgreater isobutyraldehyde \\ \hline
+r\_1583 & 2-methylpropanal transport & isobutyraldehyde  -\textgreater isobutyraldehyde \\ \hline
+r\_1585 & 2-oxobutanoate transporter & 2-oxobutanoate  -\textgreater 2-oxobutanoate \\ \hline
+r\_1586 & 2-oxoglutarate exchange & 2-oxoglutarate  -\textgreater{} \\ \hline
+r\_1587 & 2-oxoglutarate transport & 2-oxoglutarate  -\textgreater 2-oxoglutarate \\ \hline
+r\_1588 & 2-oxoglutarate transport & 2-oxoglutarate  -\textgreater 2-oxoglutarate \\ \hline
+r\_1589 & 2-phenylethanol exchange & 2-phenylethanol  -\textgreater{} \\ \hline
+r\_1590 & 2-phenylethanol transport & 2-phenylethanol  -\textgreater 2-phenylethanol \\ \hline
+r\_1591 & 2-phenylethanol transport & 2-phenylethanol  -\textgreater 2-phenylethanol \\ \hline
+r\_1595 & 3-carboxy-4-methyl-2-oxopentanoate transport & (2S)-2-isopropyl-3-oxosuccinate  -\textgreater (2S)-2-isopropyl-3-oxosuccinate \\ \hline
+r\_1596 & 3-methyl-2-oxopentanoate transport & (S)-3-methyl-2-oxopentanoate  -\textgreater (S)-3-methyl-2-oxopentanoate \\ \hline
+r\_1597 & 3-methyl-oxopentanoate trasport & (S)-3-methyl-2-oxopentanoate  -\textgreater (S)-3-methyl-2-oxopentanoate \\ \hline
+r\_1598 & 3-methylbutanal exchange & 3-methylbutanal  -\textgreater{} \\ \hline
+r\_1599 & 3-methylbutanal transport & 3-methylbutanal  -\textgreater 3-methylbutanal \\ \hline
+r\_1600 & 3-methylbutanal transport & 3-methylbutanal  -\textgreater 3-methylbutanal \\ \hline
+r\_1601 & 3-octaprenyl-4-hydroxybenzoate transport & 3-hexaprenyl-4-hydroxybenzoic acid  -\textgreater 3-hexaprenyl-4-hydroxybenzoic acid \\ \hline
+r\_1603 & 4-amino-5-hydroxymethyl-2-methylpyrimidine synthetase & 5''-phosphoribosyl-5-aminoimidazole  -\textgreater 4-amino-5-hydroxymethyl-2-methylpyrimidine + glycolaldehyde + H+ + phosphate \\ \hline
+r\_1604 & 4-aminobenzoate exchange & 4-aminobenzoate  -\textgreater{} \\ \hline
+r\_1605 & 4-aminobenzoate transport & 4-aminobenzoate  -\textgreater 4-aminobenzoate \\ \hline
+r\_1606 & 4-aminobenzoate transport & 4-aminobenzoate  -\textgreater 4-aminobenzoate \\ \hline
+r\_1607 & 4-aminobutanal transport & 4-aminobutanal  -\textgreater 4-aminobutanal \\ \hline
+r\_1608 & 4-aminobutyrate transport & gamma-aminobutyrate  -\textgreater gamma-aminobutyrate \\ \hline
+r\_1609 & 4-hydroxy-2-oxoglutarate transport & 4-hydroxy-2-oxoglutarate  -\textgreater 4-hydroxy-2-oxoglutarate \\ \hline
+r\_1610 & 4-hydroxy-2-oxoglutarate transport & 4-hydroxy-2-oxoglutarate  -\textgreater 4-hydroxy-2-oxoglutarate \\ \hline
+r\_1611 & 4-hydroxybenzoate transport & 4-hydroxybenzoate  -\textgreater 4-hydroxybenzoate \\ \hline
+r\_1613 & 5'-nucleotidase (AMP) & AMP + H2O  -\textgreater adenosine + phosphate \\ \hline
+r\_1614 & 5'-nucleotidase (dAMP) & dAMP + H2O  -\textgreater 2''-deoxyadenosine + phosphate \\ \hline
+r\_1615 & 5'-nucleotidase (dCMP) & dCMP + H2O  -\textgreater deoxycytidine + phosphate \\ \hline
+r\_1616 & 5'-nucleotidase (dGMP) & dGMP + H2O  -\textgreater 2''-deoxyguanosine + phosphate \\ \hline
+r\_1617 & 5'-nucleotidase (dTMP) & dTMP + H2O  -\textgreater phosphate + thymidine \\ \hline
+r\_1618 & 5'-nucleotidase (dUMP) & dUMP + H2O  -\textgreater 2''-deoxyuridine + phosphate \\ \hline
+r\_1620 & 5'-nucleotidase (XMP) & H2O + xanthosine-5-phosphate  -\textgreater phosphate + xanthosine \\ \hline
+r\_1621 & 5-aminolevulinate exchange & 5-aminolevulinate  -\textgreater{} \\ \hline
+r\_1622 & 5-aminolevulinate transport & 5-aminolevulinate  -\textgreater 5-aminolevulinate \\ \hline
+r\_1625 & 5-formyltetrahydrofolic acid exchange & 5-formyltetrahydrofolic acid  -\textgreater{} \\ \hline
+r\_1627 & 7,8-diaminononanoate exchange & 7,8-diaminononanoate  -\textgreater{} \\ \hline
+r\_1628 & 7,8-diaminononanoate transport & 7,8-diaminononanoate  -\textgreater 7,8-diaminononanoate \\ \hline
+r\_1629 & 8-amino-7-oxononanoate exchange & 8-amino-7-oxononanoate  -\textgreater{} \\ \hline
+r\_1630 & 9H-xanthine exchange & 9H-xanthine  -\textgreater{} \\ \hline
+r\_1631 & acetaldehyde exchange & acetaldehyde  -\textgreater{} \\ \hline
+r\_1632 & acetaldehyde transport & acetaldehyde  -\textgreater acetaldehyde \\ \hline
+r\_1633 & acetaldehyde transport & acetaldehyde  -\textgreater acetaldehyde \\ \hline
+r\_1634 & acetate exchange & acetate  -\textgreater{} \\ \hline
+r\_1635 & acetate transport & acetate  -\textgreater acetate \\ \hline
+r\_1637 & acetyl-CoA transport & acetyl-CoA  -\textgreater acetyl-CoA \\ \hline
+r\_1638 & acetylcarnitine transport & O-acetylcarnitine  -\textgreater O-acetylcarnitine \\ \hline
+r\_1639 & adenine exchange & adenine  -\textgreater{} \\ \hline
+r\_1640 & adenine transport & adenine  -\textgreater adenine \\ \hline
+r\_1641 & adenosine 3',5'-bismonophosphate exchange & adenosine 3'',5''-bismonophosphate  -\textgreater{} \\ \hline
+r\_1642 & adenosine 3',5'-bisphosphate transport & adenosine 3'',5''-bismonophosphate  -\textgreater adenosine 3'',5''-bismonophosphate \\ \hline
+r\_1643 & adenosine exchange & adenosine  -\textgreater{} \\ \hline
+r\_1644 & ADP transport & ADP  -\textgreater ADP \\ \hline
+r\_1645 & ADP transport & ADP  -\textgreater ADP \\ \hline
+r\_1647 & AKG transporter, peroxisome & 2-oxoglutarate  -\textgreater 2-oxoglutarate \\ \hline
+r\_1648 & allantoate exchange & allantoate  -\textgreater{} \\ \hline
+r\_1649 & allantoin exchange & allantoin  -\textgreater{} \\ \hline
+r\_1650 & trehalose exchange & trehalose  -\textgreater{} \\ \hline
+r\_1651 & alpha-D-glucosamine 6-phosphate exchange & alpha-D-glucosamine 6-phosphate  -\textgreater{} \\ \hline
+r\_1652 & alpha-ketoglutarate/malate transporter & (S)-malate + 2-oxoglutarate  -\textgreater (S)-malate + 2-oxoglutarate \\ \hline
+r\_1654 & ammonium exchange & ammonium  -\textgreater{} \\ \hline
+r\_1656 & AMP transport & AMP  -\textgreater AMP \\ \hline
+r\_1658 & asparagine transport & L-asparagine  -\textgreater L-asparagine \\ \hline
+r\_1659 & aspartate-glutamate transporter & L-aspartate + L-glutamate  -\textgreater L-aspartate + L-glutamate \\ \hline
+r\_1660 & ATP diffusion & ATP  -\textgreater ATP \\ \hline
+r\_1661 & ATP transport & ATP  -\textgreater ATP \\ \hline
+r\_1664 & bicarbonate formation & carbon dioxide + H2O  -\textgreater bicarbonate + H+ \\ \hline
+r\_1665 & bicarbonate formation & carbon dioxide + H2O  -\textgreater bicarbonate + H+ \\ \hline
+r\_1668 & bicarbonate formation & carbon dioxide + H2O  -\textgreater bicarbonate + H+ \\ \hline
+r\_1669 & bicarbonate transport & bicarbonate  -\textgreater bicarbonate \\ \hline
+r\_1671 & biotin exchange & biotin  -\textgreater{} \\ \hline
+r\_1672 & carbon dioxide exchange & carbon dioxide  -\textgreater{} \\ \hline
+r\_1673 & carnitine transport & (R)-carnitine  -\textgreater (R)-carnitine \\ \hline
+r\_1674 & carnitine-acetylcarnitine carrier & (R)-carnitine + O-acetylcarnitine  -\textgreater (R)-carnitine + O-acetylcarnitine \\ \hline
+r\_1675 & CDP transport & CDP  -\textgreater CDP \\ \hline
+r\_1676 & ceramide transport & ceramide-1 (C24)  -\textgreater ceramide-1 (C24) \\ \hline
+r\_1677 & ceramide transport & ceramide-2 (C24)  -\textgreater ceramide-2 (C24) \\ \hline
+r\_1678 & ceramide transport & ceramide-4 (C24)  -\textgreater ceramide-4 (C24) \\ \hline
+r\_1679 & ceramide transport & ceramide-1 (C26)  -\textgreater ceramide-1 (C26) \\ \hline
+r\_1680 & ceramide transport & ceramide-2 (C26)  -\textgreater ceramide-2 (C26) \\ \hline
+r\_1681 & ceramide transport & ceramide-4 (C26)  -\textgreater ceramide-4 (C26) \\ \hline
+r\_1682 & cholestenol delta-isomerase, lumped reaction & oxygen + S-adenosyl-L-methionine + zymosterol  -\textgreater ergosta-5,7,22,24(28)-tetraen-3beta-ol + H+ + 2 H2O + S-adenosyl-L-homocysteine \\ \hline
+r\_1683 & choline exchange & choline  -\textgreater{} \\ \hline
+r\_1684 & choline transport & choline  -\textgreater choline \\ \hline
+r\_1685 & chorismate pyruvate lyase & chorismate  -\textgreater 4-hydroxybenzoate + pyruvate \\ \hline
+r\_1686 & citrate transport & citrate  -\textgreater citrate \\ \hline
+r\_1687 & citrate exchange & citrate  -\textgreater{} \\ \hline
+r\_1688 & citrate/isocitrate antiport & citrate + isocitrate  -\textgreater citrate + isocitrate \\ \hline
+r\_1689 & citrate/malate antiport & (S)-malate + citrate  -\textgreater (S)-malate + citrate \\ \hline
+r\_1690 & CMP nucleosidase & CMP + H2O  -\textgreater cytosine + ribose-5-phosphate \\ \hline
+r\_1691 & CO2 transport & carbon dioxide  -\textgreater carbon dioxide \\ \hline
+r\_1694 & CO2 transport & carbon dioxide  -\textgreater carbon dioxide \\ \hline
+r\_1695 & CO2 transport & carbon dioxide  -\textgreater carbon dioxide \\ \hline
+r\_1696 & CO2 transport & carbon dioxide  -\textgreater carbon dioxide \\ \hline
+r\_1697 & CO2 transport & carbon dioxide  -\textgreater carbon dioxide \\ \hline
+r\_1698 & coenzyme A transport & coenzyme A  -\textgreater coenzyme A \\ \hline
+r\_1699 & coenzyme A transport & coenzyme A  -\textgreater coenzyme A \\ \hline
+r\_1700 & coenzyme A transport & coenzyme A  -\textgreater coenzyme A \\ \hline
+r\_1702 & cytidine exchange & cytidine  -\textgreater{} \\ \hline
+r\_1703 & cytidylate kinase (CMP) & ATP + CMP  -\textgreater ADP + CDP \\ \hline
+r\_1704 & cytidylate kinase (dCMP) & ATP + dCMP  -\textgreater ADP + dCDP \\ \hline
+r\_1705 & cytosine exchange & cytosine  -\textgreater{} \\ \hline
+r\_1706 & D-arabinose exchange & D-arabinose  -\textgreater{} \\ \hline
+r\_1707 & D-arabinose transport & D-arabinose  -\textgreater D-arabinose \\ \hline
+r\_1708 & D-erythrose 4-phosphate transport & D-erythrose 4-phosphate  -\textgreater D-erythrose 4-phosphate \\ \hline
+r\_1709 & D-fructose exchange & D-fructose  -\textgreater{} \\ \hline
+r\_1710 & D-galactose exchange & D-galactose  -\textgreater{} \\ \hline
+r\_1711 & D-galacturonate exchange & D-galacturonate  -\textgreater{} \\ \hline
+r\_1712 & D-glucitol exchange & D-glucitol  -\textgreater{} \\ \hline
+r\_1713 & D-glucosamine 6-phosphate uniport & alpha-D-glucosamine 6-phosphate  -\textgreater alpha-D-glucosamine 6-phosphate \\ \hline
+r\_1714 & D-glucose exchange & D-glucose  -\textgreater{} \\ \hline
+r\_1715 & D-mannose exchange & D-mannose  -\textgreater{} \\ \hline
+r\_1716 & D-ribose exchange & D-ribose  -\textgreater{} \\ \hline
+r\_1717 & D-sorbitol transport & D-glucitol  -\textgreater D-glucitol \\ \hline
+r\_1718 & D-xylose exchange & D-xylose  -\textgreater{} \\ \hline
+r\_1719 & D-xylose transport & D-xylose  -\textgreater D-xylose \\ \hline
+r\_1720 & dADP transport & dADP  -\textgreater dADP \\ \hline
+r\_1721 & dCDP transport & dCDP  -\textgreater dCDP \\ \hline
+r\_1722 & ATP deamination & ATP + H+ + H2O  -\textgreater ammonium + ITP \\ \hline
+r\_1723 & dATP deamination & dATP + H+ + H2O  -\textgreater ammonium + dITP \\ \hline
+r\_1724 & ADP deamination & ADP + H+ + H2O  -\textgreater ammonium + IDP \\ \hline
+r\_1725 & dADP deamination & dADP + H+ + H2O  -\textgreater ammonium + dIDP \\ \hline
+r\_1726 & deamino-NAD+ diffusion & deamido-NAD(+)  -\textgreater deamido-NAD(+) \\ \hline
+r\_1727 & decanoate exchange & decanoate  -\textgreater{} \\ \hline
+r\_1728 & deoxyadenosine transport & 2''-deoxyadenosine  -\textgreater 2''-deoxyadenosine \\ \hline
+r\_1730 & deoxycytidine exchange & deoxycytidine  -\textgreater{} \\ \hline
+r\_1731 & deoxycytidine transport & deoxycytidine  -\textgreater deoxycytidine \\ \hline
+r\_1732 & deoxyguanosine transport & 2''-deoxyguanosine  -\textgreater 2''-deoxyguanosine \\ \hline
+r\_1733 & deoxyinosine transport & 2''-deoxyinosine  -\textgreater 2''-deoxyinosine \\ \hline
+r\_1734 & deoxyuridine kinase (ATP:deoxyuridine) & 2''-deoxyuridine + ATP  -\textgreater ADP + dUMP + H+ \\ \hline
+r\_1735 & deoxyuridine transport & 2''-deoxyuridine  -\textgreater 2''-deoxyuridine \\ \hline
+r\_1736 & dephospho-CoA kinase & 3''-dephospho-CoA + ATP  -\textgreater ADP + coenzyme A + H+ \\ \hline
+r\_1737 & dGDP transport & dGDP  -\textgreater dGDP \\ \hline
+r\_1738 & dhnpt transport & 7,8-dihydroneopterin  -\textgreater 7,8-dihydroneopterin \\ \hline
+r\_1743 & dihydrofolate transport & dihydrofolic acid  -\textgreater dihydrofolic acid \\ \hline
+r\_1744 & dihydroneopterin triphosphate pyrophosphatase & 7,8-dihydroneopterin 3''-triphosphate + H2O  -\textgreater 7,8-dihydroneopterin 3''-phosphate + diphosphate + H+ \\ \hline
+r\_1745 & dihydropteroate transport & 7,8-dihydropteroate  -\textgreater 7,8-dihydropteroate \\ \hline
+r\_1746 & dihydroxyacetone phosphate transport & dihydroxyacetone phosphate  -\textgreater dihydroxyacetone phosphate \\ \hline
+r\_1747 & diphosphate transport & diphosphate  -\textgreater diphosphate \\ \hline
+r\_1748 & dolichol phosphate transport & dolichyl phosphate  -\textgreater dolichyl phosphate \\ \hline
+r\_1749 & dTTP exchange & dTTP  -\textgreater{} \\ \hline
+r\_1750 & dTTP uniport & dTTP  -\textgreater dTTP \\ \hline
+r\_1751 & dUDP diffusion & dUDP  -\textgreater dUDP \\ \hline
+r\_1752 & dUMP transport & dUMP  -\textgreater dUMP \\ \hline
+r\_1753 & episterol exchange & episterol  -\textgreater{} \\ \hline
+r\_1754 & ergosta-5,6,22,24,(28)-tetraen-3beta-ol transport & ergosta-5,7,22,24(28)-tetraen-3beta-ol  -\textgreater ergosta-5,7,22,24(28)-tetraen-3beta-ol \\ \hline
+r\_1757 & ergosterol exchange & ergosterol  -\textgreater{} \\ \hline
+r\_1758 & ergosterol transport & ergosterol  -\textgreater ergosterol \\ \hline
+r\_1759 & ergosterol transport & ergosterol  -\textgreater ergosterol \\ \hline
+r\_1761 & ethanol exchange & ethanol  -\textgreater{} \\ \hline
+r\_1762 & ethanol transport & ethanol  -\textgreater ethanol \\ \hline
+r\_1763 & ethanol transport, mitochondrial & ethanol  -\textgreater ethanol \\ \hline
+r\_1764 & ethanolamine exchange & ethanolamine  -\textgreater{} \\ \hline
+r\_1765 & ethyl acetate exchange & ethyl acetate  -\textgreater{} \\ \hline
+r\_1766 & farnesyl diphosphate transport & farnesyl diphosphate  -\textgreater farnesyl diphosphate \\ \hline
+r\_1770 & fatty acid transport & decanoate  -\textgreater decanoate \\ \hline
+r\_1771 & fatty acid transport & laurate  -\textgreater laurate \\ \hline
+r\_1772 & fatty acid transport & myristate  -\textgreater myristate \\ \hline
+r\_1774 & fatty acid transport & palmitate  -\textgreater palmitate \\ \hline
+r\_1775 & fatty acid transport & palmitoleate  -\textgreater palmitoleate \\ \hline
+r\_1776 & fatty acid transport & octanoate  -\textgreater octanoate \\ \hline
+r\_1777 & myristate (n-C14:0) transport & myristate  -\textgreater myristate \\ \hline
+r\_1788 & fecosterol exchange & fecosterol  -\textgreater{} \\ \hline
+r\_1791 & FMN exchange & FMN  -\textgreater{} \\ \hline
+r\_1792 & folic acid exchange & folate  -\textgreater{} \\ \hline
+r\_1793 & formate exchange & formate  -\textgreater{} \\ \hline
+r\_1794 & formate transport & formate  -\textgreater formate \\ \hline
+r\_1795 & formate transport & formate  -\textgreater formate \\ \hline
+r\_1796 & formate transport & fumarate  -\textgreater fumarate \\ \hline
+r\_1797 & fructose-1-phosphate kinase & ATP + D-fructose 1-phosphate  -\textgreater ADP + D-fructose 1,6-bisphosphate + H+ \\ \hline
+r\_1798 & fumarate exchange & fumarate  -\textgreater{} \\ \hline
+r\_1800 & gamma-aminobutyrate exchange & gamma-aminobutyrate  -\textgreater{} \\ \hline
+r\_1801 & GDP transport & GDP  -\textgreater GDP \\ \hline
+r\_1802 & GDP transport & GDP  -\textgreater GDP \\ \hline
+r\_1803 & GDP-alpha-D-mannose transport & GDP-alpha-D-mannose  -\textgreater GDP-alpha-D-mannose \\ \hline
+r\_1805 & glucose transport, vacuolar & D-glucose  -\textgreater D-glucose \\ \hline
+r\_1806 & glutathione disulfide exchange & glutathione disulfide  -\textgreater{} \\ \hline
+r\_1807 & glutathione exchange & glutathione  -\textgreater{} \\ \hline
+r\_1808 & glycerol exchange & glycerol  -\textgreater{} \\ \hline
+r\_1809 & glycerol-3-phosphate shuttle & glycerol 3-phosphate  -\textgreater glycerol 3-phosphate \\ \hline
+r\_1810 & L-glycine exchange & L-glycine  -\textgreater{} \\ \hline
+r\_1811 & glycine transport & L-glycine  -\textgreater L-glycine \\ \hline
+r\_1812 & glycoaldehyde transport & glycolaldehyde  -\textgreater glycolaldehyde \\ \hline
+r\_1813 & glycoaldehyde transport & glycolaldehyde  -\textgreater glycolaldehyde \\ \hline
+r\_1814 & glycolaldehyde exchange & glycolaldehyde  -\textgreater{} \\ \hline
+r\_1815 & glyoxylate exchange & glyoxylate  -\textgreater{} \\ \hline
+r\_1816 & glyoxylate transport & glyoxylate  -\textgreater glyoxylate \\ \hline
+r\_1817 & glyoxylate transport & glyoxylate  -\textgreater glyoxylate \\ \hline
+r\_1818 & guanine exchange & guanine  -\textgreater{} \\ \hline
+r\_1819 & guanine transport & guanine  -\textgreater guanine \\ \hline
+r\_1820 & guanosine exchange & guanosine  -\textgreater{} \\ \hline
+r\_1821 & guanosine kinase & ATP + guanosine  -\textgreater ADP + GMP + H+ \\ \hline
+r\_1822 & guanosine transport & guanosine  -\textgreater guanosine \\ \hline
+r\_1823 & guanosine transport & guanosine  -\textgreater guanosine \\ \hline
+r\_1824 & H+ diffusion & H+  -\textgreater H+ \\ \hline
+r\_1825 & H+ diffusion & H+  -\textgreater H+ \\ \hline
+r\_1826 & H+ diffusion & H+  -\textgreater H+ \\ \hline
+r\_1827 & H+ diffusion & H+  -\textgreater H+ \\ \hline
+r\_1829 & H+ diffusion & H+  -\textgreater H+ \\ \hline
+r\_1830 & H+ diffusion & H+  -\textgreater H+ \\ \hline
+r\_1831 & H+ diffusion & H+  -\textgreater H+ \\ \hline
+r\_1832 & H+ exchange & H+  -\textgreater{} \\ \hline
+r\_1833 & hexacosanoyl-CoA transport & hexacosanoyl-CoA  -\textgreater hexacosanoyl-CoA \\ \hline
+r\_1834 & hexadecanal exchange & hexadecanal  -\textgreater{} \\ \hline
+r\_1835 & hexadecanoate (n-C16:0) transport & palmitate  -\textgreater palmitate \\ \hline
+r\_1836 & hexadecenoate (n-C16:1) transport & palmitoleate  -\textgreater palmitoleate \\ \hline
+r\_1837 & L-histidine transport, mitochondrial & L-histidine  -\textgreater L-histidine \\ \hline
+r\_1839 & hydrogen peroxide transport & hydrogen peroxide  -\textgreater hydrogen peroxide \\ \hline
+r\_1840 & hydroxymethylglutaryl-CoA transport & 3-hydroxy-3-methylglutaryl-CoA  -\textgreater 3-hydroxy-3-methylglutaryl-CoA \\ \hline
+r\_1841 & hypoxanthine exchange & hypoxanthine  -\textgreater{} \\ \hline
+r\_1842 & hypoxanthine transport & hypoxanthine  -\textgreater hypoxanthine \\ \hline
+r\_1843 & indol-3-ylacetaldehyde exchange & indol-3-ylacetaldehyde  -\textgreater{} \\ \hline
+r\_1844 & indole-3-acetaldehyde transport & indol-3-ylacetaldehyde  -\textgreater indol-3-ylacetaldehyde \\ \hline
+r\_1845 & indole-3-acetaldehyde transport & indol-3-ylacetaldehyde  -\textgreater indol-3-ylacetaldehyde \\ \hline
+r\_1846 & indole-3-acetate transport & indole-3-acetate  -\textgreater indole-3-acetate \\ \hline
+r\_1847 & inosine exchange & inosine  -\textgreater{} \\ \hline
+r\_1848 & inosine transport & inosine  -\textgreater inosine \\ \hline
+r\_1849 & inositol hexakisphosphate transport & myo-inositol hexakisphosphate  -\textgreater myo-inositol hexakisphosphate \\ \hline
+r\_1850 & insosine kinase & ATP + inosine  -\textgreater ADP + H+ + IMP \\ \hline
+r\_1851 & IPC transport & inositol-P-ceramide A (C24)  -\textgreater inositol-P-ceramide A (C24) \\ \hline
+r\_1852 & IPC transport & inositol-P-ceramide B (C24)  -\textgreater inositol-P-ceramide B (C24) \\ \hline
+r\_1853 & IPC transport & inositol-P-ceramide B'' (C24)  -\textgreater inositol-P-ceramide B'' (C24) \\ \hline
+r\_1854 & IPC transport & inositol-P-ceramide C (C24)  -\textgreater inositol-P-ceramide C (C24) \\ \hline
+r\_1855 & IPC transport & inositol-P-ceramide D (C24)  -\textgreater inositol-P-ceramide D (C24) \\ \hline
+r\_1856 & IPC transport & inositol-P-ceramide A (C26)  -\textgreater inositol-P-ceramide A (C26) \\ \hline
+r\_1857 & IPC transport & inositol-P-ceramide B (C26)  -\textgreater inositol-P-ceramide B (C26) \\ \hline
+r\_1858 & IPC transport & inositol-P-ceramide B'' (C26)  -\textgreater inositol-P-ceramide B'' (C26) \\ \hline
+r\_1859 & IPC transport & inositol-P-ceramide C (C26)  -\textgreater inositol-P-ceramide C (C26) \\ \hline
+r\_1860 & IPC transport & inositol-P-ceramide D (C26)  -\textgreater inositol-P-ceramide D (C26) \\ \hline
+r\_1861 & iron(2+) exchange & iron(2+)  -\textgreater{} \\ \hline
+r\_1862 & isoamyl acetate exchange & isoamyl acetate  -\textgreater{} \\ \hline
+r\_1863 & isoamyl alcohol transport & isoamylol  -\textgreater isoamylol \\ \hline
+r\_1864 & isoamyl alcohol transport & isoamylol  -\textgreater isoamylol \\ \hline
+r\_1865 & isoamylol exchange & isoamylol  -\textgreater{} \\ \hline
+r\_1866 & isobutanol exchange & isobutanol  -\textgreater{} \\ \hline
+r\_1867 & isobutyl acetate exchange & isobutyl acetate  -\textgreater{} \\ \hline
+r\_1868 & isobutyl alcohol transport & isobutanol  -\textgreater isobutanol \\ \hline
+r\_1869 & isobutyl alcohol transport & isobutanol  -\textgreater isobutanol \\ \hline
+r\_1870 & isobutyraldehyde exchange & isobutyraldehyde  -\textgreater{} \\ \hline
+r\_1871 & L-1-pyrroline-3-hydroxy-5-carboxylate spontaneous conversion to L-4-hydroxyglutamate semialdehyde & 1-pyrroline-3-hydroxy-5-carboxylic acid + H+ + H2O  -\textgreater L-4-hydroxyglutamic semialdehyde \\ \hline
+r\_1872 & L-2-amino-3-oxobutanoate decarboxylation (spontaneous) & H+ + L-2-amino-3-oxobutanoate  -\textgreater aminoacetone + carbon dioxide \\ \hline
+r\_1873 & L-alanine exchange & L-alanine  -\textgreater{} \\ \hline
+r\_1874 & L-alanine transport & L-alanine  -\textgreater L-alanine \\ \hline
+r\_1875 & L-arabinitol exchange & L-arabinitol  -\textgreater{} \\ \hline
+r\_1876 & L-arabinitol transport & L-arabinitol  -\textgreater L-arabinitol \\ \hline
+r\_1877 & L-arabinoase transport & L-arabinose  -\textgreater L-arabinose \\ \hline
+r\_1878 & L-arabinose exchange & L-arabinose  -\textgreater{} \\ \hline
+r\_1879 & L-arginine exchange & L-arginine  -\textgreater{} \\ \hline
+r\_1880 & L-asparagine exchange & L-asparagine  -\textgreater{} \\ \hline
+r\_1881 & L-aspartate exchange & L-aspartate  -\textgreater{} \\ \hline
+r\_1882 & L-carnitine transport & (R)-carnitine  -\textgreater (R)-carnitine \\ \hline
+r\_1883 & L-cysteine exchange & L-cysteine  -\textgreater{} \\ \hline
+r\_1884 & L-erythro-4-hydroxyglutamate transport & erythro-4-hydroxy-L-glutamic acid  -\textgreater erythro-4-hydroxy-L-glutamic acid \\ \hline
+r\_1885 & L-erythro-4-hydroxyglutamate transport & erythro-4-hydroxy-L-glutamic acid  -\textgreater erythro-4-hydroxy-L-glutamic acid \\ \hline
+r\_1886 & L-glucitol exchange & L-glucitol  -\textgreater{} \\ \hline
+r\_1887 & L-glutamate 5-semialdehyde dehydratase & L-glutamic 5-semialdehyde  -\textgreater 1-pyrroline-5-carboxylate + H+ + H2O \\ \hline
+r\_1889 & L-glutamate exchange & L-glutamate  -\textgreater{} \\ \hline
+r\_1890 & L-glutamate transport & L-glutamate  -\textgreater L-glutamate \\ \hline
+r\_1891 & L-glutamine exchange & L-glutamine  -\textgreater{} \\ \hline
+r\_1892 & L-glutamine transport & L-glutamine  -\textgreater L-glutamine \\ \hline
+r\_1893 & L-histidine exchange & L-histidine  -\textgreater{} \\ \hline
+r\_1895 & L-homoserine transport & L-homoserine  -\textgreater L-homoserine \\ \hline
+r\_1896 & L-homoserine exchange & L-homoserine  -\textgreater{} \\ \hline
+r\_1897 & L-isoleucine exchange & L-isoleucine  -\textgreater{} \\ \hline
+r\_1898 & L-isoleucine transport & L-isoleucine  -\textgreater L-isoleucine \\ \hline
+r\_1899 & L-leucine exchange & L-leucine  -\textgreater{} \\ \hline
+r\_1900 & L-lysine exchange & L-lysine  -\textgreater{} \\ \hline
+r\_1901 & L-malate transport & (S)-malate  -\textgreater (S)-malate \\ \hline
+r\_1902 & L-methionine exchange & L-methionine  -\textgreater{} \\ \hline
+r\_1903 & L-phenylalanine exchange & L-phenylalanine  -\textgreater{} \\ \hline
+r\_1904 & L-proline exchange & L-proline  -\textgreater{} \\ \hline
+r\_1905 & L-proline transport & L-proline  -\textgreater L-proline \\ \hline
+r\_1906 & L-serine exchange & L-serine  -\textgreater{} \\ \hline
+r\_1907 & L-serine transport & L-serine  -\textgreater L-serine \\ \hline
+r\_1908 & L-sorbitol transport & L-glucitol  -\textgreater L-glucitol \\ \hline
+r\_1909 & L-sorbose exchange & L-sorbose  -\textgreater{} \\ \hline
+r\_1910 & L-sorbose transport & L-sorbose  -\textgreater L-sorbose \\ \hline
+r\_1911 & L-threonine exchange & L-threonine  -\textgreater{} \\ \hline
+r\_1912 & L-tryptophan exchange & L-tryptophan  -\textgreater{} \\ \hline
+r\_1913 & L-tyrosine exchange & L-tyrosine  -\textgreater{} \\ \hline
+r\_1914 & L-valine exchange & L-valine  -\textgreater{} \\ \hline
+r\_1915 & lanosterol exchange & lanosterol  -\textgreater{} \\ \hline
+r\_1916 & laurate exchange & laurate  -\textgreater{} \\ \hline
+r\_1919 & lysine transport & L-lysine  -\textgreater L-lysine \\ \hline
+r\_1920 & M(IP)2C transport & inositol phosphomannosylinositol phosphoceramide A (C24)  -\textgreater inositol phosphomannosylinositol phosphoceramide A (C24) \\ \hline
+r\_1921 & M(IP)2C transport & inositol phosphomannosylinositol phosphoceramide B (C24)  -\textgreater inositol phosphomannosylinositol phosphoceramide B (C24) \\ \hline
+r\_1922 & M(IP)2C transport & inositol phosphomannosylinositol phosphoceramide B'' (C24)  -\textgreater inositol phosphomannosylinositol phosphoceramide B'' (C24) \\ \hline
+r\_1923 & M(IP)2C transport & inositol phosphomannosylinositol phosphoceramide C (C24)  -\textgreater inositol phosphomannosylinositol phosphoceramide C (C24) \\ \hline
+r\_1924 & M(IP)2C transport & inositol phosphomannosylinositol phosphoceramide D (C24)  -\textgreater inositol phosphomannosylinositol phosphoceramide D (C24) \\ \hline
+r\_1925 & M(IP)2C transport & inositol phosphomannosylinositol phosphoceramide A (C26)  -\textgreater inositol phosphomannosylinositol phosphoceramide A (C26) \\ \hline
+r\_1926 & M(IP)2C transport & inositol phosphomannosylinositol phosphoceramide B (C26)  -\textgreater inositol phosphomannosylinositol phosphoceramide B (C26) \\ \hline
+r\_1927 & M(IP)2C transport & inositol phosphomannosylinositol phosphoceramide B'' (C26)  -\textgreater inositol phosphomannosylinositol phosphoceramide B'' (C26) \\ \hline
+r\_1928 & M(IP)2C transport & inositol phosphomannosylinositol phosphoceramide C (C26)  -\textgreater inositol phosphomannosylinositol phosphoceramide C (C26) \\ \hline
+r\_1929 & M(IP)2C transport & inositol phosphomannosylinositol phosphoceramide D (C26)  -\textgreater inositol phosphomannosylinositol phosphoceramide D (C26) \\ \hline
+r\_1930 & malate/oxaloacetate shuttle & (S)-malate + oxaloacetate  -\textgreater (S)-malate + oxaloacetate \\ \hline
+r\_1931 & maltose exchange & maltose  -\textgreater{} \\ \hline
+r\_1932 & mannan transport & mannan  -\textgreater mannan \\ \hline
+r\_1935 & methionine transport & L-methionine  -\textgreater L-methionine \\ \hline
+r\_1936 & methylglyoxal synthase & dihydroxyacetone phosphate  -\textgreater methylglyoxal + phosphate \\ \hline
+r\_1937 & MIPC transport & mannosylinositol phosphorylceramide A (C24)  -\textgreater mannosylinositol phosphorylceramide A (C24) \\ \hline
+r\_1938 & MIPC transport & mannosylinositol phosphorylceramide B (C24)  -\textgreater mannosylinositol phosphorylceramide B (C24) \\ \hline
+r\_1939 & MIPC transport & mannosylinositol phosphorylceramide B'' (C24)  -\textgreater mannosylinositol phosphorylceramide B'' (C24) \\ \hline
+r\_1940 & MIPC transport & mannosylinositol phosphorylceramide C (C24)  -\textgreater mannosylinositol phosphorylceramide C (C24) \\ \hline
+r\_1941 & MIPC transport & mannosylinositol phosphorylceramide D (C24)  -\textgreater mannosylinositol phosphorylceramide D (C24) \\ \hline
+r\_1942 & MIPC transport & mannosylinositol phosphorylceramide A (C26)  -\textgreater mannosylinositol phosphorylceramide A (C26) \\ \hline
+r\_1943 & MIPC transport & mannosylinositol phosphorylceramide B (C26)  -\textgreater mannosylinositol phosphorylceramide B (C26) \\ \hline
+r\_1944 & MIPC transport & mannosylinositol phosphorylceramide B'' (C26)  -\textgreater mannosylinositol phosphorylceramide B'' (C26) \\ \hline
+r\_1945 & MIPC transport & mannosylinositol phosphorylceramide C (C26)  -\textgreater mannosylinositol phosphorylceramide C (C26) \\ \hline
+r\_1946 & MIPC transport & mannosylinositol phosphorylceramide D (C26)  -\textgreater mannosylinositol phosphorylceramide D (C26) \\ \hline
+r\_1947 & myo-inositol exchange & myo-inositol  -\textgreater{} \\ \hline
+r\_1952 & N,N'-diformyldityrosine exchange & N,N''-diformyldityrosine  -\textgreater{} \\ \hline
+r\_1963 & NADP(+) transport & NADP(+)  -\textgreater NADP(+) \\ \hline
+r\_1964 & NADPH transport & NADPH  -\textgreater NADPH \\ \hline
+r\_1965 & NH3 transport & ammonium  -\textgreater ammonium \\ \hline
+r\_1966 & nicotinamide diffusion & nicotinamide  -\textgreater nicotinamide \\ \hline
+r\_1967 & nicotinate exchange & nicotinate  -\textgreater{} \\ \hline
+r\_1968 & NMN exchange & NMN  -\textgreater{} \\ \hline
+r\_1970 & NMN transport & NMN  -\textgreater NMN \\ \hline
+r\_1971 & NMN transport & NMN  -\textgreater NMN \\ \hline
+r\_1972 & NMN transport & NMN  -\textgreater NMN \\ \hline
+r\_1974 & nucleoside-diphosphatase (dGDP) & dGDP + H2O  -\textgreater dGMP + H+ + phosphate \\ \hline
+r\_1975 & nucleoside-triphosphatase (dGTP) & dGTP + H2O  -\textgreater dGDP + H+ + phosphate \\ \hline
+r\_1976 & O-acetylcarnintine transport into mitochondria & O-acetylcarnitine  -\textgreater O-acetylcarnitine \\ \hline
+r\_1977 & O2 transport & oxygen  -\textgreater oxygen \\ \hline
+r\_1978 & O2 transport & oxygen  -\textgreater oxygen \\ \hline
+r\_1979 & O2 transport & oxygen  -\textgreater oxygen \\ \hline
+r\_1980 & O2 transport & oxygen  -\textgreater oxygen \\ \hline
+r\_1981 & octadecanoate (n-C18:0) transport & stearate  -\textgreater stearate \\ \hline
+r\_1984 & octanoate exchange & octanoate  -\textgreater{} \\ \hline
+r\_1987 & ornithine exchange & ornithine  -\textgreater{} \\ \hline
+r\_1988 & oxaloacetate transport & oxaloacetate  -\textgreater oxaloacetate \\ \hline
+r\_1989 & oxaloacetate(2-) exchange & oxaloacetate  -\textgreater{} \\ \hline
+r\_1990 & oxidized glutathione uniport & glutathione disulfide  -\textgreater glutathione disulfide \\ \hline
+r\_1991 & oxidized thioredoxin transport & TRX1 disulphide  -\textgreater TRX1 disulphide \\ \hline
+r\_1992 & oxygen exchange & oxygen  -\textgreater{} \\ \hline
+r\_1993 & palmitate exchange & palmitate  -\textgreater{} \\ \hline
+r\_1994 & palmitoleate exchange & palmitoleate  -\textgreater{} \\ \hline
+r\_1995 & palmitoyl-CoA transport & palmitoyl-CoA  -\textgreater palmitoyl-CoA \\ \hline
+r\_1996 & panthetheine 4'-phosphate transport & pantetheine 4''-phosphate  -\textgreater pantetheine 4''-phosphate \\ \hline
+r\_1997 & panthetheine-phosphate adenylyltransferase & ATP + H+ + pantetheine 4''-phosphate  -\textgreater 3''-dephospho-CoA + diphosphate \\ \hline
+r\_1998 & PAP uniport & adenosine 3'',5''-bismonophosphate  -\textgreater adenosine 3'',5''-bismonophosphate \\ \hline
+r\_1999 & pectin exchange & pectin  -\textgreater{} \\ \hline
+r\_2000 & phenethyl acetate exchange & phenethyl acetate  -\textgreater{} \\ \hline
+r\_2001 & phenylacetaldehyde exchange & phenylacetaldehyde  -\textgreater{} \\ \hline
+r\_2002 & phenylacetaldehyde transport & phenylacetaldehyde  -\textgreater phenylacetaldehyde \\ \hline
+r\_2003 & phenylacetaldehyde transport & phenylacetaldehyde  -\textgreater phenylacetaldehyde \\ \hline
+r\_2004 & phenylalanine transport & L-phenylalanine  -\textgreater L-phenylalanine \\ \hline
+r\_2005 & phosphate exchange & phosphate  -\textgreater{} \\ \hline
+r\_2008 & phosphate transport & phosphate  -\textgreater phosphate \\ \hline
+r\_2020 & potassium exchange & potassium  -\textgreater{} \\ \hline
+r\_2022 & protoporphyrinogen IX transport & protoporphyrinogen  -\textgreater protoporphyrinogen \\ \hline
+r\_2023 & PRPP transport & PRPP  -\textgreater PRPP \\ \hline
+r\_2024 & putrescine exchange & putrescine  -\textgreater{} \\ \hline
+r\_2026 & pyridoxamine kinase & ATP + pyridoxamine  -\textgreater ADP + H+ + pyridoxamine 5''-phosphate \\ \hline
+r\_2027 & pyridoxamine phosphatase & H2O + pyridoxamine 5''-phosphate  -\textgreater phosphate + pyridoxamine \\ \hline
+r\_2028 & pyridoxine exchange & pyridoxine  -\textgreater{} \\ \hline
+r\_2030 & pyrimidine phosphatase & 5-amino-6-(5-phosphoribitylamino)uracil + H2O  -\textgreater 5-amino-6-(D-ribitylamino)uracil + phosphate \\ \hline
+r\_2031 & pyrimidine-nucleoside phosphorylase (uracil) & phosphate + uridine  -\textgreater alpha-D-ribose 1-phosphate(2-) + uracil \\ \hline
+r\_2032 & pyrophosphate transport & diphosphate  -\textgreater diphosphate \\ \hline
+r\_2033 & pyruvate exchange & pyruvate  -\textgreater{} \\ \hline
+r\_2036 & quinolinate transport & quinolinate  -\textgreater quinolinate \\ \hline
+r\_2037 & reduced thioredoxin transport & TRX1  -\textgreater TRX1 \\ \hline
+r\_2038 & riboflavin exchange & riboflavin  -\textgreater{} \\ \hline
+r\_2039 & riboflavin transport & riboflavin  -\textgreater riboflavin \\ \hline
+r\_2040 & riboflavin transport & riboflavin  -\textgreater riboflavin \\ \hline
+r\_2041 & ribose transporter & D-ribose  -\textgreater D-ribose \\ \hline
+r\_2042 & S-adenosyl-L-homocysteine transport & S-adenosyl-L-homocysteine  -\textgreater S-adenosyl-L-homocysteine \\ \hline
+r\_2043 & S-adenosyl-L-methionine exchange & S-adenosyl-L-methionine  -\textgreater{} \\ \hline
+r\_2044 & S-methyl-L-methionine exchange & S-methyl-L-methionine  -\textgreater{} \\ \hline
+r\_2045 & serine transport & L-serine  -\textgreater L-serine \\ \hline
+r\_2046 & sn-glycero-3-phosphocholine exchange & sn-glycero-3-phosphocholine  -\textgreater{} \\ \hline
+r\_2049 & sodium exchange & sodium  -\textgreater{} \\ \hline
+r\_2050 & spermidine acetyltransferase & acetyl-CoA + spermidine  -\textgreater coenzyme A + H+ + N(1)-acetylspermidine \\ \hline
+r\_2051 & spermidine exchange & spermidine  -\textgreater{} \\ \hline
+r\_2052 & spermine exchange & spermine  -\textgreater{} \\ \hline
+r\_2053 & squalene transport & squalene  -\textgreater squalene \\ \hline
+r\_2054 & squalene-2,3-epoxide transport & (S)-2,3-epoxysqualene  -\textgreater (S)-2,3-epoxysqualene \\ \hline
+r\_2055 & stearate exchange & stearate  -\textgreater{} \\ \hline
+r\_2056 & succinate exchange & succinate  -\textgreater{} \\ \hline
+r\_2057 & succinate transport & succinate  -\textgreater succinate \\ \hline
+r\_2058 & sucrose exchange & sucrose  -\textgreater{} \\ \hline
+r\_2060 & sulphate exchange & sulphate  -\textgreater{} \\ \hline
+r\_2061 & sulphite exchange & sulphite  -\textgreater{} \\ \hline
+r\_2062 & taurine exchange & taurine  -\textgreater{} \\ \hline
+r\_2063 & tetracosanoyl-CoA transport & tetracosanoyl-CoA  -\textgreater tetracosanoyl-CoA \\ \hline
+r\_2065 & thiaminase & H2O + thiamine  -\textgreater 4-amino-5-hydroxymethyl-2-methylpyrimidine + 5-(2-hydroxyethyl)-4-methylthiazole + H+ \\ \hline
+r\_2066 & thiamine(1+) diphosphate(1-) exchange & TDP  -\textgreater{} \\ \hline
+r\_2067 & thiamine(1+) exchange & thiamine  -\textgreater{} \\ \hline
+r\_2068 & thiamine(1+) monophosphate exchange & TMP  -\textgreater{} \\ \hline
+r\_2069 & thiamine-phosphate kinase & ATP + TMP  -\textgreater ADP + TDP \\ \hline
+r\_2070 & thiazole phosphate synthesis (ribose 5-phosphate) & H+ + L-cysteine + L-glycine + O-acetyl-L-homoserine + ribose-5-phosphate  -\textgreater 4-methyl-5-(2-phosphonooxyethyl)thiazole + acetate + ammonium + carbon dioxide + gamma-aminobutyrate + 3 H2O + pyruvate \\ \hline
+r\_2071 & thiazole phosphate synthesis (xylulose 5-phosphate) & D-xylulose 5-phosphate + H+ + L-cysteine + L-glycine + O-acetyl-L-homoserine  -\textgreater 4-methyl-5-(2-phosphonooxyethyl)thiazole + acetate + ammonium + carbon dioxide + gamma-aminobutyrate + 3 H2O + pyruvate \\ \hline
+r\_2072 & threonine transport & L-threonine  -\textgreater L-threonine \\ \hline
+r\_2073 & thymidine exchange & thymidine  -\textgreater{} \\ \hline
+r\_2074 & thymidine kinase (ATP:thymidine) & ATP + thymidine  -\textgreater ADP + dTMP + H+ \\ \hline
+r\_2075 & thymidine transport & thymidine  -\textgreater thymidine \\ \hline
+r\_2080 & trehalose vacuolar transport & trehalose  -\textgreater trehalose \\ \hline
+r\_2082 & tryptophan transport & L-tryptophan  -\textgreater L-tryptophan \\ \hline
+r\_2083 & tryptophol exchange & tryptophol  -\textgreater{} \\ \hline
+r\_2084 & tryptophol transport & tryptophol  -\textgreater tryptophol \\ \hline
+r\_2085 & tryptophol transport & tryptophol  -\textgreater tryptophol \\ \hline
+r\_2086 & tyrosine transport & L-tyrosine  -\textgreater L-tyrosine \\ \hline
+r\_2087 & tyrosine transport & L-tyrosine  -\textgreater L-tyrosine \\ \hline
+r\_2089 & UMP transport & UMP  -\textgreater UMP \\ \hline
+r\_2090 & uracil exchange & uracil  -\textgreater{} \\ \hline
+r\_2091 & urea exchange & urea  -\textgreater{} \\ \hline
+r\_2092 & uridine exchange & uridine  -\textgreater{} \\ \hline
+r\_2093 & valine transport & L-valine  -\textgreater L-valine \\ \hline
+r\_2094 & water diffusion & H2O  -\textgreater H2O \\ \hline
+r\_2095 & water diffusion & H2O  -\textgreater H2O \\ \hline
+r\_2096 & water diffusion & H2O  -\textgreater H2O \\ \hline
+r\_2097 & water diffusion & H2O  -\textgreater H2O \\ \hline
+r\_2098 & water diffusion & H2O  -\textgreater H2O \\ \hline
+r\_2099 & water diffusion & H2O  -\textgreater H2O \\ \hline
+r\_2100 & water exchange & H2O  -\textgreater{} \\ \hline
+r\_2101 & xanthine transport & 9H-xanthine  -\textgreater 9H-xanthine \\ \hline
+r\_2102 & xanthosine exchange & xanthosine  -\textgreater{} \\ \hline
+r\_2103 & xanthosine transport & xanthosine  -\textgreater xanthosine \\ \hline
+r\_2104 & xylitol exchange & xylitol  -\textgreater{} \\ \hline
+r\_2105 & xylitol transport & xylitol  -\textgreater xylitol \\ \hline
+r\_2106 & zymosterol exchange & zymosterol  -\textgreater{} \\ \hline
+r\_2107 & zymosterol transport & zymosterol  -\textgreater zymosterol \\ \hline
+r\_2108 & lipid pseudoreaction - merge & lipid backbone + lipid chain  -\textgreater lipid \\ \hline
+r\_2111 & growth & biomass  -\textgreater{} \\ \hline
+r\_2125 & coenzyme A: cytoplasm to LP & coenzyme A  -\textgreater coenzyme A \\ \hline
+r\_2129 & proton leak & H+  -\textgreater H+ \\ \hline
+r\_2134 & 14-demethyllanosterol exchange & 14-demethyllanosterol  -\textgreater{} \\ \hline
+r\_2136 & 14-demethyllanosterol transport & 14-demethyllanosterol  -\textgreater 14-demethyllanosterol \\ \hline
+r\_2137 & ergosta-5,7,22,24(28)-tetraen-3beta-ol exchange & ergosta-5,7,22,24(28)-tetraen-3beta-ol  -\textgreater{} \\ \hline
+r\_2139 & ergosta-5,7,22,24(28)-tetraen-3beta-ol transport & ergosta-5,7,22,24(28)-tetraen-3beta-ol  -\textgreater ergosta-5,7,22,24(28)-tetraen-3beta-ol \\ \hline
+r\_2184 & octanoate (n-C8:0) transport & octanoate  -\textgreater octanoate \\ \hline
+r\_2185 & decanoate (n-C10:0) transport & decanoate  -\textgreater decanoate \\ \hline
+r\_2186 & laurate (n-C12:0) transport & laurate  -\textgreater laurate \\ \hline
+r\_2187 & butyrate exchange & butyrate  -\textgreater{} \\ \hline
+r\_2188 & hexanoate exchange & hexanoate  -\textgreater{} \\ \hline
+r\_2189 & oleate exchange & oleate  -\textgreater{} \\ \hline
+r\_2190 & butyrate (n-C4:0) transport & butyrate  -\textgreater butyrate \\ \hline
+r\_2191 & hexanoate (n-C6:0) transport & hexanoate  -\textgreater hexanoate \\ \hline
+r\_2192 & octadecenoate (n-C18:1) transport & oleate  -\textgreater oleate \\ \hline
+r\_2193 & myristate exchange & myristate  -\textgreater{} \\ \hline
+r\_2229 & butyrate (n-C4:0) transport, cytoplasm-peroxisome & butyrate  -\textgreater butyrate \\ \hline
+r\_2230 & hexanoate (n-C6:0) transport, cytoplasm-peroxisome & hexanoate  -\textgreater hexanoate \\ \hline
+r\_2231 & octadecenoate (n-C18:1) transport, cytoplasm-peroxisome & oleate  -\textgreater oleate \\ \hline
+r\_2812 & lysoPC acyltransferase (1-16:0, 2-16:1), mitochondrial membrane & 1-acylglycerophosphocholine (16:0) + palmitoleoyl-CoA(4-)  -\textgreater phosphatidylcholine (1-16:0, 2-16:1) + coenzyme A \\ \hline
+r\_2813 & lysoPC acyltransferase (1-16:0, 2-18:1), mitochondrial membrane & 1-acylglycerophosphocholine (16:0) + oleoyl-CoA  -\textgreater phosphatidylcholine (1-16:0, 2-18:1) + coenzyme A \\ \hline
+r\_2814 & lysoPC acyltransferase (1-16:1, 2-16:1), mitochondrial membrane & 1-acylglycerophosphocholine (16:1) + palmitoleoyl-CoA(4-)  -\textgreater phosphatidylcholine (1-16:1, 2-16:1) + coenzyme A \\ \hline
+r\_2815 & lysoPC acyltransferase (1-16:1, 2-18:1), mitochondrial membrane & 1-acylglycerophosphocholine (16:1) + oleoyl-CoA  -\textgreater phosphatidylcholine (1-16:1, 2-18:1) + coenzyme A \\ \hline
+r\_2816 & lysoPC acyltransferase (1-18:0, 2-16:1), mitochondrial membrane & 1-acylglycerophosphocholine (18:0) + palmitoleoyl-CoA(4-)  -\textgreater phosphatidylcholine (1-18:0, 2-16:1) + coenzyme A \\ \hline
+r\_2817 & lysoPC acyltransferase (1-18:0, 2-18:1), mitochondrial membrane & 1-acylglycerophosphocholine (18:0) + oleoyl-CoA  -\textgreater phosphatidylcholine (1-18:0, 2-18:1) + coenzyme A \\ \hline
+r\_2818 & lysoPC acyltransferase (1-18:1, 2-16:1), mitochondrial membrane & 1-acylglycerophosphocholine (18:1) + palmitoleoyl-CoA(4-)  -\textgreater phosphatidylcholine (1-18:1, 2-16:1) + coenzyme A \\ \hline
+r\_2819 & lysoPC acyltransferase (1-18:1, 2-18:1), mitochondrial membrane & 1-acylglycerophosphocholine (18:1) + oleoyl-CoA  -\textgreater phosphatidylcholine (1-18:1, 2-18:1) + coenzyme A \\ \hline
+r\_3332 & PA kinase (1-16:0, 2-16:1), Golgi membrane & phosphatidate (1-16:0, 2-16:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-16:0, 2-16:1) \\ \hline
+r\_3333 & PA kinase (1-16:1, 2-16:1), Golgi membrane & phosphatidate (1-16:1, 2-16:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-16:1, 2-16:1) \\ \hline
+r\_3334 & PA kinase (1-18:0, 2-16:1), Golgi membrane & phosphatidate (1-18:0, 2-16:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-18:0, 2-16:1) \\ \hline
+r\_3335 & PA kinase (1-18:1, 2-16:1), Golgi membrane & phosphatidate (1-18:1, 2-16:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-18:1, 2-16:1) \\ \hline
+r\_3336 & PA kinase (1-16:0, 2-18:1), Golgi membrane & phosphatidate (1-16:0, 2-18:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-16:0, 2-18:1) \\ \hline
+r\_3337 & PA kinase (1-16:1, 2-18:1), Golgi membrane & phosphatidate (1-16:1, 2-18:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-16:1, 2-18:1) \\ \hline
+r\_3338 & PA kinase (1-18:0, 2-18:1), Golgi membrane & phosphatidate (1-18:0, 2-18:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-18:0, 2-18:1) \\ \hline
+r\_3339 & PA kinase (1-18:1, 2-18:1), Golgi membrane & phosphatidate (1-18:1, 2-18:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-18:1, 2-18:1) \\ \hline
+r\_3340 & PA kinase (1-16:0, 2-16:1), vacuolar membrane & phosphatidate (1-16:0, 2-16:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-16:0, 2-16:1) \\ \hline
+r\_3341 & PA kinase (1-16:1, 2-16:1), vacuolar membrane & phosphatidate (1-16:1, 2-16:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-16:1, 2-16:1) \\ \hline
+r\_3342 & PA kinase (1-18:0, 2-16:1), vacuolar membrane & phosphatidate (1-18:0, 2-16:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-18:0, 2-16:1) \\ \hline
+r\_3343 & PA kinase (1-18:1, 2-16:1), vacuolar membrane & phosphatidate (1-18:1, 2-16:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-18:1, 2-16:1) \\ \hline
+r\_3344 & PA kinase (1-16:0, 2-18:1), vacuolar membrane & phosphatidate (1-16:0, 2-18:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-16:0, 2-18:1) \\ \hline
+r\_3345 & PA kinase (1-16:1, 2-18:1), vacuolar membrane & phosphatidate (1-16:1, 2-18:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-16:1, 2-18:1) \\ \hline
+r\_3346 & PA kinase (1-18:0, 2-18:1), vacuolar membrane & phosphatidate (1-18:0, 2-18:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-18:0, 2-18:1) \\ \hline
+r\_3347 & PA kinase (1-18:1, 2-18:1), vacuolar membrane & phosphatidate (1-18:1, 2-18:1) + H+ + ATP  -\textgreater ADP + 1,2-diacylglycerol 3-diphosphate (1-18:1, 2-18:1) \\ \hline
+r\_3508 & laurate transport, cytoplasm-ER membrane & laurate  -\textgreater laurate \\ \hline
+r\_3509 & myristate transport, cytoplasm-ER membrane & myristate  -\textgreater myristate \\ \hline
+r\_3510 & palmitate transport, cytoplasm-ER membrane & palmitate  -\textgreater palmitate \\ \hline
+r\_3511 & palmitoleate transport, cytoplasm-ER membrane & palmitoleate  -\textgreater palmitoleate \\ \hline
+r\_3512 & stearate transport, cytoplasm-ER membrane & stearate  -\textgreater stearate \\ \hline
+r\_3513 & oleate transport, cytoplasm-ER membrane & oleate  -\textgreater oleate \\ \hline
+r\_3514 & malonyl-CoA transport, cytoplasm-ER membrane & malonyl-CoA  -\textgreater malonyl-CoA \\ \hline
+r\_3515 & lauroyl-CoA transport, cytoplasm-ER membrane & lauroyl-CoA  -\textgreater lauroyl-CoA \\ \hline
+r\_3516 & myristoyl-CoA transport, cytoplasm-ER membrane & myristoyl-CoA  -\textgreater myristoyl-CoA \\ \hline
+r\_3517 & palmitoyl-CoA transport, cytoplasm-ER membrane & palmitoyl-CoA  -\textgreater palmitoyl-CoA \\ \hline
+r\_3518 & palmitoleoyl-CoA transport, cytoplasm-ER membrane & palmitoleoyl-CoA(4-)  -\textgreater palmitoleoyl-CoA(4-) \\ \hline
+r\_3519 & stearoyl-CoA transport, cytoplasm-ER membrane & stearoyl-CoA  -\textgreater stearoyl-CoA \\ \hline
+r\_3520 & oleoyl-CoA transport, cytoplasm-ER membrane & oleoyl-CoA  -\textgreater oleoyl-CoA \\ \hline
+r\_3521 & icosanoyl-CoA transport, cytoplasm-ER membrane & icosanoyl-CoA  -\textgreater icosanoyl-CoA \\ \hline
+r\_3522 & docosanoyl-CoA transport, cytoplasm-ER membrane & docosanoyl-CoA  -\textgreater docosanoyl-CoA \\ \hline
+r\_3523 & tetracosanoyl-CoA transport, cytoplasm-ER membrane & tetracosanoyl-CoA  -\textgreater tetracosanoyl-CoA \\ \hline
+r\_3524 & hexacosanoyl-CoA transport, cytoplasm-ER membrane & hexacosanoyl-CoA  -\textgreater hexacosanoyl-CoA \\ \hline
+r\_3525 & H+ transport, cytoplasm-ER membrane & H+  -\textgreater H+ \\ \hline
+r\_3526 & H2O transport, cytoplasm-ER membrane & H2O  -\textgreater H2O \\ \hline
+r\_3527 & CO2 transport, cytoplasm-ER membrane & carbon dioxide  -\textgreater carbon dioxide \\ \hline
+r\_3528 & coenzyme A transport, cytoplasm-ER membrane & coenzyme A  -\textgreater coenzyme A \\ \hline
+r\_3529 & NADPH transport, cytoplasm-ER membrane & NADPH  -\textgreater NADPH \\ \hline
+r\_3530 & NADP(+) transport, cytoplasm-ER membrane & NADP(+)  -\textgreater NADP(+) \\ \hline
+r\_3531 & O2 transport, cytoplasm-ER membrane & oxygen  -\textgreater oxygen \\ \hline
+r\_3532 & NADH transport, cytoplasm-ER membrane & NADH  -\textgreater NADH \\ \hline
+r\_3533 & NAD transport, cytoplasm-ER membrane & NAD  -\textgreater NAD \\ \hline
+r\_3534 & glycerol 3-phosphate transport, cytoplasm-ER membrane & glycerol 3-phosphate  -\textgreater glycerol 3-phosphate \\ \hline
+r\_3535 & dihydroxyacetone phosphate transport, cytoplasm-ER membrane & dihydroxyacetone phosphate  -\textgreater dihydroxyacetone phosphate \\ \hline
+r\_3536 & diphosphate transport, cytoplasm-ER membrane & diphosphate  -\textgreater diphosphate \\ \hline
+r\_3537 & phosphate transport, cytoplasm-ER membrane & phosphate  -\textgreater phosphate \\ \hline
+r\_3538 & CTP transport, cytoplasm-ER membrane & CTP  -\textgreater CTP \\ \hline
+r\_3539 & CDP transport, cytoplasm-ER membrane & CDP  -\textgreater CDP \\ \hline
+r\_3540 & CMP transport, cytoplasm-ER membrane & CMP  -\textgreater CMP \\ \hline
+r\_3541 & CDP-ethanolamine transport, cytoplasm-ER membrane & CDP-ethanolamine  -\textgreater CDP-ethanolamine \\ \hline
+r\_3542 & CDP-choline transport, cytoplasm-ER membrane & CDP-choline  -\textgreater CDP-choline \\ \hline
+r\_3543 & ATP transport, cytoplasm-ER membrane & ATP  -\textgreater ATP \\ \hline
+r\_3544 & AMP transport, cytoplasm-ER membrane & AMP  -\textgreater AMP \\ \hline
+r\_3545 & L-serine transport, cytoplasm-ER membrane & L-serine  -\textgreater L-serine \\ \hline
+r\_3546 & myo-inositol transport, cytoplasm-ER membrane & myo-inositol  -\textgreater myo-inositol \\ \hline
+r\_3547 & S-adenosyl-L-methionine transport, cytoplasm-ER membrane & S-adenosyl-L-methionine  -\textgreater S-adenosyl-L-methionine \\ \hline
+r\_3548 & S-adenosyl-L-homocysteine transport, cytoplasm-ER membrane & S-adenosyl-L-homocysteine  -\textgreater S-adenosyl-L-homocysteine \\ \hline
+r\_3549 & episterol transport, cytoplasm-ER membrane & episterol  -\textgreater episterol \\ \hline
+r\_3550 & fecosterol transport, cytoplasm-ER membrane & fecosterol  -\textgreater fecosterol \\ \hline
+r\_3551 & lanosterol transport, cytoplasm-ER membrane & lanosterol  -\textgreater lanosterol \\ \hline
+r\_3552 & ergosterol transport, cytoplasm-ER membrane & ergosterol  -\textgreater ergosterol \\ \hline
+r\_3553 & zymosterol transport, cytoplasm-ER membrane & zymosterol  -\textgreater zymosterol \\ \hline
+r\_3554 & diglyceride (1-16:0, 2-16:1) transport, cytoplasm-ER membrane & diglyceride (1-16:0, 2-16:1)  -\textgreater diglyceride (1-16:0, 2-16:1) \\ \hline
+r\_3555 & diglyceride (1-16:1, 2-16:1) transport, cytoplasm-ER membrane & diglyceride (1-16:1, 2-16:1)  -\textgreater diglyceride (1-16:1, 2-16:1) \\ \hline
+r\_3556 & diglyceride (1-18:0, 2-16:1) transport, cytoplasm-ER membrane & diglyceride (1-18:0, 2-16:1)  -\textgreater diglyceride (1-18:0, 2-16:1) \\ \hline
+r\_3557 & diglyceride (1-18:1, 2-16:1) transport, cytoplasm-ER membrane & diglyceride (1-18:1, 2-16:1)  -\textgreater diglyceride (1-18:1, 2-16:1) \\ \hline
+r\_3558 & diglyceride (1-16:0, 2-18:1) transport, cytoplasm-ER membrane & diglyceride (1-16:0, 2-18:1)  -\textgreater diglyceride (1-16:0, 2-18:1) \\ \hline
+r\_3559 & diglyceride (1-16:1, 2-18:1) transport, cytoplasm-ER membrane & diglyceride (1-16:1, 2-18:1)  -\textgreater diglyceride (1-16:1, 2-18:1) \\ \hline
+r\_3560 & diglyceride (1-18:0, 2-18:1) transport, cytoplasm-ER membrane & diglyceride (1-18:0, 2-18:1)  -\textgreater diglyceride (1-18:0, 2-18:1) \\ \hline
+r\_3561 & diglyceride (1-18:1, 2-18:1) transport, cytoplasm-ER membrane & diglyceride (1-18:1, 2-18:1)  -\textgreater diglyceride (1-18:1, 2-18:1) \\ \hline
+r\_3562 & 1-phosphatidyl-1D-myo-inositol (1-16:0, 2-16:1) transport, cytoplasm-ER membrane & 1-phosphatidyl-1D-myo-inositol (1-16:0, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol (1-16:0, 2-16:1) \\ \hline
+r\_3563 & 1-phosphatidyl-1D-myo-inositol (1-16:1, 2-16:1) transport, cytoplasm-ER membrane & 1-phosphatidyl-1D-myo-inositol (1-16:1, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol (1-16:1, 2-16:1) \\ \hline
+r\_3564 & 1-phosphatidyl-1D-myo-inositol (1-18:0, 2-16:1) transport, cytoplasm-ER membrane & 1-phosphatidyl-1D-myo-inositol (1-18:0, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol (1-18:0, 2-16:1) \\ \hline
+r\_3565 & 1-phosphatidyl-1D-myo-inositol (1-18:1, 2-16:1) transport, cytoplasm-ER membrane & 1-phosphatidyl-1D-myo-inositol (1-18:1, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol (1-18:1, 2-16:1) \\ \hline
+r\_3566 & 1-phosphatidyl-1D-myo-inositol (1-16:0, 2-18:1) transport, cytoplasm-ER membrane & 1-phosphatidyl-1D-myo-inositol (1-16:0, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol (1-16:0, 2-18:1) \\ \hline
+r\_3567 & 1-phosphatidyl-1D-myo-inositol (1-16:1, 2-18:1) transport, cytoplasm-ER membrane & 1-phosphatidyl-1D-myo-inositol (1-16:1, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol (1-16:1, 2-18:1) \\ \hline
+r\_3568 & 1-phosphatidyl-1D-myo-inositol (1-18:0, 2-18:1) transport, cytoplasm-ER membrane & 1-phosphatidyl-1D-myo-inositol (1-18:0, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol (1-18:0, 2-18:1) \\ \hline
+r\_3569 & 1-phosphatidyl-1D-myo-inositol (1-18:1, 2-18:1) transport, cytoplasm-ER membrane & 1-phosphatidyl-1D-myo-inositol (1-18:1, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol (1-18:1, 2-18:1) \\ \hline
+r\_3570 & sn-glycero-3-phosphocholine transport, ER membrane-cytoplasm & sn-glycero-3-phosphocholine  -\textgreater sn-glycero-3-phosphocholine \\ \hline
+r\_3571 & hexadecanoate (n-C16:0) transport, cytoplasm-lipid particle & palmitate  -\textgreater palmitate \\ \hline
+r\_3572 & hexadecenoate (n-C16:1) transport, cytoplasm-lipid particle & palmitoleate  -\textgreater palmitoleate \\ \hline
+r\_3573 & octadecanoate (n-C18:0) transport, cytoplasm-lipid particle & stearate  -\textgreater stearate \\ \hline
+r\_3574 & octadecenoate (n-C18:1) transport, cytoplasm-lipid particle & oleate  -\textgreater oleate \\ \hline
+r\_3575 & lauroyl-CoA transport, cytoplasm-lipid particle & lauroyl-CoA  -\textgreater lauroyl-CoA \\ \hline
+r\_3576 & myristoyl-CoA transport, cytoplasm-lipid particle & myristoyl-CoA  -\textgreater myristoyl-CoA \\ \hline
+r\_3577 & palmitoyl-CoA transport, cytoplasm-lipid particle & palmitoyl-CoA  -\textgreater palmitoyl-CoA \\ \hline
+r\_3578 & palmitoleoyl-CoA transport, cytoplasm-lipid particle & palmitoleoyl-CoA(4-)  -\textgreater palmitoleoyl-CoA(4-) \\ \hline
+r\_3579 & stearoyl-CoA transport, cytoplasm-lipid particle & stearoyl-CoA  -\textgreater stearoyl-CoA \\ \hline
+r\_3580 & oleoyl-CoA transport, cytoplasm-lipid particle & oleoyl-CoA  -\textgreater oleoyl-CoA \\ \hline
+r\_3581 & glycerol 3-phosphate transport, cytoplasm-lipid particle & glycerol 3-phosphate  -\textgreater glycerol 3-phosphate \\ \hline
+r\_3582 & dihydroxyacetone phosphate transport, cytoplasm-lipid particle & dihydroxyacetone phosphate  -\textgreater dihydroxyacetone phosphate \\ \hline
+r\_3583 & NADPH transport, cytoplasm-lipid particle & NADPH  -\textgreater NADPH \\ \hline
+r\_3584 & NADP(+) transport, cytoplasm-lipid particle & NADP(+)  -\textgreater NADP(+) \\ \hline
+r\_3585 & ATP transport, cytoplasm-lipid particle & ATP  -\textgreater ATP \\ \hline
+r\_3586 & AMP transport, cytoplasm-lipid particle & AMP  -\textgreater AMP \\ \hline
+r\_3587 & diphosphate transport, cytoplasm-lipid particle & diphosphate  -\textgreater diphosphate \\ \hline
+r\_3588 & diglyceride (1-16:0, 2-16:1) transport, cytoplasm-lipid particle & diglyceride (1-16:0, 2-16:1)  -\textgreater diglyceride (1-16:0, 2-16:1) \\ \hline
+r\_3589 & diglyceride (1-16:1, 2-16:1) transport, cytoplasm-lipid particle & diglyceride (1-16:1, 2-16:1)  -\textgreater diglyceride (1-16:1, 2-16:1) \\ \hline
+r\_3590 & diglyceride (1-18:0, 2-16:1) transport, cytoplasm-lipid particle & diglyceride (1-18:0, 2-16:1)  -\textgreater diglyceride (1-18:0, 2-16:1) \\ \hline
+r\_3591 & diglyceride (1-18:1, 2-16:1) transport, cytoplasm-lipid particle & diglyceride (1-18:1, 2-16:1)  -\textgreater diglyceride (1-18:1, 2-16:1) \\ \hline
+r\_3592 & diglyceride (1-16:0, 2-18:1) transport, cytoplasm-lipid particle & diglyceride (1-16:0, 2-18:1)  -\textgreater diglyceride (1-16:0, 2-18:1) \\ \hline
+r\_3593 & diglyceride (1-16:1, 2-18:1) transport, cytoplasm-lipid particle & diglyceride (1-16:1, 2-18:1)  -\textgreater diglyceride (1-16:1, 2-18:1) \\ \hline
+r\_3594 & diglyceride (1-18:0, 2-18:1) transport, cytoplasm-lipid particle & diglyceride (1-18:0, 2-18:1)  -\textgreater diglyceride (1-18:0, 2-18:1) \\ \hline
+r\_3595 & diglyceride (1-18:1, 2-18:1) transport, cytoplasm-lipid particle & diglyceride (1-18:1, 2-18:1)  -\textgreater diglyceride (1-18:1, 2-18:1) \\ \hline
+r\_3596 & H2O transport, cytoplasm-lipid particle & H2O  -\textgreater H2O \\ \hline
+r\_3597 & glycerol transport, lipid particle-cytoplasm & glycerol  -\textgreater glycerol \\ \hline
+r\_3598 & docosanoyl-CoA transport, lipid particle-cytoplasm & docosanoyl-CoA  -\textgreater docosanoyl-CoA \\ \hline
+r\_3599 & tetracosanoyl-CoA transport, lipid particle-cytoplasm & tetracosanoyl-CoA  -\textgreater tetracosanoyl-CoA \\ \hline
+r\_3600 & hexacosanoyl-CoA transport, lipid particle-cytoplasm & hexacosanoyl-CoA  -\textgreater hexacosanoyl-CoA \\ \hline
+r\_3601 & ATP transport, cytoplasm-cell envelope & ATP  -\textgreater ATP \\ \hline
+r\_3602 & ADP transport, cytoplasm-cell envelope & ADP  -\textgreater ADP \\ \hline
+r\_3603 & H+ transport, cytoplasm-cell envelope & H+  -\textgreater H+ \\ \hline
+r\_3604 & H2O transport, cytoplasm-cell envelope & H2O  -\textgreater H2O \\ \hline
+r\_3605 & phosphate transport, cytoplasm-cell envelope & phosphate  -\textgreater phosphate \\ \hline
+r\_3606 & sn-glycero-3-phosphocholine transport, cell envelope-cytoplasm & sn-glycero-3-phosphocholine  -\textgreater sn-glycero-3-phosphocholine \\ \hline
+r\_3607 & 1-(sn-glycero-3-phospho)-1D-myo-inositol transport, cell envelope-cytoplasm & 1-(sn-glycero-3-phospho)-1D-myo-inositol  -\textgreater 1-(sn-glycero-3-phospho)-1D-myo-inositol \\ \hline
+r\_3608 & palmitate transport, cell envelope-cytoplasm & palmitate  -\textgreater palmitate \\ \hline
+r\_3609 & palmitoleate transport, cell envelope-cytoplasm & palmitoleate  -\textgreater palmitoleate \\ \hline
+r\_3610 & stearate transport, cell envelope-cytoplasm & stearate  -\textgreater stearate \\ \hline
+r\_3611 & oleate transport, cell envelope-cytoplasm & oleate  -\textgreater oleate \\ \hline
+r\_3612 & icosanoyl-CoA transport, cell envelope-cytoplasm & icosanoyl-CoA  -\textgreater icosanoyl-CoA \\ \hline
+r\_3613 & docosanoyl-CoA transport, cell envelope-cytoplasm & docosanoyl-CoA  -\textgreater docosanoyl-CoA \\ \hline
+r\_3614 & tetracosanoyl-CoA transport, cell envelope-cytoplasm & tetracosanoyl-CoA  -\textgreater tetracosanoyl-CoA \\ \hline
+r\_3615 & hexacosanoyl-CoA transport, cell envelope-cytoplasm & hexacosanoyl-CoA  -\textgreater hexacosanoyl-CoA \\ \hline
+r\_3616 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:0, 2-16:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:0, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:0, 2-16:1) \\ \hline
+r\_3617 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:1, 2-16:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:1, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:1, 2-16:1) \\ \hline
+r\_3618 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:0, 2-16:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:0, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:0, 2-16:1) \\ \hline
+r\_3619 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:1, 2-16:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:1, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:1, 2-16:1) \\ \hline
+r\_3620 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:0, 2-18:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:0, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:0, 2-18:1) \\ \hline
+r\_3621 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:1, 2-18:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:1, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:1, 2-18:1) \\ \hline
+r\_3622 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:0, 2-18:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:0, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:0, 2-18:1) \\ \hline
+r\_3623 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:1, 2-18:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:1, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:1, 2-18:1) \\ \hline
+r\_3624 & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-16:0, 2-16:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-16:0, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-16:0, 2-16:1) \\ \hline
+r\_3625 & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-16:1, 2-16:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-16:1, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-16:1, 2-16:1) \\ \hline
+r\_3626 & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-18:0, 2-16:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-18:0, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-18:0, 2-16:1) \\ \hline
+r\_3627 & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-18:1, 2-16:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-18:1, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-18:1, 2-16:1) \\ \hline
+r\_3628 & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-16:0, 2-18:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-16:0, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-16:0, 2-18:1) \\ \hline
+r\_3629 & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-16:1, 2-18:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-16:1, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-16:1, 2-18:1) \\ \hline
+r\_3630 & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-18:0, 2-18:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-18:0, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-18:0, 2-18:1) \\ \hline
+r\_3631 & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-18:1, 2-18:1) transport, cell envelope-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-18:1, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4-phosphate (1-18:1, 2-18:1) \\ \hline
+r\_3632 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:0, 2-16:1) transport, nucleus-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:0, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:0, 2-16:1) \\ \hline
+r\_3633 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:1, 2-16:1) transport, nucleus-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:1, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:1, 2-16:1) \\ \hline
+r\_3634 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:0, 2-16:1) transport, nucleus-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:0, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:0, 2-16:1) \\ \hline
+r\_3635 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:1, 2-16:1) transport, nucleus-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:1, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:1, 2-16:1) \\ \hline
+r\_3636 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:0, 2-18:1) transport, nucleus-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:0, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:0, 2-18:1) \\ \hline
+r\_3637 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:1, 2-18:1) transport, nucleus-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:1, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-16:1, 2-18:1) \\ \hline
+r\_3638 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:0, 2-18:1) transport, nucleus-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:0, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:0, 2-18:1) \\ \hline
+r\_3639 & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:1, 2-18:1) transport, nucleus-cytoplasm & 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:1, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 4,5-bisphosphate (1-18:1, 2-18:1) \\ \hline
+r\_3640 & diglyceride (1-16:0, 2-16:1) transport, nucleus-cytoplasm & diglyceride (1-16:0, 2-16:1)  -\textgreater diglyceride (1-16:0, 2-16:1) \\ \hline
+r\_3641 & diglyceride (1-16:1, 2-16:1) transport, nucleus-cytoplasm & diglyceride (1-16:1, 2-16:1)  -\textgreater diglyceride (1-16:1, 2-16:1) \\ \hline
+r\_3642 & diglyceride (1-18:0, 2-16:1) transport, nucleus-cytoplasm & diglyceride (1-18:0, 2-16:1)  -\textgreater diglyceride (1-18:0, 2-16:1) \\ \hline
+r\_3643 & diglyceride (1-18:1, 2-16:1) transport, nucleus-cytoplasm & diglyceride (1-18:1, 2-16:1)  -\textgreater diglyceride (1-18:1, 2-16:1) \\ \hline
+r\_3644 & diglyceride (1-16:0, 2-18:1) transport, nucleus-cytoplasm & diglyceride (1-16:0, 2-18:1)  -\textgreater diglyceride (1-16:0, 2-18:1) \\ \hline
+r\_3645 & diglyceride (1-16:1, 2-18:1) transport, nucleus-cytoplasm & diglyceride (1-16:1, 2-18:1)  -\textgreater diglyceride (1-16:1, 2-18:1) \\ \hline
+r\_3646 & diglyceride (1-18:0, 2-18:1) transport, nucleus-cytoplasm & diglyceride (1-18:0, 2-18:1)  -\textgreater diglyceride (1-18:0, 2-18:1) \\ \hline
+r\_3647 & diglyceride (1-18:1, 2-18:1) transport, nucleus-cytoplasm & diglyceride (1-18:1, 2-18:1)  -\textgreater diglyceride (1-18:1, 2-18:1) \\ \hline
+r\_3648 & H2O transport, cytoplasm-vacuolar membrane & H2O  -\textgreater H2O \\ \hline
+r\_3649 & phosphate transport, cytoplasm-vacuolar membrane & phosphate  -\textgreater phosphate \\ \hline
+r\_3650 & H+ transport, cytoplasm-vacuolar membrane & H+  -\textgreater H+ \\ \hline
+r\_3651 & ATP transport, cytoplasm-vacuolar membrane & ATP  -\textgreater ATP \\ \hline
+r\_3652 & ADP transport, cytoplasm-vacuolar membrane & ADP  -\textgreater ADP \\ \hline
+r\_3653 & carbon dioxide transport, cytoplasm-vacuolar membrane & carbon dioxide  -\textgreater carbon dioxide \\ \hline
+r\_3654 & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-16:0, 2-16:1) transport, vacuolar membrane-cytoplasm & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-16:0, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-16:0, 2-16:1) \\ \hline
+r\_3655 & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-16:1, 2-16:1) transport, vacuolar membrane-cytoplasm & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-16:1, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-16:1, 2-16:1) \\ \hline
+r\_3656 & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-18:0, 2-16:1) transport, vacuolar membrane-cytoplasm & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-18:0, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-18:0, 2-16:1) \\ \hline
+r\_3657 & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-18:1, 2-16:1) transport, vacuolar membrane-cytoplasm & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-18:1, 2-16:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-18:1, 2-16:1) \\ \hline
+r\_3658 & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-16:0, 2-18:1) transport, vacuolar membrane-cytoplasm & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-16:0, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-16:0, 2-18:1) \\ \hline
+r\_3659 & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-16:1, 2-18:1) transport, vacuolar membrane-cytoplasm & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-16:1, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-16:1, 2-18:1) \\ \hline
+r\_3660 & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-18:0, 2-18:1) transport, vacuolar membrane-cytoplasm & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-18:0, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-18:0, 2-18:1) \\ \hline
+r\_3661 & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-18:1, 2-18:1) transport, vacuolar membrane-cytoplasm & 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-18:1, 2-18:1)  -\textgreater 1-phosphatidyl-1D-myo-inositol 3,5-bisphosphate (1-18:1, 2-18:1) \\ \hline
+r\_3662 & H2O transport, cytoplasm-Golgi membrane & H2O  -\textgreater H2O \\ \hline
+r\_3663 & phosphate transport, cytoplasm-Golgi membrane & phosphate  -\textgreater phosphate \\ \hline
+r\_3664 & H+ transport, cytoplasm-Golgi membrane & H+  -\textgreater H+ \\ \hline
+r\_3665 & carbon dioxide transport, cytoplasm-Golgi membrane & carbon dioxide  -\textgreater carbon dioxide \\ \hline
+r\_3666 & ATP transport, cytoplasm-Golgi membrane & ATP  -\textgreater ATP \\ \hline
+r\_3667 & ADP transport, cytoplasm-Golgi membrane & ADP  -\textgreater ADP \\ \hline
+r\_3668 & H2O transport, cytoplasm-mitochondrial membrane & H2O  -\textgreater H2O \\ \hline
+r\_3669 & carbon dioxide transport, cytoplasm-mitochondrial membrane & carbon dioxide  -\textgreater carbon dioxide \\ \hline
+r\_3670 & palmitoleoyl-CoA transport, cytoplasm-mitochondrial membrane & palmitoleoyl-CoA(4-)  -\textgreater palmitoleoyl-CoA(4-) \\ \hline
+r\_3671 & oleoyl-CoA transport, cytoplasm-mitochondrial membrane & oleoyl-CoA  -\textgreater oleoyl-CoA \\ \hline
+r\_3672 & diglyceride (1-16:0, 2-16:1) transport, mitochondrial membrane-cytoplasm & diglyceride (1-16:0, 2-16:1)  -\textgreater diglyceride (1-16:0, 2-16:1) \\ \hline
+r\_3673 & diglyceride (1-16:1, 2-16:1) transport, mitochondrial membrane-cytoplasm & diglyceride (1-16:1, 2-16:1)  -\textgreater diglyceride (1-16:1, 2-16:1) \\ \hline
+r\_3674 & diglyceride (1-18:0, 2-16:1) transport, mitochondrial membrane-cytoplasm & diglyceride (1-18:0, 2-16:1)  -\textgreater diglyceride (1-18:0, 2-16:1) \\ \hline
+r\_3675 & diglyceride (1-18:1, 2-16:1) transport, mitochondrial membrane-cytoplasm & diglyceride (1-18:1, 2-16:1)  -\textgreater diglyceride (1-18:1, 2-16:1) \\ \hline
+r\_3676 & diglyceride (1-16:0, 2-18:1) transport, mitochondrial membrane-cytoplasm & diglyceride (1-16:0, 2-18:1)  -\textgreater diglyceride (1-16:0, 2-18:1) \\ \hline
+r\_3677 & diglyceride (1-16:1, 2-18:1) transport, mitochondrial membrane-cytoplasm & diglyceride (1-16:1, 2-18:1)  -\textgreater diglyceride (1-16:1, 2-18:1) \\ \hline
+r\_3678 & palmitate transport, mitochondrial membrane-cytoplasm & palmitate  -\textgreater palmitate \\ \hline
+r\_3679 & stearate transport, mitochondrial membrane-cytoplasm & stearate  -\textgreater stearate \\ \hline
+r\_3680 & coenzyme A transport, mitochondrial membrane-cytoplasm & coenzyme A  -\textgreater coenzyme A \\ \hline
+r\_3681 & laurate transport, ER membrane-lipid particle & laurate  -\textgreater laurate \\ \hline
+r\_3682 & myristate transport, ER membrane-lipid particle & myristate  -\textgreater myristate \\ \hline
+r\_3683 & lignoceric acid transport, ER membrane-lipid particle & lignoceric acid  -\textgreater lignoceric acid \\ \hline
+r\_3684 & cerotic acid transport, ER membrane-lipid particle & cerotic acid  -\textgreater cerotic acid \\ \hline
+r\_3685 & TAG (1-16:0, 2-16:1, 3-16:0) transport, ER membrane-lipid particle & triglyceride (1-16:0, 2-16:1, 3-16:0)  -\textgreater triglyceride (1-16:0, 2-16:1, 3-16:0) \\ \hline
+r\_3686 & TAG (1-16:0, 2-16:1, 3-16:1) transport, ER membrane-lipid particle & triglyceride (1-16:0, 2-16:1, 3-16:1)  -\textgreater triglyceride (1-16:0, 2-16:1, 3-16:1) \\ \hline
+r\_3687 & TAG (1-16:0, 2-16:1, 3-18:0) transport, ER membrane-lipid particle & triglyceride (1-16:0, 2-16:1, 3-18:0)  -\textgreater triglyceride (1-16:0, 2-16:1, 3-18:0) \\ \hline
+r\_3688 & TAG (1-16:0, 2-16:1, 3-18:1) transport, ER membrane-lipid particle & triglyceride (1-16:0, 2-16:1, 3-18:1)  -\textgreater triglyceride (1-16:0, 2-16:1, 3-18:1) \\ \hline
+r\_3689 & TAG (1-16:1, 2-16:1, 3-16:0) transport, ER membrane-lipid particle & triglyceride (1-16:1, 2-16:1, 3-16:0)  -\textgreater triglyceride (1-16:1, 2-16:1, 3-16:0) \\ \hline
+r\_3690 & TAG (1-16:1, 2-16:1, 3-16:1) transport, ER membrane-lipid particle & triglyceride (1-16:1, 2-16:1, 3-16:1)  -\textgreater triglyceride (1-16:1, 2-16:1, 3-16:1) \\ \hline
+r\_3691 & TAG (1-16:1, 2-16:1, 3-18:0) transport, ER membrane-lipid particle & triglyceride (1-16:1, 2-16:1, 3-18:0)  -\textgreater triglyceride (1-16:1, 2-16:1, 3-18:0) \\ \hline
+r\_3692 & TAG (1-16:1, 2-16:1, 3-18:1) transport, ER membrane-lipid particle & triglyceride (1-16:1, 2-16:1, 3-18:1)  -\textgreater triglyceride (1-16:1, 2-16:1, 3-18:1) \\ \hline
+r\_3693 & TAG (1-18:0, 2-16:1, 3-16:0) transport, ER membrane-lipid particle & triglyceride (1-18:0, 2-16:1, 3-16:0)  -\textgreater triglyceride (1-18:0, 2-16:1, 3-16:0) \\ \hline
+r\_3694 & TAG (1-18:0, 2-16:1, 3-16:1) transport, ER membrane-lipid particle & triglyceride (1-18:0, 2-16:1, 3-16:1)  -\textgreater triglyceride (1-18:0, 2-16:1, 3-16:1) \\ \hline
+r\_3695 & TAG (1-18:0, 2-16:1, 3-18:0) transport, ER membrane-lipid particle & triglyceride (1-18:0, 2-16:1, 3-18:0)  -\textgreater triglyceride (1-18:0, 2-16:1, 3-18:0) \\ \hline
+r\_3696 & TAG (1-18:0, 2-16:1, 3-18:1) transport, ER membrane-lipid particle & triglyceride (1-18:0, 2-16:1, 3-18:1)  -\textgreater triglyceride (1-18:0, 2-16:1, 3-18:1) \\ \hline
+r\_3697 & TAG (1-18:1, 2-16:1, 3-16:0) transport, ER membrane-lipid particle & triglyceride (1-18:1, 2-16:1, 3-16:0)  -\textgreater triglyceride (1-18:1, 2-16:1, 3-16:0) \\ \hline
+r\_3698 & TAG (1-18:1, 2-16:1, 3-16:1) transport, ER membrane-lipid particle & triglyceride (1-18:1, 2-16:1, 3-16:1)  -\textgreater triglyceride (1-18:1, 2-16:1, 3-16:1) \\ \hline
+r\_3699 & TAG (1-18:1, 2-16:1, 3-18:0) transport, ER membrane-lipid particle & triglyceride (1-18:1, 2-16:1, 3-18:0)  -\textgreater triglyceride (1-18:1, 2-16:1, 3-18:0) \\ \hline
+r\_3700 & TAG (1-18:1, 2-16:1, 3-18:1) transport, ER membrane-lipid particle & triglyceride (1-18:1, 2-16:1, 3-18:1)  -\textgreater triglyceride (1-18:1, 2-16:1, 3-18:1) \\ \hline
+r\_3701 & TAG (1-16:0, 2-18:1, 3-16:0) transport, ER membrane-lipid particle & triglyceride (1-16:0, 2-18:1, 3-16:0)  -\textgreater triglyceride (1-16:0, 2-18:1, 3-16:0) \\ \hline
+r\_3702 & TAG (1-16:0, 2-18:1, 3-16:1) transport, ER membrane-lipid particle & triglyceride (1-16:0, 2-18:1, 3-16:1)  -\textgreater triglyceride (1-16:0, 2-18:1, 3-16:1) \\ \hline
+r\_3703 & TAG (1-16:0, 2-18:1, 3-18:0) transport, ER membrane-lipid particle & triglyceride (1-16:0, 2-18:1, 3-18:0)  -\textgreater triglyceride (1-16:0, 2-18:1, 3-18:0) \\ \hline
+r\_3704 & TAG (1-16:0, 2-18:1, 3-18:1) transport, ER membrane-lipid particle & triglyceride (1-16:0, 2-18:1, 3-18:1)  -\textgreater triglyceride (1-16:0, 2-18:1, 3-18:1) \\ \hline
+r\_3705 & TAG (1-16:1, 2-18:1, 3-16:0) transport, ER membrane-lipid particle & triglyceride (1-16:1, 2-18:1, 3-16:0)  -\textgreater triglyceride (1-16:1, 2-18:1, 3-16:0) \\ \hline
+r\_3706 & TAG (1-16:1, 2-18:1, 3-16:1) transport, ER membrane-lipid particle & triglyceride (1-16:1, 2-18:1, 3-16:1)  -\textgreater triglyceride (1-16:1, 2-18:1, 3-16:1) \\ \hline
+r\_3707 & TAG (1-16:1, 2-18:1, 3-18:0) transport, ER membrane-lipid particle & triglyceride (1-16:1, 2-18:1, 3-18:0)  -\textgreater triglyceride (1-16:1, 2-18:1, 3-18:0) \\ \hline
+r\_3708 & TAG (1-16:1, 2-18:1, 3-18:1) transport, ER membrane-lipid particle & triglyceride (1-16:1, 2-18:1, 3-18:1)  -\textgreater triglyceride (1-16:1, 2-18:1, 3-18:1) \\ \hline
+r\_3709 & TAG (1-18:0, 2-18:1, 3-16:0) transport, ER membrane-lipid particle & triglyceride (1-18:0, 2-18:1, 3-16:0)  -\textgreater triglyceride (1-18:0, 2-18:1, 3-16:0) \\ \hline
+r\_3710 & TAG (1-18:0, 2-18:1, 3-16:1) transport, ER membrane-lipid particle & triglyceride (1-18:0, 2-18:1, 3-16:1)  -\textgreater triglyceride (1-18:0, 2-18:1, 3-16:1) \\ \hline
+r\_3711 & TAG (1-18:0, 2-18:1, 3-18:0) transport, ER membrane-lipid particle & triglyceride (1-18:0, 2-18:1, 3-18:0)  -\textgreater triglyceride (1-18:0, 2-18:1, 3-18:0) \\ \hline
+\end{longtable}}
+\end{landscape}
