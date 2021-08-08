@@ -26,9 +26,9 @@ All simulations in the Methods section are done on the model Yeast8 v8.3.4 which
 
 
 \section{Experimental Data Acquisition} \label{experimentaldataacquisition}
-Extracellular metabolomics data are obtained from Cakar's Lab \cite{arslan2018physiological}. Briefly, they performed ethyl methane sulfonate (EMS) mutagenesis on the prototrophic \emph{Saccharomyces cerevisiae} strain CEN.PK 113-7D (MATa, MAL2-8c, SUC2) as reference, and the cells were successively batch cultivated under gradually increasing or decreasing levels of stress factors to increase the genetic diversity as a selection strategy by evolutionary engineering. Cells were inoculated in 2\% Yeast Minimal Media (YMM), and the extracellular concentrations of glucose, ethanol, glycerol and acetate were measured at different time points by using HPLC. OD\textsubscript{600} values were determined by a spectrophotometer. Additionally, cell dry weight analysis was conducted to determine biomass production.
+Extracellular metabolomics data are obtained from Cakar's Lab \cite{arslan2018physiological}. Briefly, they performed ethyl methane sulfonate (EMS) mutagenesis on the prototrophic \emph{Saccharomyces cerevisiae} strain CEN.PK 113-7D (MATa, MAL2-8c, SUC2) as reference, and the cells were successively batch cultivated under gradually increasing levels of stress factors as a selection strategy by evolutionary engineering. After selection, the evolved strains were inoculated in 2\% Yeast Minimal Media (YMM), and the extracellular concentrations of glucose, ethanol, glycerol and acetate were measured at different time points by using HPLC. OD\textsubscript{600} values were determined by a spectrophotometer. Additionally, cell dry weight analysis was conducted to determine biomass production.
 
-Measured OD\textsubscript{600} values and dry weights of the reference strains (without mutagenesis, referred as wildtype strain in the models) of all ALE experiments were used in this study, and are collected in Table \ref{table:experimental_OD600s_and_growths}. Experimental extracellular metabolite concentrations are also collected in Table \ref{table:experimental_data}, and compared with the computational simulation results in the discussions.
+Measured OD\textsubscript{600} values and dry weights of the reference strains (without mutagenesis) of all ALE experiments were used in this study, and are collected in Table \ref{table:experimental_OD600s_and_growths}. Experimental extracellular metabolite concentrations are also collected in Table \ref{table:experimental_data}, and compared with the computational simulation results in the discussions.
 
 \input{tables/experimental_concentrations.tex}
 \input{tables/experimental_OD600s_and_growths.tex}
@@ -96,23 +96,23 @@ The idea behind this methodology arises from the biochemical constraints, such t
  \label{eq:gecko_simple}
  \ v_{j} \leq k_{cat}^{ij} \cdot [E_{i}]
 \end{align}
-Enzymes in the reaction equations must be considered as pseudo-metabolites because they do not affect the mass balance of the reaction, i.e., enzymes are not consumed in the reactions but they are occupied for a short period of time. To maintain mass balances of enzymes, an overall enzyme usage pseudo-reaction is introduced into system in order to supplement enzymes into reactions, similar to exchange reactions:
+Enzymes in the reaction equations must be considered as pseudo-metabolites because they do not affect the mass balance of the reaction, i.e., enzymes are not consumed in the reactions but they are occupied for a short period of time. To maintain mass balances of enzymes, an overall enzyme usage pseudo-reaction is introduced into system in order to supplement enzymes into reactions, similar to exchange reactions,
 \begin{align}
  \label{eq:gecko_suppelement}
  \  EU_i: \quad \to E_i
  \
 \end{align}
-If the flux carried by this reaction is $e_i$, we can say that $e_i$ ranges from 0 (i.e., no enzyme available) to a maximum value of $[E_i]$ (i.e., all the enzyme is used in the reaction):
+If the flux carried by this reaction is $e_i$, we can say that $e_i$ ranges from 0 (i.e., no enzyme available) to a maximum value of $[E_i]$ (i.e., all the enzyme is used in the reaction),
 \begin{align}
  \label{eq:gecko_enzymeflux}
  \  0 \leq e_i \leq [E_i]
 \end{align}
-Then a mass balance for the enzyme $E_i$ can be defined under steady state assumption:
+Then a mass balance for the enzyme $E_i$ can be defined under steady state assumption,
 \begin{align}
  \label{eq:gecko_enzymemass}
  \  -n_{ij} \cdot v_j + e_i = 0
 \end{align}
-By rearranging the equations \ref{eq:gecko_enzymeflux} and \ref{eq:gecko_enzymemass}, we obtain:
+By rearranging the equations \ref{eq:gecko_enzymeflux} and \ref{eq:gecko_enzymemass}, we obtain,
 \begin{align}
  \label{eq:gecko_enzymemassrearranged}
  \ v_j \leq \frac{1}{n_{ij}} \cdot [E_i]
@@ -123,7 +123,7 @@ and if we compare this equation with the equation \ref{eq:gecko_simple}, we can 
  \ n_{ij}=\frac{1}{k_{cat}^{ij}}
 \end{align}
 
-However, the equation \ref{eq:gecko_simple} does not hold in all cases since reactions can be more complex. For isozymes in which multiple enzymes catalyze the same reaction, the equation becomes:
+However, the equation \ref{eq:gecko_simple} does not hold in all cases since reactions can be more complex. For isozymes in which multiple enzymes catalyze the same reaction, the equation becomes,
 \begin{align}
  \label{eq:gecko_isozymes}
  \ v_{j} \leq \sum\limits_{i} k_{cat}^{ij} \cdot [E_{i}]
@@ -141,19 +141,19 @@ These additional reactions distrupt the boundaries for the initial reaction. In 
  \ R_{j/2}: \quad \frac{1}{k_{cat}^{2j}}E_2 + M_{int} \to B
 \end{align}
 
-For an enzyme complex catalyzing a single reaction, since the reaction is catalyzed by all the enzymes which share the same $k_{cat}$ value, the equation \ref{eq:gecko_simple} becomes:
+For an enzyme complex catalyzing a single reaction, since the reaction is catalyzed by all the enzymes which share the same $k_{cat}$ value, the equation \ref{eq:gecko_simple} becomes,
 \begin{align}
  \label{eq:gecko_complex}
  \ v_{j} \leq  k_{cat}^{ij} \cdot \min\limits_{k} \frac{ [U_{ik}] }{ S_{ik} }
  \
 \end{align}
-\noindent where $[U_{ik}]$  is the concentration of the subunit of the catalyzing enzyme $E_{i}$, and $S_{ik}$ is the stoichiometry of the subunit. For the reaction, if we think that the equation \ref{eq:geckoreaction} was catalyzed by an enzyme complex of 2 subunits, $A \xrightarrow{E_1 and E_2} B$, then it would be:
+\noindent where $[U_{ik}]$  is the concentration of the subunit of the catalyzing enzyme $E_{i}$, and $S_{ik}$ is the stoichiometry of the subunit. For the reaction, if we think that the equation \ref{eq:geckoreaction} was catalyzed by an enzyme complex of 2 subunits, $A \xrightarrow{E_1 and E_2} B$, then it would be,
 \begin{align}
  \label{eq:gecko_complex2}
  \ R_{j}: \quad \frac{S_1}{k_{cat}^{ij}}E_1 +\frac{S_2}{k_{cat}^{ij}}E_2 + A \to B
 \end{align}
 
-Finally, for the reversible reactions, two reactions must be defined for both forward and backward direction reactions with the same catalyzing enzyme but possibly with different $k_{cat}$ values. Assume the equation \ref{eq:geckoreaction} is reversible, following equations would be introduced to the system:
+Finally, for the reversible reactions, two reactions must be defined for both forward and backward direction reactions with the same catalyzing enzyme but possibly with different $k_{cat}$ values. Assume the equation \ref{eq:geckoreaction} is reversible, following equations would be introduced to the system,
 \begin{align}
  \label{eq:gecko_reversible}
  \ R_{j/f}: \quad \frac{1}{k_{cat}^{ij/f}}E_i + A \to B \\
@@ -217,7 +217,7 @@ The workflow from the RAVEN Toolbox uses the simplex method, one of the main alg
 
 
 \section{Minimization of Metabolic Adjustment}
-An approach for predicting mutant behavior similar to FBA is based on the Minimization of Metabolic Adjustment (MOMA). The idea behind this methodology arises because a mutant is more likely to display a sub-optimal flux distribution since the selection through evolutionary adaptation has altered the genetic background of the evolved strains. Therefore, the application of FBA on both wild-type and mutant strains is considered insubstantial. While the FBA method uses the objective function to present an optimal solution, MOMA choses the objective function as the minimization of the Euclidean distance between the optimal flux distribution calculated by FBA on wild type strain and the sub-optimal flux distribution of the mutant where it remains initially as close as possible to the optimal flux distribution of the wild-type.
+An approach for predicting mutant behavior similar to FBA is based on the Minimization of Metabolic Adjustment (MOMA). The idea behind this methodology arises because a mutant is more likely to display a sub-optimal flux distribution since the selection through evolutionary adaptation has altered the genetic background of the evolved strains. Therefore, the application of FBA on both wild-type and mutant strains is considered insubstantial. While the FBA method uses the objective function to present an optimal solution, MOMA choses the objective function as the minimization of the Euclidean distance between the optimal flux distribution calculated by FBA on the reference strain and the sub-optimal flux distribution of the mutant where it remains initially as close as possible to the optimal flux distribution of the wild-type.
 
 \begin{figure}[H]
 \begin{center}
