@@ -3,7 +3,7 @@ Evolution has been intensively studied since the publication of \emph{On the Ori
 
 Evolutionary engineering studies, adaptive laboratory evolution in particular, refers to the experiments in which the environmental conditions are altered gradually to obtain adapted populations in the laboratories \cite{garland2009experimental}. Accumulation of mutations obtained due to environmental alterations through generations, where the favored individuals (mainly the ones with increased fitness) are selected to become parents of the next generation, result a population with advantageous traits compared to starting population. Since one of the main challenges in the evolutionary engineering field is being able to analyze experimental to answer fundamental questions, adaptive evolution studies usually require interdisciplinary research in order to answer fundamental questions. What has changed in the cells through generations? What is the genetic basis for adaptation? Can we evolve any organism to any condition? If so, how we can achieve? These questions and many more are asked every day, and the corresponding answers potentially give rise to more questions.
 
-The purpose of this thesis is to enlighten metabolic changes in the adaptation of the yeast \emph{S. cerevisiae} using computational methods, specifically genome-scale metabolic models. Evolved yeast strains (such as ethanol tolerant, long-lived, multi-stress resistant strains) are going to be analyzed comparatively to the unevolved strains using intracellular flux distributions obtained with the integration of transcriptomics data. This study will also contribute to the global understanding of metabolic regulations in yeast, and will be further expandable into metabolic engineering studies.
+The purpose of this thesis was to enlighten metabolic changes in the adaptation of the yeast \emph{S. cerevisiae} using computational methods, specifically genome-scale metabolic models. Evolved yeast strains (such as ethanol tolerant, multi-stress resistant strains) were analyzed comparatively to the unevolved strains using intracellular flux distributions obtained with the integration of transcriptomics data. This study will also contribute to the global understanding of metabolic regulations in yeast, and will be further expandable into metabolic engineering studies.
 
 \chapter{THEORETICAL BACKGROUND}
 
@@ -12,68 +12,70 @@ Since the very first laboratory evolution experiment was published in the late 1
 
 Commonly used approaches of adaptive laboratory evolution (ALE) include chemostat cultures and serial batch or colony transfers (Figure \ref{fig:ale}). Serial transfer experiments in which the initial population is aliquoted and transferred into a new medium are simpler and cheaper to set up, however the possibility of genetic drift is higher due to random sampling of the population. On the other hand, continuous systems such as chemostat experiments in bioreactors have advantages on maintaining constant growth rates and population sizes, but with increasing experimental cost \cite{winkler2013adaptive}.
 
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[width=1\columnwidth]{ALE.png}
-\end{center}
-\caption[Workflow of ALE experiments and the two iteration mo (a) sequential serial passages in shake flasks, (b) chemostat cultures \cite{dragosits2013adaptive, shepelin2018selecting}.]{Workflow of ALE experiments and the two iteration mo (a) sequential serial passages in shake flasks, (b) chemostat cultures \cite{dragosits2013adaptive, shepelin2018selecting}.}
-\vskip\baselineskip % Leave a vertical skip below the figure
-\label{fig:ale}
-\end{figure}
-
 In addition to the methodological choice, decision of the selection criteria and the time span for the experiments are critical factors in ALE \cite{dragosits2013adaptive}. Growth rates, survivability in stressful environmental conditions and biomass yields are the most common fitness criteria for a population to be selected. Throughout the selection process, reaching \textgreater 500 generations may take a few weeks or a few months depending on the organism, therefore, detailed planning is essential \cite{conrad2011microbial}.
 
 Capturing genomic changes in the dynamic evolution process is the main goal of an ALE study, therefore frequent data collection in longitudinal manner is a must to unveil molecular details. Next-generation technologies empower researchers to catch even single-nucleotide mutations through genome sequencing and also provide an understanding on broader regulatory changes through equation expression profiles \cite{conrad2011microbial}. Focus of the studying the differences between evolved and unevolved strains may be on the individual protein level or as a system-level trait. Interpreting the system as a network enables various ways to investigate causality behind adaptive mechanisms and dynamics of evolution \cite{soyer2013evolutionary, long2018adaptive}.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=1\columnwidth]{ALE.png}
+\caption[Workflow of ALE experiments and the two iteration mo (a) sequential serial passages in shake flasks, (b) chemostat cultures \cite{dragosits2013adaptive, shepelin2018selecting}.]{Workflow of ALE experiments and the two iteration mo (a) sequential serial passages in shake flasks, (b) chemostat cultures \cite{dragosits2013adaptive, shepelin2018selecting}.}
+\label{fig:ale}
+\end{center}
+\end{figure}
+\vspace{-1cm}
 
 \subsection{Computational Tools for ALE Experiments}
 
 Adaptive laboratory evolution, in laboratories, uses natural selection to capture microbial adaptations for decades. Although the results of these experiments would provide the ideal selection pressure to be imposed on organisms to obtain favored strains, the difference between the starting and the evolved strain is not easy to find. Throughout the years, various additional methods and computational tools are invested to investigate findings. With decreasing cost of whole genome sequencing and resequencing, identification of mutations can reveal the mystery behind the adaptations. Due to complexity of cellular systems and missing points in the metabolic regulations, the interpretation of the mutation effects is still the main challenge in the field \cite{palsson2011adaptive}.
 
 A web-based database platform, ALEdb (aledb.org) \cite{phaneuf2019aledb}, has been created last year. Platform collects and reports on ALE acquired mutations and their experimental conditions and provides several features such as searching for specific mutations within reports, exporting of mutation query results for custom analysis, and many more. With these useful features and being freely available for non-commercial uses, ALEdb becomes a resourceful tool in the field (Figure \ref{fig:intro_aledb}).
-\vspace{1cm}
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=1\columnwidth]{figures/intro_aledb.jpeg}
-\caption[Pipeline flow of ALE data from beginning (experimental design) to results reporting in ALEdb \cite{phaneuf2019aledb}.]{Pipeline flow of ALE data from beginning (experimental design) to results reporting in ALEdb \cite{phaneuf2019aledb}.}
-\label{fig:intro_aledb}
-\end{center}
+\vspace{0.5cm}
+  \begin{figure}[H]
+  \begin{center}
+  \includegraphics[width=1\columnwidth]{figures/intro_aledb.jpeg}
+  \caption[Pipeline flow of ALE data from beginning (experimental design) to results reporting in ALEdb \cite{phaneuf2019aledb}.]{Pipeline flow of ALE data from beginning (experimental design) to results reporting in ALEdb \cite{phaneuf2019aledb}.}
+  \label{fig:intro_aledb}
+  \end{center}
 \end{figure}
+\vspace{-1cm}
+eVOLVER\cite{wong2018precise}, an open-source do-it-yourself (DIY) framework that promises a solution to the main challenge of balancing the tradeoff between controllable (such as bioreactor designs) and throughput (such as batch designs) experiments in the ALE. Framework comes with both software and hardware, and it offers to define the various experimental parameters e.g. temperature, density, media, in a virtually automated fashion. It simultaneously controls multiple experimental designs, collects, and measures data in real-time. eVOLVER is also designed to be scalable to high-throughput, therefore, it is a promising tool to carry out automated multidimensional growth and selection experiments.
 
-eVOLVER\cite{wong2018precise}, an open-source do-it-yourself (DIY) framework that promises a solution to the main challenge of balancing the tradeoff between controllable (such as bioreactor designs) and throughput (such as batch designs) experiments in the ALE. Framework comes with both software and hardware, and it offers to define the various experimental parameters e.g. temperature, density, media, in a virtually automated fashion (Figure \ref{fig:intro_evolver}). It simultaneously controls multiple experimental designs, collects, and measures data in real-time. eVOLVER is also designed to be scalable to high-throughput, therefore, it is a promising tool to carry out automated multidimensional growth and selection experiments.
+%eVOLVER\cite{wong2018precise}, an open-source do-it-yourself (DIY) framework that promises a solution to the main challenge of balancing the tradeoff between controllable (such as bioreactor designs) and throughput (such as batch designs) experiments in the ALE. Framework comes with both software and hardware, and it offers to define the various experimental parameters e.g. temperature, density, media, in a virtually automated fashion (Figure \ref{fig:intro_evolver}). It simultaneously controls multiple experimental designs, collects, and measures data in real-time. eVOLVER is also designed to be scalable to high-throughput, therefore, it is a promising tool to carry out automated multidimensional growth and selection experiments.
 
 In order to demonstrate the potential of eVOLVER framework, they designed a device to conduct automated sexual reproduction for adapting yeast populations under different selections. In the experiment, instead of manual sampling at arbitrary time points, the sampling process and mating carried out automatically within the device at the times when the cultures reach the defined points such as growth-rates. Media selection, vial-to-vial transfers, and deceive cleaning routines were all included in the framework. This experiment illustrated the potential of eVOLVER framework in terms of automatizing the custom build and controllable microfluidics for continuous cultures.
 
 
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=1\columnwidth]{figures/intro_evolver.png}
-\caption[Integrated framework of eVOLVER for high-throughput ALE experiments \cite{wong2018precise}.]{Integrated framework of eVOLVER for high-throughput ALE experiments \cite{wong2018precise}.}
-\label{fig:intro_evolver}
-\end{center}
-\end{figure}
+%\begin{figure}[H]
+%\begin{center}
+%\includegraphics[width=1\columnwidth]{figures/intro_evolver.png}
+%\caption[Integrated framework of eVOLVER for high-throughput ALE experiments \cite{wong2018precise}.]{Integrated framework of eVOLVER for high-throughput ALE experiments %\cite{wong2018precise}.}
+%\label{fig:intro_evolver}
+%\end{center}
+%\end{figure}
 
 
-Another simulator, ALEsim\cite{lacroix2017model}, was developed for the optimization of ALE experiments and promises to improve ALE results. It is a model built on the basic principles of growth in order to predict growth rates in batch cultures of ALE experiments (Figure \ref{fig:intro_alesim}). By evaluating various passage sizes, ALEsim can calculate how and when to deploy resources to shorten experiment timelines and to achieve desired results. ALEsim provides a way to design better experiments and quantify them, to obtain the desired outcome with the resources available on hand.
+Another simulator, ALEsim\cite{lacroix2017model}, was developed for the optimization of ALE experiments and promises to improve ALE results. It is a model built on the basic principles of growth in order to predict growth rates in batch cultures of ALE experiments. By evaluating various passage sizes, ALEsim can calculate how and when to deploy resources to shorten experiment timelines and to achieve desired results. ALEsim provides a way to design better experiments and quantify them, to obtain the desired outcome with the resources available on hand. For a simulation using a developed model, experimental (i.e., culture size, passage size, passage optical density), statistical (i.e., number of experiments), and biological (i.e., beneficial mutation rate) parameters must be set for results to be biologically meaningful. These parameters can differ for different strains and conditions, and it is crucial to define the parameters for models to be constrained. ALEsim provides an advantage by allowing automated simulations, with the cells being allowed to grow under the user-defined conditions so that the experimental and biological parameters can be strictly controlled over the course of an experiment.
 
-For a simulation using a developed model, experimental (i.e., culture size, passage size, passage optical density), statistical (i.e., number of experiments), and biological (i.e., beneficial mutation rate) parameters must be set for results to be biologically meaningful. These parameters can differ for different strains and conditions, and it is crucial to define the parameters for models to be constrained. ALEsim provides an advantage by allowing automated simulations, with the cells being allowed to grow under the user-defined conditions so that the experimental and biological parameters can be strictly controlled over the course of an experiment.
-
-\begin{figure}[H]
-\begin{center}
-\includegraphics[width=0.85\columnwidth]{figures/intro_alesim.jpg}
-\caption[Step by step workflow chart of ALEsim\cite{lacroix2017model}.]{Step by step workflow chart of ALEsim\cite{lacroix2017model}.}
-\label{fig:intro_alesim}
-\end{center}
-\end{figure}
+%\begin{figure}[H]
+%\begin{center}
+%\includegraphics[width=0.85\columnwidth]{figures/intro_alesim.jpg}
+%\caption[Step by step workflow chart of ALEsim\cite{lacroix2017model}.]{Step by step workflow chart of ALEsim\cite{lacroix2017model}.}
+%\label{fig:intro_alesim}
+%\end{center}
+%\end{figure}
 
 
 \section{Systems Biology}
 With the increasing availability of the computational tools and the development of high throughput techniques in the omics field, systems biology has shown a strong emergence in the last few years as a key multi-disciplinary field for integrating the multi-layer complexity of biological systems, particularly in the areas of transcriptomics, proteomics, metabolomics and fluxomics \cite{kitano2002systems}. This amount of available data allows researchers to investigate molecular cell processes in a large scales, applying theoretical, experimental and computational methods.
 
+\vspace{0.5cm}
+
 Biological systems based on complex interactions between various molecular components. The relations between these components are often obey nonlinear kinetics, for example, most of the reactions are regulated by one or more feedback or feed-forward loops with incomprehensible behaviors. When considered, cell structure and compartmentalization are also often introduce complexities to the unexpected behavior of the entire biological system \cite{bellouquid2006mathematical}. Mathematical modeling with these factors taken into consideration is used as a general approach to encompass existing knowledge in biological systems, and to gather information by analyzing these models to acquire a better understanding \cite{kremling2013systems}.
 
 A mathematical model of a cell can be approached by two different approaches in either a bottom-up or top-down directionality (Figure \ref{fig:systemsbiology}) \cite{bruggeman2007nature, shahzad2012application}. Top-down approach is an experimental oriented approach, it starts from the whole picture and aims to characterize biological mechanisms closer to the smaller parts and their interactions in the network. In the bottom-up approach, collected data from biological knowledge is used as a starting point, a subsystem is generated to deduce the functional properties of smaller points in the network. Combination of the pathway level models (bottom-up) into a model for the entire system level (top-down) is the ultimate goal in the systems biology therefore these approaches are complementary.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=0.8\columnwidth]{systemsbiology.png}
 \end{center}
@@ -81,7 +83,6 @@ A mathematical model of a cell can be approached by two different approaches in 
 \vskip\baselineskip % Leave a vertical skip below the figure
 \label{fig:systemsbiology}
 \end{figure}
-
 \subsection{Metabolic Networks}   \label{metabolicnetworks}
 In the context of systems biology, metabolic network reconstructions have become a common interest for the researchers over the past 20 years \cite{thiele2010protocol}. Organism-specific metabolic network analyses allow scientists to design experiments and even obtain beforehand predictions. These networks are the main sources of the mathematical models which can simulate metabolic fluxes reflecting the experimental reality \cite{orth2010flux}.
 
@@ -89,7 +90,7 @@ Before the improvement of genome sequencing or annotation technologies, initial 
 
 A generally applicable protocol is defined by the Palsson group \cite{thiele2010protocol, feist2009reconstruction} for the reconstruction of biochemical networks described in the Figure \ref{fig:modelreconstruction} \cite{chen2012metabolic}. Briefly, genomic data for the biochemical reactions of an organism are identified from the databases, such as NCBI, DDBJ and EMBL-EBI. Extraction and processing of the gene-protein-reaction relationship (GPR) of the genomic data results a draft reconstruction. GPR associations in the draft model should be reviewed by the researchers and manually curated if the identifying process is achieved with the help of automated computational algorithms \cite{pitkanen2014comparative}. Since the genomic data is the least representative of the biological phenotypes, available transcriptomic, proteomic, metabolomic and/or subcellular localization data are also used to further curate the model. Once the final metabolic network is reconstructed with bibliographic information, it is translated into a mathematical model.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \begin{center}
 \includegraphics[width=1\columnwidth]{modelreconstruction.png}
 \end{center}
@@ -98,17 +99,19 @@ A generally applicable protocol is defined by the Palsson group \cite{thiele2010
 \label{fig:modelreconstruction}
 \end{figure}
 
+\vspace{-1.5cm}
+
 Once a metabolic network is reconstructed, a rational link between a genome sequence, the proteins encoded in the genome, and the reactions catalyzed by the proteins allowing to investigate the relationships between genotype and phenotype is achieved \cite{durot2008genome}. As the final step, GSMM needs to be validated by the new experimental data sets. GSMM validation process for various experimental conditions require detailed cultivation data from experiments. For example, information on the biomass composition of the specific organism leads more accurate biomass equation in the model, that is one of the key factors in the GSMM optimization and validation \cite{dikicioglu2015biomass}. Even tough multiple steps in the GSMM reconstruction can be achieved with the automated softwares available, it is usually necessary to curate the obtained model manually.
 
-Approaches for analyzing metabolic networks are mainly categorized as dynamic or structural approaches. Even though the former is promising more realistic approach, its implementation in the literature is obstructed due to the unavailability of kinetic parameters for the majority of enzymes within a metabolic network \cite{machado2014systematic, ramkrishna2012dynamic} Because of the lack of kinetic parameters, structural metabolic modeling has been widely used for analyzing cellular metabolism at a steady-state assumption as a kind of snapshots taken at specific times.
+\vspace{2cm}
 
-GSMMs are one of the most useful tools in systems biology, especially in metabolic engineering studies \cite{kim2012recent}. In 1998, with the publication of \emph{Metabolic Engineering: Principles and Methodologies}, the term metabolic engineering is defined as the optimization of natural processes within cells to increase the production of certain substances \cite{stephanopoulos1999metabolic}. Hence, studies of metabolic engineering can be considered as genetic engineering in strain development. However, while metabolic engineering manipulates strains by altering flux distributions in the pathways; genetic engineering modifies specific genes, proteins and/or enzymes of interest \cite{stephanopoulos2012synthetic}. Although GSMMs are mainly used in metabolic engineering strategies, other applications both for descriptive and predictive purposes can be found in the literature \cite{osterlund2012fifteen}.
+Approaches for analyzing metabolic networks are mainly categorized as dynamic or structural approaches. Even though the former is promising more realistic approach, its implementation in the literature is obstructed due to the unavailability of kinetic parameters for the majority of enzymes within a metabolic network \cite{machado2014systematic, ramkrishna2012dynamic}. Because of the lack of kinetic parameters, structural metabolic modeling has been widely used for analyzing cellular metabolism at a steady-state assumption as a kind of snapshots taken at specific times.
 
-The ultimate goal of the GSMM reconstruction is to predict flux distribution profiles as close \emph{in silico} as they are \emph{in vivo}. Hence, GSMMs are in continuous research to improve predictability of organism-specific models.
+GSMMs are one of the most useful tools in systems biology, especially in metabolic engineering studies \cite{kim2012recent}. In 1998, with the publication of \emph{Metabolic Engineering: Principles and Methodologies}, the term metabolic engineering is defined as the optimization of natural processes within cells to increase the production of certain substances \cite{stephanopoulos1999metabolic}. Hence, studies of metabolic engineering can be considered as genetic engineering in strain development. However, while metabolic engineering manipulates strains by altering flux distributions in the pathways; genetic engineering modifies specific genes, proteins and/or enzymes of interest \cite{stephanopoulos2012synthetic}. Although GSMMs are mainly used in metabolic engineering strategies, other applications both for descriptive and predictive purposes can be found in the literature \cite{osterlund2012fifteen}. The ultimate goal of the GSMM reconstruction is to predict flux distribution profiles as close \emph{in silico} as they are \emph{in vivo}. Hence, GSMMs are in continuous research to improve predictability of organism-specific models.
 
-\begin{figure}[ht]
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=1\columnwidth]{figures/intro_wos.png}
+\includegraphics[width=0.8\columnwidth]{figures/intro_wos.png}
 \end{center}
 \caption[Web of Science article counts on the query "metabolic model" keyword]{Web of Science article counts on the query "metabolic model" keyword.}
 \label{fig:wos_metabolicmodel}
@@ -119,30 +122,20 @@ Basic applications of metabolic network modelling, although its framework is dev
 
 One can propose a steady-state model for the correlation between the metabolites exist in the network. This model claims that the production and consumption of a metabolites must balance each other \cite{reimers2016steady}. For example, consider the metabolite "A" in the toy network in Figure \ref{fig:ToyNetwork}. It can be taken into cell with the rate of b1, and can be converted into B or C with the rates of v1 and v2 respectively; at the same time, metabolite C can be converted into A with the rate of v3. Note that enzyme kinetics are not considered, and these equations are formed only considering mass balances.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \begin{center}
-\includegraphics[width=1\columnwidth]{figures/intro_toymodel.png}
+\includegraphics[width=0.7\columnwidth]{figures/intro_toymodel.png}
 \end{center}
 \caption[Toy network for the steady-state assumption]{Toy network for the steady-state assumption.}
 \label{fig:ToyNetwork}
 \end{figure}
+\vspace{-0.5cm}
 
-If we accept the steady-state assumption, and since we know all the possible reactions passing through metabolite A, we can write following differential equation
-
+If we accept the steady-state assumption, and since we know all the possible reactions passing through metabolite A, we can write following differential equation,
 \begin{equation}
  \ \frac{d(A)}{dt} = - v_1 - v_2 + v_3 + b_1 = 0 \\
 \end{equation}
-
-
-meaning that production rate of metabolite A is equal to its consumption rate. In other words, there will be no accumulation of metabolite A in the cell. Considering we have 3 metabolites and 7 reactions; this representation of reactions can be written as a system of linear equations:
-\begin{figure}[h]
-\includegraphics[width=1\columnwidth]{figures/intro_toymodel_eq.png}
-\begin{center}S . v = 0 \end{center}
-\end{figure}
-
-In the above equation, a matrix "S" appears. S matrix consists of stoichiometric coefficients of the reactions. A single column of S matrix, representing a single reaction, provides information about the connections between the metabolites participating in that reaction; and a single row of S matrix, representing a metabolite, provides information about the connection of all the reactions in which that metabolite participates.
-
-Next to S matrix a vector "v" appears. Vector "v" is called the flux vector, and it contains the change in concentration of metabolites. In other words, flux vector represents the flow rates or "fluxes" of each metabolite over time.
+meaning that production rate of metabolite A is equal to its consumption rate. In other words, there will be no accumulation of metabolite A in the cell. Considering we have 3 metabolites and 7 reactions; this representation of reactions can be written as a system of linear equations. When written, A matrix "S" which consists of stoichiometric coefficients of the reactions appears. A single column of S matrix, representing a single reaction, provides information about the connections between the metabolites participating in that reaction; and a single row of S matrix, representing a metabolite, provides information about the connection of all the reactions in which that metabolite participates. Next to S matrix, a vector "v" is written. Vector "v" is called the flux vector, and it contains the change in concentration of metabolites. In other words, flux vector represents the flow rates or "fluxes" of each metabolite over time.
 
 The solution space of S matrix, in the steady-state assumption, is generated by the null space base vectors of S. Studying on the null space vectors, we can define dead-end reactions (zero rows which mean reactions cannot carry flux), enzyme subsets (rows of scalar multiplies of each other, possibly chain reactions) and independent components (diagonal block structures in the null space, reactions that are independent from the network). Due to the large number of reactions in biological networks, the system is underdetermined and have multiple solutions in a convex flux cone space, referring to multiple steady-states of the cell.
 
@@ -151,20 +144,15 @@ As explained in the previous section, solution of a metabolic network is not uni
 
 In terms of physico-chemical properties of a biological system, mass and charge balance must be conserved. These conservation laws are given into mathematical problem as "hard" constraints since these rules are inviolable \cite{price2004genome}. Reaction reversibility is a hard constraint, determined by the laws of thermodynamics. Some reactions are irreversible by nature under certain conditions. These reactions are mathematically bounded in the flux vector, so they can have only positive (v$_i$ ≥ 0, forward directionality) or negative (v$_i$ ≤ 0, backwards directionality) values. Depending on the methodology, by reversing the equations of backwards-directed reactions, and splitting the reversible reactions into two forward and reverse reactions, one can obtain a vector v where each element is greater than or equal to 0.
 
-Since the experiments are carried out in a defined medium, environmental constraints must be added in silico simulations as well. These constraints include nutrient availability (such as carbon, nitrogen, or oxygen sources), the pH value, temperature, or any other experiment-specific conditions. Additionally, spatial constraints can be given to the system to limit substrate and enzyme availability for a specific compartment, especially for the metabolites which are transferred between compartments by facilitated diffusion.
-
-
-There are several methods used in constraint-based modelling (Figure \ref{fig:intro_constraintbasedmodelling}) and additional constraints are introduced into the field every day. More recently, regulatory constraints have started to be used to simulate experimental observations on cellular regulatory mechanisms, such as variable amounts of gene products (transcriptional, translational regulations) and their activities (enzymatic regulations). Integration of omics data, mainly transcriptome data, is used to capture these regulations in silico.
-
-
+Since the experiments are carried out in a defined medium, environmental constraints must be added in silico simulations as well. These constraints include nutrient availability (such as carbon, nitrogen, or oxygen sources), the pH value, temperature, or any other experiment-specific conditions. Additionally, spatial constraints can be given to the system to limit substrate and enzyme availability for a specific compartment, especially for the metabolites which are transferred between compartments by facilitated diffusion. There are several methods used in constraint-based modelling (Figure \ref{fig:intro_constraintbasedmodelling}) and additional constraints are introduced into the field every day.
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=1\columnwidth]{figures/intro_constraintbasedmodelling.png}
+\includegraphics[width=0.8\columnwidth]{figures/intro_constraintbasedmodelling.png}
 \end{center}
 \caption[Various constraint-based modeling methods \cite{lewis2012constraining}.]{Various constraint-based modeling methods \cite{lewis2012constraining}.}
 \label{fig:intro_constraintbasedmodelling}
 \end{figure}
-
+Additional to the previously mentioned methods, more recently, regulatory constraints have started to be used to simulate experimental observations on cellular regulatory mechanisms, such as variable amounts of gene products (transcriptional, translational regulations) and their activities (enzymatic regulations). Integration of omics data, mainly transcriptome data, is used to capture these regulations in silico.
 
 
 \section{\emph{Saccharomyces cerevisiae}}
@@ -181,19 +169,19 @@ Glycolysis is a cytosolic pathway where 1 molecule of glucose breaks down into 2
  \begin{figure}[H]
  \includegraphics[width=1\columnwidth]{central_carbon_mech_of_s_cerevisiae_kegg.png}
  \caption[Central carbon mechanism of \emph{S. cerevisiae}]{Central carbon mechanism of \emph{S. cerevisiae} obtained from  KEGG \cite{kanehisa2000kegg}.}
- \vskip\baselineskip % Leave a vertical skip below the figure
  \label{fig:central_carbon_mech_of_s_cerevisiae_kegg}
  \end{figure}
 
-The end product of glycolysis, pyruvate, can be converted into acetaldehyde through pyruvate decarboxylase (PDC) and, to ethanol with consumption of 1 NADH molecule by alcohol dehydrogenase (ADH). Acetaldehyde is also an important branch point metabolite and it can be converted into acetate by the acetaldehyde dehydrogenase (AcDH) with reduction of 1 NADP+ to NADPH. Acetate can be converted into acetyl-CoA by the acetate synthase (ACS) in the cytoplasm, and used as precursor for biosynthesis of secondary metabolites and in lysine biosynthesis. The stoichiometric reaction for the glycolysis can be found in Equation \ref{eq:glycolysis}.
+ \vspace{-0.5cm}
 
+The end product of glycolysis, pyruvate, can be converted into acetaldehyde through pyruvate decarboxylase (PDC) and, to ethanol with consumption of 1 NADH molecule by alcohol dehydrogenase (ADH). Acetaldehyde is also an important branch point metabolite and it can be converted into acetate by the acetaldehyde dehydrogenase (AcDH) with reduction of 1 NADP+ to NADPH. Acetate can be converted into acetyl-CoA by the acetate synthase (ACS) in the cytoplasm, and used as precursor for biosynthesis of secondary metabolites and in lysine biosynthesis. The stoichiometric reaction for the glycolysis can be written as,
 \begin{align}
   \begin{split}
-  \label{eq:glycolysis}
     \ \text{Glucose} + 2 \text{ADP} + 2 \text{P} + 2 \text{NAD}+ \xrightarrow{} \\
     \ 2 \text{Pyruvate} + 2 {ATP} + 2 {NADH} + 2 H2O + 2{H}+
   \end{split}
 \end{align}
+where glucose, ADP, phospate and NAD+ are consumed to produce pyruvate, ATP, NADH, water and hydrogen.
 
 Some enzymes in the glycolytic pathway are regulated allosterically. For example, presence of ATP in the cytoplasm inhibits the hexokinase (HXK) which deactivates the first step of glycolysis \cite{larsson2000importance}. It is also known that during low concentrations of glucose-6-phosphate (G6P) and fructose 6-phosphate (F6P), mitochondrial oxidative phosphorylation enzymes are activated and it is antagonized by the fructose 1,6- bisphosphate (F1-6bP) \cite{diaz2008mitochondrial}. This phenomenon shows that the metabolite F1-6bP inhibits the respiratory flux rates.
 
@@ -207,15 +195,18 @@ Gluconeogenesis, as a form of a reversed glycolysis, generates glucose-6-phospha
 \label{fig:intro_centralcarbon}
 \end{figure}
 
-Krebs cycle or the citric acid cycle (TCA cycle), forms the compounds NADH, CO$_2$ and FADH2. For 1 mole of pyruvate oxidized in TCA cycle, 4 mol of NADH, 1 mol of FADH2, 3 mol of CO$_2$ and 1 mol of GTP are generated. The overall stoichiometric reaction for the TCA cycle can be found in Equation \ref{eq:TCA}.
+ \vspace{-0.5cm}
+
+Krebs cycle or the citric acid cycle (TCA cycle), forms the compounds NADH, CO$_2$ and FADH2. For 1 mole of pyruvate oxidized in TCA cycle, 4 mol of NADH, 1 mol of FADH2, 3 mol of CO$_2$ and 1 mol of GTP are generated. The overall stoichiometric reaction for the TCA cycle can be written as,
 
 \begin{align}
   \begin{split}
-  \label{eq:TCA}
   \ Pyruvate + 3 H2O + GDP + 2 P + FAD + 4 NAD+ \xrightarrow{} \\
   \ 3 CO2 + GTP + 4 NADH + FADH2 + 4 H+
   \end{split}
 \end{align}
+
+\noindent where pyruvate, water, GDP, phosphate, FAD and NAD+ are consumed to produce GTP, NADH, FADH2, hydrogen and carbon dioxide.
 
 The TCA cycle is mostly regulated at transcriptional level and it is known that the cycle is repressed by high glucose concentrations \cite{liu1999transcriptional}. The main regulatory points in the TCA cycle are the citrate synthase, isocitrate dehydrogenase and $\alpha$-ketoglutarate dehydrogenase. The cycle is also regulated by feedback inhibition mechanisms and regulation is highly controlled at enzymatic level. For example, the isocitrate dehydrogenase (IDH) is increases its activity with the presence of AMP and inhibited by the presence of ATP\cite{coleman1975regulation}; while the low level of NADH/NAD+ molecules activates the majority of enzymes in the cycle \cite{gadde1997mutations}. The TCA cycle is a major pathway in mitochondria and it is used to generate important precursor metabolites such as citrate, oxaloacetate, and succinyl-coA.
 
@@ -243,6 +234,8 @@ Acid stress is another important factor in productive purposes of industrial yea
 
 Salt stress tolerance is a well-characterized trait for cells, and genomic studies previously proved that \emph{S. cerevisiae} contains multiple conserved pathways in the salt stress response\cite{gaxiola1992novel}. Considering that, Dhar et. al. exposed yeast strain BY4741 to high sodium chloride (NaCl) concentrations to initiate and investigate salt stress response. In the study where the grown cultures were serially transferred each day, after 300 generations they have found that the high salt medium which also introduces osmolarity stress, reduces the growth rates 11\%, whereas obtained evolved strains were able to grow 8–12\% faster in salty media.
 
+In addition to the above-mentioned examples, Prof. Z. Petek Cakar's lab at Istanbul Technical University has been a pioneer in evolutionary engineering (ALE) studies in Turkey, producing many evolved \emph{S. cerevisiae} strains that are resistant to diverse stress types \cite{turanli2017vivo, surmeli2019evolutionary, hacisalihouglu2019genomic, balaban2020evolutionary, kuccukgoze2013evolutionary, holyavkin2013evrimsel, terziouglu2020genomic}.
+
 \subsection{Metabolic Models of \emph{S. cerevisiae}}
 After the first \emph{S. cerevisiae} genome sequence is published, the first cDNA spotted microarray exploring metabolic gene regulation in 1997 \cite{derisi1997exploring}, and the first commercial platform for oligonucleotide microarray data (Affymetrix) to investigate cellular regulations were reported in 1998 \cite{cho1998parallel}. Existing genome data is integrated with the extensive annotation based on microarray data and biochemical knowledge from literature, leading of the publication of the first GSMM of \emph{S. cerevisiae} in 2003 \cite{forster2003genome}.
 
@@ -251,10 +244,14 @@ The first genome-scale model of S. cerevisiae, iFF708, contained a total of 1175
 From the first model reconstruction, more biologically accurate data were integrated into models such as the logical relationship between genes (GPR associations), the comprehensive conservation of mass and charge through elementally and charge-balanced reactions (proton balance), and the full compartmentalization of metabolites and proteins. iND750, the second genome-scale metabolic model of \emph{S. cerevisiae} contained 1149 unique reactions, 750	genes, 646 metabolites and five additional compartments (peroxisome, nucleus, golgi apparatus, endoplasmic reticulum, and vacuole)\cite{duarte2004reconstruction}.
 
 \begin{figure}[H]
-\includegraphics[width=1\columnwidth]{figures/intro_yeastgemschronology.png}
-\caption[Evolutionary timeline of different yeast species genome-scale metabolic models]{Evolutionary timeline of different yeast species genome-scale metabolic models.}
+\begin{center}
+\includegraphics[width=0.9\columnwidth]{figures/intro_yeastgemschronology.png}
+\caption[Evolutionary timeline of different yeast species genome-scale metabolic models \cite{lopes2017genome}.]{Evolutionary timeline of different yeast species genome-scale metabolic models \cite{lopes2017genome}.}
 \label{fig:intro_yeastgemschronology}
+\end{center}
 \end{figure}
+
+\vspace{-1cm}
 
 Afterwards, the model iLL672 was reconstructed based on the older iFF708 with improved connectivity of the network\cite{kuepfer2005metabolic}. Previous models were reconciled by deleting duplicates and multiple dead-end reactions, resulting a model with a total of 636 metabolites and 1038 reactions. Improvements of the metabolic models are followed by the iIN800 \cite{nookaew2008genome}, which tRNA synthesis, transport processes and a detailed lipid metabolism included.
 
@@ -264,9 +261,11 @@ Corrections to the iMM904 model formed the next model, named iAZ900 containing 9
 
 \begin{figure}[H]
 \includegraphics[width=1\columnwidth]{figures/intro_yeastgemschronology2.png}
-\caption[Published genome-scale models of yeast in gene, reaction, metabolite and compartment numbers]{Published genome-scale models of yeast in gene, reaction, metabolite and compartment numbers.}
+\caption[Published genome-scale models of yeast in gene, reaction, metabolite and compartment numbers\cite{lopes2017genome}.]{Published genome-scale models of yeast in gene, reaction, metabolite and compartment numbers\cite{lopes2017genome}.}
 \label{fig:intro_yeastgemschronology2}
 \end{figure}
+
+\vspace{-1cm}
 
 Yeast1, the first collaboratively constructed consensus genome-scale metabolic network was built using standardized identifiers \cite{herrgaard2008consensus}. The consensus model was cumulatively improved despite its inability to perform computational simulations. With Yeast4 \cite{dobson2010further}, which includes metabolite transport reactions, an improved lipid metabolism (based on iIN800) and improved network connectivity, a consensus model was able perform simulations. Following updates on the consensus model included expansions on the lipid metabolism with Yeast 5 \cite{heavner2012yeast}; improved predictions with Yeast 6\cite{heavner2013version}; and major changes in the fatty acid, glycerolipid, and glycerophospholipid metabolisms with Yeast 7 \cite{aung2013revising} models. The latest version of the consensus model of \emph{S. cerevisiae}, Yeast8 \cite{lu2019consensus}, is released in the last year and continues to be updated by the community.
 

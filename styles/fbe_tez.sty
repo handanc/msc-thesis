@@ -102,7 +102,7 @@
   Bo\u{g}azi\c{c}i University \\ \@subyear\\
   \null}
 %
-\newcommand\formatuptitle{  
+\newcommand\formatuptitle{
   \vspace*{13pt}
 \@title \\%
 \vskip 118pt
@@ -115,10 +115,10 @@ Science and Engineering \\
 %
 \newcommand\formatdowntitle{
   \vskip \baselineskip
-\begin{figure} 
+\begin{figure}
 \includegraphics{./figures/b_logo.png}
-\end{figure} 
-  Bo\u{g}azi\c{c}i University \\ 
+\end{figure}
+  Bo\u{g}azi\c{c}i University \\
   \null}
 %
 \newcommand\relaxtitlestuff{
@@ -137,7 +137,7 @@ Science and Engineering \\
    \begin{center}
    \uptitle
    \submission
-   Master of Science \\ 
+   Master of Science \\
    \downtitle
    \end{center}
    \end{titlepage}
@@ -173,7 +173,7 @@ Science and Engineering \\
   \ifx\@dateofapproval\empty \@@warning{No \string\dateofapproval\space given}\fi
   \vspace*{0.1pt}
   \begin{center} \@title \par \end{center}
-  \vskip 110pt
+  \vskip 100pt
   APPROVED BY: \par
   \vskip 2\baselineskip
   \settowidth{\spv}{\@supervisor}
@@ -195,7 +195,7 @@ Science and Engineering \\
   \hspace*{3.5cm} \= \hspace*{\spv}\hspace*{1em} \= \kill
   \ifx\@supervisor\empty \ifx\@cosuperi\empty \ifx\@cosuperi\empty
      \@@warning{No \string\supervisor\space given} \fi \fi
-  \else \> \@supervisor \> \makebox[35mm]\dotfill \\ 
+  \else \> \@supervisor \> \makebox[35mm]\dotfill \\
      \> (Thesis Supervisor) \\ \> \\ \fi
   \ifx\@cosuperi\empty \else \> \@cosuperi \> \makebox[35mm]\dotfill \\
      \> (Thesis Co-supervisor) \\ \> \\ \fi
@@ -618,7 +618,7 @@ Science and Engineering \\
    \stepcounter{\@mpfn}%
      \begingroup\let\protect\noexpand
        \xdef\@thefnmark{\thempfn}\endgroup
-\let\baselinestretch\@singlespaced 
+\let\baselinestretch\@singlespaced
      \@footnotemark\@footnotetext{#1}
 \let\baselinestretch\@onehalfspaced}
 }

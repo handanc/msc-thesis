@@ -22,13 +22,19 @@ Average enzyme saturation value is set to 50\% where the lowest error rate is ob
   \end{center}
 \end{figure}
 
+\vspace{-1cm}
+
 To prevent over-constraining the model with the enzyme kinetics, the most limiting proteins in the model are found based on their sensitivity on the objective function, i.e., growth, iteratively. In each iteration, the $k_{cat}$ values for the most limiting enzymes are updated with the maximum available values in BRENDA\cite{jeske2019brenda} database. Iterations are repeated until the simulation results for the growth rate agrees with the experimental growth rate with the error less than 10\%. These alterations on the $k_{cat}$ values for enzymes with their objective control coefficients can be found in the Table \ref{table:gecko_iterations}.
 
 \input{tables/gecko_iterations.tex}
 
+\vspace{-0.5cm}
+
 \section{Differential Expression Analysis and Integration}
 
 The obtained expression datasets were quantile-normalized for their own experiments. Three replicates for both reference and the evolved strains for each experiment (exception with the ethanol-b8 strain which has two replicates) is used for the differential expression analysis. The distribution across normalized gene expression levels across each experiment can be seen in the Figure \ref{fig:expr_boxplot}. No further normalization was applied to prevent introducing errors, and datasets are used as obtained from the database.
+
+A statistical threshold (p $<$ 0.05) for the differential analysis of the normalized gene expression levels detected a total of 1606 genes in ethanol-b2, 2947 genes in ethanol-b8, 4743 genes in caffeine, 2267 genes in coniferyl aldehyde, 3448 genes in iron, 152 genes in nickel, 4796 genes in phenylethanol, and 4796 genes in silver-resistant strains differentially expressed.
 
 \begin{figure}[H]
   \begin{center}
@@ -38,19 +44,28 @@ The obtained expression datasets were quantile-normalized for their own experime
   \end{center}
 \end{figure}
 
-A statistical threshold (p $<$ 0.05) for the differential analysis of the normalized gene expression levels detected a total of 1606 genes in ethanol-b2, 2947 genes in ethanol-b8, 4743 genes in caffeine, 2267 genes in coniferyl aldehyde, 3448 genes in iron, 152 genes in nickel, 4796 genes in phenylethanol, and 4796 genes in silver-resistant strains differentially expressed.
+\vspace{-1cm}
 
+To find the commonalities between evolved strains in terms of differentially expressed genes, the overlapping genes (that are differentially expressed significantly, p $<$ 0.05) were grouped together in Figure \ref{fig:intersections_by_degree}, and differentially expressed genes are plotted separately for upregulated and downregulated genes.
 
+Despite the high number of differentially expressed genes in the silver-resistant strain, the intersection with the greatest number of strains discluded it. There were not any common differentially expressed genes considering all strains. The most common genes (as shown in the first bars in Figure \ref{fig:intersections_by_degree}) are reported in Table \ref{table:common_genes}.
 
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/intersections_by_degree.png}
-  \caption[UpSet plot showing the number of common genes that are differentially expressed significantly]{UpSet plot showing the number of common genes that are differentially expressed significantly (p $<$ 0.05) across evolved strains. Connected black circles in the below panel's matrix represents a certain intersection between experiment strains, and the number of genes in that intersection are shown in the top bar graphs. Differentially expressed genes are plotted separately for (A) upregulated genes, and (B) downregulated genes.}
+  \caption[UpSet plot showing the number of common genes that are differentially expressed significantly for (A) upregulated genes, and (B) downregulated genes. Connected black circles in the below panel's matrix represents a certain intersection between experiment strains, and the number of genes in that intersection are shown in the top bar graphs.]{UpSet plot showing the number of common genes that are differentially expressed significantly for (A) upregulated genes, and (B) downregulated genes. Connected black circles in the below panel's matrix represents a certain intersection between experiment strains, and the number of genes in that intersection are shown in the top bar graphs.}
   \label{fig:intersections_by_degree}
   \end{center}
 \end{figure}
 
-Despite the high number of differentially expressed genes in the silver-resistant strain, the intersection with the greatest number of strains discluded it. There were not any common differentially expressed genes considering all strains. The most common genes (as shown in the first bars in the UpSet plot) are reported in Table \ref{table:common_genes}.
+\vspace{-1cm}
+
+
+The log2(fold-change) values of differentially expressed genes and their frequencies are plotted for each experiment in Figure \ref{fig:expr_frequencies_before}. Although the high number of differentially expressed genes are collected from the analysis (1606 genes for ethanol-b2, 2947 genes for ethanol-b8, 4743 genes for caffeine, 2267 genes for coniferyl aldehyde, 152 genes for nickel, 4796 genes for phenylethanol and 4796 genes for silver-resistant strains), due to the limited reaction number in the genome-scale metabolic models, only a part of obtained fold-change expression values were able to be integrated. Because of the limitations in the model, no further cutoff considered for the fold change values.
+
+Total of 277 genes in ethanol-b2, 464 genes in ethanol-b8, 783 genes in caffeine, 374 genes in coniferyl aldehyde, 552 genes in iron, 28 genes in nickel, 759 genes in phenylethanol and 759 genes in silver-resistant strains were integrated into the metabolic model to generate strain-specific models (Figure \ref{fig:expr_frequencies_after}). In comparison, 17.24\% of genes in ethanol-b2, 15.74\% of genes in ethanol-b8, 16.51\% of genes in caffeine	16.50\% of genes in coniferyl aldehyde, 16.01\% of genes in iron, 18.42\% of genes	in nickel, 15.82\% of genes in phenylethanol and 15.82\%  of genes in silver-resistant strains were found as annotated genes in the metabolic model, and they were integrated (Table \ref{table:de_numbers}).
+
+In order to validate the expression data integration method, fluxes for each enzyme draw reaction (i.e., protein flux from protein pool to reaction for each protein) is predicted by flux balance analysis for all the strain models and for the wild-type model (wild-type here is referred as the metabolic model without expression data integrated). Flux ratios between wild-type and evolved models are calculated, and linear regression parameters are fitted after elimination of the outliers by the generalized extreme studentized deviate test to compare the flux-changes with the protein fold-changes from the expression data. Results confirm a good correlation between simulations and protein fold-change values (Figure \ref{fig:expr_linear_regressions}).
 
 \begin{table}[H]
 \small
@@ -69,14 +84,12 @@ Despite the high number of differentially expressed genes in the silver-resistan
   \end{center}
 \end{table}
 
+\vspace{-1cm}
 
-The log2(fold-change) values of differentially expressed genes and their frequencies are plotted for each experiment in Figure \ref{fig:expr_frequencies_before}. Although the high number of differentially expressed genes are collected from the analysis (1606 genes for ethanol-b2, 2947 genes for ethanol-b8, 4743 genes for caffeine, 2267 genes for coniferyl aldehyde, 152 genes for nickel, 4796 genes for phenylethanol and 4796 genes for silver-resistant strains), due to the limited reaction number in the genome-scale metabolic models, only a part of obtained fold-change expression values were able to be integrated. Because of the limitations in the model, no further cutoff considered for the fold change values.
 
-Total of 277 genes in ethanol-b2, 464 genes in ethanol-b8, 783 genes in caffeine, 374 genes in coniferyl aldehyde, 552 genes in iron, 28 genes in nickel, 759 genes in phenylethanol and 759 genes in silver-resistant strains were integrated into the metabolic model to generate strain-specific models (Figure \ref{fig:expr_frequencies_after}).
 
 \input{tables/de_numerics.tex}
 
-In comparison, 17.24\% of genes in ethanol-b2, 15.74\% of genes in ethanol-b8, 16.51\% of genes in caffeine	16.50\% of genes in coniferyl aldehyde, 16.01\% of genes in iron, 18.42\% of genes	in nickel, 15.82\% of genes in phenylethanol and 15.82\%  of genes in silver-resistant strains were found as annotated genes in the metabolic model, and they were integrated (Table \ref{table:de_numbers}).
 
 \begin{figure}[H]
   \begin{center}
@@ -85,7 +98,6 @@ In comparison, 17.24\% of genes in ethanol-b2, 15.74\% of genes in ethanol-b8, 1
   \label{fig:expr_frequencies_before}
   \end{center}
 \end{figure}
-
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/expr_frequencies_after.png}
@@ -93,8 +105,6 @@ In comparison, 17.24\% of genes in ethanol-b2, 15.74\% of genes in ethanol-b8, 1
   \label{fig:expr_frequencies_after}
   \end{center}
 \end{figure}
-
-In order to validate the expression data integration method, fluxes for each enzyme draw reaction (i.e., protein flux from protein pool to reaction for each protein) is predicted by flux balance analysis for all the strain models and for the wild-type model (wild-type here is referred as the metabolic model without expression data integrated). Flux ratios between wild-type and evolved models are calculated, and linear regression parameters are fitted after elimination of the outliers by the generalized extreme studentized deviate test to compare the flux-changes with the protein fold-changes from the expression data. Results confirm a good correlation between simulations and protein fold-change values (Figure \ref{fig:expr_linear_regressions}).
 
 \begin{figure}[H]
   \begin{center}
@@ -128,7 +138,11 @@ Robustness analysis is performed on the wild-type model for the growth rate with
   \end{center}
 \end{figure}
 
-After the validation of the wild-type model, all models for strains are simulated for the growth rates as a function of iteratively increasing glucose uptake rates (Figure \ref{fig:growth_glucose_ales}). Models were able to grow up to the point where the protein accessibility becomes a limiting factor. It has been found that the evolution models except for the caffeine tolerant model show similar patterns on the points where the enzymes become limiting (break points in the lines). Caffeine tolerant model shows different pattern in a way that it can consume more glucose to reach higher growth rates compared to others. Additionally, it must be noted that while only caffeine and coniferyl aldehyde tolerant models can grow at higher rates than wild-type model, ethanol, iron, nickel, phenylethanol and silver models can grow at lower maximum rates. The maximum growth rates and corresponding glucose uptake rates for each model are summarized in the Table \ref{table:growth_glucose_table}.
+\vspace{-1cm}
+
+After the validation of the wild-type model, all models for strains are simulated for the growth rates as a function of iteratively increasing glucose uptake rates (Figure \ref{fig:growth_glucose_ales}). Models were able to grow up to the point where the protein accessibility becomes a limiting factor. It has been found that the evolution models except for the caffeine-resistant strain model show similar patterns on the points where the enzymes become limiting (break points in the lines).
+
+Caffeine-resistant strain model shows different pattern in a way that it can consume more glucose to reach higher growth rates compared to others. Additionally, it must be noted that while only caffeine and coniferyl aldehyde-resistant strain models can grow at higher rates than wild-type model, ethanol, iron, nickel, phenylethanol and silver models can grow at lower maximum rates. The maximum growth rates and corresponding glucose uptake rates for each model are summarized in the Table \ref{table:growth_glucose_table}.
 
 \begin{figure}[H]
   \begin{center}
@@ -137,13 +151,18 @@ After the validation of the wild-type model, all models for strains are simulate
   \label{fig:growth_glucose_ales}
   \end{center}
   \end{figure}
+
 \vspace{-1.0cm}
 
 \input{tables/gur_growth.tex}
 
+\vspace{-1cm}
+
 When the analysis results of the evolved strains were investigated within themselves, several novel behaviors are observed. Reactions that are only used in evolved strains individually and that are deactivated compared to reference strain is collected in Table \ref{table:active_deactive_rxns}. One reaction is found to be activated in all evolved strains while it is inactive in the reference strain was acetaldehyde uptake reaction. Since it is an exchange reaction which transports acetaldehyde between extracellular matrix and the cell, it does not have any gene annotations. Contrarily, the NDE2 isozyme draw reaction (to form NADH dehydrogenase) did not carry any flux in all evolved strains. Compared to the differential expression analysis, NDE2 was surprisingly upregulated and NDE1 was downregulated for almost all evolved strain, except the silver-resistant strain.
 
 \input{tables/active_deactive_rxns.tex}
+
+\vspace{-1cm}
 
 \subsection{Comparison of Exchange Fluxes Across ALE}
 
@@ -152,24 +171,28 @@ Exchange reaction fluxes for uptake and secretion of the metabolites are compare
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/fba_exchanges_1.png}
-  \caption[Exchange fluxes of water, carbon dioxide, ethanol and formate secretion as a function of iteratively increasing glucose uptake rates]{Exchange fluxes of water uptake, carbon dioxide secretion, ethanol production and formate secretion as a function of iteratively increasing glucose uptake rates}
+  \caption[Exchange fluxes of water, carbon dioxide, ethanol and formate secretion as a function of iteratively increasing glucose uptake rates]{Exchange fluxes of water uptake, carbon dioxide, ethanol production and formate secretion as a function of iteratively increasing glucose uptake rates.}
   \label{fig:fba_exchanges_1}
   \end{center}
   \end{figure}
-\vspace{-1.0cm}
+
+\vspace{-0.5cm}
 
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/fba_exchanges_2.png}
-  \caption[Exchange fluxes of hydrogen and phosphate uptakes (on the left) and secretions (on the right) as a function of iteratively increasing glucose uptake rates]{Exchange fluxes of hydrogen and phosphate uptakes (on left) and secretions (on right) as a function of iteratively increasing glucose uptake rates}
+  \caption[Exchange fluxes of hydrogen and phosphate uptakes (on the left) and secretions (on the right) as a function of iteratively increasing glucose uptake rates]{Exchange fluxes of hydrogen and phosphate uptakes (on left) and secretions (on right) as a function of iteratively increasing glucose uptake rates.}
   \label{fig:fba_exchanges_2}
   \end{center}
   \end{figure}
+
 \vspace{-1.0cm}
 
 When the glucose uptake rate exceeds 20 mmol/gDWh\textsuperscript{-1}, models start to respirate as it can be understood from the water production plot. However, silver and caffeine-resistant models show a different behavioral pattern as either they start to respirate at higher glucose uptake rates (around 30 mmol/gDWh\textsuperscript{-1}) or they undergo a metabolic change that causes them to decrease water production. This behavior can be further  investigated with the oxidative phosphorylation fluxes.
 
-All exchange reactions that carry flux in all models are reported in Figure \ref{fig:fba_exchanges_3}. One should remember that too small numeric values in metabolic fluxes (for example, L-lysine secretion reaction flux is calculated as 10\textsuperscript{-17} mmol/gDWh\textsuperscript{-1}) are biologically meaningless. Therefore, such reactions should not be taken into account when comparing evolved strains. Other insignificant results are the reactions that have the same flux value for both secretion and uptake fluxes, with net flux of 0 mmol/gDWh\textsuperscript{-1}. These results arise from the loops that occur in linear programming (see Methods section for details). Flux values of exchange reactions will be discussed in the discussion chapter.
+All exchange reactions that carry flux in all models are reported in Figure \ref{fig:fba_exchanges_3}. One should remember that too small numeric values in metabolic fluxes (for example, L-lysine secretion reaction flux is calculated as 10\textsuperscript{-17} mmol/gDWh\textsuperscript{-1}) are biologically meaningless. Therefore, such reactions should not be taken into account when comparing evolved strains. Other insignificant results are the reactions that have the same flux value for both secretion and uptake fluxes, with net flux of 0 mmol/gDWh\textsuperscript{-1}. These results arise from the loops that occur in linear programming (see Methods section for details). Flux values of exchange reactions will be discussed in the next chapter.
+
+Similar to the previous results of the iterative simulations on increasing glucose uptake rates (Figure \ref{fig:growth_glucose_ales}), the most distinguished results were collected from the caffeine and silver-resistant strains' simulations. While silver-resistant strain is found to be able to secrete higher amounts of acetate and ethanol, its growth rate shorts fall compared to other strains. caffeine-resistant strain on the other hand, uses its resources to grow at higher rates and, therefore, its secretion rates are almost equal to average of other strains including the reference strain.
 
 \begin{figure}[H]
   \begin{center}
@@ -194,23 +217,14 @@ Robustness analysis is performed on all models for the growth rate with the vary
   \label{fig:robustness_ale}
   \end{center}
   \end{figure}
-\vspace{-2.0cm}
 
-Similar to the previous results of the iterative simulations on increasing glucose uptake rates (Figure \ref{fig:growth_glucose_ales}), the most distinguished results were collected from the caffeine and silver-resistant strains' simulations. While silver-resistant strain is found to be able to secrete higher amounts of acetate and ethanol, its growth rate shorts fall compared to other strains. caffeine-resistant strain on the other hand, uses its resources to grow at higher rates and, therefore, its secretion rates are almost equal to average of other strains including the reference strain.
 
 \subsection{Phenotype Phase Planes}
 
 Phenotype phase planes are obtained through double robustness analysis to see the effect of oxygen on growth while the systems are fed with the gradually increasing glucose levels. Contour plots showing different regions can be seen in the Figure \ref{fig:robustness_glu_oxy}. Minimum and maximum values of oxygen uptake rates (y-axis) and glucose uptake rates (x-axis) are kept same in all 8 plots to be able to observe growth capacity of different resistant models clearly.
 
-\begin{figure}
-  \begin{center}
-  \includegraphics[width=0.85\columnwidth]{figures/robustness_glu_oxy.png}
-  \caption[The glucose uptake rate (mmol/gDWh) versus oxygen uptake rate (mmol/gDWh) phenotype phase planes show the cellular growth rate as colored contours for each adapted model simulations]{The glucose uptake rate (mmol/gDWh) versus oxygen uptake rate (mmol/gDWh) phenotype phase planes show the cellular growth rate as colored contours for each adapted model simulations. Maximum points are shown as red cross.}
-  \label{fig:robustness_glu_oxy}
-  \end{center}
-  \end{figure}
+Since the total area of the plots are the same (x-axis and y-axis ranges), available growth of models can be compared. On the low glucose uptake rates, growth rate contours have steep slopes for all models. They reach the growth rate of 0.3 h\textsuperscript{-1} when the glucose uptake rates are varying between 5-10 mmol/gDWh. Despite having the highest possible growth rate at 0.46497 h\textsuperscript{-1}, caffeine-resistant model has the smallest area to produce biomass. It cannot grow if the oxygen uptake rate is higher than 25 mmol/gDWh, making it sensitive hyperoxic conditions. silver-resistant model on the other hand is able to grow at high rates of both oxygen and glucose uptake rates. Ranges for the glucose and oxygen uptake rates can be found in the Table \ref{table:gur_o2_ranges}
 
- Since the total area of the plots are the same (x-axis and y-axis ranges), available growth of models can be compared. On the low glucose uptake rates, growth rate contours have steep slopes for all models. They reach the growth rate of 0.3 h\textsuperscript{-1} when the glucose uptake rates are varying between 5-10 mmol/gDWh. Despite having the highest possible growth rate at 0.46497 h\textsuperscript{-1}, caffeine-resistant model has the smallest area to produce biomass. It cannot grow if the oxygen uptake rate is higher than 25 mmol/gDWh, making it sensitive hyperoxic conditions. silver-resistant model on the other hand is able to grow at high rates of both oxygen and glucose uptake rates. Ranges for the glucose and oxygen uptake rates can be found in the Table \ref{table:gur_o2_ranges}
 
  \begin{table}[H]
  \small
@@ -218,7 +232,8 @@ Phenotype phase planes are obtained through double robustness analysis to see th
    \begin{center}
    \caption[Glucose and oxygen uptake rate ranges (mmol/gDWh) at the point where growth rate is 0.3 h\textsuperscript{-1} for all strains]{Glucose and oxygen uptake rate ranges (mmol/gDWh) at the point where growth rate is 0.3 h\textsuperscript{-1} for all strains.}
      \vspace{5mm}
-   \begin{tabular}{ccccc}
+   \begin{tabular}{|c|c|c|c|c|}
+     \hline
  \textbf{ALE Experiment} & \textbf{GUR range} & \textbf{GUR difference} & \textbf{O2 range} & \textbf{O2 difference} \\ \hline
  b2-ethanol                & 5 - 34             & 29                      & 2 - 12            & 10                     \\
  b8-ethanol                & 6 - 32             & 26                      & 2 - 10            & 8                      \\
@@ -228,16 +243,28 @@ Phenotype phase planes are obtained through double robustness analysis to see th
  nickel                   & 5 - 46             & 41                      & 2 - 16            & 14                     \\
  phenylethanol            & 8 - 31             & 23                      & 2 - 7             & 5                      \\
  silver                   & 7 - 50             & 43                      & 2 - 16            & 14                     \\
- reference                 & 5 - 47             & 42                      & 2 - 16            & 14
+ reference                 & 5 - 47             & 42                      & 2 - 16            & 14 \\ \hline
  \end{tabular}
  \label{table:gur_o2_ranges}
  \end{center}
 \end{table}
 
+\vspace{-1.0cm}
+
+\begin{figure}[H]
+  \begin{center}
+  \includegraphics[width=0.85\columnwidth]{figures/robustness_glu_oxy.png}
+  \caption[The glucose uptake rate (mmol/gDWh) versus oxygen uptake rate (mmol/gDWh) phenotype phase planes show the cellular growth rate as colored contours for each adapted model simulations]{The glucose uptake rate (mmol/gDWh) versus oxygen uptake rate (mmol/gDWh) phenotype phase planes show the cellular growth rate as colored contours for each adapted model simulations. Maximum points are shown as red cross.}
+  \label{fig:robustness_glu_oxy}
+  \end{center}
+  \end{figure}
+
 
  \subsection{Cumulative Fluxes}
 
 In order to characterize the differentiating reactions in the flux balance analysis results, cumulative flux vectors of each experiment are plotted (Figure \ref{fig:cumflux_free}). It must be remembered that at this point, the only constraint applied to the models is the level of enzymes available in the enzyme pool. In other words, the models are able to allocate enzymes as the reactions require while all other sources (carbon, nitrogen, etc.) are unlimited. Standard deviations for each reaction between strains are calculated to find most diverging points and plotted as a bar graph.
+
+Reactions with the standard deviation values more than 10 mmol/gDWh are listed in Table \ref{table:cumulative_free_stds}. The same reactions with different numbers in their names use different enzymes. For example, glyceraldehyde-3-phosphate dehydrogenase (GADPH) reaction can be carried out in the presence of YGR192C or YJL052W or YJR009C genes' proteins, in other words, TDH1 or TDH2 or TDH3 isozymes. Therefore, there are three versions of the same reaction (specified with the numbers in pharantheses), using different enzymes. It must be noted that these multiple reactions carried out with isozymes in the metabolic model may not mean a significant difference if the enzymes do not catalyze any other reaction. This means that the chosen isozyme may not matter mathematically if the flux value across the isozyme reactions are the same.
 
 \begin{figure}[H]
   \begin{center}
@@ -247,11 +274,6 @@ In order to characterize the differentiating reactions in the flux balance analy
   \end{center}
 \end{figure}
 
-Reactions with the standard deviation values more than 10 mmol/gDWh are listed in Table \ref{table:cumulative_free_stds}. The same reactions with different numbers in their names use different enzymes. For example, glyceraldehyde-3-phosphate dehydrogenase (GADPH) reaction can be carried out in the presence of YGR192C or YJL052W or YJR009C genes' proteins, in other words, TDH1 or TDH2 or TDH3 isozymes. Therefore, there are three versions of the same reaction (specified with the numbers in pharantheses), using different enzymes. It must be noted that these multiple reactions carried out with isozymes in the metabolic model may not mean a significant difference if the enzymes do not catalyze any other reaction. This means that the chosen isozyme may not matter mathematically if the flux value across the isozyme reactions are the same.
-\input{tables/cumulative_free_stds.tex}
-
-Because of the reason behind the differentiation, i.e., it is mostly caused by different uptake values of glucose, cumulative flux vectors of each experiment are plotted once more when the boundaries of the glucose uptake reaction is constrained to 10 gDWh\textsuperscript{-1} for each model (Figure \ref{fig:cumflux_gur10}). This has done to eliminate the differences caused by the free glucose uptake rates (as shown in below section, each model can uptake different maximum amount of glucose) and therefore affecting the downstream reaction fluxes.
-
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/cumflux_gur10.png}
@@ -260,9 +282,22 @@ Because of the reason behind the differentiation, i.e., it is mostly caused by d
   \end{center}
 \end{figure}
 
+\vspace{-1.0cm}
+
+Because of the reason behind the differentiation, i.e., it is mostly caused by different uptake values of glucose, cumulative flux vectors of each experiment are plotted once more when the boundaries of the glucose uptake reaction is constrained to 10 gDWh\textsuperscript{-1} for each model (Figure \ref{fig:cumflux_gur10}). This has done to eliminate the differences caused by the free glucose uptake rates (as shown in below section, each model can uptake different maximum amount of glucose) and therefore affecting the downstream reaction fluxes.
+
 Reactions with the standard deviation values more than 5 mmol/gDWh are listed in Table \ref{table:cumulative_free_stds}. Despite the decrease in the flux values (caused by the lower uptake rates of glucose), the top divergent reactions obtained are in agreement with the no-constraint flux balance analysis results.
 
+\input{tables/cumulative_free_stds.tex}
+
+\vspace{-1.0cm}
+
+
+
+
 \input{tables/cumulative_gur10_stds.tex}
+
+\vspace{-1.0cm}
 
 Finally, only the arm reactions (where the isozyme reactions were separated from, see Methods) where the glucose uptake rate is constrained to 10 mmol/gDWh are plotted as heatmap in Figure \ref{fig:fba_heatmap}. Arm reactions in this context refer to the combined reactions that normally have multiple sub-reactions because of isozymes catalyzing the same reaction. As it can be seen from the previous tables, most of the differences were caused by the isozymes with the flux values close to each other. By considering only arm reactions and a fixed glucose uptake rate, the reactions that actually differ because of the expression integration are found.
 
@@ -274,7 +309,9 @@ Finally, only the arm reactions (where the isozyme reactions were separated from
   \end{center}
 \end{figure}
 
-Overall, the most divergent strain can be seen as silver-resistant strain while the nickel strain has the closest values to the reference model as expected considering the integrated expression data. The highest deviation caused in the water diffusion from mitochondria to cytoplasm indicates that even at the same glucose feeding rates, phenylethanol-resistant strain requires higher (89.5\%) water in the mitochondria. Followed with the ferrocytochrome-c:oxygen oxidoreductase, pyruvate decarboxylase reactions and different exchange reactions (such as CO2, H+), the results conclude that the models of evolved strains follow different paths to produce biomass with the same environmental conditions provided.
+\vspace{-1.0cm}
+
+Overall, the most divergent strain can be seen as silver-resistant strain while the nickel strain has the closest values to the reference model as expected. The highest deviation caused in the water diffusion from mitochondria to cytoplasm indicates that even at the same glucose feeding rates, phenylethanol-resistant strain requires higher (89.5\%) water in the mitochondria. Followed with the ferrocytochrome-c:oxygen oxidoreductase, pyruvate decarboxylase reactions and different exchange reactions (such as CO2, H+), the results conclude that the models of evolved strains follow different paths to produce biomass with the same environmental conditions provided.
 
 
  \subsection{Hierarchical Relationships}
@@ -289,11 +326,22 @@ As these different models belong to evolved strains, hierarchical relationship b
   \end{center}
 \end{figure}
 
+\vspace{-1.0cm}
+
 \subsection{Gene Regulation}
 
 Despite the high correlation between the fold changes obtained from differential expression analysis and the flux balance analyses for particular enzymes, outliers must be investigated for the indirect regulation of enzymes. Three groups can be formed for these: Firstly, enzymes may show transcriptional regulation behaviors (TR) if their flux fold changes (between evolved and reference strain models) correlate with the differential gene expression results. Secondly, enzymes may show metabolic regulation behaviors (MR) if the flux change is observed even in the absences of the expressional changes. And lastly, enzymes may show post-transcriptional regulation behaviors (PR) if their expression levels change without showing any flux changes (Table \ref{table:regulation_table}). One should remember that only 965 enzymes exist in a metabolic model and the values for the non-differentially expressed enzymes are assigned as 1 to show no change. Enzymes that have all the required values for the regulation decision calculation are collected in the Figure \ref{fig:fba_regulation3}.
 
-\vskip 1\baselineskip
+\begin{figure}[H]
+  \begin{center}
+  \includegraphics[width=1\columnwidth]{figures/regulation.png}
+  \caption[Regulation of enzymes according to decision table shown as heatmap.]{Regulation of enzymes according to the table \ref{table:regulation_table} shown as heatmap.}
+  \label{fig:fba_regulation3}
+  \end{center}
+\end{figure}
+
+\vspace{-1.0cm}
+
 \begin{table}[H]
 \begin{center}
 \caption[Enzymatic regulation decision table of expressional fold change (from differential analysis) and flux fold change (from flux balance analysis) comparison.]{Enzymatic regulation decision table \cite{bordel2010sampling} of expressional fold change (from differential analysis) and flux fold change (from flux balance analysis) comparison.}
@@ -310,22 +358,17 @@ Despite the high correlation between the fold changes obtained from differential
 \end{center}
 \end{table}
 
-\begin{figure}[H]
-  \begin{center}
-  \includegraphics[width=1\columnwidth]{figures/regulation.png}
-  \caption[Regulation of enzymes according to decision table shown as heatmap.]{Regulation of enzymes according to the table \ref{table:regulation_table} shown as heatmap.}
-  \label{fig:fba_regulation3}
-  \end{center}
-\end{figure}
+\vspace{-1.0cm}
 
 Unfortunately, only the enzymes that carry a flux value in the FBA simulations (under no constraint on the exchange metabolites) of the reference strain were able to provide a fold change value, therefore, the enzymes with zero fluxes were discluded from the comparison. It is found that only three enzymes, MET2 (homoserine O-acetyltransferase), OLE1 (stearoyl-CoA 9-desaturase), and ACH1 (acetyl-CoA hydrolase), were transcriptionally regulated in all evolved strains. This means at least one of the strains' simulations did not correlate  with the expressional results. In nickel-resistant strain, almost all the enzymes were regulated within metabolic states as expected considering the lack of high numbers of the differential expression input. Total of 20 enzymes show metabolic regulation in all strains: QCR6 (ubiquinol-cytochrome-c reductase subunit 6), ATP8 (F1F0 ATP synthase subunit 8), COX9 (cytochrome c oxidase subunit VIIa), ERG12 (mevalonate kinase), QCR8 (ubiquinol-cytochrome-c reductase subunit 8), PYC1 (pyruvate carboxylase 1), OSM1 (fumarate reductase), QCR9 (ubiquinol-cytochrome-c reductase subunit 9), ERG8 (phosphomevalonate kinase), ERG9 (bifunctional farnesyl-diphosphate farnesyltransferase/squalene synthase), QCR10 (ubiquinol--cytochrome-c reductase subunit 10), PSD1 (phosphatidylserine decarboxylase 1), FOL2 (GTP cyclohydrolase I), PMT5 (putative dolichyl-phosphate-mannose-protein mannosyltransferase), COX12 (cytochrome c oxidase subunit VIb), ABZ2 (aminodeoxychorismate lyase ABZ2), INM2 (inositol monophosphate 1-phosphatase), YLL058W (cystathionine gamma-synthase), ATP14 (F1F0 ATP synthase subunit h), RIB2 (bifunctional DRAP deaminase/tRNA pseudouridine synthase).
 
 \subsection{Shadow Prices}
 Shadow prices are calculated by solving the optimization problem for the objective function (growth rate) by increasing the upper constraints by one unit for all reactions. This way, the sensitivity of the reactions to the growth rate is calculated for all models. In Table \ref{table:fba_shadowprices_free_table}, the shadow prices of the reactions that limit the growth rate and their values can be seen. Only the reactions that has a higher negative value compared to growth reaction are included in the table. The values for each reaction are divided to the wild-type model's shadow price values to uncover the adaptive evolution effects and plotted in Figure \ref{fig:fba_shadowprices_free}.
 
-\vskip 1\baselineskip
+\vspace{0.2cm}
 \input{tables/fba_shadowprices.tex}
 
+\vspace{-1.0cm}
 
 Shadow prices of metabolites show us that the metabolites zymosterol, ergosta-5,7,22,24(28)-tetraen-3beta-ol, ergosterol, lanosterol, 14-demethyllanosterol, biotin, riboflavin, flavin mononucleotide (FMN), 5-formyltetrahydrofolic acid, 4-aminobenzoate and hexanoate are the most required metabolites in the media to increase growth rate in all models, in the order of their mean values across models. Although all the models would increase their biomass production with these metabolites supplied, increment amounts would differ for each model. While the silver-resistant model would increase its growth rate by 250\% with biotin supplement, phenylethanol-resistant model could only achieve 33\% increase.
 
@@ -337,47 +380,50 @@ Shadow prices of metabolites show us that the metabolites zymosterol, ergosta-5,
   \end{center}
 \end{figure}
 
+\vspace{-1.0cm}
+
 Sensitivity of silver-resistant strain to biotin showed an increase almost 2.5 fold whereas caffeine, nickel and phenylethanol-resistant strains decreased their sensitivities down 4 folds. FMN and riboflavin sensitivities resulted almost the same in all strains because their reactions are defined as a chain reaction in the model, therefore they carry the same flux values and shadow prices. The same can also applied to the reactions of ergosterol, and ergosta-5,7,22,24(28)-tetraen-3beta-ol which is the product of ergosterol oxidation. Zymosterol of cholesterol biosynthesis pathway, 4-aminobenzoate in folate biosynthesis, and 5-formyltetrahydrofolic acid which is folate coenzyme, are also showed high shadow prices.
 
 Reported metabolites with increased or decreased sensitivities direct us to investigate metabolic changes in the energy maintenance reactions (especially coenzyme-A and FAD utilization), cell division pathway, and cell wall formation reactions (sterol and cholesterol biosynthesis).
 
 \subsection{Co-factor Production}
-When we look at the main ATP producing reactions in the metabolic models, we see the pyruvate kinase (Eq. \ref{eq:PK}),
+When we look at the main ATP producing reactions in the metabolic models, we see the pyruvate kinase,
 \begin{align}
-\label{eq:PK}
 \ ADP + H^+ + phosphoenolpyruvate \xrightarrow{PK} ATP + pyruvate
 \end{align}
-phosphoglycerate kinase (Eq. \ref{eq:PGK1}),
+phosphoglycerate kinase,
 \begin{align}
 \begin{split}
-\label{eq:PGK1}
 \ 1,3-bisphospho-D-glycerate + ADP  \xrightarrow{PGK1} \\
 \ 3-phosphonato-D-glycerate^{3-} + ATP
 \end{split}
 \end{align}
-and ATP synthase for the oxidative phosphorylation (Eq. \ref{eq:atpsynthase}),
+and, ATP synthase for the oxidative phosphorylation,
 \begin{align}
 \begin{split}
-\label{eq:atpsynthase}
 \ ADP + 3 H^+ + phosphate   \xrightarrow{ATP synthase}  ATP + 2 H^+ + H2O
 \end{split}
 \end{align}
-are carries flux and actively used. Comparison between flux values through these ATP producing reactions under both free system (where the only constraint is the availability of protein levels, no constraint on glucose uptake) and constrained system (where glucose uptake rate is constrained to maximum 10 mmol/gDWh) can be found in Table \ref{table:fba_atp_production}.
-
-\vskip 1\baselineskip
-\input{tables/fba_atp_production.tex}
+are the reactions that carry flux and actively used. Comparison between flux values through these ATP producing reactions under both free system (where the only constraint is the availability of protein levels, no constraint on glucose uptake) and constrained system (where glucose uptake rate is constrained to maximum 10 mmol/gDWh) can be found in Table \ref{table:fba_atp_production}.
 
 Total values of ATP production do not differ when the carbon supply is almost the same for all models. On the other hand, if we compare the simulation under free carbon source (NC columns), differences arise. Interestingly, caffeine and phenylethanol-resistant models do not prefer to produce ATP through the oxidative phosphorylation (ATP synthase) under free carbon source condition. We should consider maximum growth rate and glucose uptake rate for these models, therefore Figure \ref{fig:fba_gro_glu_atp} is created with the values from Table \ref{table:growth_glucose_table}.
 
+\vspace{0.5cm}
+\input{tables/fba_atp_production.tex}
+
 \begin{figure}[H]
   \begin{center}
-  \includegraphics[width=1\columnwidth]{figures/fba_gro_glu_atp.png}
-  \caption[Glucose uptake rates and total fluxes through ATP producing reactions are plotted with least-squares lines. Growth rates are shown as bar graphs.]{Glucose uptake rates and total fluxes through ATP producing reactions are plotted with least-squares lines. Growth rates are shown as bars on the secondary y-axis.}
+  \includegraphics[width=0.95\columnwidth]{figures/fba_gro_glu_atp.png}
+  \caption[Glucose uptake rates and total fluxes through ATP producing reactions are plotted with least-squares lines. Growth rates are shown as bar graphs on the secondary y-axis on the right.]{Glucose uptake rates and total fluxes through ATP producing reactions are plotted with least-squares lines. Growth rates are shown as bar graphs on the secondary y-axis on the right.}
   \label{fig:fba_gro_glu_atp}
   \end{center}
 \end{figure}
 
+\vspace{-1cm}
+
 As expected for the caffeine-resistant model which has the highest glucose uptake rate and the total ATP production flux, it has the highest growth rate among all models. silver-resistant model, however, has a lower growth rate despite having the second highest glucose uptake rate and total ATP production flux. Despite the low fluxes on the glucose uptake and ATP production, the iron-resistant model shows high growth rate. The similar values from the reference strain and nickel-resistant models were also expected since the lowest amount of gene expression information was integrated for the nickel-resistant model, making it the least differentiated model from the reference strain.
+
+When we look at the total coenzymes NAD, NADP, FAD consumptions and the glutathione metabolism fluxes, similar results to the ATP regulations are observed with the exception of a significant difference on the glutathione metabolism in the silver-resistant model. When the glucose uptake rate is constrained same for all models, we have collected similar results from all models. Surprisingly, the silver-resistant model was not able to carry high fluxes through glutathione metabolism under the same glucose uptake rate conditions. This could explain why the silver-resistant model was unable to grow at high rates despite carrying high fluxes on the glucose uptake and ATP producing reactions (Figure \ref{fig:fba_gro_glu_atp}).
 
 \begin{figure}[H]
   \begin{center}
@@ -389,11 +435,11 @@ As expected for the caffeine-resistant model which has the highest glucose uptak
   \end{center}
 \end{figure}
 
-When we look at the total coenzymes NAD, NADP, FAD consumptions and the glutathione metabolism fluxes, similar results to the ATP regulations are observed with the exception of a significant difference on the glutathione metabolism in the silver-resistant model. When the glucose uptake rate is constrained same for all models, we have collected similar results from all models. Surprisingly, the silver-resistant model was not able to carry high fluxes through glutathione metabolism under the same glucose uptake rate conditions. This could explain why the silver-resistant model was unable to grow at high rates despite carrying high fluxes on the glucose uptake and ATP producing reactions (Figure \ref{fig:fba_gro_glu_atp}).
 
+\vspace{-1cm}
 
 \subsection{Amino Acid Biosynthesis}
-Flux distribution within the amino acid biosynthesis subsystem in the models are collected in the Table \ref{table:aminoacids_free}. The reactions enolase, phosphoglycerate mutase, pyruvate kinase, glyceraldehyde-3-phosphate dehydrogenase are the most active reactions in the amino acid biosynthesis. Although most of the flux values are in parallel with the corresponding glucose uptake rates, some differences are observed. 2-isopropylmalate synthase enzyme is only used by coniferyl aldehyde andiron-resistant models. While caffeine-resistant model chooses to use 3-deoxy-D-arabino-heptulosonate 7-phosphate synthetase enzyme, all other models carry their fluxes through 2-deoxy-D-arabino-heptulosonate 7-phosphate synthetase. The caffeine-resistant model also does not carry a flux through phosphoglycerate dehydrogenase. And most interestingly, the silver-resistant model carries flux in the reverse direction through transketolase 1 and transketolase 2 reactions (Eq. \ref{eq:transketolase} shows the forward directions) with lower values.
+Flux distribution within the amino acid biosynthesis subsystem in the models are collected in the Table \ref{table:aminoacids_free}. The reactions enolase, phosphoglycerate mutase, pyruvate kinase, glyceraldehyde-3-phosphate dehydrogenase are the most active reactions in the amino acid biosynthesis. Although most of the flux values are in parallel with the corresponding glucose uptake rates, some differences are observed. 2-isopropylmalate synthase enzyme is only used by coniferyl aldehyde andiron-resistant models. While caffeine-resistant model chooses to use 3-deoxy-D-arabino-heptulosonate 7-phosphate synthetase enzyme, all other models carry their fluxes through 2-deoxy-D-arabino-heptulosonate 7-phosphate synthetase. The caffeine-resistant model also does not carry a flux through phosphoglycerate dehydrogenase. And most interestingly, the silver-resistant model carries flux with lower values in the reverse direction through transketolase 1 and transketolase 2 reactions,
 \begin{align}
 \begin{split}
 \label{eq:transketolase}
@@ -404,17 +450,19 @@ Flux distribution within the amino acid biosynthesis subsystem in the models are
 \ D-fructose-6-phosphate + glyceraldehyde-3-phosphate
 \end{split}
 \end{align}
+as the forward direction is shown.
 
 \vskip 1\baselineskip
 \input{tables/fba_aminoacids.tex}
 
 \subsection{Precursor Metabolites for Biomass Production}
 In the metabolic model, there are 12 branch-point metabolites that are considered as the precursor metabolites for the central carbon metabolism in the network. Producing and consuming reactions of these 12 precursor metabolites (Table \ref{table:12precursors}) are investigated individually for all models.
-
+\vspace{0.2cm}
 \begin{table}[H]
 \caption[The 12 precursor (branchpoint) metabolites for biomass production]{The 12 precursor (branchpoint) metabolites for biomass production.}
+\vspace{0.2cm}
 \setlength{\tabcolsep}{4pt}
-\resizebox{\textwidth}{!}{\begin{tabular}{clcl}
+\resizebox{\textwidth}{!}{\begin{tabular}{|c|l|c|l|}
 \hline
 \textbf{\#} & \textbf{Metabolite}           & \textbf{Abbreviation} & \textbf{Building Blocks Produced}         \\ \hline
 1               & D-glucose-6-phosphate         & G6P                   & glycogen, LPS                             \\
@@ -433,9 +481,10 @@ In the metabolic model, there are 12 branch-point metabolites that are considere
 \label{table:12precursors}
 \end{table}
 
-For the first precursor metabolite, D-glucose-6-phosphate (equation \ref{eq:12hexokinase}), only hexokinase reaction produces the metabolite,
+\vspace{-0.5cm}
+
+For the first precursor metabolite, D-glucose-6-phosphate, only hexokinase reaction produces the metabolite,
 \begin{align}
-\label{eq:12hexokinase}
 \ ATP + \text{D-glucose} \xrightarrow{hexokinase} ADP + \text{D-glucose 6-phosphate} + \text{H+}
 \end{align}
 and the flux values for all models is the same at the provided glucose uptake rate (in this case, 10 mmol/gDWh). The main difference is the activated gene for the reaction: While the silver-resistant model prefers to use the enzyme HXK1 (YFR053C), phenylethanol-resistant model uses the enzyme HXK2 (YGL253W), while all the other models use EMI2 (YDR516C) for the same reaction activity.
@@ -447,11 +496,12 @@ Producing and consuming reaction fluxes for the metabolite D-fructose-6-phosphat
 \begin{table}[H]
 \vspace{0.5cm}
 \caption[Producing and consuming reaction fluxes for the metabolite D-fructose-6-phosphate (F6P).]{Producing and consuming reaction fluxes for the metabolite D-fructose-6-phosphate (F6P).}
+\vspace{0.2cm}
 \setlength{\tabcolsep}{4pt}
 \resizebox{\textwidth}{!}{
-\begin{tabular}{cllccccccccc}
+\begin{tabular}{|cllccccccccc|}
 \hline
-\multicolumn{1}{l}{F6P} & Reaction Name                      & Genes                                                       & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
+\multicolumn{1}{|l}{F6P} & Reaction Name                      & Genes                                                       & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
 \multirow{2}{*}{\rotatebox[origin=c]{90}{Prod.}}    & \begin{tabular}[l]{@{}l@{}}glucose-6-phosphate \\ isomerase\end{tabular} & PGI1                                                     & 7.95      & 8.01      & 7.62     & 7.82                                                          & 7.85 & 7.87   & 7.88                                                      & 9.22   & 7.88     \\
                         & transketolase 2               & TKL1                                                     & 0.39      & 0.38      & 0.50     & 0.42                                                          & 0.41 & 0.41   & 0.43                                                      & 0      & 0.41     \\ \hline
 \multirow{3}{*}{\rotatebox[origin=c]{90}{Consuming}}    & transaldolase                 & \begin{tabular}[c]{@{}l@{}}TAL1, \\ NQM1\end{tabular} & 8.12      & 8.17      & 7.90     & 7.99                                                          & 8.02 & 8.04   & 8.10                                                      & 9.00   & 8.05     \\
@@ -461,18 +511,23 @@ Producing and consuming reaction fluxes for the metabolite D-fructose-6-phosphat
 \label{table:12F6P}
 \end{table}
 
+\vspace{-0.5cm}
+
 The metabolite d-ribulose-5-phosphate (R5P) is produced by the phosphogluconate dehydrogenase reaction that has two isozymes acting on it, GND1 (YHR183W) and GND2 (YGR256W). From the evolved model simulations, caffeine, coniferyl aldehyde, iron, nickel and phenylethanol-resistant models use the GND1 isozyme while b2-ethanol, b8-ethanol and silver-resistant models use the GND2 isozyme.
+
+\vspace{1cm}
 
 Ribulose 5-phosphate 3-epimerase and ribose-5-phosphate isomerase reactions are the only active reactions for the consumption of the metabolite R5P. Flux values of both production and consumption rates can be found in the Table \ref{table:12R5P}.
 
 \begin{table}[H]
 \vspace{0.5cm}
 \caption[Producing and consuming reaction fluxes for the metabolite d-ribulose-5-phosphate (R5P).]{Producing and consuming reaction fluxes for the metabolite d-ribulose-5-phosphate (R5P).}
+\vspace{0.2cm}
 \setlength{\tabcolsep}{4pt}
 \resizebox{\textwidth}{!}{
-\begin{tabular}{clcccccccccc}
+\begin{tabular}{|clcccccccccc|}
 \hline
-\multicolumn{1}{l}{R5P} & Reaction                                                                                 & Genes   & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
+\multicolumn{1}{|l}{R5P} & Reaction                                                                                 & Genes   & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
 \multirow{2}{*}{\rotatebox[origin=c]{90}{Prod.}}    & phosphogluconate dehydrogenase                                                           & GND1 & 0         & 0         & 1.86     & 1.63                                                          & 1.60 & 1.58   & 1.63                                                      & 0      & 1.58     \\
                         & phosphogluconate dehydrogenase                                                           & GND2 & 1.52      & 1.48      & 0        & 0                                                             & 0    & 0      & 0                                                         & 0.30   & 0        \\ \hline
 \multirow{3}{*}{\rotatebox[origin=c]{90}{Consuming}}    & ribulose 5-phosphate 3-epimerase                                                         & YJL121C & 0.90      & 0.87      & 1.12     & 0.96                                                          & 0.94 & 0.93   & 0.98                                                      & 0.09   & 0.93     \\
@@ -482,22 +537,19 @@ Ribulose 5-phosphate 3-epimerase and ribose-5-phosphate isomerase reactions are 
 \label{table:12R5P}
 \end{table}
 
-D-erythrose-4-phosphate producing and consuming reactions are collected in Table \ref{table:12E4P}. Interestingly, the reversible transketolase 2 reaction (Eq. \ref{eq:12transketolase2}) shows activity in the opposite direction with the flux value that is close to 0 for the silver-resistant model only.
-\begin{align}
-\begin{split}
-\label{eq:12transketolase2}
-\ \text{D-erythrose 4-phosphate} + \text{D-xylulose 5-phosphate} \xrightarrow{transketolase 2} \\
-\ \text{D-fructose 6-phosphate} + \text{glyceraldehyde 3-phosphate}
-\end{split}
-\end{align}
+\vspace{-0.5cm}
+
+D-erythrose-4-phosphate producing and consuming reactions are collected in Table \ref{table:12E4P}. Interestingly, the reversible transketolase 2 reaction shows activity in the opposite direction with the flux value that is close to 0 for the silver-resistant model only.
+
 \begin{table}[H]
-\vspace{0.5cm}
+\vspace{0.8cm}
 \caption[Producing and consuming reaction fluxes for the metabolite d-ribulose-5-phosphate (R5P).]{Producing and consuming reaction fluxes for the metabolite d-ribulose-5-phosphate (R5P).}
+\vspace{0.2cm}
 \setlength{\tabcolsep}{4pt}
 \resizebox{\textwidth}{!}{
-\begin{tabular}{clcccccccccc}
+\begin{tabular}{|clcccccccccc|}
 \hline
-\multicolumn{1}{l}{E4P} & Reaction                                                                                                     & Genes                                                     & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
+\multicolumn{1}{|l}{E4P} & Reaction                                                                                                     & Genes                                                     & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
 \multirow{2}{*}{\rotatebox[origin=l]{90}{Prod.}}    & \begin{tabular}[c]{@{}l@{}}sedoheptulose 1,7-bisphosphate \\ D-glyceraldehyde-3-phosphate-lyase\end{tabular} & FBA1                                                   & 8.63      & 8.67      & 8.52     & 8.53                                                          & 8.56 & 8.57   & 8.64                                                      & 9.10   & 8.57     \\
                         & transketolase 2 (reverse)                                                                                    & TKL2                                                   & 0         & 0         & 0        & 0                                                             & 0    & 0      & 0                                                         & 0.01   & 0        \\ \hline
 \multirow{3}{*}{\rotatebox[origin=l]{90}{Consuming}}    & transaldolase (reverse)                                                                                      & \begin{tabular}[c]{@{}c@{}}TAL1\\ NQM1\end{tabular} & 8.12      & 8.17      & 7.90     & 7.99                                                          & 8.02 & 8.04   & 8.10                                                      & 9.00   & 8.05     \\
@@ -507,16 +559,19 @@ D-erythrose-4-phosphate producing and consuming reactions are collected in Table
 \label{table:12E4P}
 \end{table}
 
+\vspace{-0.8cm}
+
 Similar pattern for the transketolase reaction in the silver-resistant model can also be seen for the glyceraldehyde-3-phosphate consuming reactions (Table \ref{table:12GAP}). In all models except the silver-resistant model, transaldolase reaction uses the TAL1 (YLR354C) enzyme for its activity; however, in the silver-resistant model, the enzyme NQM1 (YGR043C) is active for the same purpose.
 
 \begin{table}[H]
 \vspace{0.5cm}
 \caption[Producing and consuming reaction fluxes for the metabolite glyceraldehyde-3-phosphate (GAP).]{Producing and consuming reaction fluxes for the metabolite glyceraldehyde-3-phosphate (GAP).}
+\vspace{0.2cm}
 \setlength{\tabcolsep}{4pt}
 \resizebox{\textwidth}{!}{
-\begin{tabular}{clcccccccccc}
+\begin{tabular}{|clcccccccccc|}
 \hline
-\multicolumn{1}{l}{GAP}    & Reaction Name                                    & Genes                                                                         & b2-ethanol             & b8-ethanol             & caffeine              & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron                  & nickel                & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver                   & reference              \\ \hline
+\multicolumn{1}{|l}{GAP}    & Reaction Name                                    & Genes                                                                         & b2-ethanol             & b8-ethanol             & caffeine              & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron                  & nickel                & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver                   & reference              \\ \hline
 \multirow{7}{*}{\rotatebox[origin=l]{90}{Producing}} & transaldolase (reverse)   & NQM1                                                                       & 0                     & 0                     & 0                     & 0                                                             & 0                     & 0                     & 0                                                         & 9.00                     & 0                     \\
                            & transaldolase (reverse)                          & TAL1                                                                       & 8.12                  & 8.17                  & 7.90                  & 7.99                                                          & 8.02                  & 8.04                  & 8.10                                                      & 0                        & 8.05                  \\
                            & transketolase 1                                  & TKL1                                                                       & 0.51                  & 0.49                  & 0.62                  & 0.54                                                          & 0.53                  & 0.53                  & 0.54                                                      & 0                        & 0.53                  \\
@@ -530,23 +585,27 @@ Similar pattern for the transketolase reaction in the silver-resistant model can
 \label{table:12GAP}
 \end{table}
 
+\vspace{-0.5cm}
+
 Flux values for the producing and consuming reactions of the metabolite 3-phosphonato-D-glycerate (3PG) are listed in the Table \ref{table:123PG}. The difference is observed in the caffeine-resistant model as the inactivity of the phosphoglycerate dehydrogenase reaction while the reaction is active for other models. caffeine-resistant model consumes the metabolite with the mutase reaction activity.
 
 \begin{table}[H]
 \vspace{0.5cm}
 \caption[Producing and consuming reaction fluxes for the metabolite 3-phosphonato-D-glycerate (3PG).]{Producing and consuming reaction fluxes for the metabolite 3-phosphonato-D-glycerate (3PG).}
+\vspace{0.2cm}
 \setlength{\tabcolsep}{4pt}
 \resizebox{\textwidth}{!}{
-\begin{tabular}{clcccccccccc}
+\begin{tabular}{|clcccccccccc|}
 \hline
-3PG                                      & Reaction Name                  & Genes                                                     & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron  & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
+\multicolumn{1}{|l}{3PG}                                      & Reaction Name                  & Genes                                                     & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron  & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
 {\rotatebox[origin=l]{90}{Pro.}}                                    & phosphoglycerate kinase        & PGK1                                                   & 17.64     & 17.70     & 17.54    & 17.48                                                         & 17.51 & 17.54  & 17.71                                                     & 18.18  & 17.55    \\ \hline
-\multicolumn{1}{c}{\multirow{2}{*}{\rotatebox[origin=l]{90}{Con.}}} & phosphoglycerate mutase        & \begin{tabular}[c]{@{}c@{}}GPM1\\ YOR283W\end{tabular} & 17.36     & 17.43     & 17.54    & 17.18                                                         & 17.22 & 17.25  & 17.45                                                     & 17.93  & 17.26    \\
-\multicolumn{1}{c}{}                     & phosphoglycerate dehydrogenase & \begin{tabular}[c]{@{}c@{}}SER3\\ SER33\end{tabular} & 0.28      & 0.27      & 0        & 0.30                                                          & 0.29  & 0.29   & 0.26                                                      & 0.25   & 0.29     \\ \hline
+\multicolumn{1}{|c}{\multirow{2}{*}{\rotatebox[origin=l]{90}{Con.}}} & phosphoglycerate mutase        & \begin{tabular}[c]{@{}c@{}}GPM1\\ YOR283W\end{tabular} & 17.36     & 17.43     & 17.54    & 17.18                                                         & 17.22 & 17.25  & 17.45                                                     & 17.93  & 17.26    \\
+\multicolumn{1}{|c}{}                     & phosphoglycerate dehydrogenase & \begin{tabular}[c]{@{}c@{}}SER3\\ SER33\end{tabular} & 0.28      & 0.27      & 0        & 0.30                                                          & 0.29  & 0.29   & 0.26                                                      & 0.25   & 0.29     \\ \hline
 \end{tabular}}
 \label{table:123PG}
 \end{table}
 
+\vspace{-0.5cm}
 
 The phosphoenolpyruvate consuming and producing reactions are collected in the Table \ref{table:12PEP}.
 
@@ -554,11 +613,12 @@ The phosphoenolpyruvate consuming and producing reactions are collected in the T
 \begin{table}[H]
 \vspace{0.5cm}
 \caption[Producing and consuming reaction fluxes for the metabolite phosphoenolpyruvate (PEP).]{Producing and consuming reaction fluxes for the metabolite phosphoenolpyruvate (PEP).}
+\vspace{0.2cm}
 \setlength{\tabcolsep}{4pt}
 \resizebox{\textwidth}{!}{
-\begin{tabular}{clcccccccccc}
+\begin{tabular}{|clcccccccccc|}
 \hline
-\multicolumn{1}{l}{PEP} & Reaction Name                                                                           & Genes                                                     & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron  & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
+\multicolumn{1}{|l}{PEP} & Reaction Name                                                                           & Genes                                                     & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron  & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
 \multirow{2}{*}{\rotatebox[origin=l]{90}{Producing}}    & phosphoglycerate mutase                                                                 & \begin{tabular}[c]{@{}c@{}}GPM1\\ YOR283W\end{tabular} & 17.36     & 17.43     & 17.54    & 17.18                                                         & 17.22 & 17.25  & 17.45                                                     & 17.93  & 17.26    \\
                         & phosphoglycerate dehydrogenase                                                          & \begin{tabular}[c]{@{}c@{}}SER3\\ SER33\end{tabular} & 0.28      & 0.27      & 0        & 0.30                                                          & 0.29  & 0.29   & 0.26                                                      & 0.25   & 0.29     \\ \hline
 \multirow{3}{*}{\rotatebox[origin=l]{90}{Consuming}}    & pyruvate kinase                                                                         & \begin{tabular}[c]{@{}c@{}}CDC19\\ PYK2\end{tabular} & 17.12     & 17.21     & 17.31    & 16.93                                                         & 16.97 & 17.01  & 17.23                                                     & 17.72  & 17.01    \\
@@ -568,16 +628,19 @@ The phosphoenolpyruvate consuming and producing reactions are collected in the T
 \label{table:12PEP}
 \end{table}
 
+\vspace{-0.5cm}
+
 As one of the most important branchpoint metabolites, pyruvate, reactions for production and consumption of this metabolite do not differ much. As collected in the Table \ref{table:12PYR}, it can be seen that main distinction is caused by the caffeine and silver-resistant models when they use the alanine glyoxylate aminotransferase reaction for the production of pyruvate. Although the values are small, this difference must be noted for future analyses. Choosing a different isozyme for the pyruvate kinase in the silver-resistant model (PYK2, YOR347C; instead of PYK1 YAL038W) is observed as previous results. Flux value in the caffeine-resistant model through the phenylalanine transaminase (ARO9, YHR137W) almost triples the fluxes for the other models.
 
 \begin{table}[H]
 \vspace{0.5cm}
 \caption[Producing and consuming reaction fluxes for the metabolite pyruvate (PYR).]{Producing and consuming reaction fluxes for the metabolite pyruvate (PYR).}
+\vspace{0.2cm}
 \setlength{\tabcolsep}{4pt}
 \resizebox{\textwidth}{!}{
-\begin{tabular}{clcccccccccc}
+\begin{tabular}{|clcccccccccc|}
 \hline
-\multicolumn{1}{l}{PYR} & Reaction Name                       & Genes                                                               & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron  & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
+\multicolumn{1}{|l}{PYR} & Reaction Name                       & Genes                                                               & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron  & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
 \multirow{4}{*}{\rotatebox[origin=l]{90}{Producing}}    & pyruvate kinase                     & PYK2                                                             & 0         & 0         & 0        & 0                                                             & 0     & 0      & 0                                                         & 17.72  & 0        \\
                         & pyruvate kinase                     & CDC19                                                             & 17.12     & 17.21     & 17.31    & 16.93                                                         & 16.97 & 17.01  & 17.23                                                     & 0      & 17.01    \\
                         & alanine glyoxylate aminotransferase & AGX1                                                             & 0         & 0         & 0.55     & 0                                                             & 0     & 0      & 0                                                         & 0.01   & 0        \\
@@ -591,16 +654,19 @@ As one of the most important branchpoint metabolites, pyruvate, reactions for pr
 \label{table:12PYR}
 \end{table}
 
+\vspace{-0.5cm}
+
 In the network, acetyl-CoA production is done by the enzyme acetyl-CoA synthetase with two isozymes, ACS1 (YAL054C) and ACS2 (YLR153C). As it can be seen from the Table \ref{table:12ACA}, only the phenylethanol-resistant model prefers to carry flux through ACS1 isozyme and all other models uses the ACS2 isozyme.
 
 \begin{table}[H]
 \vspace{0.5cm}
 \caption[Producing and consuming reaction fluxes for the metabolite acetyl-CoA (ACA).]{Producing and consuming reaction fluxes for the metabolite acetyl-CoA (ACA).}
+\vspace{0.2cm}
 \setlength{\tabcolsep}{4pt}
 \resizebox{\textwidth}{!}{
-\begin{tabular}{clcccccccccc}
+\begin{tabular}{|clcccccccccc|}
 \hline
-\multicolumn{1}{l}{ACA} & Reaction Name                        & Genes                                                     & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
+\multicolumn{1}{|l}{ACA} & Reaction Name                        & Genes                                                     & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
 \multirow{2}{*}{\rotatebox[origin=l]{90}{Pro.}}    & acetyl-CoA synthetase                & ACS2                                                   & 0.43      & 0.42      & 0.42     & 0.46                                                          & 0.45 & 0.44   & 0                                                         & 0.40   & 0.44     \\
                         & acetyl-CoA synthetase                & ACS1                                                   & 0         & 0         & 0        & 0                                                             & 0    & 0      & 0.40                                                      & 0      & 0        \\ \hline
 \multirow{3}{*}{\rotatebox[origin=l]{90}{Consuming}}    & acetyl-CoA carboxylase, reaction     & \begin{tabular}[c]{@{}c@{}}BPL1\\ ACC1\end{tabular} & 0.38      & 0.37      & 0.37     & 0.40                                                          & 0.40 & 0.39   & 0.35                                                      & 0.35   & 0.39     \\
@@ -613,13 +679,13 @@ In the network, acetyl-CoA production is done by the enzyme acetyl-CoA synthetas
 As an intersection metabolite between central carbon metabolism and nitrogen metabolisms, producing and consuming reactions for the metabolite 2-oxoglutarate (2KG) is collected in Table \ref{table:122KG}. Activity of the oxoglutarate/malate exchange between mitochondria and cytoplasm is only observed in the silver-resistant model. As opposed to that, AKG transporter (mitochondrial) which exchanges citrate instead of malate is active in the reverse direction. Different preference for the isozymes of 2-aminoadipate transaminase reaction on the phenylethanol and silver-resistant models also observed.
 
 \begin{table}[H]
-\vspace{0.5cm}
 \caption[Producing and consuming reaction fluxes for the metabolite 2-oxoglutarate (2KG).]{Producing and consuming reaction fluxes for the metabolite 2-oxoglutarate (2KG).}
+\vspace{0.2cm}
 \setlength{\tabcolsep}{4pt}
 \resizebox{\textwidth}{!}{
-\begin{tabular}{clcccccccccc}
+\begin{tabular}{|clcccccccccc|}
 \hline
-\multicolumn{1}{l}{2KG} & Reaction Name                                                                                 & Genes                                                     & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
+\multicolumn{1}{|l}{2KG} & Reaction Name                                                                                 & Genes                                                     & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
 \multirow{14}{*}{\rotatebox[origin=l]{90}{Producing}}   & oxoglutarate/malate exchange                                                                  & \begin{tabular}[c]{@{}c@{}}YOR222W\\ YPL134C\end{tabular} & 0         & 0         & 0        & 0                                                             & 0    & 0      & 0                                                         & 0.58   & 0        \\
                         & phenylalanine transaminase (reverse)                                                          & ARO8                                                   & 0.25      & 0.25      & 0.81     & 0.27                                                          & 0.27 & 0.26   & 0.24                                                      & 0.24   & 0.26     \\
                         & AKG transporter, mitochonrial (reverse)                                                       & YHM2                                                   & 0.51      & 0.50      & 0.51     & 0.55                                                          & 0.54 & 0.53   & 0.48                                                      & 0      & 0.53     \\
@@ -646,16 +712,16 @@ As an intersection metabolite between central carbon metabolism and nitrogen met
 Intermediate metabolite of the TCA cycle, oxaloacetate (OXA), is only produced from the pyruvate carboxylase reaction and consumed by the malate dehydrogenase and aspartate transaminase reactions, as collected in Table \ref{table:12OXA}. All the flux values through these reactions are in close range with each other for all the models.
 
 \begin{table}[H]
-\vspace{0.5cm}
 \caption[Producing and consuming reaction fluxes for the metabolite oxaloacetate (OXA).]{Producing and consuming reaction fluxes for the metabolite oxaloacetate (OXA).}
+\vspace{0.2cm}
 \setlength{\tabcolsep}{4pt}
 \resizebox{\textwidth}{!}{
-\begin{tabular}{llcccccccccc}
+\begin{tabular}{|llcccccccccc|}
 \hline
 OXA                                      & Reaction Name                               & Genes   & b2-ethanol & b8-ethanol & caffeine & \begin{tabular}[c]{@{}c@{}}coniferyl\\ aldehyde\end{tabular} & iron & nickel & \begin{tabular}[c]{@{}c@{}}phenyl-\\ ethanol\end{tabular} & silver & reference \\ \hline
 \rotatebox[origin=l]{90}{Pro.}                                      & pyruvate carboxylase                        & PYC1  & 0.91      & 0.88      & 0.90     & 0.97                                                          & 0.96 & 0.94   & 0.85                                                      & 0.84   & 0.94     \\ \hline
-\multicolumn{1}{c}{\multirow{2}{*}{\rotatebox[origin=l]{90}{Con.}} } & \begin{tabular}[c]{@{}c@{}}malate dehydrogenase,\\ cytoplasmic (reverse)\end{tabular}  & MDH2  & 0.46      & 0.45      & 0.46     & 0.49                                                          & 0.49 & 0.48   & 0.43                                                      & 0.43   & 0.48     \\
-\multicolumn{1}{c}{}                     & aspartate transaminase (rev.)            & AAT2  & 0.45      & 0.43      & 0.44     & 0.48                                                          & 0.47 & 0.46   & 0.42                                                      & 0.41   & 0.46
+\multicolumn{1}{|c}{\multirow{2}{*}{\rotatebox[origin=l]{90}{Con.}} } & \begin{tabular}[c]{@{}c@{}}malate dehydrogenase,\\ cytoplasmic (reverse)\end{tabular}  & MDH2  & 0.46      & 0.45      & 0.46     & 0.49                                                          & 0.49 & 0.48   & 0.43                                                      & 0.43   & 0.48     \\
+\multicolumn{1}{|c}{}                     & aspartate transaminase (rev.)            & AAT2  & 0.45      & 0.43      & 0.44     & 0.48                                                          & 0.47 & 0.46   & 0.42                                                      & 0.41   & 0.46 \\ \hline
 \end{tabular}}
 \label{table:12OXA}
 \end{table}
@@ -663,6 +729,8 @@ OXA                                      & Reaction Name                        
 
 \subsection{Bi-level Optimization for ATP Synthase}
 With the values obtained for biomass production in FBA simulations, the objective function could be set to another reaction. ATP synthase is chosen as objective function when the growt rate is constrained with the FBA results to dual optimize metabolic problem. A linearly spaced vector of from 0 to 0.5 is used to constrain lower bound of growth while the metabolic model solved for the minimization of ATP synthase. Figure \ref{fig:bi_level1} shows the minimum required ATP synthase activity to reach specific growth rate.
+
+\vspace{1cm}
 
 \begin{figure}[H]
   \begin{center}
@@ -692,6 +760,8 @@ The most distant reactions in the evolved models from the wild type model found 
   \end{center}
 \end{figure}
 
+\vspace{-1cm}
+
 Draw reaction RIB7 showed 14.73-fold decrease in phenylethanol-resistant strain, while the fluxes for the others were decreased only 1.48$\pm$0.93 fold on average compared to the reference strain. phenylethanol-resistant strain decreased 12.72 fold for the enzyme SEC53.
 
 \section{Flux Variability Analysis}
@@ -705,11 +775,17 @@ Flux ranges of each enzyme to find active enzymes and pathways on models are ana
   \label{fig:fva_enzymes}
   \end{figure}
 
+  \vspace{-1cm}
+
 As it can be seen in the Table \ref{table:fva_results} where the most divergent proteins (std $>$ 50) across all experiments are listed, paralog components of the glutathione system namely glutaredoxin-1 (GRX1) and glutaredoxin-2 (GRX2) shows the highest divergence across strains, followed by the glyceraldehyde-3-phosphate dehydrogenase forming isozymes triose-phosphate dehydrogenase 2 and 3 (TDH3 and TDH2).
 
 \input{tables/fva_results.tex}
 
+\vspace{-1cm}
+
 Pathway-wise investigation is carried out using the results of flux variability analysis results. First, the reactions that have subsystem annotations are collected separately for each subsystem. It must be noted that some reactions can exist in multiple subsystems, for example, phosphoenolpyruvate carboxykinase reaction exists in all gluconeogenesis, glycolysis, citrate cycle (TCA cycle), pyruvate metabolism, biosynthesis of secondary metabolites, biosynthesis of antibiotics, and carbon metabolism subsystems. Secondly, the mean flux values for each subsystem for all models in flux variability analysis are collected. These flux values for the most common subsystems are plotted as stacked bars in Figure \ref{fig:fva_subsystem_spans}.
+
+\vspace{0.2cm}
 
 \begin{figure}[H]
   \begin{center}
@@ -719,6 +795,8 @@ Pathway-wise investigation is carried out using the results of flux variability 
   \end{center}
 \end{figure}
 
+\vspace{-1cm}
+
 Despite the similarities in the flux values some of the subsystems, interesting results are observed. The most distinguished models are observed as caffeine, coniferyl aldehyde and phenylethanol strains as they do not carry fluxes through fatty acid metabolism reactions. Instead, the caffeine model shows higher activity in the TCA cycle reactions, compared to coniferyl aldehyde and phenylethanol strains where the activity increases in the 2-oxocarboxylic acid metabolism. Pentose phosphate pathway for the silver-resistant strain increased its flux 3.7 fold compared to reference strain. Secondly, fatty acid metabolism for the caffeine, coniferyl aldehyde and phenylethanol-resistant strains was almost deactivated.
 
 \section{Random Sampling Results}
@@ -726,6 +804,9 @@ Despite the similarities in the flux values some of the subsystems, interesting 
 The random solutions for each metabolic model are obtained by maximizing for a random set of three reactions with random weights. Total of 10,000 solutions for each model are generated after the boundaries on growth rate as an objective function is set to minimum of 90\% and maximum of 100\% growth rate of the flux balance analysis results. The solution spaces for these reactions are plotted as histogram plots where the bin counts, N, are normalized so that the sum(N) is 1 for each analysis.
 
 The most divergent reactions excluding diffusion, transport and exchange reactions from FBA results are plotted in Figure \ref{fig:sampling_fba_top12}, the most divergent enzymes from FVA results are plotted in Figure \ref{fig:sampling_fva_top12}, followed by the MOMA hits in Figure \ref{fig:sampling_moma_top12}.
+
+
+Ferrocytochrome-c:oxygen oxidoreductase reaction shows a great divergence across all models despite having the 0 flux on the caffeine-resistant model. These 0 flux on the caffeine model explains the higher fluxes through alcohol dehydrogenase reaction, meaning that the oxidative phosphorylation rates are lower in the caffeine-resistant model compared to ethanol producing pathways. Pyruvate decarboxylase reaction shows almost the pattern with the pyruvate kinase reaction indicating a chain reaction. Remember that although the models are fed with the same amount of carbon sources, small differences in their reaction fluxes comes from the differential expression analyses. That reminded, the small flux values on the 6-phosphogluconolactonase reaction may not mean a big difference biologically, however the different behavior of the silver-resistant model (having a wider range over other models) could mean the availability of the alternative pathways for the same biological objective.
 
 \begin{figure}[H]
   \begin{center}
@@ -735,8 +816,9 @@ The most divergent reactions excluding diffusion, transport and exchange reactio
   \end{center}
 \end{figure}
 
-Ferrocytochrome-c:oxygen oxidoreductase reaction shows a great divergence across all models despite having the 0 flux on the caffeine-resistant model. These 0 flux on the caffeine model explains the higher fluxes through alcohol dehydrogenase reaction, meaning that the oxidative phosphorylation rates are lower in the caffeine-resistant model compared to ethanol producing pathways. Pyruvate decarboxylase reaction shows almost the pattern with the pyruvate kinase reaction indicating a chain reaction. Remember that although the models are fed with the same amount of carbon sources, small differences in their reaction fluxes comes from the differential expression analyses. That reminded, the small flux values on the 6-phosphogluconolactonase reaction may not mean a big difference biologically, however the different behavior of the silver-resistant model (having a wider range over other models) could mean the availability of the alternative pathways for the same biological objective.
+\vspace{-1cm}
 
+Enzyme fluxes are numerically hard to distinguish in histogram plots because of the lower magnitude of the enzyme kinetics. The main target enzymes from the flux variability analysis are found as the glutaredoxin paralogs (GRX1 and GRX2) mostly did not show very different behaviors on the sampled solution spaces. Glyceraldehyde-3-phosphate dehydrogenase isozymes (TDH1, TDH2 and TDH3) on the other hand shows the different preferences between models.
 
 \begin{figure}[H]
   \begin{center}
@@ -746,7 +828,9 @@ Ferrocytochrome-c:oxygen oxidoreductase reaction shows a great divergence across
   \end{center}
 \end{figure}
 
-Enzyme fluxes are numerically hard to distinguish in histogram plots because of the lower magnitude of the enzyme kinetics. The main target enzymes from the flux variability analysis are found as the glutaredoxin paralogs (GRX1 and GRX2) mostly did not show very different behaviors on the sampled solution spaces. Glyceraldehyde-3-phosphate dehydrogenase isozymes (TDH1, TDH2 and TDH3) on the other hand shows the different preferences between models.
+\vspace{-1cm}
+
+
 
 In order to investigate enzyme relationships, correlation coefficients for each enzyme is calculated from the solution spaces for all models. Considering only the correlation values higher than R $>$ 0.5, GRX enzymes are found to be positively correlated with the phospholipid hydroperoxide glutathione peroxidase (GPX) enzymes (Figure \ref{fig:sampling_correlation_grx}).
 
@@ -758,6 +842,8 @@ In order to investigate enzyme relationships, correlation coefficients for each 
   \end{center}
 \end{figure}
 
+\vspace{-1cm}
+
 TDH3 enzyme shows positive correlation only in the caffeine-resistant model to 4 enzymes: An enzyme responsible for the regulation of telomerase (CDC13), minor isoform of pyruvate decarboxylase (PDC5), subunit of phosphofructokinase (PFK2), and to a protein of unknown function (EMI2). TDH1 and TDH3 enzymes on the other hand show both positive and negative correlations to multiple enzymes (Figure \ref{fig:sampling_correlation_tdh}).
 
 \begin{figure}[H]
@@ -768,6 +854,7 @@ TDH3 enzyme shows positive correlation only in the caffeine-resistant model to 4
   \end{center}
 \end{figure}
 
+
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/sampling_correlation_oli_gpt_rib.png}
@@ -776,7 +863,14 @@ TDH3 enzyme shows positive correlation only in the caffeine-resistant model to 4
   \end{center}
 \end{figure}
 
-When we further investigate the enzymatic correlations of OLI1 (F0 ATP synthase subunit c), GPT2 (glycerol-3-phosphate/dihydroxyacetone phosphate sn-1 acyltransferase), and RIB7 (Diamino-hydroxy-phoshoribosyl-amino-pyrimidine deaminase) to other enzymes. We see that RIB7 shows similar results across models with the exception of correlations with HEM4 enzyme (uroporphyrinogen III synthase) absent in b8-ethanol, caffeine and phenylethanol-resistant models. Similar to HEM4 enzyme, COX15 (heme a synthase), ARH1 (mitochondrial oxidoreductase), NMA1 (nicotinic acid mononucleotide adenylyltransferase) and YAH1 (ferredoxin) enzymes must be investigated since they show different correlations across models although they are all involved in the heme biosynthesis pathways. In the case of OLI1, both positive and negative correlations are observed within all models, although the most distinct strain appears as caffeine-resistant model by showing less correlations. GPT2 enzyme positively correlates with YJU3 (monoglyceride lipase) and ALE1 (lysophospholipid acyltransferase) enzymes in the reference, silver-, and nickel-resistant models with lower correlation values in caffeine-resistant model.
+
+When we further investigate the enzymatic correlations of OLI1 (F0 ATP synthase subunit c), GPT2 (glycerol-3-phosphate/dihydroxyacetone phosphate sn-1 acyltransferase), and RIB7 (Diamino-hydroxy-phoshoribosyl-amino-pyrimidine deaminase) to other enzymes. We see that RIB7 shows similar results across models with the exception of correlations with HEM4 enzyme (uroporphyrinogen III synthase) absent in b8-ethanol, caffeine and phenylethanol-resistant models.
+
+Similar to HEM4 enzyme, COX15 (heme a synthase), ARH1 (mitochondrial oxidoreductase), NMA1 (nicotinic acid mononucleotide adenylyltransferase) and YAH1 (ferredoxin) enzymes must be investigated since they show different correlations across models although they are all involved in the heme biosynthesis pathways.
+
+In the case of OLI1, both positive and negative correlations are observed within all models, although the most distinct strain appears as caffeine-resistant model by showing less correlations. GPT2 enzyme positively correlates with YJU3 (monoglyceride lipase) and ALE1 (lysophospholipid acyltransferase) enzymes in the reference, silver-, and nickel-resistant models with lower correlation values in caffeine-resistant model.
+
+Glyceraldehyde-3-phosphate dehydrogenase reaction ranks once again number 1 in a different analysis, MOMA. It can be seen that separation is clear in all models with a wider flux range in the silver-resistant model meaning that its flux value differs in multiple solutions. Followed by palmitoyl-CoA hydrolase, long chain fatty acid-CoA ligase and methylglyoxal synthase reactions are only in the Figure because they are only active in the silver-resistant model. However, since their flux ranges are too close to 0, they cannot be investigated as solid findings. Pyruvate kinase reaction shows the same pattern as in previous analyses. Interestingly, proton leak reaction (leakage of hydrogen atoms from cytoplasm to mitochondria) carries flux up to 20 mmol/gDWh, indicating that in the phenylethanol, coniferyl aldehyde and nickel-resistant models, more than available proton is required in the mitochondria. Lastly, 5'-nucleotidase reactions, guanosine kinase and pyridoxamine kinase reactions are only active for silver-resistant model, same as the previously mentioned reactions.
 
 \begin{figure}[H]
   \begin{center}
@@ -786,7 +880,9 @@ When we further investigate the enzymatic correlations of OLI1 (F0 ATP synthase 
   \end{center}
 \end{figure}
 
-Glyceraldehyde-3-phosphate dehydrogenase reaction ranks once again number 1 in a different analysis, MOMA. It can be seen that separation is clear in all models with a wider flux range in the silver-resistant model meaning that its flux value differs in multiple solutions. Followed by palmitoyl-CoA hydrolase, long chain fatty acid-CoA ligase and methylglyoxal synthase reactions are only in the Figure because they are only active in the silver-resistant model. However, since their flux ranges are too close to 0, they cannot be investigated as solid findings. Pyruvate kinase reaction shows the same pattern as in previous analyses. Interestingly, proton leak reaction (leakage of hydrogen atoms from cytoplasm to mitochondria) carries flux up to 20 mmol/gDWh, indicating that in the phenylethanol, coniferyl aldehyde and nickel-resistant models, more than available proton is required in the mitochondria. Lastly, 5'-nucleotidase reactions, guanosine kinase and pyridoxamine kinase reactions are only active for silver-resistant model, same as the previously mentioned reactions.
+\vspace{-1cm}
+
+
 
 Finally, mean values for each enzyme from solution spaces are calculated. Z-scores are obtained from the difference between this means in each strain model to the reference model fluxes, divided by the square root of the sum of standard deviations of this difference. Z-scores for enzymes are converted to p-values within gaussian distribution, and compared to the p-values obtained from the differential expression analysis. Discarding the non-significant enzymes in both cases, the following Figure \ref{fig:sampling_regulation_heatmaps} is constructed to compare regulations.
 
@@ -798,11 +894,11 @@ Finally, mean values for each enzyme from solution spaces are calculated. Z-scor
   \end{center}
 \end{figure}
 
-Sampled points were also investigated for dual objective, the growth vs ATP synthase. In Figure \ref{fig:bi_level}, the edges where the points are denser show that the strains were able to grow at high rates without any ATP synthase activity (vertical line forming points), and the strains were able to grow at a specific rate while ATP synthase rate could vary (horizontal line forming points).
+\vspace{-1cm}
 
-Strains were able to reach their maximum growth rates without ATP synthase activity (vertical edges), and they were able to maintain the same growth rate for various flux values carried through ATP synthase (horizontal edges). Random sampling of the available solution space simply shows that multiple solution vectors can be calculated for a desired growth rate. The solutions scattered around the middle are more likely to reflect biological status of the evolved cells, therefore bi-level optimization could help investigate evolved strains.
+Sampled points were also investigated for dual objective, the growth vs ATP synthase. In Figure \ref{fig:bi_level}, the edges where the points are denser show that the strains were able to grow at high rates without any ATP synthase activity (vertical line forming points), and the strains were able to grow at a specific rate while ATP synthase rate could vary (horizontal line forming points). Strains were able to reach their maximum growth rates without ATP synthase activity (vertical edges), and they were able to maintain the same growth rate for various flux values carried through ATP synthase (horizontal edges). Random sampling of the available solution space simply shows that multiple solution vectors can be calculated for a desired growth rate. The solutions scattered around the middle are more likely to reflect biological status of the evolved cells, therefore bi-level optimization could help investigate evolved strains.
 
- \begin{figure}
+ \begin{figure}[H]
    \begin{center}
    \includegraphics[width=1\columnwidth]{figures/atp_optimized_sampling.png}
    \caption[Scatter plot of the randomly sampled points for ATP synthase and the corresponding growth rates from the solution space.]{Scatter plot of the randomly sampled points for ATP synthase and the corresponding growth rates from the solution space.}
@@ -810,8 +906,12 @@ Strains were able to reach their maximum growth rates without ATP synthase activ
    \end{center}
  \end{figure}
 
+\vspace{-1cm}
+
 \section{Survivability Analysis: Knock-out Simulations}
 To calculate the essentiality of the reactions and the proteins on the growth, \emph{in-silico} single deletion analyses are done on all the reactions for each model. Growth rate ratios between deletion applied models and the prior models are collected as percentages for each strain. The reactions that have the same value for each experiment are discarded from the results considering they do not differ after evolution. To be able to catch the most important reactions, only the reactions with the minimum of \%95 growth rate decreases are reported here. One should remember that GECKO framework includes enzyme usages as separate reactions into the metabolic models, therefore the impacts of the deleted reactions are shown as heatmaps separately in Figure \ref{fig:deletion_survivability_rxns} for metabolic reactions and in Figure \ref{fig:deletion_survivability_prots} protein reactions.
+
+Although all the models were able to grow in single deletion of any enzymes on the reactions (with the minimum 45\% lower growth rate from the non-deletion models), 2 enzymes (SAM1 and PMT5) are found essential for all models. Interestingly, MET2 (homoserine O-acetyltransferase), UGA1 (4-aminobutyrate transaminase), COX10 (protoheme IX farnesyltransferase), UGA2 (succinate-semialdehyde dehydrogenase), HEM14 (oxygen-dependent protoporphyrinogen oxidase), THI6 (bifunctional hydroxyethylthiazole kinase/thiamine-phosphate diphosphorylase) and MRI1 (S-methyl-5-thioribose-1-phosphate isomerase MRI1) enzymes were essential for all models except the caffeine-resistant model. On the other hand, the deletion of the PGK1 (phosphoglycerate kinase), PFK2 (6-phosphofructokinase subunit beta), TPI1 (triose-phosphate isomerase TPI1) and PGI1 (glucose-6-phosphate isomerase) enzymes decreases the caffeine-resistant model's growth ability higher than other models.
 
 \begin{figure}[H]
   \begin{center}
@@ -821,6 +921,8 @@ To calculate the essentiality of the reactions and the proteins on the growth, \
   \end{center}
 \end{figure}
 
+\vspace{-1cm}
+
 \begin{figure}[H]
   \begin{center}
   \includegraphics[width=1\columnwidth]{figures/deletion_survivability_prots.png}
@@ -829,4 +931,4 @@ To calculate the essentiality of the reactions and the proteins on the growth, \
   \end{center}
 \end{figure}
 
-Although all the models were able to grow in single deletion of any enzymes on the reactions (with the minimum 45\% lower growth rate from the non-deletion models), 2 enzymes (SAM1 and PMT5) are found essential for all models. Interestingly, MET2 (homoserine O-acetyltransferase), UGA1 (4-aminobutyrate transaminase), COX10 (protoheme IX farnesyltransferase), UGA2 (succinate-semialdehyde dehydrogenase), HEM14 (oxygen-dependent protoporphyrinogen oxidase), THI6 (bifunctional hydroxyethylthiazole kinase/thiamine-phosphate diphosphorylase) and MRI1 (S-methyl-5-thioribose-1-phosphate isomerase MRI1) enzymes were essential for all models except the caffeine-resistant model. On the other hand, the deletion of the PGK1 (phosphoglycerate kinase), PFK2 (6-phosphofructokinase subunit beta), TPI1 (triose-phosphate isomerase TPI1) and PGI1 (glucose-6-phosphate isomerase) enzymes decreases the caffeine-resistant model's growth ability higher than other models.
+\vspace{-1cm}
