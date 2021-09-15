@@ -51,6 +51,12 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty
@@ -65,44 +71,6 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithmic.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\soul\soul.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\soul\soul.sty
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ectt1000.tfm
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype-pdftex.def
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype-pdftex.def
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.cfg
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.cfg
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.cfg
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\cleveref\cleveref.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\cleveref\cleveref.sty
 INPUT main_thesis.aux
 INPUT main_thesis.aux
 OUTPUT main_thesis.aux
@@ -112,10 +80,14 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty
@@ -124,17 +96,28 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-cmr.cfg
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-cmr.cfg
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX 2.9\tex\generic\iftex\iftex.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-0.def
 OUTPUT main_thesis.pdf
 INPUT C:\Users\hncetin\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-1.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-1.def
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsl12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT chapters\acknowledgements.tex
+INPUT chapters\acknowledgements.tex
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def
+INPUT chapters\abstract.tex
+INPUT chapters\abstract.tex
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
+INPUT chapters\abstract_tr.tex
+INPUT chapters\abstract_tr.tex
 INPUT main_thesis.toc
 INPUT main_thesis.toc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
@@ -151,18 +134,13 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsl12.tfm
 OUTPUT main_thesis.toc
 INPUT main_thesis.lof
 INPUT main_thesis.lof
@@ -173,13 +151,18 @@ OUTPUT main_thesis.lot
 INPUT chapters\introduction.tex
 INPUT chapters\introduction.tex
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd
+INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd
 INPUT images\ALE.png
 INPUT .\images\ALE.png
 INPUT .\images\ALE.png
 INPUT .\images\ALE.png
 INPUT .\images\ALE.png
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd
+INPUT images\figures\intro_aledb.jpeg
+INPUT .\images\figures\intro_aledb.jpeg
+INPUT .\images\figures\intro_aledb.jpeg
+INPUT .\images\figures\intro_aledb.jpeg
+INPUT .\images\figures\intro_aledb.jpeg
 INPUT images\systemsbiology.png
 INPUT .\images\systemsbiology.png
 INPUT .\images\systemsbiology.png
@@ -190,45 +173,45 @@ INPUT .\images\modelreconstruction.png
 INPUT .\images\modelreconstruction.png
 INPUT .\images\modelreconstruction.png
 INPUT .\images\modelreconstruction.png
-INPUT images\wos_metabolicmodel_search.jpg
-INPUT .\images\wos_metabolicmodel_search.jpg
-INPUT .\images\wos_metabolicmodel_search.jpg
-INPUT .\images\wos_metabolicmodel_search.jpg
-INPUT .\images\wos_metabolicmodel_search.jpg
-INPUT images\ToyNetwork.png
-INPUT .\images\ToyNetwork.png
-INPUT .\images\ToyNetwork.png
-INPUT .\images\ToyNetwork.png
-INPUT .\images\ToyNetwork.png
-INPUT images\ToyNetworkEquations.png
-INPUT .\images\ToyNetworkEquations.png
-INPUT .\images\ToyNetworkEquations.png
-INPUT .\images\ToyNetworkEquations.png
-INPUT .\images\ToyNetworkEquations.png
+INPUT images\figures\intro_wos.png
+INPUT .\images\figures\intro_wos.png
+INPUT .\images\figures\intro_wos.png
+INPUT .\images\figures\intro_wos.png
+INPUT .\images\figures\intro_wos.png
+INPUT images\figures\intro_toymodel.png
+INPUT .\images\figures\intro_toymodel.png
+INPUT .\images\figures\intro_toymodel.png
+INPUT .\images\figures\intro_toymodel.png
+INPUT .\images\figures\intro_toymodel.png
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-34.def
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-34.def
+INPUT images\figures\intro_constraintbasedmodelling.png
+INPUT .\images\figures\intro_constraintbasedmodelling.png
+INPUT .\images\figures\intro_constraintbasedmodelling.png
+INPUT .\images\figures\intro_constraintbasedmodelling.png
+INPUT .\images\figures\intro_constraintbasedmodelling.png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbxti10.tfm
-INPUT images\central_carbon_mech_of_s_cerevisiae_kegg.png
-INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
-INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
-INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
-INPUT .\images\central_carbon_mech_of_s_cerevisiae_kegg.png
-INPUT chapters\materialsmethods_yeast8.tex
-INPUT chapters\materialsmethods_yeast8.tex
-INPUT images\yeast8_github.png
-INPUT .\images\yeast8_github.png
-INPUT .\images\yeast8_github.png
-INPUT .\images\yeast8_github.png
-INPUT .\images\yeast8_github.png
+INPUT images\figures\intro_yeastgemschronology.png
+INPUT .\images\figures\intro_yeastgemschronology.png
+INPUT .\images\figures\intro_yeastgemschronology.png
+INPUT .\images\figures\intro_yeastgemschronology.png
+INPUT .\images\figures\intro_yeastgemschronology.png
+INPUT images\figures\intro_yeastgemschronology2.png
+INPUT .\images\figures\intro_yeastgemschronology2.png
+INPUT .\images\figures\intro_yeastgemschronology2.png
+INPUT .\images\figures\intro_yeastgemschronology2.png
+INPUT .\images\figures\intro_yeastgemschronology2.png
+INPUT chapters\methods.tex
+INPUT chapters\methods.tex
 INPUT images\modelstats.png
 INPUT .\images\modelstats.png
 INPUT .\images\modelstats.png
 INPUT .\images\modelstats.png
 INPUT .\images\modelstats.png
-INPUT tables\experimental_OD600s_and_growths.tex
-INPUT tables\experimental_OD600s_and_growths.tex
 INPUT tables\experimental_concentrations.tex
 INPUT tables\experimental_concentrations.tex
+INPUT tables\experimental_OD600s_and_growths.tex
+INPUT tables\experimental_OD600s_and_growths.tex
 INPUT images\GrowthGraphsSmall.eps
 INPUT .\images\GrowthGraphsSmall.eps
 INPUT .\images\GrowthGraphsSmall.eps
@@ -239,121 +222,318 @@ INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
 INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
 INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
 INPUT .\images\GrowthGraphsSmall-eps-converted-to.pdf
+INPUT tables\biomass_composition.tex
+INPUT tables\biomass_composition.tex
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
 INPUT images\gecko1.png
 INPUT .\images\gecko1.png
 INPUT .\images\gecko1.png
 INPUT .\images\gecko1.png
 INPUT .\images\gecko1.png
-INPUT images\ll-achrb.png
-INPUT .\images\ll-achrb.png
-INPUT .\images\ll-achrb.png
-INPUT .\images\ll-achrb.png
-INPUT .\images\ll-achrb.png
+INPUT tables\gse_experiment.tex
+INPUT tables\gse_experiment.tex
+INPUT images\figures\phpp_example.png
+INPUT .\images\figures\phpp_example.png
+INPUT .\images\figures\phpp_example.png
+INPUT .\images\figures\phpp_example.png
+INPUT .\images\figures\phpp_example.png
 INPUT chapters\results.tex
 INPUT chapters\results.tex
-INPUT images\Gam_fitting.jpg
-INPUT .\images\Gam_fitting.jpg
-INPUT .\images\Gam_fitting.jpg
-INPUT .\images\Gam_fitting.jpg
-INPUT .\images\Gam_fitting.jpg
-INPUT tables\calculated_fluxes.tex
-INPUT tables\calculated_fluxes.tex
-INPUT images\fba.jpg
-INPUT .\images\fba.jpg
-INPUT .\images\fba.jpg
-INPUT .\images\fba.jpg
-INPUT .\images\fba.jpg
-INPUT images\fva_ranges.jpg
-INPUT .\images\fva_ranges.jpg
-INPUT .\images\fva_ranges.jpg
-INPUT .\images\fva_ranges.jpg
-INPUT .\images\fva_ranges.jpg
-INPUT images\phpp.jpg
-INPUT .\images\phpp.jpg
-INPUT .\images\phpp.jpg
-INPUT .\images\phpp.jpg
-INPUT .\images\phpp.jpg
-INPUT chapters\results\sampling_results.tex
-INPUT chapters\results\sampling_results.tex
-INPUT images\sampling_scatter_gluo2.jpg
-INPUT .\images\sampling_scatter_gluo2.jpg
-INPUT .\images\sampling_scatter_gluo2.jpg
-INPUT .\images\sampling_scatter_gluo2.jpg
-INPUT .\images\sampling_scatter_gluo2.jpg
-INPUT images\sampling_Hist_Glycolysis.jpg
-INPUT .\images\sampling_Hist_Glycolysis.jpg
-INPUT .\images\sampling_Hist_Glycolysis.jpg
-INPUT .\images\sampling_Hist_Glycolysis.jpg
-INPUT .\images\sampling_Hist_Glycolysis.jpg
-INPUT images\sampling_Scatter_Glycolysis_1.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_1.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_1.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_1.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_1.jpg
-INPUT images\sampling_Scatter_Glycolysis_2.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_2.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_2.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_2.jpg
-INPUT .\images\sampling_Scatter_Glycolysis_2.jpg
-INPUT images\sampling_Hist_TCA.jpg
-INPUT .\images\sampling_Hist_TCA.jpg
-INPUT .\images\sampling_Hist_TCA.jpg
-INPUT .\images\sampling_Hist_TCA.jpg
-INPUT .\images\sampling_Hist_TCA.jpg
-INPUT images\sampling_Scatter_TCA.jpg
-INPUT .\images\sampling_Scatter_TCA.jpg
-INPUT .\images\sampling_Scatter_TCA.jpg
-INPUT .\images\sampling_Scatter_TCA.jpg
-INPUT .\images\sampling_Scatter_TCA.jpg
-INPUT images\sampling_Hist_PPP.jpg
-INPUT .\images\sampling_Hist_PPP.jpg
-INPUT .\images\sampling_Hist_PPP.jpg
-INPUT .\images\sampling_Hist_PPP.jpg
-INPUT .\images\sampling_Hist_PPP.jpg
-INPUT images\sampling_Scatter_PPP.jpg
-INPUT .\images\sampling_Scatter_PPP.jpg
-INPUT .\images\sampling_Scatter_PPP.jpg
-INPUT .\images\sampling_Scatter_PPP.jpg
-INPUT .\images\sampling_Scatter_PPP.jpg
-INPUT images\srd_fba.jpg
-INPUT .\images\srd_fba.jpg
-INPUT .\images\srd_fba.jpg
-INPUT .\images\srd_fba.jpg
-INPUT .\images\srd_fba.jpg
-INPUT images\srd_moma.jpg
-INPUT .\images\srd_moma.jpg
-INPUT .\images\srd_moma.jpg
-INPUT .\images\srd_moma.jpg
-INPUT .\images\srd_moma.jpg
-INPUT images\sgd_fba.jpg
-INPUT .\images\sgd_fba.jpg
-INPUT .\images\sgd_fba.jpg
-INPUT .\images\sgd_fba.jpg
-INPUT .\images\sgd_fba.jpg
-INPUT images\sgd_moma.jpg
-INPUT .\images\sgd_moma.jpg
-INPUT .\images\sgd_moma.jpg
-INPUT .\images\sgd_moma.jpg
-INPUT .\images\sgd_moma.jpg
-INPUT tables\essential_genes_y8.tex
-INPUT tables\essential_genes_y8.tex
+INPUT images\figures\gamfitting.png
+INPUT .\images\figures\gamfitting.png
+INPUT .\images\figures\gamfitting.png
+INPUT .\images\figures\gamfitting.png
+INPUT .\images\figures\gamfitting.png
+INPUT images\figures\sigmafitting.png
+INPUT .\images\figures\sigmafitting.png
+INPUT .\images\figures\sigmafitting.png
+INPUT .\images\figures\sigmafitting.png
+INPUT .\images\figures\sigmafitting.png
+INPUT tables\gecko_iterations.tex
+INPUT tables\gecko_iterations.tex
+INPUT images\figures\expr_boxplots.png
+INPUT .\images\figures\expr_boxplots.png
+INPUT .\images\figures\expr_boxplots.png
+INPUT .\images\figures\expr_boxplots.png
+INPUT .\images\figures\expr_boxplots.png
+INPUT images\figures\intersections_by_degree.png
+INPUT .\images\figures\intersections_by_degree.png
+INPUT .\images\figures\intersections_by_degree.png
+INPUT .\images\figures\intersections_by_degree.png
+INPUT .\images\figures\intersections_by_degree.png
+INPUT tables\de_numerics.tex
+INPUT tables\de_numerics.tex
+INPUT images\figures\expr_frequencies_before.png
+INPUT .\images\figures\expr_frequencies_before.png
+INPUT .\images\figures\expr_frequencies_before.png
+INPUT .\images\figures\expr_frequencies_before.png
+INPUT .\images\figures\expr_frequencies_before.png
+INPUT images\figures\expr_frequencies_after.png
+INPUT .\images\figures\expr_frequencies_after.png
+INPUT .\images\figures\expr_frequencies_after.png
+INPUT .\images\figures\expr_frequencies_after.png
+INPUT .\images\figures\expr_frequencies_after.png
+INPUT images\figures\expr_linear_regressions.png
+INPUT .\images\figures\expr_linear_regressions.png
+INPUT .\images\figures\expr_linear_regressions.png
+INPUT .\images\figures\expr_linear_regressions.png
+INPUT .\images\figures\expr_linear_regressions.png
+INPUT images\figures\wt_crabtree.png
+INPUT .\images\figures\wt_crabtree.png
+INPUT .\images\figures\wt_crabtree.png
+INPUT .\images\figures\wt_crabtree.png
+INPUT .\images\figures\wt_crabtree.png
+INPUT images\figures\wt_robustness.png
+INPUT .\images\figures\wt_robustness.png
+INPUT .\images\figures\wt_robustness.png
+INPUT .\images\figures\wt_robustness.png
+INPUT .\images\figures\wt_robustness.png
+INPUT images\figures\growth_glucose_ales.png
+INPUT .\images\figures\growth_glucose_ales.png
+INPUT .\images\figures\growth_glucose_ales.png
+INPUT .\images\figures\growth_glucose_ales.png
+INPUT .\images\figures\growth_glucose_ales.png
+INPUT tables\gur_growth.tex
+INPUT tables\gur_growth.tex
+INPUT tables\active_deactive_rxns.tex
+INPUT tables\active_deactive_rxns.tex
+INPUT images\figures\fba_exchanges_1.png
+INPUT .\images\figures\fba_exchanges_1.png
+INPUT .\images\figures\fba_exchanges_1.png
+INPUT .\images\figures\fba_exchanges_1.png
+INPUT .\images\figures\fba_exchanges_1.png
+INPUT images\figures\fba_exchanges_2.png
+INPUT .\images\figures\fba_exchanges_2.png
+INPUT .\images\figures\fba_exchanges_2.png
+INPUT .\images\figures\fba_exchanges_2.png
+INPUT .\images\figures\fba_exchanges_2.png
+INPUT images\figures\secretions_1.png
+INPUT .\images\figures\secretions_1.png
+INPUT .\images\figures\secretions_1.png
+INPUT .\images\figures\secretions_1.png
+INPUT .\images\figures\secretions_1.png
+INPUT images\figures\secretions_2.png
+INPUT .\images\figures\secretions_2.png
+INPUT .\images\figures\secretions_2.png
+INPUT .\images\figures\secretions_2.png
+INPUT .\images\figures\secretions_2.png
+INPUT images\figures\secretions_3.png
+INPUT .\images\figures\secretions_3.png
+INPUT .\images\figures\secretions_3.png
+INPUT .\images\figures\secretions_3.png
+INPUT .\images\figures\secretions_3.png
+INPUT images\figures\robustness_ale_glu_oxy_ab.png
+INPUT .\images\figures\robustness_ale_glu_oxy_ab.png
+INPUT .\images\figures\robustness_ale_glu_oxy_ab.png
+INPUT .\images\figures\robustness_ale_glu_oxy_ab.png
+INPUT .\images\figures\robustness_ale_glu_oxy_ab.png
+INPUT images\figures\robustness_ale_ace_eth_cd.png
+INPUT .\images\figures\robustness_ale_ace_eth_cd.png
+INPUT .\images\figures\robustness_ale_ace_eth_cd.png
+INPUT .\images\figures\robustness_ale_ace_eth_cd.png
+INPUT .\images\figures\robustness_ale_ace_eth_cd.png
+INPUT images\figures\robustness_glu_oxy.png
+INPUT .\images\figures\robustness_glu_oxy.png
+INPUT .\images\figures\robustness_glu_oxy.png
+INPUT .\images\figures\robustness_glu_oxy.png
+INPUT .\images\figures\robustness_glu_oxy.png
+INPUT images\figures\cumflux_free.png
+INPUT .\images\figures\cumflux_free.png
+INPUT .\images\figures\cumflux_free.png
+INPUT .\images\figures\cumflux_free.png
+INPUT .\images\figures\cumflux_free.png
+INPUT images\figures\cumflux_gur10.png
+INPUT .\images\figures\cumflux_gur10.png
+INPUT .\images\figures\cumflux_gur10.png
+INPUT .\images\figures\cumflux_gur10.png
+INPUT .\images\figures\cumflux_gur10.png
+INPUT tables\cumulative_free_stds.tex
+INPUT tables\cumulative_free_stds.tex
+INPUT tables\cumulative_gur10_stds.tex
+INPUT tables\cumulative_gur10_stds.tex
+INPUT images\figures\fba_heatmap.png
+INPUT .\images\figures\fba_heatmap.png
+INPUT .\images\figures\fba_heatmap.png
+INPUT .\images\figures\fba_heatmap.png
+INPUT .\images\figures\fba_heatmap.png
+INPUT images\figures\fba_dendrogram.png
+INPUT .\images\figures\fba_dendrogram.png
+INPUT .\images\figures\fba_dendrogram.png
+INPUT .\images\figures\fba_dendrogram.png
+INPUT .\images\figures\fba_dendrogram.png
+INPUT images\figures\regulation.png
+INPUT .\images\figures\regulation.png
+INPUT .\images\figures\regulation.png
+INPUT .\images\figures\regulation.png
+INPUT .\images\figures\regulation.png
+INPUT tables\fba_shadowprices.tex
+INPUT tables\fba_shadowprices.tex
+INPUT images\figures\shadowprices_4.png
+INPUT .\images\figures\shadowprices_4.png
+INPUT .\images\figures\shadowprices_4.png
+INPUT .\images\figures\shadowprices_4.png
+INPUT .\images\figures\shadowprices_4.png
+INPUT tables\fba_atp_production.tex
+INPUT tables\fba_atp_production.tex
+INPUT images\figures\fba_gro_glu_atp.png
+INPUT .\images\figures\fba_gro_glu_atp.png
+INPUT .\images\figures\fba_gro_glu_atp.png
+INPUT .\images\figures\fba_gro_glu_atp.png
+INPUT .\images\figures\fba_gro_glu_atp.png
+INPUT images\figures\fba_nad_fad_free_bw.png
+INPUT .\images\figures\fba_nad_fad_free_bw.png
+INPUT .\images\figures\fba_nad_fad_free_bw.png
+INPUT .\images\figures\fba_nad_fad_free_bw.png
+INPUT .\images\figures\fba_nad_fad_free_bw.png
+INPUT images\figures\fba_nad_fad_gur10_bw.png
+INPUT .\images\figures\fba_nad_fad_gur10_bw.png
+INPUT .\images\figures\fba_nad_fad_gur10_bw.png
+INPUT .\images\figures\fba_nad_fad_gur10_bw.png
+INPUT .\images\figures\fba_nad_fad_gur10_bw.png
+INPUT tables\fba_aminoacids.tex
+INPUT tables\fba_aminoacids.tex
+INPUT images\figures\atp_optimized.png
+INPUT .\images\figures\atp_optimized.png
+INPUT .\images\figures\atp_optimized.png
+INPUT .\images\figures\atp_optimized.png
+INPUT .\images\figures\atp_optimized.png
+INPUT images\figures\moma_cumdist.png
+INPUT .\images\figures\moma_cumdist.png
+INPUT .\images\figures\moma_cumdist.png
+INPUT .\images\figures\moma_cumdist.png
+INPUT .\images\figures\moma_cumdist.png
+INPUT images\figures\moma_cumdist_rxns.png
+INPUT .\images\figures\moma_cumdist_rxns.png
+INPUT .\images\figures\moma_cumdist_rxns.png
+INPUT .\images\figures\moma_cumdist_rxns.png
+INPUT .\images\figures\moma_cumdist_rxns.png
+INPUT images\figures\fva_enzymes.png
+INPUT .\images\figures\fva_enzymes.png
+INPUT .\images\figures\fva_enzymes.png
+INPUT .\images\figures\fva_enzymes.png
+INPUT .\images\figures\fva_enzymes.png
+INPUT tables\fva_results.tex
+INPUT tables\fva_results.tex
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
+INPUT images\figures\fva_subsystem_spans.png
+INPUT .\images\figures\fva_subsystem_spans.png
+INPUT .\images\figures\fva_subsystem_spans.png
+INPUT .\images\figures\fva_subsystem_spans.png
+INPUT .\images\figures\fva_subsystem_spans.png
+INPUT images\figures\sampling_fba_top12.png
+INPUT .\images\figures\sampling_fba_top12.png
+INPUT .\images\figures\sampling_fba_top12.png
+INPUT .\images\figures\sampling_fba_top12.png
+INPUT .\images\figures\sampling_fba_top12.png
+INPUT images\figures\sampling_fva_top12.png
+INPUT .\images\figures\sampling_fva_top12.png
+INPUT .\images\figures\sampling_fva_top12.png
+INPUT .\images\figures\sampling_fva_top12.png
+INPUT .\images\figures\sampling_fva_top12.png
+INPUT images\figures\sampling_correlation_grx.png
+INPUT .\images\figures\sampling_correlation_grx.png
+INPUT .\images\figures\sampling_correlation_grx.png
+INPUT .\images\figures\sampling_correlation_grx.png
+INPUT .\images\figures\sampling_correlation_grx.png
+INPUT images\figures\sampling_correlation_tdh.png
+INPUT .\images\figures\sampling_correlation_tdh.png
+INPUT .\images\figures\sampling_correlation_tdh.png
+INPUT .\images\figures\sampling_correlation_tdh.png
+INPUT .\images\figures\sampling_correlation_tdh.png
+INPUT images\figures\sampling_correlation_oli_gpt_rib.png
+INPUT .\images\figures\sampling_correlation_oli_gpt_rib.png
+INPUT .\images\figures\sampling_correlation_oli_gpt_rib.png
+INPUT .\images\figures\sampling_correlation_oli_gpt_rib.png
+INPUT .\images\figures\sampling_correlation_oli_gpt_rib.png
+INPUT images\figures\sampling_moma_top12.png
+INPUT .\images\figures\sampling_moma_top12.png
+INPUT .\images\figures\sampling_moma_top12.png
+INPUT .\images\figures\sampling_moma_top12.png
+INPUT .\images\figures\sampling_moma_top12.png
+INPUT images\figures\sampling_regulation_heatmaps2.png
+INPUT .\images\figures\sampling_regulation_heatmaps2.png
+INPUT .\images\figures\sampling_regulation_heatmaps2.png
+INPUT .\images\figures\sampling_regulation_heatmaps2.png
+INPUT .\images\figures\sampling_regulation_heatmaps2.png
+INPUT images\figures\atp_optimized_sampling.png
+INPUT .\images\figures\atp_optimized_sampling.png
+INPUT .\images\figures\atp_optimized_sampling.png
+INPUT .\images\figures\atp_optimized_sampling.png
+INPUT .\images\figures\atp_optimized_sampling.png
+INPUT images\figures\deletion_survivability_rxns.png
+INPUT .\images\figures\deletion_survivability_rxns.png
+INPUT .\images\figures\deletion_survivability_rxns.png
+INPUT .\images\figures\deletion_survivability_rxns.png
+INPUT .\images\figures\deletion_survivability_rxns.png
+INPUT images\figures\deletion_survivability_prots.png
+INPUT .\images\figures\deletion_survivability_prots.png
+INPUT .\images\figures\deletion_survivability_prots.png
+INPUT .\images\figures\deletion_survivability_prots.png
+INPUT .\images\figures\deletion_survivability_prots.png
+INPUT chapters\discussion.tex
+INPUT chapters\discussion.tex
+INPUT images\figures\methods_vert.png
+INPUT .\images\figures\methods_vert.png
+INPUT .\images\figures\methods_vert.png
+INPUT .\images\figures\methods_vert.png
+INPUT .\images\figures\methods_vert.png
+INPUT images\figures\discuss_GAPDH.png
+INPUT .\images\figures\discuss_GAPDH.png
+INPUT .\images\figures\discuss_GAPDH.png
+INPUT .\images\figures\discuss_GAPDH.png
+INPUT .\images\figures\discuss_GAPDH.png
+INPUT images\figures\discuss_PDC.png
+INPUT .\images\figures\discuss_PDC.png
+INPUT .\images\figures\discuss_PDC.png
+INPUT .\images\figures\discuss_PDC.png
+INPUT .\images\figures\discuss_PDC.png
+INPUT images\figures\discuss_enoerr.png
+INPUT .\images\figures\discuss_enoerr.png
+INPUT .\images\figures\discuss_enoerr.png
+INPUT .\images\figures\discuss_enoerr.png
+INPUT .\images\figures\discuss_enoerr.png
+INPUT images\figures\discuss_PMG.png
+INPUT .\images\figures\discuss_PMG.png
+INPUT .\images\figures\discuss_PMG.png
+INPUT .\images\figures\discuss_PMG.png
+INPUT .\images\figures\discuss_PMG.png
+INPUT chapters\conclusion.tex
+INPUT chapters\conclusion.tex
 INPUT main_thesis.bbl
 INPUT main_thesis.bbl
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def
-INPUT C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def
 INPUT main_thesis.aux
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr6.pfb

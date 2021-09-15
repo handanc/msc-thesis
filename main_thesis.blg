@@ -1,36 +1,42 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: main_thesis.aux
 The style file: styles/fbe_tez_v11.bst
 Database file #1: references.bib
-Repeated entry---line 194 of file references.bib
- : @article{kerkhoven2014applications
- :                                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 226 of file references.bib
- : @article{thiele2010protocol
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 236 of file references.bib
- : @article{pitkanen2014comparative
+Repeated entry---line 137 of file references.bib
+ : @article{famili2003saccharomyces
  :                                 ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 800 of file references.bib
+Repeated entry---line 275 of file references.bib
  : @article{aung2013revising
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 820 of file references.bib
+Repeated entry---line 325 of file references.bib
+ : @article{kerkhoven2014applications
+ :                                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 355 of file references.bib
+ : @article{thiele2010protocol
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 365 of file references.bib
+ : @article{pitkanen2014comparative
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1264 of file references.bib
+ : @article{aung2013revising
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1284 of file references.bib
  : @article{nilsson2016metabolic
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 850 of file references.bib
+Repeated entry---line 1313 of file references.bib
  : @article{mahadevan2003effects
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 939 of file references.bib
+Repeated entry---line 1609 of file references.bib
  : @article{saa2016ll
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1059 of file references.bib
- : @article{dragosits2013adaptive
- :                               ,
-I'm skipping whatever remains of this entry
-(There were 8 error messages)
+Warning--empty journal in buttonbiochemical
+Warning--empty year in buttonbiochemical
+(There were 9 error messages)

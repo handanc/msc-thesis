@@ -6,7 +6,8 @@
 %%
 %% Prepared by Feza Kerestecioglu
 %%
-%% Last modified on 25/07/2003
+%% Modified by Mehmet Can Güven
+%% Last modified on 20/06/2018
 %%
 %% COPYRIGHT 1999, 2001, 2003 by
 %% Feza Kerestecioglu <kerestec@boun.edu.tr>, <kerestec@khas.edu.tr>
@@ -173,7 +174,7 @@ Science and Engineering \\
   \ifx\@dateofapproval\empty \@@warning{No \string\dateofapproval\space given}\fi
   \vspace*{0.1pt}
   \begin{center} \@title \par \end{center}
-  \vskip 100pt
+  \vskip 110pt
   APPROVED BY: \par
   \vskip 2\baselineskip
   \settowidth{\spv}{\@supervisor}
@@ -213,7 +214,7 @@ Science and Engineering \\
     \@@warning{No \string\dateofapproval\space given}
   \else\@dateofapproval
   \fi
-  \vspace*{2cm}
+%  \vspace*{2cm}
 \global\let\@dateofapproval\@empty
 \global\let\dateofapproval\relax
 \global\let\@supervisor\@empty
@@ -388,7 +389,7 @@ Science and Engineering \\
    \let\@svsec\@empty\else
    \refstepcounter{#1}
    \ifnum#2=3
-     \edef\@svsec{\underbar{\csname the#1\endcsname.\hskip 0.5em}}
+     \def\@svsec{\underbar{\csname the#1\endcsname.\hskip 0.5em}}
      \else
      \edef\@svsec{\csname the#1\endcsname.\hskip 0.5em}\fi
    \fi
@@ -705,7 +706,7 @@ Science and Engineering \\
 \footskip=0mm
 \paperheight=296mm
 \textwidth=155mm
-\textheight=241mm
+\textheight=236mm
 \parindent=1cm
 \pagestyle{myheadings}
 %

@@ -1,33 +1,58 @@
-\contentsline {chapter}{LIST OF FIGURES}{iii}% 
-\contentsline {chapter}{LIST OF TABLES}{1}% 
-\contentsline {chapter}{\numberline {1.}INTRODUCTION}{2}% 
-\contentsline {chapter}{\numberline {2.}THEORETICAL BACKGROUND}{3}% 
-\contentsline {section}{\numberline {2.1.} Adaptive Laboratory Evolution}{3}% 
-\contentsline {section}{\numberline {2.2.} Systems Biology}{4}% 
-\contentsline {subsection}{\numberline {2.2.1.} Metabolic Networks}{5}% 
-\contentsline {subsection}{\numberline {2.2.2.} Mathematical Representation of Metabolic Networks}{8}% 
-\contentsline {subsection}{\numberline {2.2.3.} Constraint-Based Modelling}{11}% 
-\contentsline {section}{\numberline {2.3.} \emph {Saccharomyces cerevisiae}}{12}% 
-\contentsline {subsection}{\numberline {2.3.1.} Central Carbon Metabolism of \emph {S. cerevisiae}}{12}% 
-\contentsline {subsection}{\numberline {2.3.2.} Adaptive Evolution Studies on \emph {S. cerevisiae} (Palsson 2015)}{13}% 
-\contentsline {subsection}{\numberline {2.3.3.} Metabolic Models of \emph {S. cerevisiae}}{13}% 
-\contentsline {subsection}{\numberline {2.3.4.} Applications of \emph {S. cerevisiae} GSMMs}{13}% 
-\contentsline {chapter}{\numberline {3.}MATERIALS AND METHODS}{15}% 
-\contentsline {section}{\numberline {3.1.} Consensus \emph {S. cerevisiae} Metabolic Model}{15}% 
-\contentsline {section}{\numberline {3.2.} Flux Balance Analysis}{17}% 
-\contentsline {section}{\numberline {3.3.} Experimental Data Acquisition}{19}% 
-\contentsline {section}{\numberline {3.4.} Batch Simulation}{22}% 
-\contentsline {section}{\numberline {3.5.} Integration of Enzymatic Constraints}{23}% 
-\contentsline {section}{\numberline {3.6.} Integration of Transcriptome Data}{26}% 
-\contentsline {section}{\numberline {3.7.} Phenotype Phase Plane Construction}{26}% 
-\contentsline {section}{\numberline {3.8.} Flux Variability Analysis}{26}% 
-\contentsline {section}{\numberline {3.9.} Random Sampling of Solution Space}{27}% 
-\contentsline {chapter}{\numberline {4.}RESULTS *NOT UPDATED*}{29}% 
-\contentsline {section}{\numberline {4.1.} Chemostat Simulation: GAM Fitting}{29}% 
-\contentsline {section}{\numberline {4.2.} Flux Balance Analysis Results}{30}% 
-\contentsline {section}{\numberline {4.3.} Flux Variability Analysis}{31}% 
-\contentsline {section}{\numberline {4.4.} Phenotype Phase Plane}{33}% 
-\contentsline {section}{\numberline {4.5.} Sampling Results}{33}% 
-\contentsline {section}{\numberline {4.6.} Single Gene and Reaction Knock-Out Simulations}{41}% 
-\contentsline {chapter}{REFERENCES}{51}% 
-\noindent APPENDIX\ A:\hspace {1.6ex}APPLICATION \penalty \@M \leaders \hbox {$\mathsurround \z@ \mkern 4.5mu.\mkern 4.5mu$} \hfill \penalty \@M \hbox to1.55em{\hss 58}\par 
+\contentsline {chapter}{ACKNOWLEDGEMENTS}{ii}% 
+\contentsline {chapter}{ABSTRACT}{iii}% 
+\contentsline {chapter}{\"OZET}{iv}% 
+\contentsline {chapter}{LIST OF FIGURES}{vii}% 
+\contentsline {chapter}{LIST OF TABLES}{xiv}% 
+\contentsline {chapter}{LIST OF SYMBOLS}{xvii}% 
+\contentsline {chapter}{LIST OF ACRONYMS/ABBREVIATIONS}{xviii}% 
+\contentsline {chapter}{\numberline {1.}INTRODUCTION}{1}% 
+\contentsline {chapter}{\numberline {2.}THEORETICAL BACKGROUND}{2}% 
+\contentsline {section}{\numberline {2.1.} Adaptive Laboratory Evolution}{2}% 
+\contentsline {subsection}{\numberline {2.1.1.} Computational Tools for ALE Experiments}{3}% 
+\contentsline {section}{\numberline {2.2.} Systems Biology}{5}% 
+\contentsline {subsection}{\numberline {2.2.1.} Metabolic Networks}{7}% 
+\contentsline {subsection}{\numberline {2.2.2.} Mathematical Representation of Metabolic Networks}{10}% 
+\contentsline {subsection}{\numberline {2.2.3.} Constraint-Based Modelling}{12}% 
+\contentsline {section}{\numberline {2.3.} \emph {Saccharomyces cerevisiae}}{13}% 
+\contentsline {subsection}{\numberline {2.3.1.} Central Carbon Metabolism of \emph {S. cerevisiae}}{14}% 
+\contentsline {subsection}{\numberline {2.3.2.} Adaptive Evolution Studies on \emph {S. cerevisiae}}{17}% 
+\contentsline {subsection}{\numberline {2.3.3.} Metabolic Models of \emph {S. cerevisiae}}{19}% 
+\contentsline {subsection}{\numberline {2.3.4.} Applications of \emph {S. cerevisiae} GSMMs}{22}% 
+\contentsline {chapter}{\numberline {3.}MATERIALS AND METHODS}{23}% 
+\contentsline {section}{\numberline {3.1.} Consensus \emph {S. cerevisiae} Metabolic Model}{23}% 
+\contentsline {section}{\numberline {3.2.} Experimental Data Acquisition}{24}% 
+\contentsline {section}{\numberline {3.3.} Flux Balance Analysis}{27}% 
+\contentsline {section}{\numberline {3.4.} Integration of Enzymatic Constraints}{30}% 
+\contentsline {section}{\numberline {3.5.} Differential Expression Analysis and Integration}{33}% 
+\contentsline {section}{\numberline {3.6.} Phenotype Phase Plane and Robustness Analysis}{34}% 
+\contentsline {section}{\numberline {3.7.} Flux Variability Analysis}{36}% 
+\contentsline {section}{\numberline {3.8.} Random Sampling of Solution Space}{36}% 
+\contentsline {section}{\numberline {3.9.} Minimization of Metabolic Adjustment}{37}% 
+\contentsline {chapter}{\numberline {4.}RESULTS}{39}% 
+\contentsline {section}{\numberline {4.1.} Model Constraints and Curation}{39}% 
+\contentsline {section}{\numberline {4.2.} Differential Expression Analysis and Integration}{41}% 
+\contentsline {section}{\numberline {4.3.} Flux Balance Analysis Simulations}{48}% 
+\contentsline {subsection}{\numberline {4.3.1.} Comparison of Exchange Fluxes Across ALE}{52}% 
+\contentsline {subsection}{\numberline {4.3.2.} Robustness Analysis}{55}% 
+\contentsline {subsection}{\numberline {4.3.3.} Phenotype Phase Planes}{56}% 
+\contentsline {subsection}{\numberline {4.3.4.} Cumulative Fluxes}{58}% 
+\contentsline {subsection}{\numberline {4.3.5.} Hierarchical Relationships}{63}% 
+\contentsline {subsection}{\numberline {4.3.6.} Gene Regulation}{63}% 
+\contentsline {subsection}{\numberline {4.3.7.} Shadow Prices}{66}% 
+\contentsline {subsection}{\numberline {4.3.8.} Co-factor Production}{68}% 
+\contentsline {subsection}{\numberline {4.3.9.} Amino Acid Biosynthesis}{72}% 
+\contentsline {subsection}{\numberline {4.3.10.} Precursor Metabolites for Biomass Production}{74}% 
+\contentsline {subsection}{\numberline {4.3.11.} Bi-level Optimization for ATP Synthase}{81}% 
+\contentsline {section}{\numberline {4.4.} Minimization of Metabolic Adjustment}{82}% 
+\contentsline {section}{\numberline {4.5.} Flux Variability Analysis}{84}% 
+\contentsline {section}{\numberline {4.6.} Random Sampling Results}{87}% 
+\contentsline {section}{\numberline {4.7.} Survivability Analysis: Knock-out Simulations}{95}% 
+\contentsline {chapter}{\numberline {5.}DISCUSSION}{98}% 
+\contentsline {section}{\numberline {5.1.} Flux Distribution Comparisons}{99}% 
+\contentsline {section}{\numberline {5.2.} Strain Survivability}{108}% 
+\contentsline {section}{\numberline {5.3.} Simulations vs. Experimental Results}{110}% 
+\contentsline {chapter}{\numberline {6.}CONCLUSION}{115}% 
+\contentsline {chapter}{REFERENCES}{117}% 
+\noindent APPENDIX\ A:\hspace {1.6ex}RESULTS OF DIFFERENTIAL EXPRESSION ANALYSIS \\ \hspace *{2.95cm} AND INTEGRATION INFORMATION \penalty \@M \leaders \hbox {$\mathsurround \z@ \mkern 4.5mu.\mkern 4.5mu$} \hfill \penalty \@M \hbox to1.55em{\hss 137}\par 
+\noindent APPENDIX\ B:\hspace {1.6ex}RECONSTRUCTED MODEL FILES \penalty \@M \leaders \hbox {$\mathsurround \z@ \mkern 4.5mu.\mkern 4.5mu$} \hfill \penalty \@M \hbox to1.55em{\hss 138}\par 
+\noindent APPENDIX\ C:\hspace {1.6ex}SOLUTION VECTORS OF ANALYSES \penalty \@M \leaders \hbox {$\mathsurround \z@ \mkern 4.5mu.\mkern 4.5mu$} \hfill \penalty \@M \hbox to1.55em{\hss 139}\par 

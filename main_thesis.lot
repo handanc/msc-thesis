@@ -1,5 +1,28 @@
-\contentsline {table}{\numberline {Table 3.1.}{\ignorespaces Biomass coefficients}\vspace \baselineskip }{19}% 
-\contentsline {table}{\numberline {Table 3.2.}{\ignorespaces Measured OD\textsubscript {600} and cell dry weight values of reference strain}\vspace \baselineskip }{20}% 
-\contentsline {table}{\numberline {Table 3.3.}{\ignorespaces Measurements of extracellular concentrations}\vspace \baselineskip }{21}% 
-\contentsline {table}{\numberline {Table 4.1.}{\ignorespaces Calculated flux values}\vspace \baselineskip }{30}% 
-\contentsline {table}{\numberline {4.2}{Essential genes found in Yeast8}}{44}% 
+\contentsline {table}{\numberline {Table 3.1.}{\ignorespaces Measurements of extracellular concentrations}\vspace \baselineskip }{25}% 
+\contentsline {table}{\numberline {Table 3.2.}{\ignorespaces Measured OD\textsubscript {600} and cell dry weight values of reference strain}\vspace \baselineskip }{26}% 
+\contentsline {table}{\numberline {Table 3.3.}{\ignorespaces Biomass formulation that are used in the Yeast8}\vspace \baselineskip }{29}% 
+\contentsline {table}{\numberline {Table 3.4.}{\ignorespaces GSEQuery codes of used expression data.}\vspace \baselineskip }{34}% 
+\contentsline {table}{\numberline {Table 4.1.}{\ignorespaces Iterations on the network to find the top limiting proteins by their objective control coefficients (cc), i.e. sensitivities on the growth, with previous and updated $k_{cat}$ values and error improvements}\vspace \baselineskip }{41}% 
+\contentsline {table}{\numberline {Table 4.2.}{\ignorespaces The common upregulated and downregulated genes within ethanol, caffeine, coniferyl aldehyde, iron, nickel and phenylethanol-resistant strains.}\vspace \baselineskip }{44}% 
+\contentsline {table}{\numberline {Table 4.3.}{\ignorespaces Numerical values of differentially expressed (DE) genes (p $<$ 0.05) for mutant strains, and percentage integration into the reference metabolic model.}\vspace \baselineskip }{44}% 
+\contentsline {table}{\numberline {Table 4.4.}{\ignorespaces Maximum growth rates ($\mu $) from FBA for each strain and their maximum glucose uptake rates (GUR) required for that growth; and possible minimum and maximum glucose and oxygen uptake rates from FVA for at least minimum of 90\% of growth rate.}\vspace \baselineskip }{51}% 
+\contentsline {table}{\numberline {Table 4.5.}{\ignorespaces Number of reactions that are either activated or deactivated (carried flux or no flux) in the evolved strains compared to wildtype strain}\vspace \baselineskip }{51}% 
+\contentsline {table}{\numberline {Table 4.6.}{\ignorespaces Glucose and oxygen uptake rate ranges (mmol/gDWh) at the point where growth rate is 0.3 h\textsuperscript {-1} for all strains}\vspace \baselineskip }{56}% 
+\contentsline {table}{\numberline {Table 4.7.}{\ignorespaces The most divergent reactions according to their standard deviations across all strains and their flux values in mmol/gDWh.}\vspace \baselineskip }{60}% 
+\contentsline {table}{\numberline {Table 4.8.}{\ignorespaces The most divergent reactions across all strains and their flux values in mmol/gDWh when the glucose uptake rate is constrained to 10 mmol/gDWh.}\vspace \baselineskip }{61}% 
+\contentsline {table}{\numberline {Table 4.9.}{\ignorespaces Enzymatic regulation decision table of expressional fold change (from differential analysis) and flux fold change (from flux balance analysis) comparison.}\vspace \baselineskip }{65}% 
+\contentsline {table}{\numberline {Table 4.10.}{\ignorespaces Shadow prices of the exchange metabolites' uptake reactions that has a value higher than the growth itself}\vspace \baselineskip }{66}% 
+\contentsline {table}{\numberline {Table 4.11.}{\ignorespaces Carried flux values (mmol/gDWh) through ATP producing reactions (A: the only constraint applied to the models is the maximum protein availability; B: additional constraint is applied to the glucose uptake rate as 10 mmol/gDW)}\vspace \baselineskip }{69}% 
+\contentsline {table}{\numberline {Table 4.12.}{\ignorespaces Fluxes through the reactions in the amino acids biosynthesis subsystem}\vspace \baselineskip }{73}% 
+\contentsline {table}{\numberline {Table 4.13.}{\ignorespaces The 12 precursor (branchpoint) metabolites for biomass production}\vspace \baselineskip }{74}% 
+\contentsline {table}{\numberline {Table 4.14.}{\ignorespaces Producing (P) and consuming (C) reaction fluxes for the metabolite D-fructose-6-phosphate (F6P).}\vspace \baselineskip }{75}% 
+\contentsline {table}{\numberline {Table 4.15.}{\ignorespaces Producing (P) and consuming (C) reaction fluxes for the metabolite d-ribulose-5-phosphate (R5P).}\vspace \baselineskip }{76}% 
+\contentsline {table}{\numberline {Table 4.16.}{\ignorespaces Producing (P) and consuming (C) reaction fluxes for the metabolite d-erythrose-4-phosphate (E4P).}\vspace \baselineskip }{76}% 
+\contentsline {table}{\numberline {Table 4.17.}{\ignorespaces Producing (P) and consuming (C) reaction fluxes for the metabolite glyceraldehyde-3-phosphate (GAP).}\vspace \baselineskip }{77}% 
+\contentsline {table}{\numberline {Table 4.18.}{\ignorespaces Producing (P) and consuming (C) reaction fluxes for the metabolite 3-phosphonato-D-glycerate (3PG).}\vspace \baselineskip }{77}% 
+\contentsline {table}{\numberline {Table 4.19.}{\ignorespaces Producing (P) and consuming (C) reaction fluxes for the metabolite phosphoenolpyruvate (PEP).}\vspace \baselineskip }{78}% 
+\contentsline {table}{\numberline {Table 4.20.}{\ignorespaces Producing (P) and consuming (C) reaction fluxes for the metabolite pyruvate (PYR).}\vspace \baselineskip }{79}% 
+\contentsline {table}{\numberline {Table 4.21.}{\ignorespaces Producing (P) and consuming (C) reaction fluxes for the metabolite acetyl-CoA (ACA).}\vspace \baselineskip }{79}% 
+\contentsline {table}{\numberline {Table 4.22.}{\ignorespaces Producing (P) and consuming (C) reaction fluxes for the metabolite 2-oxoglutarate (2KG).}\vspace \baselineskip }{80}% 
+\contentsline {table}{\numberline {Table 4.23.}{\ignorespaces Producing (P) and consuming (C) reaction fluxes for the metabolite oxaloacetate (OXA).}\vspace \baselineskip }{80}% 
+\contentsline {table}{\numberline {Table 4.24.}{\ignorespaces The most (std $>$ 55 nmol/gDWh) divergent proteins across all experiments and their flux variabilities as ranges (max - min flux) in nmol/gDWh}\vspace \baselineskip }{85}% 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 \newcommand{\enquote}[1]{``#1''}
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -11,7 +11,7 @@ Futuyma, D.~J. and T.~R. Meagher, \enquote{Evolution, science and society:
 
 \bibitem{hird2017evolutionary}
 Hird, S.~M., \enquote{Evolutionary biology needs wild microbiomes}, {\em
-  Frontiers in microbiology\/}, Vol.~8, p. 725, 2017.
+  Frontiers in Microbiology\/}, Vol.~8, p. 725, 2017.
 
 \bibitem{nielsen2016engineering}
 Nielsen, J. and J.~D. Keasling, \enquote{Engineering cellular metabolism}, {\em
@@ -25,11 +25,11 @@ Garland, T. and M.~R. Rose, {\em Experimental evolution: concepts, methods, and
 \bibitem{dragosits2013adaptive}
 Dragosits, M. and D.~Mattanovich, \enquote{Adaptive laboratory
   evolution--principles and applications for biotechnology}, {\em Microbial
-  cell factories\/}, Vol.~12, No.~1, p.~64, 2013.
+  Cell Factories\/}, Vol.~12, No.~1, p.~64, 2013.
 
 \bibitem{mcdonald2019microbial}
 McDonald, M.~J., \enquote{Microbial Experimental Evolution--a proving ground
-  for evolutionary theory and a tool for discovery}, {\em EMBO reports\/},
+  for evolutionary theory and a tool for discovery}, {\em EMBO Reports\/},
   Vol.~20, No.~8, 2019.
 
 \bibitem{winkler2013adaptive}
@@ -37,15 +37,10 @@ Winkler, J., L.~H. Reyes and K.~C. Kao, \enquote{Adaptive laboratory evolution
   for strain engineering}, {\em Systems Metabolic Engineering\/}, pp. 211--222,
   Springer, 2013.
 
-\bibitem{shepelin2018selecting}
-Shepelin, D., A.~S.~L. Hansen, R.~Lennen, H.~Luo and M.~J. Herrg{\aa}rd,
-  \enquote{Selecting the best: evolutionary engineering of chemical production
-  in microbes}, {\em Genes\/}, Vol.~9, No.~5, p. 249, 2018.
-
 \bibitem{conrad2011microbial}
 Conrad, T.~M., N.~E. Lewis and B.~{\O}. Palsson, \enquote{Microbial laboratory
-  evolution in the era of genome-scale science}, {\em Molecular systems
-  biology\/}, Vol.~7, No.~1, 2011.
+  evolution in the era of genome-scale science}, {\em Molecular Systems
+  Biology\/}, Vol.~7, No.~1, 2011.
 
 \bibitem{soyer2013evolutionary}
 Soyer, O.~S. and M.~A. O'Malley, \enquote{Evolutionary systems biology: what it
@@ -55,10 +50,36 @@ Soyer, O.~S. and M.~A. O'Malley, \enquote{Evolutionary systems biology: what it
 \bibitem{long2018adaptive}
 Long, C.~P. and M.~R. Antoniewicz, \enquote{How adaptive evolution reshapes
   metabolism to improve fitness: recent advances and future outlook}, {\em
-  Current opinion in chemical engineering\/}, Vol.~22, pp. 209--215, 2018.
+  Current Opinion in Chemical Engineering\/}, Vol.~22, pp. 209--215, 2018.
+
+\bibitem{shepelin2018selecting}
+Shepelin, D., A.~S.~L. Hansen, R.~Lennen, H.~Luo and M.~J. Herrg{\aa}rd,
+  \enquote{Selecting the best: evolutionary engineering of chemical production
+  in microbes}, {\em Genes\/}, Vol.~9, No.~5, p. 249, 2018.
+
+\bibitem{palsson2011adaptive}
+Palsson, B., \enquote{Adaptive laboratory evolution this tool for studying
+  molecular mechanisms and evolutionary dynamics follows bacteria as they adapt
+  to environmental stress}, {\em Microbe\/}, Vol.~6, No.~2, p.~69, 2011.
+
+\bibitem{phaneuf2019aledb}
+Phaneuf, P.~V., D.~Gosting, B.~O. Palsson and A.~M. Feist, \enquote{ALEdb 1.0:
+  a database of mutations from adaptive laboratory evolution experimentation},
+  {\em Nucleic Acids Research\/}, Vol.~47, No.~D1, pp. D1164--D1171, 2019.
+
+\bibitem{wong2018precise}
+Wong, B.~G., C.~P. Mancuso, S.~Kiriakov, C.~J. Bashor and A.~S. Khalil,
+  \enquote{Precise, automated control of conditions for high-throughput growth
+  of yeast and bacteria with eVOLVER}, {\em Nature Biotechnology\/}, Vol.~36,
+  No.~7, pp. 614--623, 2018.
+
+\bibitem{lacroix2017model}
+LaCroix, R.~A., B.~O. Palsson and A.~M. Feist, \enquote{A model for designing
+  adaptive laboratory evolution experiments}, {\em Applied and Environmental
+  Microbiology\/}, Vol.~83, No.~8, 2017.
 
 \bibitem{kitano2002systems}
-Kitano, H., \enquote{Systems biology: a brief overview}, {\em science\/}, Vol.
+Kitano, H., \enquote{Systems biology: a brief overview}, {\em Science\/}, Vol.
   295, No. 5560, pp. 1662--1664, 2002.
 
 \bibitem{bellouquid2006mathematical}
@@ -71,7 +92,7 @@ Kremling, A., {\em Systems biology: mathematical modeling and model
 
 \bibitem{bruggeman2007nature}
 Bruggeman, F.~J. and H.~V. Westerhoff, \enquote{The nature of systems biology},
-  {\em TRENDS in Microbiology\/}, Vol.~15, No.~1, pp. 45--50, 2007.
+  {\em Trends in Microbiology\/}, Vol.~15, No.~1, pp. 45--50, 2007.
 
 \bibitem{shahzad2012application}
 Shahzad, K. and J.~J~Loor, \enquote{Application of top-down and bottom-up
@@ -81,11 +102,11 @@ Shahzad, K. and J.~J~Loor, \enquote{Application of top-down and bottom-up
 \bibitem{thiele2010protocol}
 Thiele, I. and B.~{\O}. Palsson, \enquote{A protocol for generating a
   high-quality genome-scale metabolic reconstruction}, {\em Nature
-  protocols\/}, Vol.~5, No.~1, p.~93, 2010.
+  Protocols\/}, Vol.~5, No.~1, p.~93, 2010.
 
 \bibitem{orth2010flux}
 Orth, J.~D., I.~Thiele and B.~{\O}. Palsson, \enquote{What is flux balance
-  analysis?}, {\em Nature biotechnology\/}, Vol.~28, No.~3, p. 245, 2010.
+  analysis?}, {\em Nature Biotechnology\/}, Vol.~28, No.~3, p. 245, 2010.
 
 \bibitem{vallino1994carbon}
 Vallino, J.~J. and G.~Stephanopoulos, \enquote{Carbon flux distributions at the
@@ -95,7 +116,7 @@ Vallino, J.~J. and G.~Stephanopoulos, \enquote{Carbon flux distributions at the
 
 \bibitem{varma1993biochemical}
 Varma, A., B.~W. Boesch and B.~O. Palsson, \enquote{Biochemical production
-  capabilities of Escherichia coli}, {\em Biotechnology and bioengineering\/},
+  capabilities of Escherichia coli}, {\em Biotechnology and Bioengineering\/},
   Vol.~42, No.~1, pp. 59--73, 1993.
 
 \bibitem{feist2009reconstruction}
@@ -107,24 +128,24 @@ Feist, A.~M., M.~J. Herrg{\aa}rd, I.~Thiele, J.~L. Reed and B.~{\O}. Palsson,
 Pitk{\"a}nen, E., P.~Jouhten, J.~Hou, M.~F. Syed, P.~Blomberg, J.~Kludas,
   M.~Oja, L.~Holm, M.~Penttil{\"a}, J.~Rousu {\em et~al.\/},
   \enquote{Comparative genome-scale reconstruction of gapless metabolic
-  networks for present and ancestral species}, {\em PLoS computational
-  biology\/}, Vol.~10, No.~2, p. e1003465, 2014.
+  networks for present and ancestral species}, {\em PLoS Computational
+  Biology\/}, Vol.~10, No.~2, p. e1003465, 2014.
 
 \bibitem{kerkhoven2014applications}
 Kerkhoven, E.~J., P.-J. Lahtvee and J.~Nielsen, \enquote{Applications of
   computational modeling in metabolic engineering of yeast}, {\em FEMS Yeast
-  Res\/}, Vol.~15, No.~1, pp. 1567--1364, 2014.
+  Research\/}, Vol.~15, No.~1, pp. 1567--1364, 2014.
 
 \bibitem{chen2012metabolic}
 Chen, N., I.~J. del Val, S.~Kyriakopoulos, K.~M. Polizzi and C.~Kontoravdi,
   \enquote{Metabolic network reconstruction: advances in in silico
-  interpretation of analytical information}, {\em Current opinion in
-  biotechnology\/}, Vol.~23, No.~1, pp. 77--82, 2012.
+  interpretation of analytical information}, {\em Current Opinion in
+  Biotechnology\/}, Vol.~23, No.~1, pp. 77--82, 2012.
 
 \bibitem{durot2008genome}
 Durot, M., P.-Y. Bourguignon and V.~Schachter, \enquote{Genome-scale models of
   bacterial metabolism: reconstruction and applications}, {\em FEMS
-  microbiology reviews\/}, Vol.~33, No.~1, pp. 164--190, 2008.
+  Microbiology Reviews\/}, Vol.~33, No.~1, pp. 164--190, 2008.
 
 \bibitem{dikicioglu2015biomass}
 Dikicioglu, D., B.~K{\i}rdar and S.~G. Oliver, \enquote{Biomass composition:
@@ -134,7 +155,7 @@ Dikicioglu, D., B.~K{\i}rdar and S.~G. Oliver, \enquote{Biomass composition:
 \bibitem{machado2014systematic}
 Machado, D. and M.~Herrg{\aa}rd, \enquote{Systematic evaluation of methods for
   integration of transcriptomic data into constraint-based models of
-  metabolism}, {\em PLoS computational biology\/}, Vol.~10, No.~4, p. e1003580,
+  metabolism}, {\em PLoS Computational Biology\/}, Vol.~10, No.~4, p. e1003580,
   2014.
 
 \bibitem{ramkrishna2012dynamic}
@@ -145,21 +166,21 @@ Ramkrishna, D. and H.-S. Song, \enquote{Dynamic models of metabolism: Review of
 \bibitem{kim2012recent}
 Kim, T.~Y., S.~B. Sohn, Y.~B. Kim, W.~J. Kim and S.~Y. Lee, \enquote{Recent
   advances in reconstruction and applications of genome-scale metabolic
-  models}, {\em Current opinion in biotechnology\/}, Vol.~23, No.~4, pp.
+  models}, {\em Current Opinion in Biotechnology\/}, Vol.~23, No.~4, pp.
   617--623, 2012.
 
 \bibitem{stephanopoulos1999metabolic}
 Stephanopoulos, G., \enquote{Metabolic fluxes and metabolic engineering}, {\em
-  Metabolic engineering\/}, Vol.~1, No.~1, pp. 1--11, 1999.
+  Metabolic Engineering\/}, Vol.~1, No.~1, pp. 1--11, 1999.
 
 \bibitem{stephanopoulos2012synthetic}
 Stephanopoulos, G., \enquote{Synthetic biology and metabolic engineering}, {\em
-  ACS synthetic biology\/}, Vol.~1, No.~11, pp. 514--525, 2012.
+  ACS Synthetic Biology\/}, Vol.~1, No.~11, pp. 514--525, 2012.
 
 \bibitem{osterlund2012fifteen}
 {\"O}sterlund, T., I.~Nookaew and J.~Nielsen, \enquote{Fifteen years of large
   scale metabolic modeling of yeast: developments and impacts}, {\em
-  Biotechnology advances\/}, Vol.~30, No.~5, pp. 979--988, 2012.
+  Biotechnology Advances\/}, Vol.~30, No.~5, pp. 979--988, 2012.
 
 \bibitem{pinzon2018mathematical}
 Pinzon, W., H.~Vega, J.~Gonzalez and A.~Pinzon, \enquote{Mathematical Framework
@@ -168,7 +189,7 @@ Pinzon, W., H.~Vega, J.~Gonzalez and A.~Pinzon, \enquote{Mathematical Framework
 
 \bibitem{reimers2016steady}
 Reimers, A.-M. and A.~C. Reimers, \enquote{The steady-state assumption in
-  oscillating and growing systems}, {\em Journal of theoretical biology\/},
+  oscillating and growing systems}, {\em Journal of Theoretical Biology\/},
   Vol. 406, pp. 176--186, 2016.
 
 \bibitem{thiele2007bringing}
@@ -181,9 +202,15 @@ Price, N.~D., J.~L. Reed and B.~{\O}. Palsson, \enquote{Genome-scale models of
   microbial cells: evaluating the consequences of constraints}, {\em Nature
   Reviews Microbiology\/}, Vol.~2, No.~11, p. 886, 2004.
 
+\bibitem{lewis2012constraining}
+Lewis, N.~E., H.~Nagarajan and B.~O. Palsson, \enquote{Constraining the
+  metabolic genotype--phenotype relationship using a phylogeny of in silico
+  methods}, {\em Nature Reviews Microbiology\/}, Vol.~10, No.~4, pp. 291--305,
+  2012.
+
 \bibitem{gelinas2009inventions}
 G{\'e}linas, P., \enquote{Inventions on baker's yeast strains and specialty
-  ingredients}, {\em Recent patents on food, nutrition \& agriculture\/},
+  ingredients}, {\em Recent Patents on Food, Nutrition \& Agriculture\/},
   Vol.~1, No.~2, pp. 104--132, 2009.
 
 \bibitem{goffeau1997multidrug}
@@ -211,9 +238,178 @@ Barnett, J.~A., \enquote{A history of research on yeasts 2: Louis Pasteur and
   his contemporaries, 1850--1880}, {\em Yeast\/}, Vol.~16, No.~8, pp. 755--771,
   2000.
 
-\bibitem{kanehisa2000kegg}
-Kanehisa, M. and S.~Goto, \enquote{KEGG: kyoto encyclopedia of genes and
-  genomes}, {\em Nucleic acids research\/}, Vol.~28, No.~1, pp. 27--30, 2000.
+\bibitem{larsson2000importance}
+Larsson, C., I.-l. P{\aa}hlman and L.~Gustafsson, \enquote{The importance of
+  ATP as a regulator of glycolytic flux in Saccharomyces cerevisiae}, {\em
+  Yeast\/}, Vol.~16, No.~9, pp. 797--809, 2000.
+
+\bibitem{diaz2008mitochondrial}
+D{\'\i}az-Ruiz, R., N.~Av{\'e}ret, D.~Araiza, B.~Pinson, S.~Uribe-Carvajal,
+  A.~Devin and M.~Rigoulet, \enquote{Mitochondrial Oxidative Phosphorylation Is
+  Regulated by Fructose 1, 6-Bisphosphate A Possible Role in Crabtree Effect
+  Induction?}, {\em Journal of Biological Chemistry\/}, Vol. 283, No.~40, pp.
+  26948--26955, 2008.
+
+\bibitem{ter2001transcriptome}
+ter Kuile, B.~H. and H.~V. Westerhoff, \enquote{Transcriptome meets metabolome:
+  hierarchical and metabolic regulation of the glycolytic pathway}, {\em FEBS
+  Letters\/}, Vol. 500, No.~3, pp. 169--171, 2001.
+
+\bibitem{daran2004role}
+Daran-Lapujade, P., M.~L. Jansen, J.-M. Daran, W.~van Gulik, J.~H. de~Winde and
+  J.~T. Pronk, \enquote{Role of transcriptional regulation in controlling
+  fluxes in central carbon metabolism of Saccharomyces cerevisiae A chemostat
+  culture study}, {\em Journal of Biological Chemistry\/}, Vol. 279, No.~10,
+  pp. 9125--9138, 2004.
+
+\bibitem{liu1999transcriptional}
+Liu, Z. and R.~A. Butow, \enquote{A transcriptional switch in the expression of
+  yeast tricarboxylic acid cycle genes in response to a reduction or loss of
+  respiratory function}, {\em Molecular and Cellular Biology\/}, Vol.~19,
+  No.~10, pp. 6720--6728, 1999.
+
+\bibitem{coleman1975regulation}
+Coleman, J. and J.~Bhattacharjee, \enquote{Regulation of citrate synthase
+  activity ofSaccharomyces cerevisiae}, {\em Antonie van Leeuwenhoek\/},
+  Vol.~41, No.~1, pp. 249--256, 1975.
+
+\bibitem{gadde1997mutations}
+Gadde, D.~M. and M.~T. McCammon, \enquote{Mutations in theIDH2Gene Encoding the
+  Catalytic Subunit of the Yeast NAD+-Dependent Isocitrate Dehydrogenase Can Be
+  Suppressed by Mutations in theCIT1Gene Encoding Citrate Synthase and Other
+  Genes of Oxidative Metabolism}, {\em Archives of Biochemistry and
+  Biophysics\/}, Vol. 344, No.~1, pp. 139--149, 1997.
+
+\bibitem{bakker2001stoichiometry}
+Bakker, B.~M., K.~M. Overkamp, A.~J. van Maris, P.~K{\"o}tter, M.~A. Luttik,
+  J.~P. van Dijken and J.~T. Pronk, \enquote{Stoichiometry and compartmentation
+  of NADH metabolism in Saccharomyces cerevisiae}, {\em FEMS Microbiology
+  Reviews\/}, Vol.~25, No.~1, pp. 15--37, 2001.
+
+\bibitem{zitomer1979transcriptional}
+Zitomer, R.~S., D.~L. Montgomery, D.~L. Nichols and B.~D. Hall,
+  \enquote{Transcriptional regulation of the yeast cytochrome c gene}, {\em
+  Proceedings of the National Academy of Sciences\/}, Vol.~76, No.~8, pp.
+  3627--3631, 1979.
+
+\bibitem{de1987mitochondrial}
+de~Vries, S. and C.~A. Marres, \enquote{The mitochondrial respiratory chain of
+  yeast. Structure and biosynthesis and the role in cellular metabolism}, {\em
+  Biochimica et Biophysica Acta (BBA)-Reviews on Bioenergetics\/}, Vol. 895,
+  No.~3, pp. 205--239, 1987.
+
+\bibitem{cimini2009global}
+Cimini, D., K.~R. Patil, C.~Schiraldi and J.~Nielsen, \enquote{Global
+  transcriptional response of Saccharomyces cerevisiae to the deletion of
+  SDH3}, {\em BMC Systems Biology\/}, Vol.~3, No.~1, p.~17, 2009.
+
+\bibitem{lagunas1983role}
+Lagunas, R. and C.~Gancedo, \enquote{Role of phosphate in the regulation of the
+  Pasteur effect in Saccharomyces cerevisiae}, {\em European Journal of
+  Biochemistry\/}, Vol. 137, No.~3, pp. 479--483, 1983.
+
+\bibitem{kaliterna1995transient}
+Kaliterna, J., R.~A. Weusthuis, J.~I. Castrillo, J.~P. Van~Dijken and J.~T.
+  Pronk, \enquote{Transient responses of Candida utilis to oxygen limitation:
+  regulation of the Kluyver effect for maltose}, {\em Yeast\/}, Vol.~11, No.~4,
+  pp. 317--325, 1995.
+
+\bibitem{scheffers1966stimulation}
+Scheffers, W., \enquote{Stimulation of fermentation in yeasts by acetoin and
+  oxygen}, {\em Nature\/}, Vol. 210, No. 5035, pp. 533--534, 1966.
+
+\bibitem{mans2018under}
+Mans, R., J.-M.~G. Daran and J.~T. Pronk, \enquote{Under pressure: evolutionary
+  engineering of yeast strains for improved performance in fuels and chemicals
+  production}, {\em Current Opinion in Biotechnology\/}, Vol.~50, pp. 47--56,
+  2018.
+
+\bibitem{ho2017sole}
+Ho, P.-W., S.~Swinnen, J.~Duitama and E.~Nevoigt, \enquote{The sole
+  introduction of two single-point mutations establishes glycerol utilization
+  in Saccharomyces cerevisiae CEN. PK derivatives}, {\em Biotechnology for
+  Biofuels\/}, Vol.~10, No.~1, p.~10, 2017.
+
+\bibitem{bracher2017laboratory}
+Bracher, J.~M., E.~de~Hulster, C.~C. Koster, M.~van~den Broek, J.-M.~G. Daran,
+  A.~J. van Maris and J.~T. Pronk, \enquote{Laboratory evolution of a
+  biotin-requiring Saccharomyces cerevisiae strain for full biotin prototrophy
+  and identification of causal mutations}, {\em Applied and Environmental
+  Microbiology\/}, Vol.~83, No.~16, 2017.
+
+\bibitem{smith2014simultaneously}
+Smith, J., E.~Van~Rensburg and J.~F. G{\"o}rgens, \enquote{Simultaneously
+  improving xylose fermentation and tolerance to lignocellulosic inhibitors
+  through evolutionary engineering of recombinant Saccharomyces
+  cerevisiaeharbouring xylose isomerase}, {\em BMC Biotechnology\/}, Vol.~14,
+  No.~1, p.~41, 2014.
+
+\bibitem{voordeckers2015adaptation}
+Voordeckers, K., J.~Kominek, A.~Das, A.~Espinosa-Cantu, D.~De~Maeyer,
+  A.~Arslan, M.~Van~Pee, E.~van~der Zande, W.~Meert, Y.~Yang {\em et~al.\/},
+  \enquote{Adaptation to high ethanol reveals complex evolutionary pathways},
+  {\em PLoS Genetics\/}, Vol.~11, No.~11, p. e1005635, 2015.
+
+\bibitem{fletcher2017evolutionary}
+Fletcher, E., A.~Feizi, M.~M. Bisschops, B.~M. Hallstr{\"o}m, S.~Khoomrung,
+  V.~Siewers and J.~Nielsen, \enquote{Evolutionary engineering reveals
+  divergent paths when yeast is adapted to different acidic environments}, {\em
+  Metabolic Engineering\/}, Vol.~39, pp. 19--28, 2017.
+
+\bibitem{gaxiola1992novel}
+Gaxiola, R., I.~F. De~Larrinoa, J.~M. Villalba and R.~Serrano, \enquote{A novel
+  and conserved salt-induced protein is an important determinant of salt
+  tolerance in yeast.}, {\em The EMBO Journal\/}, Vol.~11, No.~9, pp.
+  3157--3164, 1992.
+
+\bibitem{turanli2017vivo}
+Turanl{\i}-Y{\i}ld{\i}z, B., L.~Benbadis, C.~Alk{\i}m, T.~Sezgin,
+  A.~Ak{\c{s}}it, A.~G{\"o}k{\c{c}}e, Y.~{\"O}zt{\"u}rk, A.~T. Baykal, Z.~P.
+  {\c{C}}akar and J.~M. Fran{\c{c}}ois, \enquote{In vivo evolutionary
+  engineering for ethanol-tolerance of Saccharomyces cerevisiae haploid cells
+  triggers diploidization}, {\em Journal of Bioscience and Bioengineering\/},
+  Vol. 124, No.~3, pp. 309--318, 2017.
+
+\bibitem{surmeli2019evolutionary}
+S{\"u}rmeli, Y., C.~Holyavkin, A.~Topalo{\u{g}}lu, M.~Arslan, H.~{\.I}.
+  K{\i}sakesen and Z.~P. {\c{C}}akar, \enquote{Evolutionary engineering and
+  molecular characterization of a caffeine-resistant Saccharomyces cerevisiae
+  strain}, {\em World Journal of Microbiology and Biotechnology\/}, Vol.~35,
+  No.~12, pp. 1--16, 2019.
+
+\bibitem{hacisalihouglu2019genomic}
+Hac{\i}saliho{\u{g}}lu, B., C.~Holyavkin, A.~Topalo{\u{g}}lu, H.~{\.I}.
+  K{\i}sakesen and Z.~P. {\c{C}}akar, \enquote{Genomic and transcriptomic
+  analysis of a coniferyl aldehyde-resistant Saccharomyces cerevisiae strain
+  obtained by evolutionary engineering}, {\em FEMS Yeast Research\/}, Vol.~19,
+  No.~3, p. foz021, 2019.
+
+\bibitem{balaban2020evolutionary}
+Balaban, B.~G., {\"U}.~Y{\i}lmaz, C.~Alk{\i}m, A.~Topalo{\u{g}}lu, H.~{\.I}.
+  K{\i}sakesen, C.~Holyavkin and Z.~P. {\c{C}}akar, \enquote{Evolutionary
+  Engineering of an Iron-Resistant Saccharomyces cerevisiae Mutant and Its
+  Physiological and Molecular Characterization}, {\em Microorganisms\/},
+  Vol.~8, No.~1, p.~43, 2020.
+
+\bibitem{kuccukgoze2013evolutionary}
+K{\"u}{\c{c}}{\"u}kg{\"o}ze, G., C.~Alk{\i}m, {\"U}.~Y{\i}lmaz, H.~{\.I}.
+  K{\i}sakesen, S.~G{\"u}nd{\"u}z, S.~Akman and Z.~P. {\c{C}}akar,
+  \enquote{Evolutionary engineering and transcriptomic analysis of
+  nickel-resistant Saccharomyces cerevisiae}, {\em FEMS Yeast Research\/},
+  Vol.~13, No.~8, pp. 731--746, 2013.
+
+\bibitem{holyavkin2013evrimsel}
+Holyavkin, C., {\em Evolutionary engineering of phenylethanol-resistant
+  Saccharomyces cerevisiae\/}, Ph.D. Thesis, Istanbul Technical University,
+  Graduate School of Science, Engineering and Technology, 2013.
+
+\bibitem{terziouglu2020genomic}
+Terzio{\u{g}}lu, E., C.~Alk{\i}m, M.~Arslan, B.~G. Balaban, C.~Holyavkin,
+  H.~{\.I}. K{\i}sakesen, A.~Topalo{\u{g}}lu, {\"U}.~Y{\i}lmaz~{\c{S}}ahin,
+  S.~G{\"u}nd{\"u}z~I{\c{s}}{\i}k, S.~Akman {\em et~al.\/}, \enquote{Genomic,
+  transcriptomic and physiological analyses of silver-resistant Saccharomyces
+  cerevisiae obtained by evolutionary engineering}, {\em Yeast\/}, Vol.~37, No.
+  9-10, pp. 413--426, 2020.
 
 \bibitem{derisi1997exploring}
 DeRisi, J.~L., V.~R. Iyer and P.~O. Brown, \enquote{Exploring the metabolic and
@@ -230,74 +426,189 @@ Cho, R.~J., M.~Fromont-Racine, L.~Wodicka, B.~Feierbach, T.~Stearns,
 \bibitem{forster2003genome}
 F{\"o}rster, J., I.~Famili, P.~Fu, B.~{\O}. Palsson and J.~Nielsen,
   \enquote{Genome-scale reconstruction of the Saccharomyces cerevisiae
-  metabolic network}, {\em Genome research\/}, Vol.~13, No.~2, pp. 244--253,
+  metabolic network}, {\em Scientific Reports\/}, Vol.~13, No.~2, pp. 244--253,
   2003.
+
+\bibitem{forster2003large}
+F{\"o}rster, J., I.~Famili, B.~{\O}. Palsson and J.~Nielsen,
+  \enquote{Large-scale evaluation of in silico gene deletions in Saccharomyces
+  cerevisiae}, {\em OMICS A Journal of Integrative Biology\/}, Vol.~7, No.~2,
+  pp. 193--202, 2003.
+
+\bibitem{famili2003saccharomyces}
+Famili, I., J.~F{\"o}rster, J.~Nielsen and B.~O. Palsson,
+  \enquote{Saccharomyces cerevisiae phenotypes can be predicted by using
+  constraint-based analysis of a genome-scale reconstructed metabolic network},
+  {\em Proceedings of the National Academy of Sciences\/}, Vol. 100, No.~23,
+  pp. 13134--13139, 2003.
+
+\bibitem{duarte2004reconstruction}
+Duarte, N.~C., M.~J. Herrg{\aa}rd and B.~{\O}. Palsson, \enquote{Reconstruction
+  and validation of Saccharomyces cerevisiae iND750, a fully compartmentalized
+  genome-scale metabolic model}, {\em Genome Research\/}, Vol.~14, No.~7, pp.
+  1298--1309, 2004.
 
 \bibitem{lopes2017genome}
 Lopes, H. and I.~Rocha, \enquote{Genome-scale modeling of yeast: chronology,
-  applications and critical perspectives}, {\em FEMS yeast research\/},
+  applications and critical perspectives}, {\em FEMS Yeast Research\/},
   Vol.~17, No.~5, 2017.
+
+\bibitem{kuepfer2005metabolic}
+Kuepfer, L., U.~Sauer and L.~M. Blank, \enquote{Metabolic functions of
+  duplicate genes in Saccharomyces cerevisiae}, {\em Genome Research\/},
+  Vol.~15, No.~10, pp. 1421--1430, 2005.
+
+\bibitem{nookaew2008genome}
+Nookaew, I., M.~C. Jewett, A.~Meechai, C.~Thammarongtham, K.~Laoteng,
+  S.~Cheevadhanarak, J.~Nielsen and S.~Bhumiratana, \enquote{The genome-scale
+  metabolic model iIN800 of Saccharomyces cerevisiae and its validation: a
+  scaffold to query lipid metabolism}, {\em BMC Systems Biology\/}, Vol.~2,
+  No.~1, p.~71, 2008.
+
+\bibitem{mo2009connecting}
+Mo, M.~L., B.~{\O}. Palsson and M.~J. Herrg{\aa}rd, \enquote{Connecting
+  extracellular metabolomic measurements to intracellular flux states in
+  yeast}, {\em BMC Systems Biology\/}, Vol.~3, No.~1, p.~37, 2009.
+
+\bibitem{zomorrodi2010improving}
+Zomorrodi, A.~R. and C.~D. Maranas, \enquote{Improving the iMM904 S. cerevisiae
+  metabolic model using essentiality and synthetic lethality data}, {\em BMC
+  Systems Biology\/}, Vol.~4, No.~1, p. 178, 2010.
+
+\bibitem{herrgaard2008consensus}
+Herrg{\aa}rd, M.~J., N.~Swainston, P.~Dobson, W.~B. Dunn, K.~Y. Arga, M.~Arvas,
+  N.~Bl{\"u}thgen, S.~Borger, R.~Costenoble, M.~Heinemann {\em et~al.\/},
+  \enquote{A consensus yeast metabolic network reconstruction obtained from a
+  community approach to systems biology}, {\em Nature Biotechnology\/},
+  Vol.~26, No.~10, p. 1155, 2008.
+
+\bibitem{dobson2010further}
+Dobson, P.~D., K.~Smallbone, D.~Jameson, E.~Simeonidis, K.~Lanthaler, P.~Pir,
+  C.~Lu, N.~Swainston, W.~B. Dunn, P.~Fisher {\em et~al.\/}, \enquote{Further
+  developments towards a genome-scale metabolic model of yeast}, {\em BMC
+  Systems Biology\/}, Vol.~4, No.~1, p. 145, 2010.
+
+\bibitem{heavner2012yeast}
+Heavner, B.~D., K.~Smallbone, B.~Barker, P.~Mendes and L.~P. Walker,
+  \enquote{Yeast 5--an expanded reconstruction of the Saccharomyces cerevisiae
+  metabolic network}, {\em BMC Systems Biology\/}, Vol.~6, No.~1, p.~55, 2012.
+
+\bibitem{heavner2013version}
+Heavner, B.~D., K.~Smallbone, N.~D. Price and L.~P. Walker, \enquote{Version 6
+  of the consensus yeast metabolic network refines biochemical coverage and
+  improves model performance}, {\em Database\/}, Vol. 2013, 2013.
+
+\bibitem{aung2013revising}
+Aung, H.~W., S.~A. Henry and L.~P. Walker, \enquote{Revising the representation
+  of fatty acid, glycerolipid, and glycerophospholipid metabolism in the
+  consensus model of yeast metabolism}, {\em Industrial Biotechnology\/},
+  Vol.~9, No.~4, pp. 215--228, 2013.
 
 \bibitem{lu2019consensus}
 Lu, H., F.~Li, B.~J. S{\'a}nchez, Z.~Zhu, G.~Li, I.~Domenzain,
   S.~Marci{\v{s}}auskas, P.~M. Anton, D.~Lappa, C.~Lieven {\em et~al.\/},
   \enquote{A consensus S. cerevisiae metabolic model Yeast8 and its ecosystem
   for comprehensively probing cellular metabolism}, {\em Nature
-  communications\/}, Vol.~10, No.~1, pp. 1--13, 2019.
+  Communications\/}, Vol.~10, No.~1, pp. 1--13, 2019.
 
-\bibitem{aung2013revising}
-Aung, H.~W., S.~A. Henry and L.~P. Walker, \enquote{Revising the representation
-  of fatty acid, glycerolipid, and glycerophospholipid metabolism in the
-  consensus model of yeast metabolism}, {\em Industrial biotechnology\/},
-  Vol.~9, No.~4, pp. 215--228, 2013.
+\bibitem{bro2006silico}
+Bro, C., B.~Regenberg, J.~F{\"o}rster and J.~Nielsen, \enquote{In silico aided
+  metabolic engineering of Saccharomyces cerevisiae for improved bioethanol
+  production}, {\em Metabolic Engineering\/}, Vol.~8, No.~2, pp. 102--111,
+  2006.
+
+\bibitem{burgard2003optknock}
+Burgard, A.~P., P.~Pharkya and C.~D. Maranas, \enquote{Optknock: a bilevel
+  programming framework for identifying gene knockout strategies for microbial
+  strain optimization}, {\em Biotechnology and Bioengineering\/}, Vol.~84,
+  No.~6, pp. 647--657, 2003.
+
+\bibitem{ng2012production}
+Ng, C., M.-y. Jung, J.~Lee and M.-K. Oh, \enquote{Production of 2, 3-butanediol
+  in Saccharomyces cerevisiae by in silico aided metabolic engineering}, {\em
+  Microbial Cell Factories\/}, Vol.~11, No.~1, p.~68, 2012.
+
+\bibitem{xu2012fumaric}
+Xu, G., W.~Zou, X.~Chen, N.~Xu, L.~Liu and J.~Chen, \enquote{Fumaric acid
+  production in Saccharomyces cerevisiae by in silico aided metabolic
+  engineering}, {\em PloS One\/}, Vol.~7, No.~12, p. e52086, 2012.
+
+\bibitem{sun2014identification}
+Sun, Z., H.~Meng, J.~Li, J.~Wang, Q.~Li, Y.~Wang and Y.~Zhang,
+  \enquote{Identification of novel knockout targets for improving terpenoids
+  biosynthesis in Saccharomyces cerevisiae}, {\em PloS One\/}, Vol.~9, No.~11,
+  p. e112615, 2014.
 
 \bibitem{chowdhury2015using}
 Chowdhury, R., A.~Chowdhury and C.~Maranas, \enquote{Using gene essentiality
   and synthetic lethality information to correct yeast and CHO cell
   genome-scale models}, {\em Metabolites\/}, Vol.~5, No.~4, pp. 536--570, 2015.
 
-\bibitem{nilsson2016metabolic}
-Nilsson, A. and J.~Nielsen, \enquote{Metabolic trade-offs in yeast are caused
-  by F1F0-ATP synthase}, {\em Scientific reports\/}, Vol.~6, p. 22264, 2016.
-
 \bibitem{arslan2018physiological}
 Arslan, M., C.~Holyavkin, H.~{\.I}. K{\i}sakesen, A.~Topalo{\u{g}}lu,
   Y.~S{\"u}rmeli and Z.~P. {\c{C}}akar, \enquote{Physiological and
   transcriptomic analysis of a chronologically long-lived Saccharomyces
   cerevisiae strain obtained by evolutionary engineering}, {\em Molecular
-  biotechnology\/}, Vol.~60, No.~7, pp. 468--484, 2018.
+  Biotechnology\/}, Vol.~60, No.~7, pp. 468--484, 2018.
+
+\bibitem{nilsson2016metabolic}
+Nilsson, A. and J.~Nielsen, \enquote{Metabolic trade-offs in yeast are caused
+  by F1F0-ATP synthase}, {\em Scientific Reports\/}, Vol.~6, p. 22264, 2016.
 
 \bibitem{sanchez2017improving}
 S{\'a}nchez, B.~J., C.~Zhang, A.~Nilsson, P.-J. Lahtvee, E.~J. Kerkhoven and
   J.~Nielsen, \enquote{Improving the phenotype predictions of a yeast
   genome-scale metabolic model by incorporating enzymatic constraints}, {\em
-  Molecular systems biology\/}, Vol.~13, No.~8, 2017.
+  Molecular Systems Biology\/}, Vol.~13, No.~8, 2017.
+
+\bibitem{huber2015orchestrating}
+Huber, W., V.~J. Carey, R.~Gentleman, S.~Anders, M.~Carlson, B.~S. Carvalho,
+  H.~C. Bravo, S.~Davis, L.~Gatto, T.~Girke {\em et~al.\/},
+  \enquote{Orchestrating high-throughput genomic analysis with Bioconductor},
+  {\em Nature Methods\/}, Vol.~12, No.~2, p. 115, 2015.
+
+\bibitem{davis2007geoquery}
+Davis, S. and P.~S. Meltzer, \enquote{GEOquery: a bridge between the Gene
+  Expression Omnibus (GEO) and BioConductor}, {\em Bioinformatics\/}, Vol.~23,
+  No.~14, pp. 1846--1847, 2007.
+
+\bibitem{ritchie2015limma}
+Ritchie, M.~E., B.~Phipson, D.~Wu, Y.~Hu, C.~W. Law, W.~Shi and G.~K. Smyth,
+  \enquote{limma powers differential expression analyses for RNA-sequencing and
+  microarray studies}, {\em Nucleic Acids Research\/}, Vol.~43, No.~7, pp.
+  e47--e47, 2015.
 
 \bibitem{edwards2002characterizing}
 Edwards, J.~S., R.~Ramakrishna and B.~O. Palsson, \enquote{Characterizing the
   metabolic phenotype: a phenotype phase plane analysis}, {\em Biotechnology
-  and bioengineering\/}, Vol.~77, No.~1, pp. 27--36, 2002.
+  and Bioengineering\/}, Vol.~77, No.~1, pp. 27--36, 2002.
+
+\bibitem{tack2017simulation}
+Tack, I.~L., P.~Nimmegeers, S.~Akkermans, I.~Hashem and J.~F. Van~Impe,
+  \enquote{Simulation of Escherichia coli dynamics in biofilms and submerged
+  colonies with an individual-based model including metabolic network
+  information}, {\em Frontiers in Microbiology\/}, Vol.~8, p. 2509, 2017.
 
 \bibitem{thiele2010functional}
 Thiele, I., R.~M. Fleming, A.~Bordbar, J.~Schellenberger and B.~{\O}. Palsson,
   \enquote{Functional characterization of alternate optimal solutions of
   Escherichia coli's transcriptional and translational machinery}, {\em
-  Biophysical journal\/}, Vol.~98, No.~10, pp. 2072--2081, 2010.
+  Biophysical Journal\/}, Vol.~98, No.~10, pp. 2072--2081, 2010.
 
 \bibitem{mahadevan2003effects}
 Mahadevan, R. and C.~Schilling, \enquote{The effects of alternate optimal
   solutions in constraint-based genome-scale metabolic models}, {\em Metabolic
-  engineering\/}, Vol.~5, No.~4, pp. 264--276, 2003.
+  Engineering\/}, Vol.~5, No.~4, pp. 264--276, 2003.
 
 \bibitem{reed2004genome}
 Reed, J.~L. and B.~{\O}. Palsson, \enquote{Genome-scale in silico models of E.
   coli have multiple equivalent phenotypic states: assessment of correlated
-  reaction subsets that comprise network states}, {\em Genome research\/},
+  reaction subsets that comprise network states}, {\em Genome Research\/},
   Vol.~14, No.~9, pp. 1797--1805, 2004.
 
 \bibitem{gudmundsson2010computationally}
 Gudmundsson, S. and I.~Thiele, \enquote{Computationally efficient flux
-  variability analysis}, {\em BMC bioinformatics\/}, Vol.~11, No.~1, p. 489,
+  variability analysis}, {\em BMC Bioinformatics\/}, Vol.~11, No.~1, p. 489,
   2010.
 
 \bibitem{kiatsupaibul2011analysis}
@@ -313,12 +624,262 @@ Saa, P.~A. and L.~K. Nielsen, \enquote{ll-ACHRB: a scalable algorithm for
 
 \bibitem{schellenberger2009use}
 Schellenberger, J. and B.~{\O}. Palsson, \enquote{Use of randomized sampling
-  for analysis of metabolic networks}, {\em Journal of biological chemistry\/},
+  for analysis of metabolic networks}, {\em Journal of Biological Chemistry\/},
   Vol. 284, No.~9, pp. 5457--5461, 2009.
+
+\bibitem{heirendt2019creation}
+Heirendt, L., S.~Arreckx, T.~Pfau, S.~N. Mendoza, A.~Richelle, A.~Heinken,
+  H.~S. Haraldsd{\'o}ttir, J.~Wachowiak, S.~M. Keating, V.~Vlasov {\em
+  et~al.\/}, \enquote{Creation and analysis of biochemical constraint-based
+  models using the COBRA Toolbox v. 3.0}, {\em Nature Protocols\/}, Vol.~14,
+  No.~3, pp. 639--702, 2019.
+
+\bibitem{wang2018raven}
+Wang, H., S.~Marci{\v{s}}auskas, B.~J. S{\'a}nchez, I.~Domenzain,
+  D.~Hermansson, R.~Agren, J.~Nielsen and E.~J. Kerkhoven, \enquote{RAVEN 2.0:
+  A versatile toolbox for metabolic network reconstruction and a case study on
+  Streptomyces coelicolor}, {\em PLoS Computational Biology\/}, Vol.~14,
+  No.~10, p. e1006541, 2018.
 
 \bibitem{van1998effect}
 Van~Hoek, P., J.~P. Van~Dijken and J.~T. Pronk, \enquote{Effect of specific
   growth rate on fermentative capacity of baker’s yeast}, {\em Appl. Environ.
   Microbiol.\/}, Vol.~64, No.~11, pp. 4226--4233, 1998.
+
+\bibitem{jeske2019brenda}
+Jeske, L., S.~Placzek, I.~Schomburg, A.~Chang and D.~Schomburg, \enquote{BRENDA
+  in 2019: a European ELIXIR core data resource}, {\em Nucleic Acids
+  Research\/}, Vol.~47, No.~D1, pp. D542--D549, 2019.
+
+\bibitem{bordel2010sampling}
+Bordel, S., R.~Agren and J.~Nielsen, \enquote{Sampling the solution space in
+  genome-scale metabolic networks reveals transcriptional regulation in key
+  enzymes}, {\em PLoS Computational Biology\/}, Vol.~6, No.~7, p. e1000859,
+  2010.
+
+\bibitem{buttonbiochemical}
+Button, D., \enquote{Biochemical Basis for Whole-Cell Uptake Kinetics: Specific
+  Affinity, Oligotrophic Capacity, and the Meaning of the Michaelis Constant},
+  .
+
+\bibitem{penninckx2002overview}
+Penninckx, M.~J., \enquote{An overview on glutathione in Saccharomyces versus
+  non-conventional yeasts}, {\em FEMS Yeast Research\/}, Vol.~2, No.~3, pp.
+  295--305, 2002.
+
+\bibitem{kepes1988yeast}
+Kepes, F. and R.~Schekman, \enquote{The yeast SEC53 gene encodes
+  phosphomannomutase.}, {\em Journal of Biological Chemistry\/}, Vol. 263,
+  No.~19, pp. 9155--9161, 1988.
+
+\bibitem{oltmanns1972biosynthesis}
+Oltmanns, O. and A.~Bacher, \enquote{Biosynthesis of riboflavine in
+  Saccharomyces cerevisiae: the role of genes rib 1 and rib 7}, {\em Journal of
+  Bacteriology\/}, Vol. 110, No.~3, pp. 818--822, 1972.
+
+\bibitem{arnold1997yeast}
+Arnold, I., M.~F. Bauer, M.~Brunner, W.~Neupert and R.~A. Stuart,
+  \enquote{Yeast mitochondrial F1F0-ATPase: the novel subunit e is identical to
+  Tim11}, {\em FEBS Letters\/}, Vol. 411, No. 2-3, pp. 195--200, 1997.
+
+\bibitem{trembath1975biogenesis}
+Trembath, M., B.~Monk, G.~Kellerman and A.~Linnane, \enquote{Biogenesis of
+  mitochondria 36}, {\em Molecular and General Genetics MGG\/}, Vol. 141,
+  No.~1, pp. 9--22, 1975.
+
+\bibitem{tokatlidis1996translocation}
+Tokatlidis, K., T.~Junne, S.~Moes, G.~Schatz and B.~S. Glick,
+  \enquote{Translocation arrest of an intramitochondrial sorting signal next to
+  Tim11 at the inner-membrane import site}, {\em Nature\/}, Vol. 384, No. 6609,
+  pp. 585--588, 1996.
+
+\bibitem{meunier2013respiratory}
+Meunier, B., N.~Fisher, S.~Ransac, J.-P. Mazat and G.~Brasseur,
+  \enquote{Respiratory complex III dysfunction in humans and the use of yeast
+  as a model organism to study mitochondrial myopathy and associated diseases},
+  {\em Biochimica Et Biophysica Acta (BBA)-Bioenergetics\/}, Vol. 1827, No.
+  11-12, pp. 1346--1361, 2013.
+
+\bibitem{athenstaedt1997biosynthesis}
+Athenstaedt, K. and G.~Daum, \enquote{Biosynthesis of phosphatidic acid in
+  lipid particles and endoplasmic reticulum of Saccharomyces cerevisiae}, {\em
+  Journal of Bacteriology\/}, Vol. 179, No.~24, pp. 7611--7616, 1997.
+
+\bibitem{jimenez2008phosphoribosyl}
+Jim{\'e}nez, A., M.~A. Santos and J.~L. Revuelta, \enquote{Phosphoribosyl
+  pyrophosphate synthetase activity affects growth and riboflavin production in
+  Ashbya gossypii}, {\em BMC Biotechnology\/}, Vol.~8, No.~1, pp. 1--12, 2008.
+
+\bibitem{schneiter2000importance}
+Schneiter, R., A.~T. Carter, Y.~Hernando, G.~Zellnig, L.~M. Schweizer and
+  M.~Schweizer, \enquote{The importance of the five
+  phosphoribosyl-pyrophosphate synthetase (Prs) gene products of Saccharomyces
+  cerevisiae in the maintenance of cell integrity and the subcellular
+  localization of Prs1p}, {\em Microbiology\/}, Vol. 146, No.~12, pp.
+  3269--3278, 2000.
+
+\bibitem{ugbogu2013contribution}
+Ugbogu, E.~A., S.~Wippler, M.~Euston, E.~N. Kouwenhoven, A.~P. de~Brouwer,
+  L.~M. Schweizer and M.~Schweizer, \enquote{The contribution of the
+  nonhomologous region of Prs1 to the maintenance of cell wall integrity and
+  cell viability}, {\em FEMS Yeast Research\/}, Vol.~13, No.~3, pp. 291--301,
+  2013.
+
+\bibitem{de2012yeast}
+De~Smet, C.~H., E.~Vittone, M.~Scherer, M.~Houweling, G.~Liebisch, J.~F.
+  Brouwers and A.~I. de~Kroon, \enquote{The yeast acyltransferase Sct1p
+  regulates fatty acid desaturation by competing with the desaturase Ole1p},
+  {\em Molecular Biology of the Cell\/}, Vol.~23, No.~7, pp. 1146--1156, 2012.
+
+\bibitem{hasslacher1993acetyl}
+Hasslacher, M., A.~Ivessa, F.~Paltauf and S.~Kohlwein, \enquote{Acetyl-CoA
+  carboxylase from yeast is an essential enzyme and is regulated by factors
+  that control phospholipid metabolism}, {\em Journal of Biological
+  Chemistry\/}, Vol. 268, No.~15, pp. 10946--10952, 1993.
+
+\bibitem{morris1987yeast}
+Morris, C.~P., F.~Lim and J.~C. Wallace, \enquote{Yeast pyruvate carboxylase:
+  gene isolation}, {\em Biochemical and Biophysical Research Communications\/},
+  Vol. 145, No.~1, pp. 390--396, 1987.
+
+\bibitem{tsibris1966studies}
+Tsibris, J.~C., D.~B. McCormick and L.~D. Wright, \enquote{Studies on the
+  binding and function of flavin phosphates with flavin
+  mononucleotide-dependent enzymes}, {\em Journal of Biological Chemistry\/},
+  Vol. 241, No.~5, pp. 1138--1143, 1966.
+
+\bibitem{boucherie1995differential}
+Boucheri{\'e}, H., N.~Bataille, I.~T. Fitch, M.~Perrot and M.~F. Tuite,
+  \enquote{Differential synthesis of glyceraldehyde-3-phosphate dehydrogenase
+  polypeptides in stressed yeast cells}, {\em FEMS Microbiology Letters\/},
+  Vol. 125, No. 2-3, pp. 127--133, 1995.
+
+\bibitem{barber2005gapdh}
+Barber, R.~D., D.~W. Harmer, R.~A. Coleman and B.~J. Clark, \enquote{GAPDH as a
+  housekeeping gene: analysis of GAPDH mRNA expression in a panel of 72 human
+  tissues}, {\em Physiological Genomics\/}, Vol.~21, No.~3, pp. 389--395, 2005.
+
+\bibitem{yang2008effects}
+Yang, Y., W.~Fan, L.~Zhu, T.~Zhao, L.~Ma, Y.~Wu, R.~Ge and M.~Fan,
+  \enquote{Effects of hypoxia on mRNA expression of housekeeping genes in rat
+  brain tissue and primary cultured neural cells}, {\em Frontiers of Medicine
+  in China\/}, Vol.~2, No.~3, pp. 239--243, 2008.
+
+\bibitem{sweeny2018glyceraldehyde}
+Sweeny, E.~A., A.~B. Singh, R.~Chakravarti, O.~Martinez-Guzman, A.~Saini, M.~M.
+  Haque, G.~Garee, P.~D. Dans, L.~Hannibal, A.~R. Reddi {\em et~al.\/},
+  \enquote{Glyceraldehyde-3-phosphate dehydrogenase is a chaperone that
+  allocates labile heme in cells}, {\em Journal of Biological Chemistry\/},
+  Vol. 293, No.~37, pp. 14557--14568, 2018.
+
+\bibitem{chuang2005glyceraldehyde}
+Chuang, D.-M., C.~Hough and V.~V. Senatorov,
+  \enquote{Glyceraldehyde-3-phosphate dehydrogenase, apoptosis, and
+  neurodegenerative diseases}, {\em Annu. Rev. Pharmacol. Toxicol.\/}, Vol.~45,
+  pp. 269--290, 2005.
+
+\bibitem{hohmann1991pdc6}
+Hohmann, S., \enquote{PDC6, a weakly expressed pyruvate decarboxylase gene from
+  yeast, is activated when fused spontaneously under the control of the PDC1
+  promoter}, {\em Current Genetics\/}, Vol.~20, No.~5, pp. 373--378, 1991.
+
+\bibitem{tkach2012dissecting}
+Tkach, J.~M., A.~Yimit, A.~Y. Lee, M.~Riffle, M.~Costanzo, D.~Jaschob, J.~A.
+  Hendry, J.~Ou, J.~Moffat, C.~Boone {\em et~al.\/}, \enquote{Dissecting DNA
+  damage response pathways by analysing protein localization and abundance
+  changes during DNA replication stress}, {\em Nature Cell Biology\/}, Vol.~14,
+  No.~9, pp. 966--976, 2012.
+
+\bibitem{pryde1995sequence}
+Pryde, F.~E., T.~C. Huckle and E.~J. Louis, \enquote{Sequence analysis of the
+  right end of chromosome XV in Saccharomyces cerevisiae: an insight into the
+  structural and functional significance of sub-telomeric repeat sequences},
+  {\em Yeast\/}, Vol.~11, No.~4, pp. 371--382, 1995.
+
+\bibitem{kornblatt2013saccharomyces}
+Kornblatt, M., J.~Richard~Albert, S.~Mattie, J.~Zakaib, S.~Dayanandan,
+  P.~Hanic-Joyce and P.~Joyce, \enquote{The Saccharomyces cerevisiae
+  enolase-related regions encode proteins that are active enolases}, {\em
+  Yeast\/}, Vol.~30, No.~2, pp. 55--69, 2013.
+
+\bibitem{ho2009identification}
+Ho, C.~K., A.~F. Lam and L.~S. Symington, \enquote{Identification of nucleases
+  and phosphatases by direct biochemical screen of the Saccharomyces cerevisiae
+  proteome}, {\em PloS One\/}, Vol.~4, No.~9, p. e6993, 2009.
+
+\bibitem{grisolia1967mercury}
+Grisolia, S. and J.~Tecson, \enquote{Mercury-induced reversible increase in 2,
+  3-diphosphoglycerate phosphatase and concomitant decrease in mutase activity
+  of animal phosphoglycerate mutases}, {\em Biochimica et Biophysica Acta
+  (BBA)-Enzymology\/}, Vol. 132, No.~1, pp. 56--67, 1967.
+
+\bibitem{nosaka1994isolation}
+Nosaka, K., H.~Nishimura, Y.~Kawasaki, T.~Tsujihara and A.~Iwashima,
+  \enquote{Isolation and characterization of the THI6 gene encoding a
+  bifunctional thiamin-phosphate pyrophosphorylase/hydroxyethylthiazole kinase
+  from Saccharomyces cerevisiae.}, {\em Journal of Biological Chemistry\/},
+  Vol. 269, No.~48, pp. 30510--30516, 1994.
+
+\bibitem{amillet1995isolation}
+Amillet, J.-M. and R.~Labbe-Bois, \enquote{Isolation of the gene HEM4 encoding
+  uroporphyrinogen III synthase in Saccharomyces cerevisiae}, {\em Yeast\/},
+  Vol.~11, No.~5, pp. 419--424, 1995.
+
+\bibitem{tan2008identification}
+Tan, F.-C., Q.~Cheng, K.~Saha, I.~U. Heinemann, M.~Jahn, D.~Jahn and A.~G.
+  Smith, \enquote{Identification and characterization of the Arabidopsis gene
+  encoding the tetrapyrrole biosynthesis enzyme uroporphyrinogen III synthase},
+  {\em Biochemical Journal\/}, Vol. 410, No.~2, pp. 291--299, 2008.
+
+\bibitem{chiang1977activation}
+Chiang, P.~K. and C.~GL, \enquote{Activation of methionine for
+  transmethylation. Purification of the S-adenosylmethionine synthetase of
+  bakers' yeast and its separation into two forms.}, {\em The Journal of
+  Biological Chemistry\/}, 1977.
+
+\bibitem{girrbach2003members}
+Girrbach, V. and S.~Strahl, \enquote{Members of the evolutionarily conserved
+  PMT family of proteinO-mannosyltransferases form distinct protein complexes
+  among themselves}, {\em Journal of Biological Chemistry\/}, Vol. 278, No.~14,
+  pp. 12554--12562, 2003.
+
+\bibitem{TuranlYldz2017}
+Turanl{\i}-Y{\i}ld{\i}z, B., L.~Benbadis, C.~Alk{\i}m, T.~Sezgin,
+  A.~Ak{\c{s}}it, A.~G\"{o}k{\c{c}}e, Y.~\"{O}zt\"{u}rk, A.~T. Baykal, Z.~P.
+  {\c{C}}akar and J.~M. Fran{\c{c}}ois, \enquote{In~vivo evolutionary
+  engineering for ethanol-tolerance of Saccharomyces cerevisiae haploid cells
+  triggers diploidization}, {\em Journal of Bioscience and Bioengineering\/},
+  Vol. 124, No.~3, pp. 309--318, Sep. 2017.
+
+\bibitem{Srmeli2019}
+S\"{u}rmeli, Y., C.~Holyavkin, A.~Topalo{\u{g}}lu, M.~Arslan, H.~{\.{I}}.
+  K{\i}sakesen and Z.~P. {\c{C}}akar, \enquote{Evolutionary engineering and
+  molecular characterization of a caffeine-resistant Saccharomyces cerevisiae
+  strain}, {\em World Journal of Microbiology and Biotechnology\/}, Vol.~35,
+  No.~12, Nov. 2019.
+
+\bibitem{adeboye2015catabolism}
+Adeboye, P.~T., M.~Bettiga, F.~Aldaeus, P.~T. Larsson and L.~Olsson,
+  \enquote{Catabolism of coniferyl aldehyde, ferulic acid and p-coumaric acid
+  by Saccharomyces cerevisiae yields less toxic products}, {\em Microbial Cell
+  Factories\/}, Vol.~14, No.~1, p. 149, 2015.
+
+\bibitem{Hacsaliholu2019}
+Hac{\i}saliho{\u{g}}lu, B., C.~Holyavkin, A.~Topalo{\u{g}}lu, H.~{\.{I}}.
+  K{\i}sakesen and Z.~P. {\c{C}}akar, \enquote{Genomic and transcriptomic
+  analysis of a coniferyl aldehyde-{resistantSaccharomyces} cerevisiaestrain
+  obtained by evolutionary engineering}, {\em {FEMS} Yeast Research\/},
+  Vol.~19, No.~3, Apr. 2019.
+
+\bibitem{horstmann2019transcriptome}
+Horstmann, C., C.~Campbell, D.~S. Kim and K.~Kim, \enquote{Transcriptome
+  profile with 20 nm silver nanoparticles in yeast}, {\em FEMS Yeast
+  Research\/}, 2019.
+
+\bibitem{galvan2018zinc}
+Galv{\'a}n~M{\'a}rquez, I., M.~Ghiyasvand, A.~Massarsky, M.~Babu, B.~Samanfar,
+  K.~Omidi, T.~W. Moon, M.~L. Smith and A.~Golshani, \enquote{Zinc oxide and
+  silver nanoparticles toxicity in the baker's yeast, Saccharomyces
+  cerevisiae}, {\em PloS One\/}, Vol.~13, No.~3, p. e0193111, 2018.
 
 \end{thebibliography}
